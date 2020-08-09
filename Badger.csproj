@@ -68,9 +68,6 @@
     <Reference Include="BudgetExtensions">
       <HintPath>..\Extensions\bin\Debug\BudgetExtensions.dll</HintPath>
     </Reference>
-    <Reference Include="BudgetNinja">
-      <HintPath>..\Ninja\bin\Debug\BudgetNinja.dll</HintPath>
-    </Reference>
     <Reference Include="BudgetStatic">
       <HintPath>..\Static\bin\Debug\BudgetStatic.dll</HintPath>
     </Reference>
@@ -1092,12 +1089,6 @@
     <Content Include="icons\toolbar\png\Server.png" />
     <Content Include="icons\toolbar\png\UndoButton.png" />
     <Content Include="icons\toolbar\png\UpdateButton.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Enumerations\Enumerations.csproj">
-      <Project>{7E4815FC-F938-48BF-AF14-676F61AB5F30}</Project>
-      <Name>Enumerations</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
