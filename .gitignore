@@ -256,7 +256,7 @@ ServiceFabricBackup/
 # SQLite Database files
 *.db
 
-# BudgetBadger Files
+# Budget Badger Files
 *.exe
 [Ll]ib/
 [Ee]tc/
