@@ -160,7 +160,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                Application.Fail( ex );
+                Fail( ex );
                 return default;
             }
         }
@@ -184,7 +184,7 @@ namespace BudgetExecution
                 }
                 catch( Exception ex )
                 {
-                    Application.Fail( ex );
+                    Fail( ex );
                 }
             }
 
@@ -213,7 +213,7 @@ namespace BudgetExecution
                 }
                 catch( Exception ex )
                 {
-                    Application.Fail( ex );
+                    Fail( ex );
                 }
             }
 
@@ -245,9 +245,20 @@ namespace BudgetExecution
                 }
                 catch( Exception ex )
                 {
-                    Application.Fail( ex );
+                    Fail( ex );
                 }
             }
+        }
+
+        /// <summary>
+        /// Get Error Dialog.
+        /// </summary>
+        /// <param name="ex">The ex.</param>
+        private protected static void Fail( Exception ex )
+        {
+            using var error = new Error( ex );
+            error?.SetText();
+            error?.ShowDialog();
         }
     }
 }
