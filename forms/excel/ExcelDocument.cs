@@ -284,10 +284,7 @@ namespace BudgetExecution
                     spreadsheet.Workbook.ActiveSheet.StandardWidth = 12.5f;
                     var name = spreadsheet.Workbook.Worksheets[ 0 ].Name;
                     var sheet = spreadsheet.Workbook.ActiveSheet;
-
-                    spreadsheet.ActiveSheet.ImportDataGridView( datagrid, 1, 1, true,
-                        false );
-
+                    spreadsheet.ActiveSheet.ImportDataGridView( datagrid, 1, 1, true, false );
                     var range = sheet.UsedRange;
                     var table = sheet.ListObjects.Create( name, range );
                     table.BuiltInTableStyle = TableBuiltInStyles.TableStyleMedium2;
