@@ -1,6 +1,6 @@
-﻿// <copyright file = "SizeConfig.cs " company = "Terry D. Eppler">
-// Copyright (c) Terry Eppler. All rights reserved.
-// </copyright>
+﻿// // <copyright file = "FontConfig.cs" company = "Terry D. Eppler">
+// // Copyright (c) Terry D. Eppler. All rights reserved.
+// // </copyright>
 
 namespace BudgetExecution
 {
@@ -9,7 +9,6 @@ namespace BudgetExecution
     // **************************************************************************************************************************
 
     using System;
-    using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
     using System.Threading;
@@ -17,146 +16,93 @@ namespace BudgetExecution
     /// <summary>
     /// 
     /// </summary>
+    /// <seealso cref = "System.IDisposable"/>
     [ SuppressMessage( "ReSharper", "UnusedType.Global" ) ]
-    public class SizeConfig
+    public class FontConfig : IDisposable
     {
         // **************************************************************************************************************************
         // ********************************************      FIELDS     *************************************************************
         // **************************************************************************************************************************
 
         /// <summary>
-        /// Gets the size of the normal form.
+        /// The font style regular
         /// </summary>
-        /// <value>
-        /// The size of the normal form.
-        /// </value>
-        public static readonly Size FormNormal = new Size( 1500, 820 );
+        public static readonly FontStyle FontStyleRegular = FontStyle.Regular;
 
         /// <summary>
-        /// Gets the maximum size of the form.
+        /// The font style bold
         /// </summary>
-        /// <value>
-        /// The maximum size of the form.
-        /// </value>
-        public static readonly Size FormMaximum = new Size( 1900, 1060 );
+        public static readonly FontStyle FontStyleBold = FontStyle.Bold;
 
         /// <summary>
-        /// Gets the minimum size of the form.
+        /// The font style italic
         /// </summary>
-        /// <value>
-        /// The minimum size of the form.
-        /// </value>
-        public static readonly Size FormMinimum = new Size( 600, 400 );
+        public static readonly FontStyle FontStyleItalic = FontStyle.Italic;
 
         /// <summary>
-        /// The dialog size normal
+        /// The font size small
         /// </summary>
-        public static readonly Size DialogNormal = new Size( 350, 300 );
+        public static readonly Font FontSizeSmall = new Font( "Roboto", 8 );
 
         /// <summary>
-        /// The form size maximum
+        /// The font size medium
         /// </summary>
-        public static readonly Size DialogMinimum = new Size( 300, 250 );
+        public static readonly Font FontSizeMedium = new Font( "Roboto", 10 );
 
         /// <summary>
-        /// The form size minimum
+        /// The font size large
         /// </summary>
-        public static readonly Size DialogMaximum = new Size( 600, 450 );
-
-        /// <summary>
-        /// The column configuration size
-        /// </summary>
-        public static readonly Size ContextMenuNormal = new Size( 250, 350 );
-
-        /// <summary>
-        /// The small
-        /// </summary>
-        public static readonly Size ImageSmall = new Size( 12, 12 );
-
-        /// <summary>
-        /// The medium
-        /// </summary>
-        public static readonly Size ImageMedium = new Size( 16, 16 );
-
-        /// <summary>
-        /// The large
-        /// </summary>
-        public static readonly Size ImageLarge = new Size( 20, 20 );
-
-        /// <summary>
-        /// The largest
-        /// </summary>
-        public static readonly Size ImageHuge = new Size( 250, 250 );
+        public static readonly Font FontSizeLarge = new Font( "Roboto", 12 );
 
         // **************************************************************************************************************************
         // ********************************************   CONSTRUCTORS     **********************************************************
         // **************************************************************************************************************************
 
         /// <summary>
-        /// Initializes a new instance of the <see cref = "SizeConfig"/> class.
+        /// Initializes a new instance of the <see cref = "FontConfig"/> class.
         /// </summary>
-        public SizeConfig()
+        public FontConfig()
         {
         }
 
         // ***************************************************************************************************************************
-        // ****************************************************  PROPERTIES   ********************************************************
+        // ******************************************************   PROPERTIES   *****************************************************
         // ***************************************************************************************************************************
 
         /// <summary>
-        /// Gets or sets the size of the client.
+        /// Gets or sets a value indicating whether this instance is disposed.
         /// </summary>
         /// <value>
-        /// The size of the client.
+        /// <c>
+        /// true
+        /// </c>
+        /// if this instance is disposed; otherwise,
+        /// <c>
+        /// false
+        /// </c>
+        /// .
         /// </value>
-        public Size ClientSize { get; set; }
-
-        /// <summary>
-        /// Gets or sets the bounds.
-        /// </summary>
-        /// <value>
-        /// The bounds.
-        /// </value>
-        public Size Bounds { get; set; }
-
-        /// <summary>
-        /// Gets or sets the height.
-        /// </summary>
-        /// <value>
-        /// The height.
-        /// </value>
-        public int Height { get; set; }
-
-        /// <summary>
-        /// Gets or sets the width.
-        /// </summary>
-        /// <value>
-        /// The width.
-        /// </value>
-        public int Width { get; set; }
+        public bool IsDisposed { get; set; }
 
         // **************************************************************************************************************************
         // ********************************************      METHODS    *************************************************************
         // **************************************************************************************************************************
 
         /// <summary>
-        /// Sets the color.
+        /// Gets the size.
         /// </summary>
-        /// <param name = "width" >
-        /// The width.
-        /// </param>
-        /// <param name = "height" >
-        /// The height.
+        /// <param name = "size" >
+        /// The size.
         /// </param>
         /// <returns>
         /// </returns>
-        public static Size GetSize( int width = 1, int height = 1 )
+        public static int GetFontSize( int size = 8 )
         {
             try
             {
-                return width > 0 && height > 0
-                    ? new Size( width, height )
-                    : Size.Empty;
+                return size > 0
+                    ? size
+                    : 8;
             }
             catch( Exception ex )
             {
@@ -166,58 +112,126 @@ namespace BudgetExecution
         }
 
         /// <summary>
-        /// Sets the size.
+        /// Gets the style.
         /// </summary>
-        /// <param name = "size" >
-        /// The size.
+        /// <param name = "style" >
+        /// The style.
         /// </param>
         /// <returns>
         /// </returns>
-        public static Size GetSize( Size size )
+        public static FontStyle GetFontStyle( FontStyle style = FontStyle.Regular )
         {
-            if( size.Width > -1
-                && size.Height > -1 )
+            try
             {
-                try
-                {
-                    return size;
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
+                return Enum.IsDefined( typeof( FontStyle ), style )
+                    ? style
+                    : FontStyle.Regular;
             }
-
-            return default;
+            catch( Exception ex )
+            {
+                Fail( ex );
+                return FontStyle.Regular;
+            }
         }
 
         /// <summary>
-        /// Sets the size.
+        /// Gets the font.
         /// </summary>
+        /// <param name = "family" >
+        /// The family.
+        /// </param>
+        /// <param name = "size" >
+        /// The size.
+        /// </param>
+        /// <param name = "style" >
+        /// The style.
+        /// </param>
         /// <returns>
         /// </returns>
-        public static Size GetSize( ImageSizer size )
+        public static Font GetFont( string family = "Roboto", int size = 8,
+            FontStyle style = FontStyle.Regular )
         {
-            if( Verify.ImageSize( size ) )
+            try
+            {
+                return Verify.Input( family ) && size > 0 && Enum.IsDefined( typeof( FontStyle ), style )
+                    ? new Font( family, size, style )
+                    : new Font( "Roboto", 8, FontStyle.Regular );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+                return default;
+            }
+        }
+
+        /// <summary>
+        /// Gets the font.
+        /// </summary>
+        /// <param name = "font" >
+        /// The font.
+        /// </param>
+        /// <returns>
+        /// </returns>
+        public static Font GetFont( Font font )
+        {
+            try
+            {
+                return Verify.Input( font?.FontFamily?.Name )
+                    ? font
+                    : default;
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+                return default;
+            }
+        }
+
+        /// <summary>
+        /// Releases unmanaged and - optionally - managed resources.
+        /// </summary>
+        /// <param name = "disposing" >
+        /// <c>
+        /// true
+        /// </c>
+        /// to release both managed and unmanaged resources;
+        /// <c>
+        /// false
+        /// </c>
+        /// to release only unmanaged resources.
+        /// </param>
+        private void Dispose( bool disposing )
+        {
+            if( disposing )
             {
                 try
                 {
-                    return size switch
-                    {
-                        ImageSizer.Small => ImageSmall,
-                        ImageSizer.Medium => ImageMedium,
-                        ImageSizer.Large => ImageLarge,
-                        ImageSizer.Huge => ImageLarge,
-                        _ => Size.Empty
-                    };
+                    FontSizeSmall?.Dispose();
+                    FontSizeMedium?.Dispose();
+                    FontSizeLarge?.Dispose();
                 }
                 catch( Exception ex )
                 {
                     Fail( ex );
                 }
             }
+        }
 
-            return Size.Empty;
+        /// <summary>
+        /// Performs application-defined tasks associated with freeing, releasing, or
+        /// resetting unmanaged resources.
+        /// </summary>
+        public void Dispose()
+        {
+            try
+            {
+                Dispose( true );
+                GC.SuppressFinalize( this );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
         }
 
         // **************************************************************************************************************************
@@ -225,7 +239,7 @@ namespace BudgetExecution
         // **************************************************************************************************************************
 
         /// <summary>
-        /// Called when [size changed].
+        /// Called when [font changed].
         /// </summary>
         /// <param name = "sender" >
         /// The sender.
@@ -233,7 +247,7 @@ namespace BudgetExecution
         /// <param name = "e" >
         /// The <see cref = "EventArgs"/> instance containing the event data.
         /// </param>
-        public static void OnSizeChanged( object sender, EventArgs e )
+        public static void OnFontChanged( object sender, EventArgs e )
         {
             if( sender != null
                 && e != null )

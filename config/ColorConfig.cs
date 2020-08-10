@@ -1,6 +1,6 @@
-﻿// <copyright file = "ColorConfig.cs " company = "Terry D. Eppler">
-// Copyright (c) Terry Eppler. All rights reserved.
-// </copyright>
+﻿// // <copyright file = "ColorConfig.cs" company = "Terry D. Eppler">
+// // Copyright (c) Terry D. Eppler. All rights reserved.
+// // </copyright>
 
 namespace BudgetExecution
 {
@@ -123,9 +123,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
                 return Color.Empty;
             }
         }
@@ -145,9 +143,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
                 return ExcelFillStyle.None;
             }
         }
@@ -167,9 +163,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
                 return ExcelFillGradientType.None;
             }
         }
@@ -189,9 +183,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
                 return ExcelFillType.UnknownGradient;
             }
         }
@@ -211,9 +203,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
                 return ExcelGradientStyle.Horizontal;
             }
         }
@@ -243,11 +233,20 @@ namespace BudgetExecution
                 }
                 catch( Exception ex )
                 {
-                    using var error = new Error( ex );
-                    error?.SetText();
-                    error?.ShowDialog();
+                    Fail( ex );
                 }
             }
+        }
+
+        /// <summary>
+        /// Get Error Dialog.
+        /// </summary>
+        /// <param name="ex">The ex.</param>
+        private protected static void Fail( Exception ex )
+        {
+            using var error = new Error( ex );
+            error?.SetText();
+            error?.ShowDialog();
         }
     }
 }

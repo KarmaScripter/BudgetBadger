@@ -1,6 +1,6 @@
-﻿// <copyright file="TabPanel.cs" company="Terry D. Eppler">
-// Copyright (c) Terry Eppler. All rights reserved.
-// </copyright>
+﻿// // <copyright file = "TabPanel.cs" company = "Terry D. Eppler">
+// // Copyright (c) Terry D. Eppler. All rights reserved.
+// // </copyright>
 
 namespace BudgetExecution
 {
@@ -226,9 +226,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
             }
         }
 
@@ -264,9 +262,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
             }
         }
 
@@ -282,9 +278,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
             }
         }
 
@@ -301,9 +295,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
             }
         }
 
@@ -321,9 +313,7 @@ namespace BudgetExecution
                 }
                 catch( Exception ex )
                 {
-                    using var error = new Error( ex );
-                    error?.SetText();
-                    error?.ShowDialog();
+                    Fail( ex );
                 }
             }
         }
@@ -340,9 +330,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
             }
         }
 
@@ -358,9 +346,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
             }
         }
 
@@ -380,9 +366,7 @@ namespace BudgetExecution
                 }
                 catch( Exception ex )
                 {
-                    using var error = new Error( ex );
-                    error?.SetText();
-                    error?.ShowDialog();
+                    Fail( ex );
                 }
             }
         }
@@ -412,9 +396,7 @@ namespace BudgetExecution
                 }
                 catch( Exception ex )
                 {
-                    using var error = new Error( ex );
-                    error?.SetText();
-                    error?.ShowDialog();
+                    Fail( ex );
                 }
             }
         }
@@ -433,9 +415,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
                 return default;
             }
         }
@@ -460,9 +440,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
             }
         }
 
@@ -482,10 +460,19 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
             }
+        }
+
+        /// <summary>
+        /// Get Error Dialog.
+        /// </summary>
+        /// <param name="ex">The ex.</param>
+        private protected static void Fail( Exception ex )
+        {
+            using var error = new Error( ex );
+            error?.SetText();
+            error?.ShowDialog();
         }
     }
 }

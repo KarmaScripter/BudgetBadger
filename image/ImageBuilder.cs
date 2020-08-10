@@ -1,6 +1,6 @@
-﻿// <copyright file="ImageBuilder.cs" company="Terry D. Eppler">
-// Copyright (c) Terry Eppler. All rights reserved.
-// </copyright>
+﻿// // <copyright file = "ImageBuilder.cs" company = "Terry D. Eppler">
+// // Copyright (c) Terry D. Eppler. All rights reserved.
+// // </copyright>
 
 namespace BudgetExecution
 {
@@ -239,10 +239,9 @@ namespace BudgetExecution
         {
             try
             {
-                return Verify.ImageResource( Source )
-                    && Verify.Input( Resource.Settings[ $"{Source}" ] )
-                        ? Resource.Settings[ $"{Source}" ]
-                        : default;
+                return Verify.ImageResource( Source ) && Verify.Input( Resource.Settings[ $"{Source}" ] )
+                    ? Resource.Settings[ $"{Source}" ]
+                    : default;
             }
             catch( Exception ex )
             {

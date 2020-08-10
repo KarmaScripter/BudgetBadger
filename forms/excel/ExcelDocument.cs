@@ -1,6 +1,6 @@
-﻿// <copyright file="{ClassName}.cs" company="Terry D. Eppler">
-// Copyright (c) Eppler. All rights reserved.
-// </copyright>
+﻿// // <copyright file = "ExcelDocument.cs" company = "Terry D. Eppler">
+// // Copyright (c) Terry D. Eppler. All rights reserved.
+// // </copyright>
 
 namespace BudgetExecution
 {
@@ -196,9 +196,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
                 return default;
             }
         }
@@ -218,11 +216,9 @@ namespace BudgetExecution
                 {
                     ConnectionString = extension?.ToUpper() switch
                     {
-                        ".XLS" => @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source="
-                        + filepath
+                        ".XLS" => @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + filepath
                         + ";Extended Properties=\"Excel 8.0;HDR=YES;\"",
-                        ".Report" => @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source="
-                        + filepath
+                        ".Report" => @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + filepath
                         + ";Extended Properties=\"Excel 12.0;HDR=YES;\"",
                         _ => ConnectionString
                     };
@@ -233,9 +229,7 @@ namespace BudgetExecution
                 }
                 catch( Exception ex )
                 {
-                    using var error = new Error( ex );
-                    error?.SetText();
-                    error?.ShowDialog();
+                    Fail( ex );
                     return string.Empty;
                 }
             }
@@ -269,9 +263,7 @@ namespace BudgetExecution
                 }
                 catch( Exception ex )
                 {
-                    using var error = new Error( ex );
-                    error?.SetText();
-                    error?.ShowDialog();
+                    Fail( ex );
                 }
             }
         }
@@ -304,15 +296,13 @@ namespace BudgetExecution
                 }
                 catch( Exception ex )
                 {
-                    using var error = new Error( ex );
-                    error?.SetText();
-                    error?.ShowDialog();
+                    Fail( ex );
                 }
             }
         }
 
         /// <summary>
-        /// Fails the specified ex.
+        /// Get Error Dialog.
         /// </summary>
         /// <param name="ex">The ex.</param>
         private protected static void Fail( Exception ex )

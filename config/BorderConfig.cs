@@ -1,6 +1,6 @@
-﻿// <copyright file = "FontConfig.cs " company = "Terry D. Eppler">
-// Copyright (c) Terry Eppler. All rights reserved.
-// </copyright>
+﻿// // <copyright file = "BorderConfig.cs" company = "Terry D. Eppler">
+// // Copyright (c) Terry D. Eppler. All rights reserved.
+// // </copyright>
 
 namespace BudgetExecution
 {
@@ -12,56 +12,49 @@ namespace BudgetExecution
     using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
     using System.Threading;
+    using System.Windows.Forms;
+    using OfficeOpenXml.Style;
+    using Syncfusion.XlsIO;
 
     /// <summary>
     /// 
     /// </summary>
-    /// <seealso cref = "System.IDisposable"/>
     [ SuppressMessage( "ReSharper", "UnusedType.Global" ) ]
-    public class FontConfig : IDisposable
+    [ SuppressMessage( "ReSharper", "ConvertToConstant.Global" ) ]
+    public class BorderConfig
     {
         // **************************************************************************************************************************
         // ********************************************      FIELDS     *************************************************************
         // **************************************************************************************************************************
 
         /// <summary>
-        /// The font style regular
+        /// The form fixed
         /// </summary>
-        public static readonly FontStyle FontStyleRegular = FontStyle.Regular;
+        public static readonly FormBorderStyle FormFixed = FormBorderStyle.FixedSingle;
 
         /// <summary>
-        /// The font style bold
+        /// The form none
         /// </summary>
-        public static readonly FontStyle FontStyleBold = FontStyle.Bold;
+        public static readonly FormBorderStyle FormNone = FormBorderStyle.None;
 
         /// <summary>
-        /// The font style italic
+        /// The form sizable
         /// </summary>
-        public static readonly FontStyle FontStyleItalic = FontStyle.Italic;
+        public static readonly FormBorderStyle FormSizable = FormBorderStyle.Sizable;
 
         /// <summary>
-        /// The font size small
+        /// The size thin
         /// </summary>
-        public static readonly Font FontSizeSmall = new Font( "Roboto", 8 );
-
-        /// <summary>
-        /// The font size medium
-        /// </summary>
-        public static readonly Font FontSizeMedium = new Font( "Roboto", 10 );
-
-        /// <summary>
-        /// The font size large
-        /// </summary>
-        public static readonly Font FontSizeLarge = new Font( "Roboto", 12 );
+        public static readonly int SizeThin = 1;
 
         // **************************************************************************************************************************
         // ********************************************   CONSTRUCTORS     **********************************************************
         // **************************************************************************************************************************
 
         /// <summary>
-        /// Initializes a new instance of the <see cref = "FontConfig"/> class.
+        /// Initializes a new instance of the <see cref = "BorderConfig"/> class.
         /// </summary>
-        public FontConfig()
+        public BorderConfig()
         {
         }
 
@@ -70,46 +63,44 @@ namespace BudgetExecution
         // ***************************************************************************************************************************
 
         /// <summary>
-        /// Gets or sets a value indicating whether this instance is disposed.
+        /// Gets or sets a value indicating whether this instance is hoverable.
         /// </summary>
         /// <value>
         /// <c>
         /// true
         /// </c>
-        /// if this instance is disposed; otherwise,
+        /// if this instance is hoverable; otherwise,
         /// <c>
         /// false
         /// </c>
         /// .
         /// </value>
-        public bool IsDisposed { get; set; }
+        public bool IsHoverable { get; set; } = false;
 
         // **************************************************************************************************************************
         // ********************************************      METHODS    *************************************************************
         // **************************************************************************************************************************
 
         /// <summary>
-        /// Gets the size.
+        /// Gets the thickness.
         /// </summary>
         /// <param name = "size" >
         /// The size.
         /// </param>
         /// <returns>
         /// </returns>
-        public static int GetFontSize( int size = 8 )
+        public static int GetThickness( int size = 1 )
         {
             try
             {
                 return size > 0
                     ? size
-                    : 8;
+                    : 1;
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
-                return default;
+                Fail( ex );
+                return 1;
             }
         }
 
@@ -121,130 +112,121 @@ namespace BudgetExecution
         /// </param>
         /// <returns>
         /// </returns>
-        public static FontStyle GetFontStyle( FontStyle style = FontStyle.Regular )
+        public static BorderStyle GetStyle( BorderStyle style = BorderStyle.None )
         {
             try
             {
-                return Enum.IsDefined( typeof( FontStyle ), style )
+                return Enum.IsDefined( typeof( BorderStyle ), style )
                     ? style
-                    : FontStyle.Regular;
+                    : BorderStyle.None;
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
-                return FontStyle.Regular;
+                Fail( ex );
+                return BorderStyle.None;
             }
         }
 
         /// <summary>
-        /// Gets the font.
+        /// Gets the color.
         /// </summary>
-        /// <param name = "family" >
-        /// The family.
-        /// </param>
-        /// <param name = "size" >
-        /// The size.
-        /// </param>
-        /// <param name = "style" >
-        /// The style.
+        /// <param name = "color" >
+        /// The color.
         /// </param>
         /// <returns>
         /// </returns>
-        public static Font GetFont( string family = "Roboto", int size = 8,
-            FontStyle style = FontStyle.Regular )
+        public static Color GetColor( Color color )
         {
             try
             {
-                return Verify.Input( family )
-                    && size > 0
-                    && Enum.IsDefined( typeof( FontStyle ), style )
-                        ? new Font( family, size, style )
-                        : new Font( "Roboto", 8, FontStyle.Regular );
+                return color != Color.Empty
+                    ? color
+                    : Color.Empty;
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
-                return default;
+                Fail( ex );
+                return Color.Empty;
             }
         }
 
         /// <summary>
-        /// Gets the font.
+        /// Gets the excel border style.
         /// </summary>
-        /// <param name = "font" >
-        /// The font.
-        /// </param>
-        /// <returns>
-        /// </returns>
-        public static Font GetFont( Font font )
+        /// <param name="border">The border.</param>
+        /// <returns></returns>
+        public static ExcelBorderStyle GetExcelBorderStyle( ExcelBorderStyle border )
         {
             try
             {
-                return Verify.Input( font?.FontFamily?.Name )
-                    ? font
-                    : default;
+                return Enum.IsDefined( typeof( ExcelBorderStyle ), border )
+                    ? border
+                    : ExcelBorderStyle.None;
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
-                return default;
+                Fail( ex );
+                return ExcelBorderStyle.None;
             }
         }
 
         /// <summary>
-        /// Releases unmanaged and - optionally - managed resources.
+        /// Gets the type of the excel underline.
         /// </summary>
-        /// <param name = "disposing" >
-        /// <c>
-        /// true
-        /// </c>
-        /// to release both managed and unmanaged resources;
-        /// <c>
-        /// false
-        /// </c>
-        /// to release only unmanaged resources.
-        /// </param>
-        private void Dispose( bool disposing )
+        /// <param name="underline">The underline.</param>
+        /// <returns></returns>
+        public static eUnderLineType GetExcelUnderlineType( eUnderLineType underline )
         {
-            if( disposing )
+            try
             {
-                try
-                {
-                    FontSizeSmall?.Dispose();
-                    FontSizeMedium?.Dispose();
-                    FontSizeLarge?.Dispose();
-                }
-                catch( Exception ex )
-                {
-                    using var error = new Error( ex );
-                    error?.SetText();
-                    error?.ShowDialog();
-                }
+                return Enum.IsDefined( typeof( eUnderLineType ), underline )
+                    ? underline
+                    : eUnderLineType.None;
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+                return eUnderLineType.None;
             }
         }
 
         /// <summary>
-        /// Performs application-defined tasks associated with freeing, releasing, or
-        /// resetting unmanaged resources.
+        /// Gets the spreadsheet border weight.
         /// </summary>
-        public void Dispose()
+        /// <param name="weight">The weight.</param>
+        /// <returns></returns>
+        public static ExcelBorderWeight GetSpreadsheetBorderWeight( ExcelBorderWeight weight )
         {
             try
             {
-                Dispose( true );
-                GC.SuppressFinalize( this );
+                return Enum.IsDefined( typeof( ExcelBorderWeight ), weight )
+                    ? weight
+                    : ExcelBorderWeight.None;
             }
             catch( Exception ex )
             {
-                using var error = new Error( ex );
-                error?.SetText();
-                error?.ShowDialog();
+                Fail( ex );
+                return ExcelBorderWeight.None;
+            }
+        }
+
+        /// <summary>
+        /// Gets the spreadsheet line style.
+        /// </summary>
+        /// <param name="style">The styel.</param>
+        /// <returns></returns>
+        public static ExcelLineStyle GetSpreadsheetLineStyle( ExcelLineStyle style )
+        {
+            try
+            {
+                return Enum.IsDefined( typeof( ExcelLineStyle ), style )
+                    ? style
+                    : ExcelLineStyle.None;
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+                return ExcelLineStyle.None;
             }
         }
 
@@ -253,7 +235,7 @@ namespace BudgetExecution
         // **************************************************************************************************************************
 
         /// <summary>
-        /// Called when [font changed].
+        /// Called when [mouse hover].
         /// </summary>
         /// <param name = "sender" >
         /// The sender.
@@ -261,7 +243,7 @@ namespace BudgetExecution
         /// <param name = "e" >
         /// The <see cref = "EventArgs"/> instance containing the event data.
         /// </param>
-        public static void OnFontChanged( object sender, EventArgs e )
+        public static void OnMouseHover( object sender, EventArgs e )
         {
             if( sender != null
                 && e != null )
@@ -273,11 +255,46 @@ namespace BudgetExecution
                 }
                 catch( Exception ex )
                 {
-                    using var error = new Error( ex );
-                    error?.SetText();
-                    error?.ShowDialog();
+                    Fail( ex );
                 }
             }
+        }
+
+        /// <summary>
+        /// Called when [border changed].
+        /// </summary>
+        /// <param name = "sender" >
+        /// The sender.
+        /// </param>
+        /// <param name = "e" >
+        /// The <see cref = "EventArgs"/> instance containing the event data.
+        /// </param>
+        public static void OnBorderChanged( object sender, EventArgs e )
+        {
+            if( sender != null
+                && e != null )
+            {
+                try
+                {
+                    using var message = new Message( "NOT YET IMPLEMENTED" );
+                    message?.ShowDialog();
+                }
+                catch( Exception ex )
+                {
+                    Fail( ex );
+                }
+            }
+        }
+
+        /// <summary>
+        /// Get Error Dialog.
+        /// </summary>
+        /// <param name="ex">The ex.</param>
+        private protected static void Fail( Exception ex )
+        {
+            using var error = new Error( ex );
+            error?.SetText();
+            error?.ShowDialog();
         }
     }
 }
