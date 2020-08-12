@@ -51,7 +51,7 @@ namespace BudgetExecution
                 this.Header = new System.Windows.Forms.TableLayoutPanel();
                 this.Picture = new PicturePanel();
                 this.Label = new LabelPanel();
-                this.ToolControl = new ToolBarControl();
+                this.ToolControl = new ToolControl();
                 this.CloseBox = new ClosePanel();
                 this.BackPanel.SuspendLayout();
                 this.Header.SuspendLayout();
@@ -571,7 +571,7 @@ namespace BudgetExecution
 
             public TableLayoutPanel Header;
 
-            public ToolBarControl ToolControl;
+            public ToolControl ToolControl;
 
             public PicturePanel Picture;
 

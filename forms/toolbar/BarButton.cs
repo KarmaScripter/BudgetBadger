@@ -25,7 +25,8 @@ namespace BudgetExecution
 
         public BarButton()
         {
-            Margin = new Padding( 10, 5, 10, 0 );
+            Margin = new Padding( 10, 5, 10, 5 );
+            Padding = new Padding( 1 );
             DisplayStyle = ToolStripItemDisplayStyle.Image;
             BackColor = ColorConfig.BackColorBlack;
             ForeColor = ColorConfig.ForeColorGray;

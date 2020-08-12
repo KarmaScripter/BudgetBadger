@@ -49,7 +49,7 @@ namespace BudgetExecution
             this.BackPanel = new BudgetExecution.LayoutPanel();
             this.DataGrid = new BudgetExecution.BudgetGridPanel();
             this.InfoSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ToolBar = new BudgetExecution.ToolBarPanel();
+            this.ToolBar = new BudgetExecution.ToolPanel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.Label = new BudgetExecution.BarLabel();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -456,7 +456,7 @@ namespace BudgetExecution
 
         public BudgetGridPanel DataGrid;
 
-        public ToolBarPanel ToolBar;
+        public ToolPanel ToolBar;
 
         public ToolStripSeparator toolStripSeparator1;
 

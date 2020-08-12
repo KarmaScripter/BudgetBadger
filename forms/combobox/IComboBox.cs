@@ -7,7 +7,6 @@ namespace BudgetExecution
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
-    using System.Data;
 
     public interface IComboBox
     {
@@ -48,7 +47,8 @@ namespace BudgetExecution
         /// Sets the binding source.
         /// </summary>
         /// <param name="bindingsource">The bindingsource.</param>
-        void SetDataSource<T>( T bindingsource ) where T : IBindingList;
+        void SetDataSource<T>( T bindingsource )
+            where T : IBindingList;
 
         /// <summary>
         /// Sets the binding source.
@@ -58,13 +58,15 @@ namespace BudgetExecution
         /// <param name="bindinglist">The bindingsource.</param>
         /// <param name="dict">The dictionary.</param>
         void SetDataSource<T, T2>( T bindinglist, T2 dict )
-            where T : IBindingList where T2 : IDictionary<string, object>;
+            where T : IBindingList
+            where T2 : IDictionary<string, object>;
 
         /// <summary>
         /// Sets the binding source.
         /// </summary>
         /// <param name="data">The data.</param>
-        void SetDataSource<T>( IEnumerable<T> data ) where T : IEnumerable<DataRow>;
+        void SetDataSource<T>( IEnumerable<T> data )
+            where T : IEnumerable<T>;
 
         /// <summary>
         /// Sets the binding source.
@@ -73,7 +75,7 @@ namespace BudgetExecution
         /// <param name="data">The data.</param>
         /// <param name="dict">The dictionary.</param>
         void SetDataSource<T>( IEnumerable<T> data, IDictionary<string, object> dict )
-            where T : IEnumerable<DataRow>;
+            where T : IEnumerable<T>;
 
         /// <summary>
         /// Sets the binding source.
@@ -85,7 +87,8 @@ namespace BudgetExecution
         /// <param name="field">The field.</param>
         /// <param name="filter">The dictionary.</param>
         void SetDataSource<T1, T2, T3>( IEnumerable<T1> data, T2 field, T3 filter )
-            where T1 : IEnumerable<DataRow> where T2 : struct;
+            where T1 : IEnumerable<T1>
+            where T2 : struct;
 
         /// <summary>
         /// Sets the binding source.
@@ -93,7 +96,8 @@ namespace BudgetExecution
         /// <typeparam name="T1">The type of the 1.</typeparam>
         /// <param name="data">The data.</param>
         /// <param name="field">The field.</param>
-        void SetDataSource<T1>( IEnumerable<T1> data, object field = null ) where T1 : IEnumerable<DataRow>;
+        void SetDataSource<T1>( IEnumerable<T1> data, object field = null )
+            where T1 : IEnumerable<T1>;
 
         /// <summary>
         /// Sets the bindings.
@@ -102,7 +106,8 @@ namespace BudgetExecution
         /// <param>The numeric.</param>
         /// <param name = "dict" > </param>
         void SetDataSource<T1, T2>( IEnumerable<T1> data, T2 dict )
-            where T1 : IEnumerable<DataRow> where T2 : IDictionary<string, object>;
+            where T1 : IEnumerable<T1>
+            where T2 : IDictionary<string, object>;
 
         /// <summary>
         /// Sets the binding source.
@@ -111,6 +116,7 @@ namespace BudgetExecution
         /// <param name="field">The field.</param>
         /// <param name="filter">The filter.</param>
         void SetDataSource<T1, T2>( IEnumerable<T1> data, T2 field, object filter = null )
-            where T1 : IEnumerable<DataRow> where T2 : struct;
+            where T1 : IEnumerable<T1>
+            where T2 : struct;
     }
 }

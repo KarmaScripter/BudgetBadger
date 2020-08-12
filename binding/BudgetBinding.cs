@@ -1,6 +1,6 @@
-﻿// // <copyright file = "BudgetBinding.cs" company = "Terry D. Eppler">
-// // Copyright (c) Terry D. Eppler. All rights reserved.
-// // </copyright>
+﻿// <copyright file = "BudgetBinding.cs" company = "Terry D. Eppler">
+// Copyright (c) Terry D. Eppler. All rights reserved.
+// </copyright>
 
 namespace BudgetExecution
 {
@@ -89,7 +89,7 @@ namespace BudgetExecution
                 }
                 catch( Exception ex )
                 {
-                    BudgetBinding.Fail( ex );
+                    Fail( ex );
                 }
             }
         }
@@ -120,7 +120,7 @@ namespace BudgetExecution
                 }
                 catch( Exception ex )
                 {
-                    BudgetBinding.Fail( ex );
+                    Fail( ex );
                 }
             }
         }
@@ -139,7 +139,7 @@ namespace BudgetExecution
             }
             catch( Exception ex )
             {
-                BudgetBinding.Fail( ex );
+                Fail( ex );
                 return default;
             }
         }

@@ -11,7 +11,6 @@ namespace BudgetExecution
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
-    using System.Data;
     using System.Linq;
     using System.Threading;
     using System.Windows.Forms;
@@ -85,12 +84,12 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the binding source.
         /// </summary>
-        /// <param name="bindingsource">The bindingsource.</param>
-        public void SetDataSource<T>( T bindingsource ) where T : IBindingList
+        /// <param name="bindinglist">The bindingsource.</param>
+        public void SetDataSource<T>( T bindinglist ) where T : IBindingList
         {
             try
             {
-                if( bindingsource is BindingSource binder
+                if( bindinglist is BindingSource binder
                     && binder?.DataSource != null )
                 {
                     try
@@ -117,7 +116,8 @@ namespace BudgetExecution
         /// <param name="bindinglist">The bindingsource.</param>
         /// <param name="dict">The dictionary.</param>
         public void SetDataSource<T, T2>( T bindinglist, T2 dict )
-            where T : IBindingList where T2 : IDictionary<string, object>
+            where T : IBindingList
+            where T2 : IDictionary<string, object>
         {
             try
             {
@@ -161,7 +161,8 @@ namespace BudgetExecution
         /// Sets the binding source.
         /// </summary>
         /// <param name="data">The data.</param>
-        public void SetDataSource<T>( IEnumerable<T> data ) where T : IEnumerable<DataRow>
+        public void SetDataSource<T>( IEnumerable<T> data )
+            where T : IEnumerable<T>
         {
             if( Verify.Sequence( data ) )
             {
@@ -183,7 +184,7 @@ namespace BudgetExecution
         /// <param name="data">The data.</param>
         /// <param name="dict">The dictionary.</param>
         public void SetDataSource<T1>( IEnumerable<T1> data, IDictionary<string, object> dict )
-            where T1 : IEnumerable<DataRow>
+            where T1 : IEnumerable<T1>
         {
             if( Verify.Sequence( data ) )
             {
@@ -220,7 +221,8 @@ namespace BudgetExecution
         /// <param name="field">The field.</param>
         /// <param name="filter">The dictionary.</param>
         public void SetDataSource<T1, T2, T3>( IEnumerable<T1> data, T2 field, T3 filter )
-            where T1 : IEnumerable<DataRow> where T2 : struct
+            where T1 : IEnumerable<T1>
+            where T2 : struct
         {
             if( Verify.Sequence( data )
                 && Verify.Field( field ) )
@@ -253,7 +255,7 @@ namespace BudgetExecution
         /// <param name="data">The data.</param>
         /// <param name="field">The field.</param>
         public void SetDataSource<T1>( IEnumerable<T1> data, object field = null )
-            where T1 : IEnumerable<DataRow>
+            where T1 : IEnumerable<T1>
         {
             if( Verify.Input( data ) )
             {
@@ -283,7 +285,8 @@ namespace BudgetExecution
         /// <param>The numeric.</param>
         /// <param name = "dict" > </param>
         public void SetDataSource<T1, T2>( IEnumerable<T1> data, T2 dict )
-            where T1 : IEnumerable<DataRow> where T2 : IDictionary<string, object>
+            where T1 : IEnumerable<T1>
+            where T2 : IDictionary<string, object>
         {
             if( Verify.Sequence( data )
                 && Verify.Map( dict ) )
@@ -318,7 +321,8 @@ namespace BudgetExecution
         /// <param name="field">The field.</param>
         /// <param name="filter">The filter.</param>
         public void SetDataSource<T1, T2>( IEnumerable<T1> data, T2 field, object filter = null )
-            where T1 : IEnumerable<DataRow> where T2 : struct
+            where T1 : IEnumerable<T1>
+            where T2 : struct
         {
             if( Verify.Sequence( data )
                 && Verify.Field( field ) )

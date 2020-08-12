@@ -60,7 +60,7 @@ namespace BudgetExecution
                 this.bocCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
                 this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
                 this.AllocationsBindingSource = new System.Windows.Forms.BindingSource( this.components );
-                this.ToolBar = new ToolBarPanel();
+                this.ToolBar = new ToolPanel();
                 this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
                 this.barLabel1 = new BarLabel();
                 this.barButton1 = new BarButton();
@@ -660,7 +660,7 @@ namespace BudgetExecution
 
             public DataGridPanel DataGrid;
 
-            public ToolBarPanel ToolBar;
+            public ToolPanel ToolBar;
 
             private ToolStripSeparator toolStripSeparator1;
 

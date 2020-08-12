@@ -18,7 +18,7 @@ namespace BudgetExecution
     /// 
     /// </summary>
     [ SuppressMessage( "ReSharper", "UnusedVariable" ) ]
-    public class BarControlBase : UserControl
+    public class ToolControlBase : UserControl
     {
         // ***************************************************************************************************************************
         // ****************************************************    FIELDS     ********************************************************
@@ -34,14 +34,14 @@ namespace BudgetExecution
         // ***************************************************************************************************************************
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ToolBarControl"/> class.
+        /// Initializes a new instance of the <see cref="ToolControl"/> class.
         /// </summary>
-        public BarControlBase()
+        public ToolControlBase()
         {
             ForeColor = Color.Black;
             BackColor = ColorConfig.BackColorBlack;
             Font = FontConfig.FontSizeSmall;
-            Padding = new Padding( 0 );
+            Padding = new Padding( 1 );
         }
 
         // ***************************************************************************************************************************

@@ -21,36 +21,34 @@ namespace BudgetExecution
     /// </summary>
     /// <seealso cref="ControlBase" />
     [ SuppressMessage( "ReSharper", "UnusedVariable" ) ]
-    public partial class ToolBarControl : BarControlBase
+    public partial class ToolControl : ToolControlBase
     {
         // ***************************************************************************************************************************
         // ****************************************************  CONSTRUCTORS ********************************************************
         // ***************************************************************************************************************************
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ToolBarControl"/> class.
+        /// Initializes a new instance of the <see cref="ToolControl"/> class.
         /// </summary>
-        public ToolBarControl()
+        public ToolControl()
         {
             InitializeComponent();
             Height = 33;
             Size = ToolBar.Size;
-            Margin = new Padding( 0, 5, 0, 0 );
+            Margin = new Padding( 3, 3, 3, 3 );
             Dock = DockStyle.Bottom;
             ToolBar.BackColor = ColorConfig.BackColorBlack;
-            ToolBar.ForeColor = ColorConfig.ForeColorBlack;
+            ToolBar.ForeColor = ColorConfig.ForeColorGray;
             ToolBar.Font = FontConfig.FontSizeSmall;
             ToolBar.OfficeColorScheme = ToolStripEx.ColorScheme.Black;
             ToolBar.Dock = DockStyle.Bottom;
-            ToolBar.ShowCaption = false;
+            ToolBar.ShowCaption = true;
             ToolBar.CaptionMinHeight = 0;
             ToolBar.VisualStyle = ToolStripExStyle.Default;
             ToolBar.Office12Mode = true;
             ToolBar.Dock = DockStyle.Bottom;
             ToolBar.Stretch = true;
-            ToolBar.Enabled = true;
-            ToolBar.Visible = true;
-            ToolBar.BorderStyle = ToolStripBorderStyle.None;
+            ToolBar.BorderStyle = ToolStripBorderStyle.StaticEdge;
             ToolBar.Visible = true;
             ToolBar.Enabled = true;
         }

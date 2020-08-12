@@ -479,23 +479,23 @@
     <Compile Include="forms\tilelayout\TilePanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\tile\base\TileBase.cs">
+    <Compile Include="forms\tile\TileBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\tile\base\TileConfig.cs">
+    <Compile Include="forms\tile\TileConfig.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\tile\buttontile\ButtonTilePanel.cs">
+    <Compile Include="forms\tile\ButtonTilePanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\tile\itile\IButtonTile.cs" />
-    <Compile Include="forms\tile\itile\IPulsingTile.cs" />
-    <Compile Include="forms\tile\itile\IRotatingTile.cs" />
-    <Compile Include="forms\tile\itile\ITile.cs" />
-    <Compile Include="forms\tile\pulsingtile\PulsingTilePanel.cs">
+    <Compile Include="forms\tile\IButtonTile.cs" />
+    <Compile Include="forms\tile\IPulsingTile.cs" />
+    <Compile Include="forms\tile\IRotatingTile.cs" />
+    <Compile Include="forms\tile\ITile.cs" />
+    <Compile Include="forms\tile\PulsingTilePanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\tile\rotatingtile\RotatingTilePanel.cs">
+    <Compile Include="forms\tile\RotatingTilePanel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="forms\toolbar\BarButton.cs">
@@ -513,32 +513,32 @@
     <Compile Include="forms\toolbar\BarTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\base\BarButtonBase.cs">
+    <Compile Include="forms\toolbar\BarButtonBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\base\BarComboBase.cs">
+    <Compile Include="forms\toolbar\BarComboBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\base\BarControlBase.cs">
+    <Compile Include="forms\toolbar\ToolControlBase.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\base\BarLabelBase.cs">
+    <Compile Include="forms\toolbar\BarLabelBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\base\ToolBarBase.cs">
+    <Compile Include="forms\toolbar\ToolPanelBase.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="forms\toolbar\IToolBar.cs" />
-    <Compile Include="forms\toolbar\ToolBarControl.cs">
+    <Compile Include="forms\toolbar\ToolControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\ToolBarControl.Designer.cs">
-      <DependentUpon>ToolBarControl.cs</DependentUpon>
+    <Compile Include="forms\toolbar\ToolControl.Designer.cs">
+      <DependentUpon>ToolControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\toolbar\ToolBarData.cs">
+    <Compile Include="forms\toolbar\ToolPanelData.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\ToolBarPanel.cs">
+    <Compile Include="forms\toolbar\ToolPanel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="forms\toolbar\ToolSeparator.cs">
@@ -647,8 +647,8 @@
     <EmbeddedResource Include="forms\tilelayout\TileLayoutControl.resx">
       <DependentUpon>TileLayoutControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\toolbar\ToolBarControl.resx">
-      <DependentUpon>ToolBarControl.cs</DependentUpon>
+    <EmbeddedResource Include="forms\toolbar\ToolControl.resx">
+      <DependentUpon>ToolControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

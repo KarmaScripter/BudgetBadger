@@ -16,7 +16,7 @@ namespace BudgetExecution
     /// <summary> </summary>
     /// <seealso cref = "Syncfusion.Windows.Forms.Tools.ToolStripEx"/>
     [ SuppressMessage( "ReSharper", "VirtualMemberNeverOverridden.Global" ) ]
-    public class ToolBarBase : ToolBarData
+    public class ToolPanelBase : ToolPanelData
     {
         // ***************************************************************************************************************************
         // ****************************************************    FIELDS     ********************************************************

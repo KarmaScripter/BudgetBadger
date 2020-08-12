@@ -87,7 +87,7 @@ namespace BudgetExecution
                 this.TextBox1 = new TextBoxPanel();
                 this.TopPanel = new LayoutPanel();
                 this.TopLabel = new LabelPanel();
-                this.ToolBar = new ToolBarPanel();
+                this.ToolBar = new ToolPanel();
                 this.Separator1 = new System.Windows.Forms.ToolStripSeparator();
                 this.BarLabel = new BarLabel();
                 this.Separator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -4558,7 +4558,7 @@ namespace BudgetExecution
 
             #endregion
 
-            public ToolBarPanel ToolBar;
+            public ToolPanel ToolBar;
 
             private LayoutPanel BottomPanel;
 

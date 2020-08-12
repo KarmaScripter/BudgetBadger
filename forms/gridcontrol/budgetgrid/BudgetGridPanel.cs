@@ -136,7 +136,7 @@ namespace BudgetExecution
 
         /// <summary> Gets or sets the tool bar. </summary>
         /// <value> The tool bar. </value>
-        public ToolBarPanel ToolBar { set; get; }
+        public ToolPanel ToolBar { set; get; }
 
         /// <summary> Gets or sets the grid panel. </summary>
         /// <value> The grid panel. </value>
@@ -419,7 +419,7 @@ namespace BudgetExecution
         {
             try
             {
-                var toolbar = new ToolBarPanel();
+                var toolbar = new ToolPanel();
                 GridBoxPanel?.Controls.Add( ToolBar );
                 toolbar.Dock = DockStyle.Fill;
                 toolbar.Dock = DockStyle.Bottom;

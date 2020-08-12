@@ -19,13 +19,13 @@ namespace BudgetExecution
     [ SuppressMessage( "ReSharper", "UnusedParameter.Global" ) ]
     [ SuppressMessage( "ReSharper", "ClassNeverInstantiated.Global" ) ]
     [ SuppressMessage( "ReSharper", "AutoPropertyCanBeMadeGetOnly.Local" ) ]
-    public class ToolBarPanel : ToolBarBase
+    public class ToolPanel : ToolPanelBase
     {
         // ***************************************************************************************************************************
         // ******************************************************  CONSTRUCTORS  *****************************************************
         // ***************************************************************************************************************************
 
-        public ToolBarPanel()
+        public ToolPanel()
         {
             Margin = ControlConfig.Margin;
             BackColor = ColorConfig.BackColorBlack;
