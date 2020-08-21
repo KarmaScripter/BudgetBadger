@@ -293,11 +293,11 @@
     <Compile Include="forms\excel\ExcelData.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\excel\ExcelDocument.cs">
+    <Compile Include="forms\excel\ExcelForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\excel\ExcelDocument.Designer.cs">
-      <DependentUpon>ExcelDocument.cs</DependentUpon>
+    <Compile Include="forms\excel\ExcelForm.Designer.cs">
+      <DependentUpon>ExcelForm.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\excel\sheet\ISpreadsheet.cs" />
     <Compile Include="forms\excel\sheet\RibbonPanel.cs">
@@ -605,8 +605,8 @@
     <EmbeddedResource Include="forms\editor\DataEditor.resx">
       <DependentUpon>DataEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\excel\ExcelDocument.resx">
-      <DependentUpon>ExcelDocument.cs</DependentUpon>
+    <EmbeddedResource Include="forms\excel\ExcelForm.resx">
+      <DependentUpon>ExcelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\form\BadgerForm.resx">
       <DependentUpon>BadgerForm.cs</DependentUpon>

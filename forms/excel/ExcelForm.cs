@@ -24,25 +24,25 @@ namespace BudgetExecution
     /// 
     /// </summary>
     /// <seealso cref="Syncfusion.Windows.Forms.MetroForm" />
-    public partial class ExcelDocument : MetroForm
+    public partial class ExcelForm : MetroForm
     {
         // ***************************************************************************************************************************
         // ****************************************************  CONSTRUCTORS ********************************************************
         // ***************************************************************************************************************************
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ExcelDocument"/> class.
+        /// Initializes a new instance of the <see cref="ExcelForm"/> class.
         /// </summary>
-        public ExcelDocument()
+        public ExcelForm()
         {
             InitializeComponent();
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ExcelDocument"/> class.
+        /// Initializes a new instance of the <see cref="ExcelForm"/> class.
         /// </summary>
         /// <param name="filepath">The filepath.</param>
-        public ExcelDocument( string filepath )
+        public ExcelForm( string filepath )
         {
             InitializeComponent();
             FilePath = Path.GetFullPath( filepath );
@@ -217,9 +217,9 @@ namespace BudgetExecution
                     ConnectionString = extension?.ToUpper() switch
                     {
                         ".XLS" => @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + filepath
-                        + ";Extended Properties=\"Excel 8.0;HDR=YES;\"",
+                            + ";Extended Properties=\"Excel 8.0;HDR=YES;\"",
                         ".Report" => @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + filepath
-                        + ";Extended Properties=\"Excel 12.0;HDR=YES;\"",
+                            + ";Extended Properties=\"Excel 12.0;HDR=YES;\"",
                         _ => ConnectionString
                     };
 

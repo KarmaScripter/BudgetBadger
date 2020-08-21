@@ -7,7 +7,7 @@ namespace BudgetExecution
     using System.Threading;
     using System.Windows.Forms;
 
-    partial class ExcelDocument
+    partial class ExcelForm
     {
         /// <summary>
         /// Required designer variable.
@@ -51,7 +51,7 @@ namespace BudgetExecution
             Syncfusion.Windows.Forms.CaptionImage captionImage1 = new Syncfusion.Windows.Forms.CaptionImage();
 
             System.ComponentModel.ComponentResourceManager resources =
-                new System.ComponentModel.ComponentResourceManager( typeof( ExcelDocument ) );
+                new System.ComponentModel.ComponentResourceManager( typeof( ExcelForm ) );
 
             this.BackPanel = new LayoutPanel();
             this.Sheet = new SheetPanel();
@@ -292,7 +292,7 @@ namespace BudgetExecution
                 ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ) );
 
             this.MinimizeBox = false;
-            this.Name = "ExcelDocument";
+            this.Name = "ExcelForm";
             this.Padding = new System.Windows.Forms.Padding( 1 );
             this.ShowIcon = false;
             this.ShowMaximizeBox = false;

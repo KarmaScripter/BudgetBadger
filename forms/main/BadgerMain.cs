@@ -66,7 +66,7 @@ namespace BudgetExecution
         private void OnExcelButtonClick( object sender, EventArgs e )
         {
             var path = Resource.Settings[ "Report" ];
-            using var excel = new ExcelDocument( path );
+            using var excel = new ExcelForm( path );
             excel?.ShowDialog();
         }
 
