@@ -137,6 +137,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="forms\calculator\CalculationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\calculator\CalculationControl.Designer.cs">
+      <DependentUpon>CalculationControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="config\AlignConfig.cs" />
     <Compile Include="config\BorderConfig.cs" />
     <Compile Include="config\ChartConfig.cs" />
@@ -185,12 +191,6 @@
     <Compile Include="forms\button\ButtonBase.cs" />
     <Compile Include="forms\button\ButtonPanel.cs" />
     <Compile Include="forms\button\IButton.cs" />
-    <Compile Include="forms\calculator\CalculationControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="forms\calculator\CalculationControl.Designer.cs">
-      <DependentUpon>CalculationControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="forms\calculator\CalculationPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -566,11 +566,11 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="forms\binding\IBindingSource.cs" />
-    <EmbeddedResource Include="forms\budgetchart\BudgetChartControl.resx">
-      <DependentUpon>BudgetChartControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="forms\calculator\CalculationControl.resx">
       <DependentUpon>CalculationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\budgetchart\BudgetChartControl.resx">
+      <DependentUpon>BudgetChartControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\calendar\CalendarControl.resx">
       <DependentUpon>CalendarControl.cs</DependentUpon>

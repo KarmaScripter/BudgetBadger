@@ -102,7 +102,7 @@ namespace BudgetExecution
         /// <value>
         /// The calculator text.
         /// </value>
-        public RichTextPanel TextBox { get; set; }
+        public LabelPanel Label { get; set; }
 
         /// <summary>
         /// Gets or sets the tool tip.
@@ -128,7 +128,7 @@ namespace BudgetExecution
             try
             {
                 var result = DoubleValue;
-                TextBox.Text = result.ToString( "c" );
+                Label.Text = result.ToString( "c" );
             }
             catch( Exception ex )
             {
