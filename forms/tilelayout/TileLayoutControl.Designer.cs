@@ -90,7 +90,6 @@ namespace BudgetExecution
             this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.BackPanel.var _ = null;
             // 
             // TileLayout
             // 
@@ -132,7 +131,6 @@ namespace BudgetExecution
             this.TileLayout.TabIndex = 0;
             this.TileLayout.TextAlignment = Syncfusion.Windows.Forms.Tools.TextAlignment.Center;
             this.TileLayout.TitleFont = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TileLayout.var _ = null;
             this.TileLayout.Transparency = 10;
             // 
             // FirstGroup

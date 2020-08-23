@@ -188,8 +188,6 @@ namespace BudgetExecution
                 this.BackPanel.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.BackPanel.var _ = null;
-
                 // 
                 // BottomPanel
                 // 
@@ -251,8 +249,6 @@ namespace BudgetExecution
 
                 this.BottomPanel.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.BottomPanel.var _ = null;
 
                 // 
                 // SecondRow
@@ -422,8 +418,6 @@ namespace BudgetExecution
                 this.TextBox9.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.TextBox9.var _ = null;
-
                 this.TextBox9.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
                     ( (int)( ( (byte)( 128 ) ) ) ) );
@@ -542,8 +536,6 @@ namespace BudgetExecution
 
                 this.TextBox8.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.TextBox8.var _ = null;
 
                 this.TextBox8.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
@@ -664,7 +656,6 @@ namespace BudgetExecution
                 this.TextBox7.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.TextBox7.var _ = null;
 
                 this.TextBox7.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
@@ -787,8 +778,6 @@ namespace BudgetExecution
                 this.TextBox12.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.TextBox12.var _ = null;
-
                 this.TextBox12.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
                     ( (int)( ( (byte)( 128 ) ) ) ) );
@@ -909,8 +898,6 @@ namespace BudgetExecution
 
                 this.TextBox11.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.TextBox11.var _ = null;
 
                 this.TextBox11.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
@@ -1033,8 +1020,6 @@ namespace BudgetExecution
                 this.TextBox10.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.TextBox10.var _ = null;
-
                 this.TextBox10.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
                     ( (int)( ( (byte)( 128 ) ) ) ) );
@@ -1107,7 +1092,6 @@ namespace BudgetExecution
                 this.Label7.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.Label7.var _ = null;
 
                 // 
                 // Label8
@@ -1166,8 +1150,6 @@ namespace BudgetExecution
                 this.Label8.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.Label8.var _ = null;
-
                 // 
                 // Label9
                 // 
@@ -1224,9 +1206,6 @@ namespace BudgetExecution
 
                 this.Label9.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.Label9.var _ = null;
-
                 // 
                 // Label10
                 // 
@@ -1283,8 +1262,6 @@ namespace BudgetExecution
 
                 this.Label10.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.Label10.var _ = null;
 
                 // 
                 // Label11
@@ -1343,8 +1320,6 @@ namespace BudgetExecution
                 this.Label11.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.Label11.var _ = null;
-
                 // 
                 // Label12
                 // 
@@ -1401,8 +1376,6 @@ namespace BudgetExecution
 
                 this.Label12.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.Label12.var _ = null;
 
                 // 
                 // ComboBox7
@@ -1499,8 +1472,6 @@ namespace BudgetExecution
 
                 this.ComboBox7.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.ComboBox7.var _ = null;
 
                 this.ComboBox7.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
@@ -1612,8 +1583,6 @@ namespace BudgetExecution
                 this.ComboBox8.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.ComboBox8.var _ = null;
-
                 this.ComboBox8.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
                     ( (int)( ( (byte)( 128 ) ) ) ) );
@@ -1723,8 +1692,6 @@ namespace BudgetExecution
 
                 this.ComboBox9.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.ComboBox9.var _ = null;
 
                 this.ComboBox9.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
@@ -1837,8 +1804,6 @@ namespace BudgetExecution
                 this.ComboBox10.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.ComboBox10.var _ = null;
-
                 this.ComboBox10.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
                     ( (int)( ( (byte)( 128 ) ) ) ) );
@@ -1950,8 +1915,6 @@ namespace BudgetExecution
                 this.ComboBox11.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.ComboBox11.var _ = null;
-
                 this.ComboBox11.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
                     ( (int)( ( (byte)( 128 ) ) ) ) );
@@ -2062,8 +2025,6 @@ namespace BudgetExecution
 
                 this.ComboBox12.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.ComboBox12.var _ = null;
 
                 this.ComboBox12.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
@@ -2247,8 +2208,6 @@ namespace BudgetExecution
                 this.TextBox6.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.TextBox6.var _ = null;
-
                 this.TextBox6.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
                     ( (int)( ( (byte)( 128 ) ) ) ) );
@@ -2367,8 +2326,6 @@ namespace BudgetExecution
 
                 this.TextBox5.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.TextBox5.var _ = null;
 
                 this.TextBox5.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
@@ -2489,8 +2446,6 @@ namespace BudgetExecution
                 this.TextBox4.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.TextBox4.var _ = null;
-
                 this.TextBox4.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
                     ( (int)( ( (byte)( 128 ) ) ) ) );
@@ -2609,8 +2564,6 @@ namespace BudgetExecution
 
                 this.TextBox3.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.TextBox3.var _ = null;
 
                 this.TextBox3.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
@@ -2731,8 +2684,6 @@ namespace BudgetExecution
                 this.TextBox2.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.TextBox2.var _ = null;
-
                 this.TextBox2.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
                     ( (int)( ( (byte)( 128 ) ) ) ) );
@@ -2844,8 +2795,6 @@ namespace BudgetExecution
                 this.ComboBox6.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.ComboBox6.var _ = null;
-
                 this.ComboBox6.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
                     ( (int)( ( (byte)( 128 ) ) ) ) );
@@ -2955,8 +2904,6 @@ namespace BudgetExecution
 
                 this.ComboBox5.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.ComboBox5.var _ = null;
 
                 this.ComboBox5.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
@@ -3068,8 +3015,6 @@ namespace BudgetExecution
                 this.ComboBox4.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.ComboBox4.var _ = null;
-
                 this.ComboBox4.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
                     ( (int)( ( (byte)( 128 ) ) ) ) );
@@ -3179,8 +3124,6 @@ namespace BudgetExecution
 
                 this.ComboBox3.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.ComboBox3.var _ = null;
 
                 this.ComboBox3.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
@@ -3292,8 +3235,6 @@ namespace BudgetExecution
                 this.ComboBox2.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.ComboBox2.var _ = null;
-
                 this.ComboBox2.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
                     ( (int)( ( (byte)( 128 ) ) ) ) );
@@ -3365,8 +3306,6 @@ namespace BudgetExecution
                 this.Label6.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.Label6.var _ = null;
-
                 // 
                 // Label5
                 // 
@@ -3423,8 +3362,6 @@ namespace BudgetExecution
 
                 this.Label5.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.Label5.var _ = null;
 
                 // 
                 // Label4
@@ -3483,8 +3420,6 @@ namespace BudgetExecution
                 this.Label4.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.Label4.var _ = null;
-
                 // 
                 // Label3
                 // 
@@ -3541,8 +3476,6 @@ namespace BudgetExecution
 
                 this.Label3.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.Label3.var _ = null;
 
                 // 
                 // Label2
@@ -3601,8 +3534,6 @@ namespace BudgetExecution
                 this.Label2.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.Label2.var _ = null;
-
                 // 
                 // Label1
                 // 
@@ -3660,8 +3591,6 @@ namespace BudgetExecution
 
                 this.Label1.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.Label1.var _ = null;
 
                 // 
                 // ComboBox1
@@ -3758,8 +3687,6 @@ namespace BudgetExecution
 
                 this.ComboBox1.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.ComboBox1.var _ = null;
 
                 this.ComboBox1.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
@@ -3879,8 +3806,6 @@ namespace BudgetExecution
                 this.TextBox1.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.TextBox1.var _ = null;
-
                 this.TextBox1.Watermark.Active = System.Drawing.Color.FromArgb(
                     ( (int)( ( (byte)( 128 ) ) ) ), ( (int)( ( (byte)( 128 ) ) ) ),
                     ( (int)( ( (byte)( 128 ) ) ) ) );
@@ -3954,8 +3879,6 @@ namespace BudgetExecution
                 this.TopPanel.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.TopPanel.var _ = null;
-
                 // 
                 // TopLabel
                 // 
@@ -4015,8 +3938,6 @@ namespace BudgetExecution
 
                 this.TopLabel.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                this.TopLabel.var _ = null;
 
                 // 
                 // ToolBar
@@ -4095,7 +4016,6 @@ namespace BudgetExecution
                 this.BarLabel.Size = new System.Drawing.Size( 62, 23 );
                 this.BarLabel.Tag = "Label";
                 this.BarLabel.Text = "Data Editor";
-                this.BarLabel.var _ = null;
 
                 // 
                 // Separator2
