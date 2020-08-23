@@ -18,7 +18,7 @@ namespace BudgetExecution
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     [ SuppressMessage( "ReSharper", "UnusedParameter.Global" ) ]
     [ SuppressMessage( "ReSharper", "ClassNeverInstantiated.Global" ) ]
-    public class BarLabel : BarLabelBase
+    public class BarLabel : BarLabelBase, IBarLabel
     {
         // ***************************************************************************************************************************
         // ******************************************************  CONSTRUCTORS  *****************************************************
@@ -31,7 +31,8 @@ namespace BudgetExecution
         /// </summary>
         public BarLabel()
         {
-            Margin = new Padding( 10, 5, 10, 0 );
+            Margin = new Padding( 5, 5, 5, 5 );
+            Padding = new Padding( 0 );
             Size = new Size( 150, 23 );
             ForeColor = ColorConfig.ForeColorBlack;
             Font = FontConfig.FontSizeSmall;

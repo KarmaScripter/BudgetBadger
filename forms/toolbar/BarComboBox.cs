@@ -21,7 +21,7 @@ namespace BudgetExecution
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     [ SuppressMessage( "ReSharper", "UnusedParameter.Global" ) ]
     [ SuppressMessage( "ReSharper", "ClassNeverInstantiated.Global" ) ]
-    public class BarComboBox : BarComboBase
+    public class BarComboBox : BarComboBase, IBarComboBox
     {
         // ***************************************************************************************************************************
         // ******************************************************  CONSTRUCTORS  *****************************************************
@@ -29,7 +29,8 @@ namespace BudgetExecution
 
         public BarComboBox()
         {
-            Margin = new Padding( 10, 5, 10, 0 );
+            Margin = new Padding( 5, 5, 5, 5 );
+            Padding = new Padding( 0 );
             Size = new Size( 150, 23 );
             DropDownStyle = ComboBoxStyle.DropDownList;
             MaxDropDownItems = 30;

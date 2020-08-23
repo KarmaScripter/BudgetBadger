@@ -55,10 +55,6 @@ namespace BudgetExecution
             Padding = ControlConfig.Padding;
             SizeGripStyle = SizeGripStyle.Hide;
             WindowState = FormWindowState.Normal;
-            CloseBox.MinimizeButton.Click += OnMinimizeClicked;
-            CloseBox.MaximizeButton.Click += OnMaximizeClicked;
-            Controls.Add( CloseBox );
-            Controls.Add( BackPanel );
         }
 
         // ***************************************************************************************************************************

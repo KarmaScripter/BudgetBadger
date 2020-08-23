@@ -32,16 +32,16 @@ namespace BudgetExecution
         // ***************************************************************************************************************************
 
         private readonly string HelpPath =
-            @"C:\Users\Daddy\source\repos\BudgetBadger\resources\image\closebox\HelpButton.png";
+            @"C:\Users\Daddy\source\repos\Badger\icons\close\png\HelpButton.png";
 
         private readonly string MaxPath =
-            @"C:\Users\Daddy\source\repos\BudgetBadger\resources\image\closebox\MaximizeButton.png";
+            @"C:\Users\Daddy\source\repos\Badger\icons\close\png\MaximizeButton.png";
 
         private readonly string MinPath =
-            @"C:\Users\Daddy\source\repos\BudgetBadger\resources\image\closebox\MinimizeButton.png";
+            @"C:\Users\Daddy\source\repos\Badger\icons\close\png\MinimizeButton.png";
 
         private readonly string ClosePath =
-            @"C:\Users\Daddy\source\repos\BudgetBadger\resources\image\closebox\CloseButton.png";
+            @"C:\Users\Daddy\source\repos\Badger\icons\close\png\CloseButton.png";
 
         // ***************************************************************************************************************************
         // ******************************************************  CONSTRUCTORS  *****************************************************
@@ -57,9 +57,9 @@ namespace BudgetExecution
             // Prologue
             ForeColor = ColorConfig.ForeColorGray;
             Font = FontConfig.FontSizeSmall;
-            Margin = new Padding( 3 );
+            Margin = new Padding( 0 );
             Padding = new Padding( 0 );
-            Size = SizeConfig.GetSize( 200, 25 );
+            Size = SizeConfig.GetSize( 300, 25 );
             Anchor = AnchorStyles.Top & AnchorStyles.Right;
             Visible = true;
             Enabled = true;
@@ -67,7 +67,7 @@ namespace BudgetExecution
             // Set Button Properties
             HelpButton.Image = new Bitmap( HelpPath );
             HelpButton.Size = new Size( 50, 25 );
-            HelpButton.Margin = new Padding( 3 );
+            HelpButton.Margin = new Padding( 0 );
             HelpButton.Tag = "Documentation";
             HelpButton.Visible = true;
             HelpButton.Enabled = true;
@@ -83,13 +83,14 @@ namespace BudgetExecution
             HelpButton.ForeColor = ColorConfig.BackColorBlack;
             HelpButton.ForeColorState.Disabled = ColorConfig.BackColorBlack;
             HelpButton.ForeColorState.Enabled = ColorConfig.BackColorBlack;
-            HelpButton.ForeColorState.Hover = Color.White;
+            HelpButton.ForeColorState.Hover = Color.Yellow;
             HelpButton.ForeColorState.Pressed = Color.White;
 
             // Minimize Button Properties
             MinimizeButton.Image = new Bitmap( MinPath );
+            MinimizeButton.Text = "1";
             MinimizeButton.Size = new Size( 50, 25 );
-            MinimizeButton.Margin = new Padding( 3 );
+            MinimizeButton.Margin = new Padding( 0 );
             MinimizeButton.Tag = "Minimize";
             MinimizeButton.Visible = true;
             MinimizeButton.Enabled = true;
@@ -111,7 +112,7 @@ namespace BudgetExecution
             // Maximize Button Properties
             MaximizeButton.Image = new Bitmap( MaxPath );
             MaximizeButton.Size = new Size( 50, 25 );
-            MaximizeButton.Margin = new Padding( 3 );
+            MaximizeButton.Margin = new Padding( 0 );
             MaximizeButton.Tag = "Maximize";
             MaximizeButton.Visible = true;
             MaximizeButton.Enabled = true;
@@ -133,8 +134,8 @@ namespace BudgetExecution
             // Close Button Properties
             CloseButton.Image = new Bitmap( ClosePath );
             CloseButton.Size = new Size( 50, 25 );
-            CloseButton.Margin = new Padding( 3 );
-            CloseButton.Tag = "Exit | Close";
+            CloseButton.Margin = new Padding( 0 );
+            CloseButton.Tag = "Close";
             CloseButton.Visible = true;
             CloseButton.Enabled = true;
 
@@ -152,7 +153,7 @@ namespace BudgetExecution
             CloseButton.ForeColorState.Hover = Color.White;
             CloseButton.ForeColorState.Pressed = Color.White;
 
-            // Event Wiring
+            // Events
             HelpButton.MouseHover += OnMouseHover;
             MinimizeButton.MouseHover += OnMouseHover;
             MaximizeButton.MouseHover += OnMouseHover;
@@ -299,31 +300,13 @@ namespace BudgetExecution
         }
 
         /// <summary>
-        /// Sets the control button information.
-        /// </summary>
-        private void SetControlButtonInfo()
-        {
-            try
-            {
-                HelpButton.Tag = "Need Help?";
-                MaximizeButton.Tag = "Set Maximum Size";
-                MinimizeButton.Tag = "Set Minimum Size";
-                CloseButton.Tag = "Close Form";
-            }
-            catch( Exception ex )
-            {
-                Fail( ex );
-            }
-        }
-
-        /// <summary>
         /// Sets the hover information.
         /// </summary>
         /// <param name="button">The button.</param>
-        public void SetToolTip( Control button )
+        public void SetToolTip( ControlBoxButton button )
         {
             if( Verify.Ref( button )
-                && Verify.Input( button?.Tag?.ToString() ) )
+                && Verify.Input( button.Tag?.ToString() ) )
             {
                 try
                 {
@@ -365,9 +348,9 @@ namespace BudgetExecution
 
             try
             {
-                if( button?.Tag != null )
+                if( button != null )
                 {
-                    SetToolTip( button );
+                    ToolTip = new ToolTip( button, button.Tag.ToString() );
                 }
             }
             catch( Exception ex )

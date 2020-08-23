@@ -17,7 +17,7 @@ namespace BudgetExecution
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     [ SuppressMessage( "ReSharper", "UnusedParameter.Global" ) ]
     [ SuppressMessage( "ReSharper", "ClassNeverInstantiated.Global" ) ]
-    public class BarButton : BarButtonBase
+    public class BarButton : BarButtonBase, IBarButton
     {
         // ***************************************************************************************************************************
         // ******************************************************  CONSTRUCTORS  *****************************************************
@@ -25,8 +25,8 @@ namespace BudgetExecution
 
         public BarButton()
         {
-            Margin = new Padding( 10, 5, 10, 5 );
-            Padding = new Padding( 1 );
+            Margin = new Padding( 5, 5, 5, 5 );
+            Padding = new Padding( 0 );
             DisplayStyle = ToolStripItemDisplayStyle.Image;
             BackColor = ColorConfig.BackColorBlack;
             ForeColor = ColorConfig.ForeColorGray;

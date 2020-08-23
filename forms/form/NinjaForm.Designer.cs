@@ -560,13 +560,9 @@ namespace BudgetExecution
             #endregion
 
             public LayoutPanel BackPanel;
-
             public TableLayoutPanel Header;
-
             public LabelPanel Label;
-
             public PicturePanel Picture;
-
             public ClosePanel CloseBox;
         }
 

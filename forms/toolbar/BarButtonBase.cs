@@ -55,9 +55,33 @@ namespace BudgetExecution
         /// </value>
         public Tool Bar { get; set; }
 
+        /// <summary>
+        /// Gets or sets the name of the item.
+        /// </summary>
+        public new string Name { get; set; }
+
         // **************************************************************************************************************************
         // ********************************************      METHODS    *************************************************************
         // **************************************************************************************************************************
+
+        /// <summary>
+        /// Gets the name.
+        /// </summary>
+        /// <returns></returns>
+        public string GetName()
+        {
+            try
+            {
+                return Verify.Input( Name )
+                    ? Name
+                    : string.Empty;
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+                return string.Empty;
+            }
+        }
 
         /// <summary>
         /// Sets the field.

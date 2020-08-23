@@ -37,12 +37,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Error));
             this.Info = new VisualPlus.Toolkit.Controls.Interactivity.VisualLabel();
+            this.StackPanel = new BudgetExecution.RichTextPanel();
             this.SuspendLayout();
             // 
             // Info
             // 
-            this.Info.ForeColor = System.Drawing.Color.Maroon;
-            this.Info.Location = new System.Drawing.Point(42, 68);
+            this.Info.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Info.ForeColor = System.Drawing.Color.LightGray;
+            this.Info.Location = new System.Drawing.Point(38, 31);
             this.Info.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Info.Name = "Info";
             this.Info.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -55,9 +57,9 @@
             this.Info.ShadowDirection = 315;
             this.Info.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Info.ShadowOpacity = 100;
-            this.Info.Size = new System.Drawing.Size(237, 23);
+            this.Info.Size = new System.Drawing.Size(557, 20);
             this.Info.TabIndex = 0;
-            this.Info.Text = "Error Message";
+            this.Info.Text = "Source :";
             this.Info.TextAlignment = System.Drawing.StringAlignment.Near;
             this.Info.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Info.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
@@ -68,15 +70,55 @@
             this.Info.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Info.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
+            // StackPanel
+            // 
+            this.StackPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.StackPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.StackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.StackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.StackPanel.BindingSource = null;
+            this.StackPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.StackPanel.Border.HoverColor = System.Drawing.Color.Maroon;
+            this.StackPanel.Border.HoverVisible = true;
+            this.StackPanel.Border.Rounding = 6;
+            this.StackPanel.Border.Thickness = 1;
+            this.StackPanel.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+            this.StackPanel.Border.Visible = true;
+            this.StackPanel.DataFilter = null;
+            this.StackPanel.Field = BudgetExecution.Field.NS;
+            this.StackPanel.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StackPanel.ForeColor = System.Drawing.Color.LightGray;
+            this.StackPanel.Location = new System.Drawing.Point(38, 59);
+            this.StackPanel.Margin = new System.Windows.Forms.Padding(5);
+            this.StackPanel.MaxLength = 2147483647;
+            this.StackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+            this.StackPanel.Name = "StackPanel";
+            this.StackPanel.Numeric = BudgetExecution.Numeric.Default;
+            this.StackPanel.ReadOnly = false;
+            this.StackPanel.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
+            this.StackPanel.ShowSelectionMargin = false;
+            this.StackPanel.Size = new System.Drawing.Size(557, 396);
+            this.StackPanel.TabIndex = 1;
+            this.StackPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+            this.StackPanel.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.StackPanel.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.StackPanel.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.StackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.StackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            this.StackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.StackPanel.ToolTip = null;
+            // 
             // Error
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BorderColor = System.Drawing.Color.Maroon;
+            this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.CaptionBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.CaptionFont = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClientSize = new System.Drawing.Size(650, 519);
+            this.CaptionFont = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CaptionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ClientSize = new System.Drawing.Size(650, 517);
+            this.Controls.Add(this.StackPanel);
             this.Controls.Add(this.Info);
             this.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.LightGray;
@@ -89,7 +131,7 @@
         }
 
         #endregion
-
-        private VisualLabel Info;
+        public RichTextPanel StackPanel;
+        public VisualLabel Info;
     }
 }

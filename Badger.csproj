@@ -6,7 +6,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A94160F2-FA8A-4F1A-8B24-D479FBA9E18E}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>BudgetExecution</RootNamespace>
     <AssemblyName>BudgetBadger</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -58,8 +58,7 @@
     </ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
+    <StartupObject>BudgetExecution.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BudgetEnumerations">
@@ -519,22 +518,17 @@
     <Compile Include="forms\toolbar\BarComboBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\ToolControlBase.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="forms\toolbar\BarLabelBase.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="forms\toolbar\IBarButton.cs" />
+    <Compile Include="forms\toolbar\IBarComboBox.cs" />
+    <Compile Include="forms\toolbar\IBarLabel.cs" />
+    <Compile Include="forms\toolbar\IBarTextBox.cs" />
     <Compile Include="forms\toolbar\ToolPanelBase.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="forms\toolbar\IToolBar.cs" />
-    <Compile Include="forms\toolbar\ToolControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="forms\toolbar\ToolControl.Designer.cs">
-      <DependentUpon>ToolControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="forms\toolbar\ToolPanelData.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -555,6 +549,7 @@
     <Compile Include="image\ImageList.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="forms\binding\BindingBase.cs">
       <SubType>Component</SubType>
@@ -566,6 +561,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="forms\binding\IBindingSource.cs" />
+    <Compile Include="forms\toolbar\ToolBarControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\toolbar\ToolBarControl.Designer.cs">
+      <DependentUpon>ToolBarControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="forms\calculator\CalculationControl.resx">
       <DependentUpon>CalculationControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -647,9 +648,6 @@
     <EmbeddedResource Include="forms\tilelayout\TileLayoutControl.resx">
       <DependentUpon>TileLayoutControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\toolbar\ToolControl.resx">
-      <DependentUpon>ToolControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -660,6 +658,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="forms\toolbar\ToolBarControl.resx">
+      <DependentUpon>ToolBarControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include=".editorconfig" />
     <None Include="App.config" />
     <None Include="guidance\FundsControlManual.pdf" />
@@ -700,6 +701,14 @@
     <Content Include="icons\badger\png\logo.png" />
     <Content Include="icons\badger\png\runningbadger.png" />
     <Content Include="icons\close\png\CloseButton.png" />
+    <Content Include="icons\codec\png\BMP.png" />
+    <Content Include="icons\codec\png\EPS.png" />
+    <Content Include="icons\codec\png\GIF.png" />
+    <Content Include="icons\codec\png\JPG.png" />
+    <Content Include="icons\codec\png\PNG.png" />
+    <Content Include="icons\codec\png\PPT.png" />
+    <Content Include="icons\codec\png\TGA.png" />
+    <Content Include="icons\codec\png\ZIP.png" />
     <Content Include="icons\database\png\Access.png" />
     <Content Include="icons\database\png\Excel.png" />
     <Content Include="icons\database\png\SqlCe.png" />
@@ -732,6 +741,31 @@
     <Content Include="icons\data\png\Settings.png" />
     <Content Include="icons\data\png\Sort.png" />
     <Content Include="icons\data\png\Transfer.png" />
+    <Content Include="icons\dialog\png\Archive.png" />
+    <Content Include="icons\dialog\png\Caution.png" />
+    <Content Include="icons\dialog\png\Danger.png" />
+    <Content Include="icons\dialog\png\DataSearch.png" />
+    <Content Include="icons\dialog\png\DataWarning.png" />
+    <Content Include="icons\dialog\png\Download.png" />
+    <Content Include="icons\dialog\png\Email.png" />
+    <Content Include="icons\dialog\png\Error.png" />
+    <Content Include="icons\dialog\png\FileSearch.png" />
+    <Content Include="icons\dialog\png\Find.png" />
+    <Content Include="icons\dialog\png\GeneralWarning.png" />
+    <Content Include="icons\dialog\png\GroupMessage.png" />
+    <Content Include="icons\dialog\png\Idea.png" />
+    <Content Include="icons\dialog\png\Info.png" />
+    <Content Include="icons\dialog\png\Login.png" />
+    <Content Include="icons\dialog\png\Logout.png" />
+    <Content Include="icons\dialog\png\Message.png" />
+    <Content Include="icons\dialog\png\Print.png" />
+    <Content Include="icons\dialog\png\Question.png" />
+    <Content Include="icons\dialog\png\Save.png" />
+    <Content Include="icons\dialog\png\Search-Folder-New.png" />
+    <Content Include="icons\dialog\png\Search.png" />
+    <Content Include="icons\dialog\png\SearchFollder.png" />
+    <Content Include="icons\dialog\png\Upload.png" />
+    <Content Include="icons\dialog\png\Verify.png" />
     <Content Include="icons\division\png\ARD.png" />
     <Content Include="icons\division\png\D6.png" />
     <Content Include="icons\division\png\ECAD.png" />
@@ -740,6 +774,7 @@
     <Content Include="icons\division\png\LSASD.png" />
     <Content Include="icons\division\png\MDR.png" />
     <Content Include="icons\division\png\MSD.png" />
+    <Content Include="icons\division\png\MSR.png" />
     <Content Include="icons\division\png\ORA.png" />
     <Content Include="icons\division\png\ORC.png" />
     <Content Include="icons\division\png\R6.png" />
@@ -748,6 +783,7 @@
     <Content Include="icons\division\png\WD.png" />
     <Content Include="icons\division\png\WSA.png" />
     <Content Include="icons\division\png\XA.png" />
+    <Content Include="icons\email\png\ Settings.png" />
     <Content Include="icons\email\png\Add.png" />
     <Content Include="icons\email\png\Browse.png" />
     <Content Include="icons\email\png\Delete.png" />
@@ -779,6 +815,7 @@
     <Content Include="icons\employee\png\Delete.png" />
     <Content Include="icons\employee\png\Download.png" />
     <Content Include="icons\employee\png\Ediit.png" />
+    <Content Include="icons\employee\png\Edit.png" />
     <Content Include="icons\employee\png\Help.png" />
     <Content Include="icons\employee\png\Info.png" />
     <Content Include="icons\employee\png\Locked.png" />
@@ -798,16 +835,22 @@
     <Content Include="icons\epa\png\EpaBlue.png" />
     <Content Include="icons\epa\png\EpaDark.png" />
     <Content Include="icons\epa\png\EpaGreen.png" />
+    <Content Include="icons\file\png\Accounting-02.png" />
     <Content Include="icons\file\png\Add.png" />
     <Content Include="icons\file\png\Copy.png" />
+    <Content Include="icons\file\png\CSV.png" />
     <Content Include="icons\file\png\Delete.png" />
     <Content Include="icons\file\png\Download.png" />
     <Content Include="icons\file\png\Edit.png" />
+    <Content Include="icons\file\png\Excel.png" />
     <Content Include="icons\file\png\File.png" />
     <Content Include="icons\file\png\Help.png" />
     <Content Include="icons\file\png\Info.png" />
     <Content Include="icons\file\png\Lock.png" />
     <Content Include="icons\file\png\Log.png" />
+    <Content Include="icons\file\png\OneNote.png" />
+    <Content Include="icons\file\png\Outlook.png" />
+    <Content Include="icons\file\png\PowerPoint.png" />
     <Content Include="icons\file\png\Query.png" />
     <Content Include="icons\file\png\Refresh.png" />
     <Content Include="icons\file\png\Remove.png" />
@@ -818,6 +861,7 @@
     <Content Include="icons\file\png\Transfer.png" />
     <Content Include="icons\file\png\Upload.png" />
     <Content Include="icons\file\png\Verify.png" />
+    <Content Include="icons\file\png\Word.png" />
     <Content Include="icons\filter\png\Add.png" />
     <Content Include="icons\filter\png\Ascending.png" />
     <Content Include="icons\filter\png\ColumnFilter.png" />
@@ -858,31 +902,43 @@
     <Content Include="icons\fund\pic\STAG.png" />
     <Content Include="icons\fund\pic\SUPERFUND.png" />
     <Content Include="icons\close\png\HelpButton.png" />
+    <Content Include="icons\identification\png\Add.png" />
     <Content Include="icons\identification\png\Contact.png" />
     <Content Include="icons\identification\png\Delete.png" />
     <Content Include="icons\identification\png\Error.png" />
     <Content Include="icons\identification\png\Identification.png" />
+    <Content Include="icons\identification\png\Remove.png" />
     <Content Include="icons\identification\png\Search.png" />
     <Content Include="icons\close\png\InfoButton.png" />
+    <Content Include="icons\identification\png\Verify.png" />
+    <Content Include="icons\interface\png\Add.png" />
     <Content Include="icons\interface\png\Analysis.png" />
     <Content Include="icons\interface\png\Appropriation.png" />
+    <Content Include="icons\interface\png\Ask.com.png" />
+    <Content Include="icons\interface\png\AutoSizeColumns.png" />
     <Content Include="icons\interface\png\Bluetooth.png" />
     <Content Include="icons\interface\png\Bucket.png" />
+    <Content Include="icons\interface\png\Calculator.png" />
     <Content Include="icons\interface\png\Calendar.png" />
     <Content Include="icons\interface\png\Category.png" />
     <Content Include="icons\interface\png\Chart.png" />
     <Content Include="icons\interface\png\CircleAdd.png" />
+    <Content Include="icons\interface\png\CircledMail.png" />
     <Content Include="icons\interface\png\Clean.png" />
     <Content Include="icons\interface\png\Configuration.png" />
     <Content Include="icons\interface\png\Construction.png" />
     <Content Include="icons\interface\png\Contacts.png" />
+    <Content Include="icons\interface\png\Divisions.png" />
     <Content Include="icons\interface\png\Ecology.png" />
+    <Content Include="icons\interface\png\Edit.png" />
     <Content Include="icons\interface\png\EPA.png" />
     <Content Include="icons\interface\png\ErrorMessage.png" />
     <Content Include="icons\interface\png\Exchange.png" />
+    <Content Include="icons\interface\png\Execute.png" />
     <Content Include="icons\interface\png\Explosion.png" />
     <Content Include="icons\interface\png\Flag.png" />
     <Content Include="icons\interface\png\Fund.png" />
+    <Content Include="icons\interface\png\GreenIdea.png" />
     <Content Include="icons\interface\png\Home.png" />
     <Content Include="icons\interface\png\Idea.png" />
     <Content Include="icons\interface\png\Information.png" />
@@ -895,20 +951,28 @@
     <Content Include="icons\interface\png\Message.png" />
     <Content Include="icons\interface\png\Metrics.png" />
     <Content Include="icons\interface\png\Network.png" />
+    <Content Include="icons\interface\png\NetworkSharing.png" />
     <Content Include="icons\interface\png\Ninja.png" />
+    <Content Include="icons\interface\png\Notes.png" />
     <Content Include="icons\interface\png\Notify.png" />
     <Content Include="icons\interface\png\Ok.png" />
     <Content Include="icons\interface\png\Question.png" />
     <Content Include="icons\interface\png\Recertify.png" />
     <Content Include="icons\interface\png\RegionalOffice.png" />
     <Content Include="icons\interface\png\RemoteLocation.png" />
+    <Content Include="icons\interface\png\Search.png" />
     <Content Include="icons\interface\png\Section.png" />
+    <Content Include="icons\interface\png\Setting.png" />
     <Content Include="icons\interface\png\Signin.png" />
     <Content Include="icons\interface\png\Signout.png" />
     <Content Include="icons\interface\png\Sleep.png" />
     <Content Include="icons\interface\png\Target.png" />
+    <Content Include="icons\interface\png\Transfer.png" />
     <Content Include="icons\interface\png\Unlock.png" />
     <Content Include="icons\interface\png\Update.png" />
+    <Content Include="icons\interface\png\UploadSuccess.png" />
+    <Content Include="icons\interface\png\Verify.png" />
+    <Content Include="icons\interface\png\WebSearch.png" />
     <Content Include="icons\interface\png\Worker.png" />
     <Content Include="icons\interface\png\WorkLocation.png" />
     <Content Include="icons\loaders\png\circle_loader.gif" />
@@ -944,6 +1008,7 @@
     <Content Include="icons\navigation\png\BackUndo.png" />
     <Content Include="icons\navigation\png\BottomLeft.png" />
     <Content Include="icons\navigation\png\BottomRight.png" />
+    <Content Include="icons\navigation\png\CircledCheck Box - 01.png" />
     <Content Include="icons\navigation\png\CircledCheckBox.png" />
     <Content Include="icons\navigation\png\CircleDown.png" />
     <Content Include="icons\navigation\png\CircleForward.png" />
@@ -984,11 +1049,15 @@
     <Content Include="icons\objectclass\png\SiteTravel.png" />
     <Content Include="icons\objectclass\png\Travel.png" />
     <Content Include="icons\objectclass\png\WCF.png" />
+    <Content Include="icons\office\png\Access.png" />
     <Content Include="icons\office\png\Admin.png" />
     <Content Include="icons\office\png\Adobe.png" />
     <Content Include="icons\office\png\Android.png" />
     <Content Include="icons\office\png\Contacts.png" />
+    <Content Include="icons\office\png\CSV.png" />
+    <Content Include="icons\office\png\CsvExport.png" />
     <Content Include="icons\office\png\Delve.png" />
+    <Content Include="icons\office\png\ExcelExport.png" />
     <Content Include="icons\office\png\Facebook.png" />
     <Content Include="icons\office\png\Fax.png" />
     <Content Include="icons\office\png\Firefox.png" />
@@ -999,29 +1068,38 @@
     <Content Include="icons\office\png\Linux.png" />
     <Content Include="icons\office\png\OneDrive.png" />
     <Content Include="icons\office\png\OneNote.png" />
+    <Content Include="icons\office\png\Outlook.png" />
+    <Content Include="icons\office\png\PowerPoint.png" />
     <Content Include="icons\office\png\Printer.png" />
     <Content Include="icons\office\png\Project.png" />
     <Content Include="icons\office\png\Publisher.png" />
     <Content Include="icons\office\png\SharePoint.png" />
+    <Content Include="icons\office\png\Skype.png" />
     <Content Include="icons\office\png\Sway.png" />
+    <Content Include="icons\office\png\Word.png" />
     <Content Include="icons\office\png\XLSX.png" />
+    <Content Include="icons\outlays\png\Accounting-02.png" />
     <Content Include="icons\outlays\png\Available.png" />
     <Content Include="icons\outlays\png\Awards.png" />
     <Content Include="icons\outlays\png\Balance.png" />
     <Content Include="icons\outlays\png\BankCard.png" />
     <Content Include="icons\outlays\png\Commitment.png" />
     <Content Include="icons\outlays\png\Deobligations.png" />
+    <Content Include="icons\outlays\png\Ex.png" />
     <Content Include="icons\outlays\png\Expenditures.png" />
     <Content Include="icons\outlays\png\Invoice.png" />
+    <Content Include="icons\outlays\png\Loan.png" />
     <Content Include="icons\outlays\png\Money.png" />
     <Content Include="icons\outlays\png\Obligations.png" />
     <Content Include="icons\outlays\png\OpenCommitement.png" />
     <Content Include="icons\outlays\png\Payments.png" />
+    <Content Include="icons\outlays\png\Payrments.png" />
     <Content Include="icons\outlays\png\POV.png" />
     <Content Include="icons\outlays\png\Procurements.png" />
     <Content Include="icons\outlays\png\PurchaseActivity.png" />
     <Content Include="icons\outlays\png\PurchaseRequest.png" />
     <Content Include="icons\outlays\png\Purchases.png" />
+    <Content Include="icons\outlays\png\Requisitioin.png" />
     <Content Include="icons\outlays\png\Transit.png" />
     <Content Include="icons\outlays\png\TravelObligation.png" />
     <Content Include="icons\outlays\png\Vendor.png" />
@@ -1039,12 +1117,17 @@
     <Content Include="icons\summary\pic\ObjectClass.png" />
     <Content Include="icons\summary\pic\RegionalAuthority.png" />
     <Content Include="icons\summary\pic\Transfers.png" />
+    <Content Include="icons\toolbar\png\AccessButton.png" />
+    <Content Include="icons\toolbar\png\AccountsButton.png" />
     <Content Include="icons\toolbar\png\AddButton.png" />
     <Content Include="icons\toolbar\png\AddColumn.png" />
     <Content Include="icons\toolbar\png\AddRow.png" />
     <Content Include="icons\toolbar\png\Available.png" />
     <Content Include="icons\toolbar\png\BrowseButton.png" />
     <Content Include="icons\toolbar\png\CalculatorButton.png" />
+    <Content Include="icons\toolbar\png\ChartButton.png" />
+    <Content Include="icons\toolbar\png\CloseButton.png" />
+    <Content Include="icons\toolbar\png\CopyButton.png" />
     <Content Include="icons\toolbar\png\CSV.png" />
     <Content Include="icons\toolbar\png\CsvExport.png" />
     <Content Include="icons\toolbar\png\DataSearch.png" />
@@ -1052,7 +1135,9 @@
     <Content Include="icons\toolbar\png\DB.png" />
     <Content Include="icons\toolbar\png\DeleteButton.png" />
     <Content Include="icons\toolbar\png\DivisionButton.png" />
+    <Content Include="icons\toolbar\png\DowloadButton.png" />
     <Content Include="icons\toolbar\png\EditButton.png" />
+    <Content Include="icons\toolbar\png\EmailButton.png" />
     <Content Include="icons\toolbar\png\ExcelButton.png" />
     <Content Include="icons\toolbar\png\ExcelExport.png" />
     <Content Include="icons\toolbar\png\ExitButton.png" />
@@ -1070,25 +1155,44 @@
     <Content Include="icons\toolbar\png\FolderEditButton.png" />
     <Content Include="icons\toolbar\png\FolderOpenButton.png" />
     <Content Include="icons\toolbar\png\FolderUploadButton.png" />
+    <Content Include="icons\toolbar\png\ForwardButton.png" />
     <Content Include="icons\toolbar\png\GMail.png" />
+    <Content Include="icons\toolbar\png\GuidanceButton.png" />
+    <Content Include="icons\toolbar\png\HomeButton.png" />
     <Content Include="icons\toolbar\png\ImportButton.png" />
     <Content Include="icons\toolbar\png\InsertButton.png" />
     <Content Include="icons\toolbar\png\LastButton.png" />
     <Content Include="icons\toolbar\png\MDF.png" />
+    <Content Include="icons\toolbar\png\MenuButton.png" />
+    <Content Include="icons\toolbar\png\MenuInterfaceButton.png" />
     <Content Include="icons\toolbar\png\NavigationButton.png" />
+    <Content Include="icons\toolbar\png\NewButton.png" />
     <Content Include="icons\toolbar\png\NextButton.png" />
     <Content Include="icons\toolbar\png\Outlook.png" />
+    <Content Include="icons\toolbar\png\PauseButton.png" />
     <Content Include="icons\toolbar\png\PdfButton.png" />
     <Content Include="icons\toolbar\png\PdfExport.png" />
+    <Content Include="icons\toolbar\png\PowerPointButton.png" />
     <Content Include="icons\toolbar\png\PreviousButton.png" />
     <Content Include="icons\toolbar\png\PrintButton.png" />
     <Content Include="icons\toolbar\png\QueryButton.png" />
+    <Content Include="icons\toolbar\png\RedoButton.png" />
     <Content Include="icons\toolbar\png\RefreshButton.png" />
+    <Content Include="icons\toolbar\png\RemoveButton.png" />
+    <Content Include="icons\toolbar\png\RewindButton.png" />
     <Content Include="icons\toolbar\png\SaveButton.png" />
     <Content Include="icons\toolbar\png\SDF.png" />
     <Content Include="icons\toolbar\png\Server.png" />
+    <Content Include="icons\toolbar\png\SettingsButton.png" />
+    <Content Include="icons\toolbar\png\SkipButton.png" />
+    <Content Include="icons\toolbar\png\StopButton.png" />
+    <Content Include="icons\toolbar\png\TransferButton.png" />
     <Content Include="icons\toolbar\png\UndoButton.png" />
     <Content Include="icons\toolbar\png\UpdateButton.png" />
+    <Content Include="icons\toolbar\png\UploadButton.png" />
+    <Content Include="icons\toolbar\png\VerifyButton.png" />
+    <Content Include="icons\toolbar\png\WebButton.png" />
+    <Content Include="icons\toolbar\png\WordButton.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

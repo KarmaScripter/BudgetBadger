@@ -25,7 +25,6 @@ namespace BudgetExecution
         public BadgerMain()
         {
             InitializeComponent();
-            ToolControl.ExcelButton.Click += OnExcelButtonClick;
             FormClosing += OnClose;
         }
 

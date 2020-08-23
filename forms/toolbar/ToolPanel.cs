@@ -27,7 +27,7 @@ namespace BudgetExecution
 
         public ToolPanel()
         {
-            Margin = ControlConfig.Margin;
+            Margin = new Padding( 0 );
             BackColor = ColorConfig.BackColorBlack;
             ForeColor = ColorConfig.ForeColorGray;
             Font = FontConfig.FontSizeSmall;

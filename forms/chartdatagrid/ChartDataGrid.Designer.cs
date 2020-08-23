@@ -42,7 +42,7 @@ namespace BudgetExecution
             this.DataGrid = new BudgetExecution.BudgetGridPanel();
             this.DataBinding = new System.Windows.Forms.BindingSource(this.components);
             this.Chart = new BudgetExecution.BudgetChartPanel();
-            this.ToolControl = new BudgetExecution.ToolControl();
+            this.ToolControl = new BudgetExecution.ToolBarControl();
             this.BackPanel.SuspendLayout();
             this.Table.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
@@ -212,20 +212,18 @@ namespace BudgetExecution
             // ToolControl
             // 
             this.ToolControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ToolControl.BindingSource = this.DataBinding;
-            this.ToolControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ToolControl.DataFilter = null;
+            this.ToolControl.ToolBar.BindingSource = this.DataBinding;
+            this.ToolControl.ToolBar.DataFilter = null;
             this.ToolControl.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ToolControl.Field = BudgetExecution.Field.NS;
+            this.ToolControl.ToolBar.Field = BudgetExecution.Field.NS;
             this.ToolControl.Font = new System.Drawing.Font("Roboto", 8F);
             this.ToolControl.ForeColor = System.Drawing.Color.Black;
-            this.ToolControl.HoverText = null;
             this.ToolControl.Location = new System.Drawing.Point(0, 565);
             this.ToolControl.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.ToolControl.Name = "ToolControl";
             this.ToolControl.Size = new System.Drawing.Size(1294, 33);
             this.ToolControl.TabIndex = 1;
-            this.ToolControl.ToolTip = null;
+            this.ToolControl.ToolBar.ToolTip = null;
             // 
             // ChartDataGrid
             // 
@@ -256,7 +254,7 @@ namespace BudgetExecution
 
         private BindingSource DataBinding;
 
-        public ToolControl ToolControl;
+        public ToolBarControl ToolControl;
     }
     
 }
