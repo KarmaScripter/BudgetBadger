@@ -8,8 +8,6 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System;
-    using System.Threading;
     using Syncfusion.Windows.Forms;
 
     public partial class CalculatorForm : MetroForm

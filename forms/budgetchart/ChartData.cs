@@ -13,7 +13,6 @@ namespace BudgetExecution
     using System.ComponentModel;
     using System.Data;
     using System.Linq;
-    using System.Threading;
     using System.Windows.Forms;
 
     public class ChartData

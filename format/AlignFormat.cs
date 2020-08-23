@@ -8,9 +8,7 @@ namespace BudgetExecution
     // ********************************************      ASSEMBLIES    **********************************************************
     // **************************************************************************************************************************
 
-    using System;
     using System.Drawing;
-    using System.Threading;
     using DocumentFormat.OpenXml.Spreadsheet;
     using OfficeOpenXml.Style;
     using Syncfusion.Windows.Forms.Tools;

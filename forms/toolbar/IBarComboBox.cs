@@ -73,14 +73,5 @@ namespace BudgetExecution
         /// </summary>
         /// <param name="text">The text.</param>
         void SetHoverText( string text );
-
-        /// <summary>
-        /// Called when [mouse hover].
-        /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The
-        /// <see cref="EventArgs" />
-        /// instance containing the event data.</param>
-        void OnMouseHover( object sender, EventArgs e );
     }
 }

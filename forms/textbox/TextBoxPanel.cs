@@ -13,7 +13,6 @@ namespace BudgetExecution
     using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
     using System.Linq;
-    using System.Threading;
     using System.Windows.Forms;
     using VisualPlus.Enumerators;
 
@@ -245,7 +244,7 @@ namespace BudgetExecution
             {
                 try
                 {
-                    ToolTip = new ToolTip( this, text );
+                    var _ = new ToolTip( this, text );
                 }
                 catch( Exception ex )
                 {

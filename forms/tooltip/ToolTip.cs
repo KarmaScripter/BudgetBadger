@@ -5,11 +5,8 @@
 namespace BudgetExecution
 {
     using System;
-    using System;
-    using System.Collections.Generic;
     using System.ComponentModel;
     using System.Diagnostics.CodeAnalysis;
-    using System.Threading;
     using System.Windows.Forms;
     using MetroSet_UI.Components;
     using MetroSet_UI.Design;
@@ -26,6 +23,7 @@ namespace BudgetExecution
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     [ SuppressMessage( "ReSharper", "MemberCanBeInternal" ) ]
     [ SuppressMessage( "ReSharper", "PossibleNullReferenceException" ) ]
+    [ SuppressMessage( "ReSharper", "IsExpressionAlwaysTrue" ) ]
     public class ToolTip : MetroSetToolTip
     {
         // ***************************************************************************************************************************
@@ -70,7 +68,6 @@ namespace BudgetExecution
             : this()
         {
             SetToolTipText( control, text );
-            AddTextItem( text );
         }
 
         /// <summary>
@@ -82,7 +79,12 @@ namespace BudgetExecution
             : this()
         {
             SetToolTipText( component, text );
-            AddTextItem( text );
+        }
+
+        public ToolTip( ToolStripItem toolitem )
+            : this()
+        {
+            SetToolTipText( toolitem );
         }
 
         // **********************************************************************************************************************
@@ -91,7 +93,7 @@ namespace BudgetExecution
 
         /// <summary> Gets or sets the ToolTipIcon Gets the tool tip icon. </summary>
         /// <value> The tool tip icon. </value>
-        public ToolTipIcon TipIcon { get; set; } = ToolTipIcon.None;
+        public ToolTipIcon TipIcon { get; set; } = ToolTipIcon.Info;
 
         /// <summary> Gets or sets the ToolTipTitle Gets the tool tip title. </summary>
         /// <value> The tool tip title. </value>
@@ -100,10 +102,6 @@ namespace BudgetExecution
         /// <summary> Gets or sets the Name </summary>
         /// <value> The name. </value>
         public string Name { get; set; }
-
-        /// <summary> Gets or sets the items. </summary>
-        /// <value> The items. </value>
-        public IEnumerable<string> Items { get; set; }
 
         /// <summary> Gets or sets the binding source. </summary>
         /// <value> The binding source. </value>
@@ -204,23 +202,6 @@ namespace BudgetExecution
             }
         }
 
-        /// <summary> Adds the item. </summary>
-        /// <param name = "data" > The data. </param>
-        public void AddTextItem( string data )
-        {
-            if( Verify.Input( data ) )
-            {
-                try
-                {
-                    ( Items as List<string> )?.Add( data );
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
-            }
-        }
-
         /// <summary> Sets the field. </summary>
         /// <param name = "field" > The field. </param>
         public void SetField( Field field )
@@ -265,6 +246,7 @@ namespace BudgetExecution
             {
                 try
                 {
+                    RemoveAll();
                     var caption = control.Tag.ToString();
                     SetToolTip( control, caption );
                 }
@@ -291,6 +273,7 @@ namespace BudgetExecution
             {
                 try
                 {
+                    RemoveAll();
                     SetToolTip( control, caption );
                 }
                 catch( Exception ex )
@@ -307,15 +290,17 @@ namespace BudgetExecution
         public void SetToolTipText( ToolStripItem item )
         {
             if( item.GetCurrentParent() != null
-                && item is Component component )
+                && item is Component )
             {
                 try
                 {
+                    Control parent = item.GetCurrentParent();
                     var caption = item?.Tag?.ToString();
 
                     if( Verify.Input( caption ) )
                     {
-                        SetToolTipText( component, caption );
+                        RemoveAll();
+                        SetToolTipText( parent, caption );
                     }
                 }
                 catch( Exception ex )
@@ -339,6 +324,7 @@ namespace BudgetExecution
                     if( Verify.Input( control?.Tag?.ToString() ) )
                     {
                         var caption = control.Tag.ToString();
+                        RemoveAll();
                         SetToolTip( control, caption );
                     }
                 }
@@ -363,6 +349,7 @@ namespace BudgetExecution
                 {
                     if( component is Control control )
                     {
+                        RemoveAll();
                         SetToolTip( control, caption );
                     }
                 }

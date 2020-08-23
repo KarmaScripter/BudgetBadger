@@ -146,8 +146,6 @@ namespace BudgetExecution
                 this.BackPanel.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.BackPanel.ToolTip = null;
-
                 // 
                 // DataGrid
                 // 
@@ -361,7 +359,6 @@ namespace BudgetExecution
                 this.ToolBar.Size = new System.Drawing.Size( 1126, 30 );
                 this.ToolBar.TabIndex = 0;
                 this.ToolBar.Text = "toolBarPanel1";
-                this.ToolBar.ToolTip = null;
 
                 // 
                 // toolStripSeparator1
@@ -402,7 +399,6 @@ namespace BudgetExecution
                 this.barButton1.Name = "barButton1";
                 this.barButton1.Size = new System.Drawing.Size( 23, 20 );
                 this.barButton1.Text = "barButton1";
-                this.barButton1.ToolTip = null;
 
                 // 
                 // toolStripSeparator2
@@ -431,7 +427,6 @@ namespace BudgetExecution
                 this.barButton2.Name = "barButton2";
                 this.barButton2.Size = new System.Drawing.Size( 23, 20 );
                 this.barButton2.Text = "barButton2";
-                this.barButton2.ToolTip = null;
 
                 // 
                 // toolStripSeparator3
@@ -454,7 +449,6 @@ namespace BudgetExecution
                 this.barTextBox1.Margin = new System.Windows.Forms.Padding( 5, 1, 5, 1 );
                 this.barTextBox1.Name = "barTextBox1";
                 this.barTextBox1.Size = new System.Drawing.Size( 200, 28 );
-                this.barTextBox1.ToolTip = null;
 
                 // 
                 // toolStripSeparator4
@@ -483,7 +477,6 @@ namespace BudgetExecution
                 this.barButton3.Name = "barButton3";
                 this.barButton3.Size = new System.Drawing.Size( 23, 20 );
                 this.barButton3.Text = "barButton3";
-                this.barButton3.ToolTip = null;
 
                 // 
                 // toolStripSeparator5
@@ -512,7 +505,6 @@ namespace BudgetExecution
                 this.barButton4.Name = "barButton4";
                 this.barButton4.Size = new System.Drawing.Size( 23, 20 );
                 this.barButton4.Text = "barButton4";
-                this.barButton4.ToolTip = null;
 
                 // 
                 // toolStripSeparator6
@@ -541,7 +533,6 @@ namespace BudgetExecution
                 this.barButton5.Name = "barButton5";
                 this.barButton5.Size = new System.Drawing.Size( 23, 20 );
                 this.barButton5.Text = "barButton5";
-                this.barButton5.ToolTip = null;
 
                 // 
                 // toolStripSeparator7
@@ -570,7 +561,6 @@ namespace BudgetExecution
                 this.barButton6.Name = "barButton6";
                 this.barButton6.Size = new System.Drawing.Size( 23, 20 );
                 this.barButton6.Text = "barButton6";
-                this.barButton6.ToolTip = null;
 
                 // 
                 // toolStripSeparator8
@@ -599,7 +589,6 @@ namespace BudgetExecution
                 this.barButton7.Name = "barButton7";
                 this.barButton7.Size = new System.Drawing.Size( 23, 20 );
                 this.barButton7.Text = "barButton7";
-                this.barButton7.ToolTip = null;
 
                 // 
                 // toolStripSeparator9
@@ -628,7 +617,6 @@ namespace BudgetExecution
                 this.barButton8.Name = "barButton8";
                 this.barButton8.Size = new System.Drawing.Size( 23, 20 );
                 this.barButton8.Text = "barButton8";
-                this.barButton8.ToolTip = null;
 
                 // 
                 // DataGridControl

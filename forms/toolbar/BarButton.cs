@@ -9,14 +9,13 @@ namespace BudgetExecution
     // ******************************************************************************************************************************
 
     using System;
-    using System;
     using System.Diagnostics.CodeAnalysis;
-    using System.Threading;
     using System.Windows.Forms;
 
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     [ SuppressMessage( "ReSharper", "UnusedParameter.Global" ) ]
     [ SuppressMessage( "ReSharper", "ClassNeverInstantiated.Global" ) ]
+    [ SuppressMessage( "ReSharper", "UsePatternMatching" ) ]
     public class BarButton : BarButtonBase, IBarButton
     {
         // ***************************************************************************************************************************
@@ -31,11 +30,12 @@ namespace BudgetExecution
             BackColor = ColorConfig.BackColorBlack;
             ForeColor = ColorConfig.ForeColorGray;
             Font = FontConfig.FontSizeSmall;
-            ToolTipText = Tag?.ToString();
+            HoverText = Tag?.ToString();
             Text = string.Empty;
             Visible = true;
             Enabled = true;
-            MouseHover += OnMouseOver;
+            MouseHover += OnMouseHover;
+            Click += OnClick;
         }
 
         /// <summary>
@@ -46,12 +46,18 @@ namespace BudgetExecution
             : this()
         {
             Image = new BudgetImage( tool.ToString(), ImageSource.ToolBar )?.GetBitmap();
+            Bar = tool;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BarButton"/> class.
+        /// </summary>
+        /// <param name="image">The image.</param>
         public BarButton( IBudgetImage image )
             : this()
         {
             Image = image.GetBitmap();
+            Bar = (Tool)Enum.Parse( typeof( Tool ), image.GetName() );
         }
 
         // ***************************************************************************************************************************
@@ -89,6 +95,48 @@ namespace BudgetExecution
         // ***************************************************************************************************************************
         // ****************************************************   EVENTS/DELEGATES  **************************************************
         // ***************************************************************************************************************************
+
+        /// <summary>
+        /// Called when [mouse over].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        public void OnMouseHover( object sender, EventArgs e )
+        {
+            try
+            {
+                var button = sender as BarButton;
+
+                if( button != null
+                    && !string.IsNullOrEmpty( HoverText ) )
+                {
+                    button.Tag = HoverText;
+                    var _ = new ToolTip( button );
+                }
+                else
+                {
+                    if( !string.IsNullOrEmpty( Tag?.ToString() ) )
+                    {
+                        var _ = new ToolTip( button );
+                    }
+                }
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        public void OnMouseLeave( object sender, EventArgs e )
+        {
+            try
+            {
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
 
         /// <summary> Called when [click]. </summary>
         /// <param name = "sender" > The sender. </param>

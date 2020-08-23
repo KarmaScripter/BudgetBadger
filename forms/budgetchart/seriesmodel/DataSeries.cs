@@ -13,7 +13,6 @@ namespace BudgetExecution
     using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
     using System.Linq;
-    using System.Threading;
     using Syncfusion.Windows.Forms.Chart;
 
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]

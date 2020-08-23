@@ -8,10 +8,8 @@ namespace BudgetExecution
     // ********************************************      ASSEMBLIES    **********************************************************
     // **************************************************************************************************************************
 
-    using System;
     using System.ComponentModel;
     using System.Diagnostics.CodeAnalysis;
-    using System.Threading;
 
     [ SuppressMessage( "ReSharper", "UnusedParameter.Global" ) ]
     public interface IChartBinding : IBindingSource

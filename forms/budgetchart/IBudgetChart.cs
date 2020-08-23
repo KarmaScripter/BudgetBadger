@@ -8,9 +8,7 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System;
     using System.Drawing;
-    using System.Threading;
     using System.Windows.Forms;
 
     public interface IBudgetChart

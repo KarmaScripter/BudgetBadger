@@ -14,7 +14,6 @@ namespace BudgetExecution
     using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
     using System.Drawing.Text;
-    using System.Threading;
     using System.Windows.Forms;
     using VisualPlus.Enumerators;
 
@@ -207,7 +206,7 @@ namespace BudgetExecution
         {
             try
             {
-                ToolTip = ControlConfig.GetToolTip( this, text );
+                var _ = ControlConfig.GetToolTip( this, text );
                 MouseHover += OnMouseHover;
             }
             catch( Exception ex )

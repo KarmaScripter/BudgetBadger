@@ -48,506 +48,331 @@ namespace BudgetExecution
             /// </summary>
             private void InitializeComponent()
             {
-                this.components = new System.ComponentModel.Container();
-
-                Syncfusion.Windows.Forms.CaptionImage captionImage1 =
-                    new Syncfusion.Windows.Forms.CaptionImage();
-
-                System.ComponentModel.ComponentResourceManager resources =
-                    new System.ComponentModel.ComponentResourceManager( typeof( Message ) );
-
-                this.BackPanel = new VisualPlus.Toolkit.Controls.Layout.VisualPanel();
-                this.FlowPanel = new System.Windows.Forms.FlowLayoutPanel();
-                this.visualButton1 = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
-                this.visualButton2 = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
-                this.visualButton3 = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
-                this.Table = new System.Windows.Forms.TableLayoutPanel();
-                this.visualRichTextBox1 = new VisualPlus.Toolkit.Controls.Editors.VisualRichTextBox();
-                this.Info = new VisualPlus.Toolkit.Controls.Interactivity.VisualLabel();
-                this.BackPanel.SuspendLayout();
-                this.FlowPanel.SuspendLayout();
-                this.Table.SuspendLayout();
-                this.SuspendLayout();
-
-                // 
-                // BackPanel
-                // 
-                this.BackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.BackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.BackPanel.Border.Color = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.BackPanel.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
-                this.BackPanel.Border.HoverVisible = false;
-                this.BackPanel.Border.Rounding = 6;
-                this.BackPanel.Border.Thickness = 1;
-                this.BackPanel.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-                this.BackPanel.Border.Visible = true;
-                this.BackPanel.Controls.Add( this.FlowPanel );
-                this.BackPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-                this.BackPanel.ForeColor = System.Drawing.Color.LightGray;
-                this.BackPanel.Location = new System.Drawing.Point( 1, 361 );
-                this.BackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-                this.BackPanel.Name = "BackPanel";
-                this.BackPanel.Padding = new System.Windows.Forms.Padding( 1 );
-                this.BackPanel.Size = new System.Drawing.Size( 634, 88 );
-                this.BackPanel.TabIndex = 3;
-
-                this.BackPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 131 ) ) ) ), ( (int)( ( (byte)( 129 ) ) ) ),
-                    ( (int)( ( (byte)( 129 ) ) ) ) );
-
-                this.BackPanel.TextStyle.Enabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.BackPanel.TextStyle.Hover = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.BackPanel.TextStyle.Pressed = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-                this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-
-                this.BackPanel.TextStyle.TextRenderingHint =
-                    System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                // 
-                // FlowPanel
-                // 
-                this.FlowPanel.BackColor = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.FlowPanel.Controls.Add( this.visualButton1 );
-                this.FlowPanel.Controls.Add( this.visualButton2 );
-                this.FlowPanel.Controls.Add( this.visualButton3 );
-                this.FlowPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-                this.FlowPanel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-                this.FlowPanel.ForeColor = System.Drawing.Color.LightGray;
-                this.FlowPanel.Location = new System.Drawing.Point( 0, 0 );
-                this.FlowPanel.Name = "FlowPanel";
-                this.FlowPanel.Padding = new System.Windows.Forms.Padding( 1 );
-                this.FlowPanel.Size = new System.Drawing.Size( 634, 88 );
-                this.FlowPanel.TabIndex = 0;
-                this.FlowPanel.WrapContents = false;
-
-                // 
-                // visualButton1
-                // 
-                this.visualButton1.Anchor =
-                    ( (System.Windows.Forms.AnchorStyles)( ( ( System.Windows.Forms.AnchorStyles.Top
-                            | System.Windows.Forms.AnchorStyles.Left )
-                        | System.Windows.Forms.AnchorStyles.Right ) ) );
-
-                this.visualButton1.BackColorState.Disabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.visualButton1.BackColorState.Enabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.visualButton1.BackColorState.Hover = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 15 ) ) ) ), ( (int)( ( (byte)( 15 ) ) ) ),
-                    ( (int)( ( (byte)( 15 ) ) ) ) );
-
-                this.visualButton1.BackColorState.Pressed = System.Drawing.SystemColors.HotTrack;
-
-                this.visualButton1.Border.Color = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.visualButton1.Border.HoverColor = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.visualButton1.Border.HoverVisible = true;
-                this.visualButton1.Border.Rounding = 6;
-                this.visualButton1.Border.Thickness = 1;
-                this.visualButton1.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-                this.visualButton1.Border.Visible = true;
-                this.visualButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-                this.visualButton1.ForeColor = System.Drawing.Color.LightGray;
-                this.visualButton1.Image = null;
-                this.visualButton1.Location = new System.Drawing.Point( 451, 4 );
-                this.visualButton1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-                this.visualButton1.Name = "visualButton1";
-                this.visualButton1.Size = new System.Drawing.Size( 178, 78 );
-                this.visualButton1.TabIndex = 0;
-                this.visualButton1.Text = "Cancel";
-                this.visualButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
-
-                this.visualButton1.TextStyle.Disabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 131 ) ) ) ), ( (int)( ( (byte)( 129 ) ) ) ),
-                    ( (int)( ( (byte)( 129 ) ) ) ) );
-
-                this.visualButton1.TextStyle.Enabled = System.Drawing.Color.LightGray;
-
-                this.visualButton1.TextStyle.Hover = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.visualButton1.TextStyle.Pressed = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.visualButton1.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-                this.visualButton1.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-
-                this.visualButton1.TextStyle.TextRenderingHint =
-                    System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                // 
-                // visualButton2
-                // 
-                this.visualButton2.Anchor =
-                    ( (System.Windows.Forms.AnchorStyles)( ( ( System.Windows.Forms.AnchorStyles.Top
-                            | System.Windows.Forms.AnchorStyles.Left )
-                        | System.Windows.Forms.AnchorStyles.Right ) ) );
-
-                this.visualButton2.BackColorState.Disabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.visualButton2.BackColorState.Enabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.visualButton2.BackColorState.Hover = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 15 ) ) ) ), ( (int)( ( (byte)( 15 ) ) ) ),
-                    ( (int)( ( (byte)( 15 ) ) ) ) );
-
-                this.visualButton2.BackColorState.Pressed = System.Drawing.SystemColors.HotTrack;
-
-                this.visualButton2.Border.Color = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.visualButton2.Border.HoverColor = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.visualButton2.Border.HoverVisible = true;
-                this.visualButton2.Border.Rounding = 6;
-                this.visualButton2.Border.Thickness = 1;
-                this.visualButton2.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-                this.visualButton2.Border.Visible = true;
-                this.visualButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-                this.visualButton2.ForeColor = System.Drawing.Color.LightGray;
-                this.visualButton2.Image = null;
-                this.visualButton2.Location = new System.Drawing.Point( 267, 4 );
-                this.visualButton2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-                this.visualButton2.Name = "visualButton2";
-                this.visualButton2.Size = new System.Drawing.Size( 178, 78 );
-                this.visualButton2.TabIndex = 1;
-                this.visualButton2.Text = "Accept";
-                this.visualButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
-
-                this.visualButton2.TextStyle.Disabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 131 ) ) ) ), ( (int)( ( (byte)( 129 ) ) ) ),
-                    ( (int)( ( (byte)( 129 ) ) ) ) );
-
-                this.visualButton2.TextStyle.Enabled = System.Drawing.Color.LightGray;
-
-                this.visualButton2.TextStyle.Hover = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.visualButton2.TextStyle.Pressed = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.visualButton2.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-                this.visualButton2.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-
-                this.visualButton2.TextStyle.TextRenderingHint =
-                    System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                // 
-                // visualButton3
-                // 
-                this.visualButton3.Anchor =
-                    ( (System.Windows.Forms.AnchorStyles)( ( ( System.Windows.Forms.AnchorStyles.Top
-                            | System.Windows.Forms.AnchorStyles.Left )
-                        | System.Windows.Forms.AnchorStyles.Right ) ) );
-
-                this.visualButton3.BackColorState.Disabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.visualButton3.BackColorState.Enabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.visualButton3.BackColorState.Hover = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 15 ) ) ) ), ( (int)( ( (byte)( 15 ) ) ) ),
-                    ( (int)( ( (byte)( 15 ) ) ) ) );
-
-                this.visualButton3.BackColorState.Pressed = System.Drawing.SystemColors.HotTrack;
-
-                this.visualButton3.Border.Color = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.visualButton3.Border.HoverColor = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.visualButton3.Border.HoverVisible = true;
-                this.visualButton3.Border.Rounding = 6;
-                this.visualButton3.Border.Thickness = 1;
-                this.visualButton3.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-                this.visualButton3.Border.Visible = true;
-                this.visualButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-                this.visualButton3.ForeColor = System.Drawing.Color.LightGray;
-                this.visualButton3.Image = null;
-                this.visualButton3.Location = new System.Drawing.Point( 65, 4 );
-                this.visualButton3.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-                this.visualButton3.Name = "visualButton3";
-                this.visualButton3.Size = new System.Drawing.Size( 196, 78 );
-                this.visualButton3.TabIndex = 2;
-                this.visualButton3.Text = "Browse";
-                this.visualButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
-
-                this.visualButton3.TextStyle.Disabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 131 ) ) ) ), ( (int)( ( (byte)( 129 ) ) ) ),
-                    ( (int)( ( (byte)( 129 ) ) ) ) );
-
-                this.visualButton3.TextStyle.Enabled = System.Drawing.Color.LightGray;
-
-                this.visualButton3.TextStyle.Hover = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.visualButton3.TextStyle.Pressed = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.visualButton3.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-                this.visualButton3.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-
-                this.visualButton3.TextStyle.TextRenderingHint =
-                    System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                // 
-                // Table
-                // 
-                this.Table.BackColor = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.Table.ColumnCount = 3;
-
-                this.Table.ColumnStyles.Add(
-                    new System.Windows.Forms.ColumnStyle( System.Windows.Forms.SizeType.Percent,
-                        14.75129F ) );
-
-                this.Table.ColumnStyles.Add(
-                    new System.Windows.Forms.ColumnStyle( System.Windows.Forms.SizeType.Percent,
-                        85.24871F ) );
-
-                this.Table.ColumnStyles.Add(
-                    new System.Windows.Forms.ColumnStyle( System.Windows.Forms.SizeType.Absolute, 68F ) );
-
-                this.Table.Controls.Add( this.visualRichTextBox1, 1, 0 );
-                this.Table.Dock = System.Windows.Forms.DockStyle.Top;
-                this.Table.Location = new System.Drawing.Point( 1, 34 );
-                this.Table.Name = "Table";
-                this.Table.Padding = new System.Windows.Forms.Padding( 1 );
-                this.Table.RowCount = 1;
-
-                this.Table.RowStyles.Add(
-                    new System.Windows.Forms.RowStyle( System.Windows.Forms.SizeType.Percent, 50F ) );
-
-                this.Table.Size = new System.Drawing.Size( 634, 321 );
-                this.Table.TabIndex = 4;
-
-                // 
-                // visualRichTextBox1
-                // 
-                this.visualRichTextBox1.BackColorState.Disabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.visualRichTextBox1.BackColorState.Enabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 15 ) ) ) ), ( (int)( ( (byte)( 15 ) ) ) ),
-                    ( (int)( ( (byte)( 15 ) ) ) ) );
-
-                this.visualRichTextBox1.Border.Color = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.visualRichTextBox1.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
-                this.visualRichTextBox1.Border.HoverVisible = false;
-                this.visualRichTextBox1.Border.Rounding = 6;
-                this.visualRichTextBox1.Border.Thickness = 1;
-                this.visualRichTextBox1.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-                this.visualRichTextBox1.Border.Visible = true;
-                this.visualRichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-                this.visualRichTextBox1.ForeColor = System.Drawing.Color.LightGray;
-                this.visualRichTextBox1.Location = new System.Drawing.Point( 87, 4 );
-                this.visualRichTextBox1.MaxLength = 2147483647;
-                this.visualRichTextBox1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-                this.visualRichTextBox1.Name = "visualRichTextBox1";
-                this.visualRichTextBox1.ReadOnly = false;
-                this.visualRichTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
-                this.visualRichTextBox1.ShowSelectionMargin = false;
-                this.visualRichTextBox1.Size = new System.Drawing.Size( 474, 313 );
-                this.visualRichTextBox1.TabIndex = 0;
-
-                this.visualRichTextBox1.TextStyle.Disabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 131 ) ) ) ), ( (int)( ( (byte)( 129 ) ) ) ),
-                    ( (int)( ( (byte)( 129 ) ) ) ) );
-
-                this.visualRichTextBox1.TextStyle.Enabled = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.visualRichTextBox1.TextStyle.Hover = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.visualRichTextBox1.TextStyle.Pressed = System.Drawing.Color.FromArgb(
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.visualRichTextBox1.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-                this.visualRichTextBox1.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-
-                this.visualRichTextBox1.TextStyle.TextRenderingHint =
-                    System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                // 
-                // Info
-                // 
-                this.Info.Dock = System.Windows.Forms.DockStyle.Top;
-                this.Info.ForeColor = System.Drawing.Color.LightGray;
-                this.Info.Location = new System.Drawing.Point( 1, 1 );
-                this.Info.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-                this.Info.Name = "Info";
-                this.Info.Orientation = System.Windows.Forms.Orientation.Horizontal;
-                this.Info.Outline = false;
-                this.Info.OutlineColor = System.Drawing.Color.Red;
-                this.Info.OutlineLocation = new System.Drawing.Point( 0, 0 );
-
-                this.Info.ReflectionColor = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 120 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.Info.ReflectionSpacing = 0;
-                this.Info.ShadowColor = System.Drawing.Color.Black;
-                this.Info.ShadowDirection = 315;
-                this.Info.ShadowLocation = new System.Drawing.Point( 0, 0 );
-                this.Info.ShadowOpacity = 100;
-                this.Info.Size = new System.Drawing.Size( 634, 33 );
-                this.Info.TabIndex = 5;
-                this.Info.Text = "Label";
-                this.Info.TextAlignment = System.Drawing.StringAlignment.Center;
-                this.Info.TextLineAlignment = System.Drawing.StringAlignment.Center;
-
-                this.Info.TextStyle.Disabled = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 131 ) ) ) ),
-                    ( (int)( ( (byte)( 129 ) ) ) ), ( (int)( ( (byte)( 129 ) ) ) ) );
-
-                this.Info.TextStyle.Enabled = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.Info.TextStyle.Hover = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.Info.TextStyle.Pressed = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 0 ) ) ) ),
-                    ( (int)( ( (byte)( 0 ) ) ) ), ( (int)( ( (byte)( 0 ) ) ) ) );
-
-                this.Info.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-                this.Info.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-
-                this.Info.TextStyle.TextRenderingHint =
-                    System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                // 
-                // Message
-                // 
-                this.AutoScaleDimensions = new System.Drawing.SizeF( 96F, 96F );
-                this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-
-                this.BackColor = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.BorderColor = System.Drawing.SystemColors.HotTrack;
-
-                this.CaptionBarColor = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.CaptionButtonColor = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.CaptionButtonHoverColor = System.Drawing.Color.White;
-                this.CaptionFont = new System.Drawing.Font( "Roboto", 8.25F );
-
-                this.CaptionForeColor = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                captionImage1.BackColor = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 15 ) ) ) ),
-                    ( (int)( ( (byte)( 15 ) ) ) ), ( (int)( ( (byte)( 15 ) ) ) ) );
-
-                captionImage1.Image =
-                    ( (System.Drawing.Image)( resources.GetObject( "captionImage1.Image" ) ) );
-
-                captionImage1.Location = new System.Drawing.Point( 20, 10 );
-                captionImage1.Name = "CaptionImage1";
-                captionImage1.Size = new System.Drawing.Size( 15, 15 );
-                this.CaptionImages.Add( captionImage1 );
-                this.ClientSize = new System.Drawing.Size( 636, 450 );
-                this.Controls.Add( this.BackPanel );
-                this.Controls.Add( this.Table );
-                this.Controls.Add( this.Info );
-                this.DoubleBuffered = true;
-
-                this.Font = new System.Drawing.Font( "Roboto", 8.25F, System.Drawing.FontStyle.Regular,
-                    System.Drawing.GraphicsUnit.Point, ( (byte)( 0 ) ) );
-
-                this.ForeColor = System.Drawing.Color.LightGray;
-                this.Icon = ( (System.Drawing.Icon)( resources.GetObject( "$this.Icon" ) ) );
-                this.MaximizeBox = false;
-
-                this.MetroColor = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 5 ) ) ) ),
-                    ( (int)( ( (byte)( 5 ) ) ) ), ( (int)( ( (byte)( 5 ) ) ) ) );
-
-                this.MinimizeBox = false;
-                this.Name = "Message";
-                this.Padding = new System.Windows.Forms.Padding( 1 );
-                this.ShowIcon = false;
-                this.ShowMaximizeBox = false;
-                this.ShowMinimizeBox = false;
-                this.ShowMouseOver = true;
-                this.Text = "Message";
-                this.BackPanel.ResumeLayout( false );
-                this.FlowPanel.ResumeLayout( false );
-                this.Table.ResumeLayout( false );
-                this.ResumeLayout( false );
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Message));
+            Syncfusion.Windows.Forms.CaptionImage captionImage1 = new Syncfusion.Windows.Forms.CaptionImage();
+            this.BackPanel = new VisualPlus.Toolkit.Controls.Layout.VisualPanel();
+            this.NoButton = new BudgetExecution.ButtonPanel();
+            this.YesButton = new BudgetExecution.ButtonPanel();
+            this.Table = new System.Windows.Forms.TableLayoutPanel();
+            this.TextBox = new VisualPlus.Toolkit.Controls.Editors.VisualRichTextBox();
+            this.Info = new VisualPlus.Toolkit.Controls.Interactivity.VisualLabel();
+            this.CloseBox = new BudgetExecution.ClosePanel();
+            this.PictureBox = new BudgetExecution.PicturePanel();
+            this.TopTablePanel = new System.Windows.Forms.TableLayoutPanel();
+            this.BackPanel.SuspendLayout();
+            this.Table.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
+            this.TopTablePanel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // BackPanel
+            // 
+            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BackPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BackPanel.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
+            this.BackPanel.Border.HoverVisible = false;
+            this.BackPanel.Border.Rounding = 6;
+            this.BackPanel.Border.Thickness = 1;
+            this.BackPanel.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+            this.BackPanel.Border.Visible = true;
+            this.BackPanel.Controls.Add(this.NoButton);
+            this.BackPanel.Controls.Add(this.YesButton);
+            this.BackPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BackPanel.ForeColor = System.Drawing.Color.LightGray;
+            this.BackPanel.Location = new System.Drawing.Point(1, 390);
+            this.BackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+            this.BackPanel.Name = "BackPanel";
+            this.BackPanel.Padding = new System.Windows.Forms.Padding(1);
+            this.BackPanel.Size = new System.Drawing.Size(656, 79);
+            this.BackPanel.TabIndex = 3;
+            this.BackPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+            this.BackPanel.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BackPanel.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BackPanel.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // NoButton
+            // 
+            this.NoButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.NoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.NoButton.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.NoButton.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.NoButton.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.NoButton.BackColorState.Pressed = System.Drawing.Color.SteelBlue;
+            this.NoButton.BindingSource = null;
+            this.NoButton.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.NoButton.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.NoButton.Border.HoverVisible = true;
+            this.NoButton.Border.Rounding = 6;
+            this.NoButton.Border.Thickness = 1;
+            this.NoButton.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+            this.NoButton.Border.Visible = true;
+            this.NoButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.NoButton.Field = BudgetExecution.Field.NS;
+            this.NoButton.Font = new System.Drawing.Font("Roboto", 8F);
+            this.NoButton.ForeColor = System.Drawing.Color.LightGray;
+            this.NoButton.HoverText = "Close Window";
+            this.NoButton.Image = null;
+            this.NoButton.Images = null;
+            this.NoButton.Location = new System.Drawing.Point(361, 0);
+            this.NoButton.Margin = new System.Windows.Forms.Padding(0);
+            this.NoButton.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+            this.NoButton.Name = "NoButton";
+            this.NoButton.Size = new System.Drawing.Size(201, 74);
+            this.NoButton.TabIndex = 1;
+            this.NoButton.Tag = "Close";
+            this.NoButton.Text = "NO";
+            this.NoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
+            this.NoButton.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.NoButton.TextStyle.Enabled = System.Drawing.Color.LightGray;
+            this.NoButton.TextStyle.Hover = System.Drawing.Color.LightGray;
+            this.NoButton.TextStyle.Pressed = System.Drawing.Color.White;
+            this.NoButton.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.NoButton.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            this.NoButton.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // YesButton
+            // 
+            this.YesButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.YesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.YesButton.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.YesButton.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.YesButton.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.YesButton.BackColorState.Pressed = System.Drawing.Color.SteelBlue;
+            this.YesButton.BindingSource = null;
+            this.YesButton.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.YesButton.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.YesButton.Border.HoverVisible = true;
+            this.YesButton.Border.Rounding = 6;
+            this.YesButton.Border.Thickness = 1;
+            this.YesButton.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+            this.YesButton.Border.Visible = true;
+            this.YesButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.YesButton.Field = BudgetExecution.Field.NS;
+            this.YesButton.Font = new System.Drawing.Font("Roboto", 8F);
+            this.YesButton.ForeColor = System.Drawing.Color.LightGray;
+            this.YesButton.HoverText = "Accept";
+            this.YesButton.Image = null;
+            this.YesButton.Images = null;
+            this.YesButton.Location = new System.Drawing.Point(87, 1);
+            this.YesButton.Margin = new System.Windows.Forms.Padding(0);
+            this.YesButton.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+            this.YesButton.Name = "YesButton";
+            this.YesButton.Size = new System.Drawing.Size(201, 74);
+            this.YesButton.TabIndex = 0;
+            this.YesButton.Tag = "Accept";
+            this.YesButton.Text = "YES";
+            this.YesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
+            this.YesButton.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.YesButton.TextStyle.Enabled = System.Drawing.Color.LightGray;
+            this.YesButton.TextStyle.Hover = System.Drawing.Color.LightGray;
+            this.YesButton.TextStyle.Pressed = System.Drawing.Color.White;
+            this.YesButton.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.YesButton.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            this.YesButton.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // Table
+            // 
+            this.Table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Table.ColumnCount = 3;
+            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.75129F));
+            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85.24871F));
+            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
+            this.Table.Controls.Add(this.TextBox, 1, 0);
+            this.Table.Location = new System.Drawing.Point(1, 72);
+            this.Table.Name = "Table";
+            this.Table.Padding = new System.Windows.Forms.Padding(1);
+            this.Table.RowCount = 1;
+            this.Table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Table.Size = new System.Drawing.Size(653, 312);
+            this.Table.TabIndex = 4;
+            // 
+            // TextBox
+            // 
+            this.TextBox.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.TextBox.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.TextBox.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.TextBox.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
+            this.TextBox.Border.HoverVisible = false;
+            this.TextBox.Border.Rounding = 6;
+            this.TextBox.Border.Thickness = 1;
+            this.TextBox.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+            this.TextBox.Border.Visible = true;
+            this.TextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextBox.ForeColor = System.Drawing.Color.LightGray;
+            this.TextBox.Location = new System.Drawing.Point(87, 4);
+            this.TextBox.MaxLength = 2147483647;
+            this.TextBox.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+            this.TextBox.Name = "TextBox";
+            this.TextBox.ReadOnly = false;
+            this.TextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
+            this.TextBox.ShowSelectionMargin = false;
+            this.TextBox.Size = new System.Drawing.Size(475, 304);
+            this.TextBox.TabIndex = 0;
+            this.TextBox.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+            this.TextBox.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.TextBox.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.TextBox.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.TextBox.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.TextBox.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            this.TextBox.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // Info
+            // 
+            this.Info.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Info.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Info.ForeColor = System.Drawing.Color.LightGray;
+            this.Info.Location = new System.Drawing.Point(60, 3);
+            this.Info.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+            this.Info.Name = "Info";
+            this.Info.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.Info.Outline = false;
+            this.Info.OutlineColor = System.Drawing.Color.Red;
+            this.Info.OutlineLocation = new System.Drawing.Point(0, 0);
+            this.Info.ReflectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Info.ReflectionSpacing = 0;
+            this.Info.ShadowColor = System.Drawing.Color.Black;
+            this.Info.ShadowDirection = 315;
+            this.Info.ShadowLocation = new System.Drawing.Point(0, 0);
+            this.Info.ShadowOpacity = 100;
+            this.Info.Size = new System.Drawing.Size(480, 29);
+            this.Info.TabIndex = 5;
+            this.Info.Text = "Label";
+            this.Info.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Info.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            this.Info.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+            this.Info.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Info.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Info.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Info.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Info.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            this.Info.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // CloseBox
+            // 
+            this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Maroon;
+            this.CloseBox.CloseHoverForeColor = System.Drawing.Color.White;
+            this.CloseBox.CloseNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CloseBox.DisabledForeColor = System.Drawing.Color.DimGray;
+            this.CloseBox.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CloseBox.Font = new System.Drawing.Font("Roboto", 8F);
+            this.CloseBox.ForeColor = System.Drawing.Color.LightGray;
+            this.CloseBox.Location = new System.Drawing.Point(556, 0);
+            this.CloseBox.Margin = new System.Windows.Forms.Padding(0);
+            this.CloseBox.MaximizeBox = true;
+            this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MaximizeHoverForeColor = System.Drawing.Color.White;
+            this.CloseBox.MaximizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CloseBox.MinimizeBox = true;
+            this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MinimizeHoverForeColor = System.Drawing.Color.White;
+            this.CloseBox.MinimizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CloseBox.Name = "CloseBox";
+            this.CloseBox.Size = new System.Drawing.Size(100, 25);
+            this.CloseBox.Style = MetroSet_UI.Design.Style.Custom;
+            this.CloseBox.StyleManager = null;
+            this.CloseBox.TabIndex = 7;
+            this.CloseBox.ThemeAuthor = "Terry D. Eppler";
+            this.CloseBox.ThemeName = "Budget Execution";
+            // 
+            // PictureBox
+            // 
+            this.PictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox.BindingSource = null;
+            this.PictureBox.DataFilter = null;
+            this.PictureBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PictureBox.ErrorImage = null;
+            this.PictureBox.Field = BudgetExecution.Field.NS;
+            this.PictureBox.HoverText = null;
+            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
+            this.PictureBox.ImageList = null;
+            this.PictureBox.Location = new System.Drawing.Point(3, 3);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Padding = new System.Windows.Forms.Padding(1);
+            this.PictureBox.Size = new System.Drawing.Size(26, 27);
+            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox.TabIndex = 6;
+            this.PictureBox.TabStop = false;
+            // 
+            // TopTablePanel
+            // 
+            this.TopTablePanel.BackColor = System.Drawing.Color.Transparent;
+            this.TopTablePanel.ColumnCount = 3;
+            this.TopTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.015038F));
+            this.TopTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 93.98496F));
+            this.TopTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
+            this.TopTablePanel.Controls.Add(this.PictureBox, 0, 0);
+            this.TopTablePanel.Controls.Add(this.CloseBox, 2, 0);
+            this.TopTablePanel.Controls.Add(this.Info, 1, 0);
+            this.TopTablePanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopTablePanel.Location = new System.Drawing.Point(1, 1);
+            this.TopTablePanel.Name = "TopTablePanel";
+            this.TopTablePanel.RowCount = 1;
+            this.TopTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TopTablePanel.Size = new System.Drawing.Size(656, 37);
+            this.TopTablePanel.TabIndex = 3;
+            // 
+            // Message
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.CaptionBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CaptionButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CaptionButtonHoverColor = System.Drawing.Color.White;
+            this.CaptionFont = new System.Drawing.Font("Roboto", 8.25F);
+            this.CaptionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            captionImage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            captionImage1.Image = ((System.Drawing.Image)(resources.GetObject("captionImage1.Image")));
+            captionImage1.Location = new System.Drawing.Point(20, 10);
+            captionImage1.Name = "CaptionImage1";
+            captionImage1.Size = new System.Drawing.Size(15, 15);
+            this.CaptionImages.Add(captionImage1);
+            this.ClientSize = new System.Drawing.Size(658, 470);
+            this.ControlBox = false;
+            this.Controls.Add(this.TopTablePanel);
+            this.Controls.Add(this.BackPanel);
+            this.Controls.Add(this.Table);
+            this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.LightGray;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.MinimizeBox = false;
+            this.Name = "Message";
+            this.Padding = new System.Windows.Forms.Padding(1);
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.ShowMaximizeBox = false;
+            this.ShowMinimizeBox = false;
+            this.ShowMouseOver = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.BackPanel.ResumeLayout(false);
+            this.Table.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
+            this.TopTablePanel.ResumeLayout(false);
+            this.ResumeLayout(false);
 
             }
 
             #endregion
 
-            public VisualPanel BackPanel;
-
-            public FlowLayoutPanel FlowPanel;
-
-            private VisualButton visualButton1;
-
-            private VisualButton visualButton2;
-
-            private VisualButton visualButton3;
-
-            public TableLayoutPanel Table;
-
-            public VisualRichTextBox visualRichTextBox1;
-
-            public VisualLabel Info;
-        }
+        public VisualPanel BackPanel;
+        public TableLayoutPanel Table;
+        public VisualRichTextBox TextBox;
+        public VisualLabel Info;
+        public PicturePanel PictureBox;
+        public ClosePanel CloseBox;
+        public ButtonPanel NoButton;
+        public ButtonPanel YesButton;
+        private TableLayoutPanel TopTablePanel;
+    }
     
 }

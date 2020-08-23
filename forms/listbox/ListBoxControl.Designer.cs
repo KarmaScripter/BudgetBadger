@@ -91,7 +91,6 @@ namespace BudgetExecution
             this.ListBox.TabIndex = 0;
             this.ListBox.ThemeAuthor = "Terry D. Eppler";
             this.ListBox.ThemeName = "Budget Execution";
-            this.ListBox.ToolTip = null;
 
             // 
             // TopPanel
@@ -148,8 +147,6 @@ namespace BudgetExecution
 
             this.TopPanel.TextStyle.TextRenderingHint =
                 System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-            this.TopPanel.ToolTip = null;
 
             // 
             // Label
@@ -214,8 +211,6 @@ namespace BudgetExecution
             this.Label.TextStyle.TextRenderingHint =
                 System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-            this.Label.ToolTip = null;
-
             // 
             // BottomPanel
             // 
@@ -275,9 +270,6 @@ namespace BudgetExecution
 
             this.BottomPanel.TextStyle.TextRenderingHint =
                 System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-            this.BottomPanel.ToolTip = null;
-
             // 
             // ListBoxControl
             // 

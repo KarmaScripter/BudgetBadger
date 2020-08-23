@@ -13,7 +13,6 @@ namespace BudgetExecution
     using System.ComponentModel;
     using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
-    using System.Threading;
     using System.Windows.Forms;
     using Syncfusion.Windows.Forms.Tools;
 
@@ -305,7 +304,7 @@ namespace BudgetExecution
             {
                 try
                 {
-                    ToolTip = new ToolTip( this, text );
+                    var _ = new ToolTip( this, text );
                 }
                 catch( Exception ex )
                 {

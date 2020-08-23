@@ -8,9 +8,7 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System;
     using System.Collections.Generic;
-    using System.Threading;
     using Syncfusion.Windows.Forms.Chart;
 
     public interface IDataSeries

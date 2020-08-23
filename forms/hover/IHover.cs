@@ -8,10 +8,8 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System;
     using System.ComponentModel;
     using System.Drawing;
-    using System.Threading;
     using Syncfusion.Windows.Forms.Tools;
 
     /// <summary>

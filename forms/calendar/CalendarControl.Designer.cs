@@ -110,8 +110,6 @@ namespace BudgetExecution
                 this.BackPanel.TextStyle.TextRenderingHint =
                     System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                this.BackPanel.ToolTip = null;
-
                 // 
                 // Calendar
                 // 
@@ -174,7 +172,6 @@ namespace BudgetExecution
                 this.Calendar.Size = new System.Drawing.Size( 346, 340 );
                 this.Calendar.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010;
                 this.Calendar.TabIndex = 0;
-                this.Calendar.ToolTip = null;
                 this.Calendar.WeekFont = new System.Drawing.Font( "Verdana", 8F );
 
                 // 

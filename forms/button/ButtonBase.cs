@@ -9,10 +9,8 @@ namespace BudgetExecution
     // **************************************************************************************************************************
 
     using System;
-    using System;
     using System.Collections.Generic;
     using System.Drawing;
-    using System.Threading;
     using System.Windows.Forms;
     using VisualPlus.Toolkit.Controls.Interactivity;
 
@@ -257,6 +255,30 @@ namespace BudgetExecution
             using var error = new Error( ex );
             error?.SetText();
             error?.ShowDialog();
+        }
+
+        // ***************************************************************************************************************************
+        // ****************************************************     EVENTS    ********************************************************
+        // ***************************************************************************************************************************
+
+        /// <summary>
+        /// Called when [mouse leave].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        public void OnMouseLeave( object sender, EventArgs e )
+        {
+            try
+            {
+                if( ToolTip?.Active == true )
+                {
+                    ToolTip.RemoveAll();
+                }
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
         }
     }
 }

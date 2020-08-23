@@ -110,7 +110,6 @@ namespace BudgetExecution
             this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.BackPanel.ToolTip = null;
             // 
             // DataGrid
             // 
@@ -208,7 +207,6 @@ namespace BudgetExecution
             this.ToolBar.Size = new System.Drawing.Size(863, 32);
             this.ToolBar.TabIndex = 0;
             this.ToolBar.Text = "toolBarPanel1";
-            this.ToolBar.ToolTip = null;
             // 
             // toolStripSeparator1
             // 
@@ -227,7 +225,6 @@ namespace BudgetExecution
             this.Label.Size = new System.Drawing.Size(64, 28);
             this.Label.Tag = "Label";
             this.Label.Text = "Commands";
-            this.Label.ToolTip = null;
             // 
             // toolStripSeparator2
             // 
@@ -250,7 +247,6 @@ namespace BudgetExecution
             this.FirstButton.Name = "FirstButton";
             this.FirstButton.Size = new System.Drawing.Size(23, 20);
             this.FirstButton.Text = "barButton1";
-            this.FirstButton.ToolTip = null;
             // 
             // Separator3
             // 
@@ -272,7 +268,6 @@ namespace BudgetExecution
             this.PreviousButton.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
             this.PreviousButton.Name = "PreviousButton";
             this.PreviousButton.Size = new System.Drawing.Size(23, 20);
-            this.PreviousButton.ToolTip = null;
             // 
             // Separator4
             // 
@@ -293,7 +288,6 @@ namespace BudgetExecution
             this.TextBox.Padding = new System.Windows.Forms.Padding(1);
             this.TextBox.Size = new System.Drawing.Size(176, 28);
             this.TextBox.Tag = "";
-            this.TextBox.ToolTip = null;
             // 
             // Separator5
             // 
@@ -316,7 +310,6 @@ namespace BudgetExecution
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(23, 20);
             this.NextButton.Text = "barButton3";
-            this.NextButton.ToolTip = null;
             // 
             // Separator6
             // 
@@ -339,7 +332,6 @@ namespace BudgetExecution
             this.LastButton.Name = "LastButton";
             this.LastButton.Size = new System.Drawing.Size(23, 20);
             this.LastButton.Text = "barButton4";
-            this.LastButton.ToolTip = null;
             // 
             // Separator7
             // 
@@ -362,7 +354,6 @@ namespace BudgetExecution
             this.InsertButton.Name = "InsertButton";
             this.InsertButton.Size = new System.Drawing.Size(23, 20);
             this.InsertButton.Text = "barButton5";
-            this.InsertButton.ToolTip = null;
             // 
             // Separator8
             // 
@@ -385,7 +376,6 @@ namespace BudgetExecution
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(23, 20);
             this.DeleteButton.Text = "barButton6";
-            this.DeleteButton.ToolTip = null;
             // 
             // Separator9
             // 
@@ -408,7 +398,6 @@ namespace BudgetExecution
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(23, 20);
             this.SaveButton.Text = "barButton7";
-            this.SaveButton.ToolTip = null;
             // 
             // Separator10
             // 
@@ -431,7 +420,6 @@ namespace BudgetExecution
             this.CalculatorButton.Name = "CalculatorButton";
             this.CalculatorButton.Size = new System.Drawing.Size(23, 20);
             this.CalculatorButton.Text = "barButton8";
-            this.CalculatorButton.ToolTip = null;
             // 
             // BudgetGridControl
             // 

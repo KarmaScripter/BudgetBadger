@@ -9,7 +9,6 @@ namespace BudgetExecution
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Linq;
-    using System.Threading;
     using System.Windows.Forms;
     using Syncfusion.Windows.Forms.Tools;
 
@@ -66,22 +65,6 @@ namespace BudgetExecution
         // ***************************************************************************************************************************
         // ************************************************  METHODS   ***************************************************************
         // ***************************************************************************************************************************
-
-        /// <summary>
-        /// Sets the field.
-        /// </summary>
-        /// <param name="field">The field.</param>
-        public void SetField( Field field )
-        {
-            try
-            {
-                Field = FormConfig.GetField( field );
-            }
-            catch( Exception ex )
-            {
-                Fail( ex );
-            }
-        }
 
         /// <summary>
         /// Sets the binding source.

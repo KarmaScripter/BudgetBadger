@@ -8,8 +8,6 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System;
-    using System.Threading;
     using System.Windows.Forms;
 
     public partial class BudgetChartControl : UserControl

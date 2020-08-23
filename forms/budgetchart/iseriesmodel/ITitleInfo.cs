@@ -2,12 +2,9 @@
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
-using System;
-
 namespace BudgetExecution
 {
     using System.Drawing;
-    using System.Threading;
     using Syncfusion.Windows.Forms.Chart;
 
     // ********************************************************************************************************************************

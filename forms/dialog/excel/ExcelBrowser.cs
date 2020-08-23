@@ -8,9 +8,6 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System;
-    using System;
-    using System.Threading;
     using Syncfusion.Windows.Forms;
 
     public partial class ExcelBrowser : MetroForm

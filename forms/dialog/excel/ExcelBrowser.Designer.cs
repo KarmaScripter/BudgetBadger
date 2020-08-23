@@ -534,7 +534,6 @@ namespace BudgetExecution
             this.SideLabel.TextStyle.TextRenderingHint =
                 System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-            this.SideLabel.ToolTip = null;
 
             // 
             // visualCheckBox1

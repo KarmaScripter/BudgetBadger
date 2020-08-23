@@ -11,7 +11,6 @@ namespace BudgetExecution
     using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
-    using System.Threading;
     using System.Windows.Forms;
     using VisualPlus.Enumerators;
     using VisualPlus.Models;
@@ -77,6 +76,7 @@ namespace BudgetExecution
             TextStyle.TextAlignment = AlignConfig.StringCenter;
             TextStyle.TextLineAlignment = AlignConfig.StringCenter;
             MouseHover += OnMouseOver;
+            MouseLeave += OnMouseLeave;
         }
 
         /// <summary>

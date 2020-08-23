@@ -2,11 +2,10 @@
 // // Copyright (c) Terry D. Eppler. All rights reserved.
 // // </copyright>
 
-using System;
-using System.Windows.Forms;
-
 namespace BudgetExecution
 {
+    using System.Windows.Forms;
+
     public interface IBarButton
     {
         /// <summary>
@@ -20,15 +19,6 @@ namespace BudgetExecution
         /// <param name = "tool" > 
         /// </param>
         void SetImage( Tool tool );
-
-        /// <summary> Called when [click]. </summary>
-        /// <param name = "sender" > The sender. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
-        void OnClick( object sender, EventArgs e );
 
         /// <summary>
         /// Sets the field.
@@ -53,12 +43,5 @@ namespace BudgetExecution
         /// </summary>
         /// <param name="text">The text.</param>
         void SetHoverText( string text );
-
-        /// <summary>
-        /// Called when [mouse over].
-        /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
-        void OnMouseOver( object sender, EventArgs e );
     }
 }

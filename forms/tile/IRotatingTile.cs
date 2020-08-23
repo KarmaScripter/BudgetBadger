@@ -8,9 +8,7 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System;
     using System.Drawing;
-    using System.Threading;
     using Syncfusion.Windows.Forms.Tools;
 
     public interface IRotatingTile : ITile

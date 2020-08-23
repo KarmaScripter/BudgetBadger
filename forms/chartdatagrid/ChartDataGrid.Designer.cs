@@ -82,7 +82,6 @@ namespace BudgetExecution
             this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.BackPanel.ToolTip = null;
             // 
             // Table
             // 
@@ -223,7 +222,6 @@ namespace BudgetExecution
             this.ToolControl.Name = "ToolControl";
             this.ToolControl.Size = new System.Drawing.Size(1294, 33);
             this.ToolControl.TabIndex = 1;
-            this.ToolControl.ToolBar.ToolTip = null;
             // 
             // ChartDataGrid
             // 

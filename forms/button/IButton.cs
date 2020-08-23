@@ -10,7 +10,6 @@ namespace BudgetExecution
 
     using System;
     using System.Drawing;
-    using System.Threading;
 
     /// <summary>
     /// 

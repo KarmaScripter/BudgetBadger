@@ -139,7 +139,7 @@ namespace BudgetExecution
             this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.BackPanel.ToolTip = null;
+            this.BackPanel.var _ = null;
             // 
             // Table
             // 
@@ -243,7 +243,7 @@ namespace BudgetExecution
             this.TextBox12.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox12.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox12.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBox12.ToolTip = null;
+            this.TextBox12.var _ = null;
             this.TextBox12.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox12.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox12.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -312,7 +312,7 @@ namespace BudgetExecution
             this.TextBox11.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox11.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox11.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBox11.ToolTip = null;
+            this.TextBox11.var _ = null;
             this.TextBox11.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox11.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox11.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -355,7 +355,7 @@ namespace BudgetExecution
             this.Label12.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label12.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label12.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.Label12.ToolTip = null;
+            this.Label12.var _ = null;
             // 
             // Label11
             // 
@@ -392,7 +392,7 @@ namespace BudgetExecution
             this.Label11.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label11.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label11.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.Label11.ToolTip = null;
+            this.Label11.var _ = null;
             // 
             // TextBox7
             // 
@@ -450,7 +450,7 @@ namespace BudgetExecution
             this.TextBox7.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox7.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox7.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBox7.ToolTip = null;
+            this.TextBox7.var _ = null;
             this.TextBox7.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox7.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox7.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -514,7 +514,7 @@ namespace BudgetExecution
             this.TextBox6.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox6.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox6.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBox6.ToolTip = null;
+            this.TextBox6.var _ = null;
             this.TextBox6.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox6.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox6.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -578,7 +578,7 @@ namespace BudgetExecution
             this.TextBox9.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox9.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox9.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBox9.ToolTip = null;
+            this.TextBox9.var _ = null;
             this.TextBox9.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox9.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox9.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -642,7 +642,7 @@ namespace BudgetExecution
             this.TextBox5.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox5.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox5.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBox5.ToolTip = null;
+            this.TextBox5.var _ = null;
             this.TextBox5.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox5.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox5.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -706,7 +706,7 @@ namespace BudgetExecution
             this.TextBox4.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox4.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox4.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBox4.ToolTip = null;
+            this.TextBox4.var _ = null;
             this.TextBox4.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox4.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox4.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -770,7 +770,7 @@ namespace BudgetExecution
             this.TextBox3.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox3.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox3.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBox3.ToolTip = null;
+            this.TextBox3.var _ = null;
             this.TextBox3.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox3.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox3.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -834,7 +834,7 @@ namespace BudgetExecution
             this.TextBox2.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox2.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox2.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBox2.ToolTip = null;
+            this.TextBox2.var _ = null;
             this.TextBox2.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox2.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox2.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -877,7 +877,7 @@ namespace BudgetExecution
             this.Label5.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label5.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label5.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.Label5.ToolTip = null;
+            this.Label5.var _ = null;
             // 
             // Label4
             // 
@@ -914,7 +914,7 @@ namespace BudgetExecution
             this.Label4.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label4.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label4.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.Label4.ToolTip = null;
+            this.Label4.var _ = null;
             // 
             // Label3
             // 
@@ -951,7 +951,7 @@ namespace BudgetExecution
             this.Label3.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label3.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label3.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.Label3.ToolTip = null;
+            this.Label3.var _ = null;
             // 
             // Label2
             // 
@@ -988,7 +988,7 @@ namespace BudgetExecution
             this.Label2.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label2.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label2.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.Label2.ToolTip = null;
+            this.Label2.var _ = null;
             // 
             // Label1
             // 
@@ -1025,7 +1025,7 @@ namespace BudgetExecution
             this.Label1.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label1.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label1.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.Label1.ToolTip = null;
+            this.Label1.var _ = null;
             // 
             // TextBox1
             // 
@@ -1083,7 +1083,7 @@ namespace BudgetExecution
             this.TextBox1.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox1.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox1.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBox1.ToolTip = null;
+            this.TextBox1.var _ = null;
             this.TextBox1.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox1.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox1.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1147,7 +1147,7 @@ namespace BudgetExecution
             this.TextBox10.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox10.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox10.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBox10.ToolTip = null;
+            this.TextBox10.var _ = null;
             this.TextBox10.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox10.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox10.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1190,7 +1190,7 @@ namespace BudgetExecution
             this.Label6.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label6.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label6.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.Label6.ToolTip = null;
+            this.Label6.var _ = null;
             // 
             // TextBox8
             // 
@@ -1248,7 +1248,7 @@ namespace BudgetExecution
             this.TextBox8.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox8.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox8.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBox8.ToolTip = null;
+            this.TextBox8.var _ = null;
             this.TextBox8.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox8.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox8.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1291,7 +1291,7 @@ namespace BudgetExecution
             this.Label7.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label7.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label7.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.Label7.ToolTip = null;
+            this.Label7.var _ = null;
             // 
             // Label8
             // 
@@ -1328,7 +1328,7 @@ namespace BudgetExecution
             this.Label8.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label8.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label8.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.Label8.ToolTip = null;
+            this.Label8.var _ = null;
             // 
             // Label9
             // 
@@ -1365,7 +1365,7 @@ namespace BudgetExecution
             this.Label9.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label9.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label9.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.Label9.ToolTip = null;
+            this.Label9.var _ = null;
             // 
             // Label10
             // 
@@ -1402,7 +1402,7 @@ namespace BudgetExecution
             this.Label10.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label10.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label10.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.Label10.ToolTip = null;
+            this.Label10.var _ = null;
             // 
             // ToolBar
             // 
@@ -1455,7 +1455,6 @@ namespace BudgetExecution
             this.ToolBar.ShowLauncher = false;
             this.ToolBar.Size = new System.Drawing.Size(1064, 47);
             this.ToolBar.TabIndex = 0;
-            this.ToolBar.ToolTip = null;
             // 
             // Separator1
             // 
@@ -1476,7 +1475,7 @@ namespace BudgetExecution
             this.Label.Size = new System.Drawing.Size(110, 22);
             this.Label.Tag = "Label";
             this.Label.Text = "Data Source:             ";
-            this.Label.ToolTip = null;
+            this.Label.var _ = null;
             // 
             // Separator2
             // 
@@ -1501,7 +1500,6 @@ namespace BudgetExecution
             this.FirstButton.Padding = new System.Windows.Forms.Padding(1);
             this.FirstButton.Size = new System.Drawing.Size(23, 22);
             this.FirstButton.Text = "barButton1";
-            this.FirstButton.ToolTip = null;
             // 
             // Separator3
             // 
@@ -1526,7 +1524,6 @@ namespace BudgetExecution
             this.PreviousButton.Padding = new System.Windows.Forms.Padding(1);
             this.PreviousButton.Size = new System.Drawing.Size(23, 22);
             this.PreviousButton.Text = "barButton2";
-            this.PreviousButton.ToolTip = null;
             // 
             // Separator4
             // 
@@ -1551,7 +1548,6 @@ namespace BudgetExecution
             this.TextBox.Tag = "";
             this.TextBox.Text = "Record";
             this.TextBox.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox.ToolTip = null;
             // 
             // Separator5
             // 
@@ -1576,7 +1572,6 @@ namespace BudgetExecution
             this.NextButton.Padding = new System.Windows.Forms.Padding(1);
             this.NextButton.Size = new System.Drawing.Size(23, 22);
             this.NextButton.Text = "barButton3";
-            this.NextButton.ToolTip = null;
             // 
             // Separator6
             // 
@@ -1601,7 +1596,6 @@ namespace BudgetExecution
             this.LastButton.Padding = new System.Windows.Forms.Padding(1);
             this.LastButton.Size = new System.Drawing.Size(23, 22);
             this.LastButton.Text = "barButton4";
-            this.LastButton.ToolTip = null;
             // 
             // Separator7
             // 
@@ -1626,7 +1620,6 @@ namespace BudgetExecution
             this.AddButton.Padding = new System.Windows.Forms.Padding(1);
             this.AddButton.Size = new System.Drawing.Size(23, 22);
             this.AddButton.Text = "barButton5";
-            this.AddButton.ToolTip = null;
             // 
             // Separator8
             // 
@@ -1651,7 +1644,6 @@ namespace BudgetExecution
             this.DeleteButton.Padding = new System.Windows.Forms.Padding(1);
             this.DeleteButton.Size = new System.Drawing.Size(23, 22);
             this.DeleteButton.Text = "barButton6";
-            this.DeleteButton.ToolTip = null;
             // 
             // Separator9
             // 
@@ -1676,7 +1668,6 @@ namespace BudgetExecution
             this.UndoButton.Padding = new System.Windows.Forms.Padding(1);
             this.UndoButton.Size = new System.Drawing.Size(23, 22);
             this.UndoButton.Text = "barButton7";
-            this.UndoButton.ToolTip = null;
             // 
             // Separator10
             // 
@@ -1701,7 +1692,6 @@ namespace BudgetExecution
             this.RefreshButton.Padding = new System.Windows.Forms.Padding(1);
             this.RefreshButton.Size = new System.Drawing.Size(23, 22);
             this.RefreshButton.Text = "barButton8";
-            this.RefreshButton.ToolTip = null;
             // 
             // Separator11
             // 
@@ -1724,7 +1714,6 @@ namespace BudgetExecution
             this.CalculatorButton.Name = "CalculatorButton";
             this.CalculatorButton.Padding = new System.Windows.Forms.Padding(1);
             this.CalculatorButton.Size = new System.Drawing.Size(23, 22);
-            this.CalculatorButton.ToolTip = null;
             // 
             // Separator12
             // 
@@ -1748,7 +1737,6 @@ namespace BudgetExecution
             this.SaveButton.Padding = new System.Windows.Forms.Padding(1);
             this.SaveButton.Size = new System.Drawing.Size(23, 22);
             this.SaveButton.Text = "barButton9";
-            this.SaveButton.ToolTip = null;
             // 
             // Separator13
             // 
@@ -1772,7 +1760,6 @@ namespace BudgetExecution
             this.UploadButton.Padding = new System.Windows.Forms.Padding(1);
             this.UploadButton.Size = new System.Drawing.Size(23, 22);
             this.UploadButton.Text = "barButton10";
-            this.UploadButton.ToolTip = null;
             // 
             // Separator14
             // 

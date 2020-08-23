@@ -9,11 +9,9 @@ namespace BudgetExecution
     // ********************************************************************************************************************************
 
     using System;
-    using System;
     using System.Data;
     using System.Data.OleDb;
     using System.IO;
-    using System.Threading;
     using System.Windows.Forms;
     using OfficeOpenXml;
     using Syncfusion.Windows.Forms;

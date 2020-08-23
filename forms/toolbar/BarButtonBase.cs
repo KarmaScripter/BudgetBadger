@@ -9,8 +9,6 @@ namespace BudgetExecution
     // **************************************************************************************************************************
 
     using System;
-    using System;
-    using System.Threading;
     using System.Windows.Forms;
 
     /// <summary>
@@ -30,14 +28,6 @@ namespace BudgetExecution
         /// The field.
         /// </value>
         public Field Field { get; set; }
-
-        /// <summary>
-        /// Gets or sets the tool tip.
-        /// </summary>
-        /// <value>
-        /// The tool tip.
-        /// </value>
-        public ToolTip ToolTip { get; set; }
 
         /// <summary>
         /// Gets or sets the hover text.
@@ -158,42 +148,6 @@ namespace BudgetExecution
             using var error = new Error( ex );
             error?.SetText();
             error?.ShowDialog();
-        }
-
-        // ***************************************************************************************************************************
-        // ****************************************************   EVENTS/DELEGATES  **************************************************
-        // ***************************************************************************************************************************
-
-        /// <summary>
-        /// Called when [mouse over].
-        /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
-        public void OnMouseOver( object sender, EventArgs e )
-        {
-            if( sender is BarButton button
-                && Verify.Input( button?.HoverText ) )
-            {
-                try
-                {
-                    if( Verify.Input( HoverText ) )
-                    {
-                        var text = button?.HoverText;
-                        ToolTip = new ToolTip( this, text );
-                    }
-                    else
-                    {
-                        if( Verify.Input( Tag?.ToString() ) )
-                        {
-                            ToolTip = new ToolTip( this, Tag?.ToString()?.SplitPascal() );
-                        }
-                    }
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
-            }
         }
     }
 }

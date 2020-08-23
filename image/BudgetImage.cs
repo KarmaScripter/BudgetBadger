@@ -9,11 +9,9 @@ namespace BudgetExecution
     // ******************************************************************************************************************************
 
     using System;
-    using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
     using System.IO;
-    using System.Threading;
 
     [ SuppressMessage( "ReSharper", "MemberCanBeInternal" ) ]
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]

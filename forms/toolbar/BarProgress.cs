@@ -9,10 +9,8 @@ namespace BudgetExecution
     // ******************************************************************************************************************************
 
     using System;
-    using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
-    using System.Threading;
     using System.Windows.Forms;
 
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
@@ -153,13 +151,13 @@ namespace BudgetExecution
                     if( Verify.Input( HoverText ) )
                     {
                         var text = progress?.HoverText;
-                        ToolTip = new ToolTip( this, text );
+                        var _ = new ToolTip( this, text );
                     }
                     else
                     {
                         if( Verify.Input( Tag?.ToString() ) )
                         {
-                            ToolTip = new ToolTip( progress, Tag?.ToString()?.SplitPascal() );
+                            var _ = new ToolTip( progress, Tag?.ToString()?.SplitPascal() );
                         }
                     }
                 }

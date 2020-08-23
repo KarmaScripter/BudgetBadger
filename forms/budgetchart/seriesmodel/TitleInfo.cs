@@ -9,11 +9,9 @@ namespace BudgetExecution
     // ******************************************************************************************************************************
 
     using System;
-    using System;
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
-    using System.Threading;
     using Syncfusion.Windows.Forms.Chart;
 
     /// <summary> </summary>

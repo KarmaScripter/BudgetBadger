@@ -8,8 +8,6 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System;
-    using System.Threading;
     using Syncfusion.Windows.Forms.Chart;
 
     public class CallOut : ChartCalloutInfo

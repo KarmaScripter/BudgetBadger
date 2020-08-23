@@ -9,10 +9,7 @@ namespace BudgetExecution
     // **************************************************************************************************************************
 
     using System;
-    using System;
-    using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
-    using System.Threading;
     using System.Windows.Forms;
 
     /// <summary>
@@ -40,14 +37,6 @@ namespace BudgetExecution
         /// The field.
         /// </value>
         public Field Field { get; set; }
-
-        /// <summary>
-        /// Gets or sets the tip.
-        /// </summary>
-        /// <value>
-        /// The tip.
-        /// </value>
-        public ToolTip ToolTip { get; set; }
 
         /// <summary>
         /// Gets or sets the binding source.
@@ -180,40 +169,21 @@ namespace BudgetExecution
         // ***************************************************************************************************************************
 
         /// <summary>
-        /// Called when [mouse hover].
+        /// Called when [mouse leave].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The
-        /// <see cref="EventArgs" />
-        /// instance containing the event data.</param>
-        [ SuppressMessage( "ReSharper", "UnusedVariable" ) ]
-        public void OnMouseHover( object sender, EventArgs e )
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        public void OnMouseLeave( object sender, EventArgs e )
         {
-            if( sender is BarComboBox combobox
-                && Verify.Input( combobox?.HoverText ) )
+            try
             {
-                try
-                {
-                    if( Verify.Input( HoverText ) )
-                    {
-                        var text = combobox?.HoverText;
-                        ToolTip = new ToolTip( this, text );
-                    }
-                    else
-                    {
-                        if( Verify.Input( Tag?.ToString() ) )
-                        {
-                            ToolTip = new ToolTip( this, Tag?.ToString()?.SplitPascal() );
-                        }
-                    }
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
             }
         }
-
+    
         /// <summary>
         /// Get Error Dialog.
         /// </summary>

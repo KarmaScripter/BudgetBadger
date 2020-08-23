@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToolBarControl));
             this.ToolBar = new BudgetExecution.ToolPanel();
             this.Separator1 = new BudgetExecution.ToolSeparator();
@@ -74,15 +75,16 @@
             // ToolBar
             // 
             this.ToolBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ToolBar.BindingSource = null;
+            this.ToolBar.BindingSource = this.BindingSource;
             this.ToolBar.BorderStyle = Syncfusion.Windows.Forms.Tools.ToolStripBorderStyle.StaticEdge;
+            this.ToolBar.Buttons = null;
             this.ToolBar.CaptionAlignment = Syncfusion.Windows.Forms.Tools.CaptionAlignment.Center;
             this.ToolBar.CaptionFont = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ToolBar.DataFilter = null;
             this.ToolBar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ToolBar.Field = BudgetExecution.Field.NS;
             this.ToolBar.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ToolBar.ForeColor = System.Drawing.Color.White;
+            this.ToolBar.ForeColor = System.Drawing.Color.MidnightBlue;
             this.ToolBar.GripMargin = new System.Windows.Forms.Padding(0);
             this.ToolBar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.ToolBar.Image = null;
@@ -125,16 +127,16 @@
             this.HomeButton,
             this.Separator19,
             this.ProgressBar});
-            this.ToolBar.Location = new System.Drawing.Point(0, 0);
+            this.ToolBar.Location = new System.Drawing.Point(1, 1);
             this.ToolBar.Margin = new System.Windows.Forms.Padding(0);
             this.ToolBar.Name = "ToolBar";
             this.ToolBar.Numeric = BudgetExecution.Numeric.Default;
             this.ToolBar.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Black;
+            this.ToolBar.Padding = new System.Windows.Forms.Padding(1, 1, 1, 0);
             this.ToolBar.ShowCaption = true;
-            this.ToolBar.Size = new System.Drawing.Size(1297, 50);
+            this.ToolBar.Size = new System.Drawing.Size(1297, 51);
             this.ToolBar.TabIndex = 0;
-            this.ToolBar.Text = "Tool Br";
-            this.ToolBar.ToolTip = null;
+            this.ToolBar.Text = "Tool Bar";
             // 
             // Separator1
             // 
@@ -155,7 +157,6 @@
             this.Label.Size = new System.Drawing.Size(33, 23);
             this.Label.Tag = "Data Source";
             this.Label.Text = "Data:";
-            this.Label.ToolTip = null;
             // 
             // Separator2
             // 
@@ -181,8 +182,6 @@
             this.FirstButton.Padding = new System.Windows.Forms.Padding(1);
             this.FirstButton.Size = new System.Drawing.Size(23, 23);
             this.FirstButton.Tag = "First Record";
-            this.FirstButton.Text = "barButton1";
-            this.FirstButton.ToolTip = null;
             // 
             // Separator3
             // 
@@ -209,7 +208,6 @@
             this.PreviousButton.Size = new System.Drawing.Size(23, 23);
             this.PreviousButton.Tag = "Previous Record";
             this.PreviousButton.Text = "barButton2";
-            this.PreviousButton.ToolTip = null;
             // 
             // Separator4
             // 
@@ -231,7 +229,6 @@
             this.TextBox.Name = "TextBox";
             this.TextBox.Size = new System.Drawing.Size(154, 23);
             this.TextBox.Tag = "";
-            this.TextBox.ToolTip = null;
             // 
             // Separator5
             // 
@@ -258,7 +255,6 @@
             this.NextButton.Size = new System.Drawing.Size(23, 23);
             this.NextButton.Tag = "Next Record";
             this.NextButton.Text = "barButton3";
-            this.NextButton.ToolTip = null;
             // 
             // Separator6
             // 
@@ -285,7 +281,6 @@
             this.LastButton.Size = new System.Drawing.Size(23, 23);
             this.LastButton.Tag = "Last Record";
             this.LastButton.Text = "barButton4";
-            this.LastButton.ToolTip = null;
             // 
             // Separator7
             // 
@@ -312,7 +307,6 @@
             this.AddButton.Size = new System.Drawing.Size(23, 23);
             this.AddButton.Tag = "Add";
             this.AddButton.Text = "barButton5";
-            this.AddButton.ToolTip = null;
             // 
             // Separator8
             // 
@@ -339,7 +333,6 @@
             this.DeleteButton.Size = new System.Drawing.Size(23, 23);
             this.DeleteButton.Tag = "Delete";
             this.DeleteButton.Text = "barButton6";
-            this.DeleteButton.ToolTip = null;
             // 
             // Separator9
             // 
@@ -366,7 +359,6 @@
             this.UndoButton.Size = new System.Drawing.Size(23, 23);
             this.UndoButton.Tag = "Undo";
             this.UndoButton.Text = "barButton7";
-            this.UndoButton.ToolTip = null;
             // 
             // Separator10
             // 
@@ -393,7 +385,6 @@
             this.RefreshButton.Size = new System.Drawing.Size(23, 23);
             this.RefreshButton.Tag = "Refresh Data";
             this.RefreshButton.Text = "barButton8";
-            this.RefreshButton.ToolTip = null;
             // 
             // Separator11
             // 
@@ -420,7 +411,6 @@
             this.SaveButton.Size = new System.Drawing.Size(23, 23);
             this.SaveButton.Tag = "Save";
             this.SaveButton.Text = "barButton9";
-            this.SaveButton.ToolTip = null;
             // 
             // Separator12
             // 
@@ -447,7 +437,6 @@
             this.CalculatorButton.Size = new System.Drawing.Size(23, 23);
             this.CalculatorButton.Tag = "Calculator";
             this.CalculatorButton.Text = "barButton10";
-            this.CalculatorButton.ToolTip = null;
             // 
             // Separator13
             // 
@@ -472,7 +461,6 @@
             this.ComboBox.Name = "ComboBox";
             this.ComboBox.Size = new System.Drawing.Size(150, 23);
             this.ComboBox.Tag = "Make Selection";
-            this.ComboBox.ToolTip = null;
             this.ComboBox.ToolTipText = "Make Selection";
             // 
             // Separator14
@@ -500,7 +488,6 @@
             this.ExcelButton.Size = new System.Drawing.Size(23, 23);
             this.ExcelButton.Tag = "Excel";
             this.ExcelButton.Text = "barButton1";
-            this.ExcelButton.ToolTip = null;
             // 
             // Separator15
             // 
@@ -526,8 +513,6 @@
             this.ExitButton.Padding = new System.Windows.Forms.Padding(1);
             this.ExitButton.Size = new System.Drawing.Size(23, 23);
             this.ExitButton.Tag = "Exit";
-            this.ExitButton.Text = "barButton1";
-            this.ExitButton.ToolTip = null;
             // 
             // Separator16
             // 
@@ -554,7 +539,6 @@
             this.ChartButton.Size = new System.Drawing.Size(23, 23);
             this.ChartButton.Tag = "Charts";
             this.ChartButton.Text = "barButton1";
-            this.ChartButton.ToolTip = null;
             // 
             // Separator17
             // 
@@ -580,7 +564,6 @@
             this.UpdateButton.Padding = new System.Windows.Forms.Padding(1);
             this.UpdateButton.Size = new System.Drawing.Size(23, 23);
             this.UpdateButton.Tag = "Update";
-            this.UpdateButton.ToolTip = null;
             // 
             // Separator18
             // 
@@ -598,7 +581,7 @@
             this.HomeButton.Field = BudgetExecution.Field.NS;
             this.HomeButton.Font = new System.Drawing.Font("Roboto", 8F);
             this.HomeButton.ForeColor = System.Drawing.Color.LightGray;
-            this.HomeButton.HoverText = null;
+            this.HomeButton.HoverText = "Home";
             this.HomeButton.Image = ((System.Drawing.Image)(resources.GetObject("HomeButton.Image")));
             this.HomeButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.HomeButton.Margin = new System.Windows.Forms.Padding(5);
@@ -606,7 +589,6 @@
             this.HomeButton.Padding = new System.Windows.Forms.Padding(1);
             this.HomeButton.Size = new System.Drawing.Size(23, 23);
             this.HomeButton.Tag = "Home";
-            this.HomeButton.ToolTip = null;
             // 
             // Separator19
             // 
@@ -626,12 +608,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Controls.Add(this.ToolBar);
-            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.LightGray;
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
             this.Name = "ToolBarControl";
-            this.Size = new System.Drawing.Size(1297, 50);
+            this.Padding = new System.Windows.Forms.Padding(1, 1, 1, 0);
+            this.Size = new System.Drawing.Size(1299, 52);
             this.ToolBar.ResumeLayout(false);
             this.ToolBar.PerformLayout();
             this.ResumeLayout(false);

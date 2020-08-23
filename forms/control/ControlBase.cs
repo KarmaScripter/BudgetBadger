@@ -11,7 +11,6 @@ namespace BudgetExecution
     using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
-    using System.Threading;
     using System.Windows.Forms;
 
     /// <summary>
@@ -45,14 +44,6 @@ namespace BudgetExecution
         // **********************************************************************************************************************
         // *************************************************   PROPERTIES   *****************************************************
         // **********************************************************************************************************************
-
-        /// <summary>
-        /// Gets or sets the tip.
-        /// </summary>
-        /// <value>
-        /// The tip.
-        /// </value>
-        public ToolTip ToolTip { get; set; }
 
         /// <summary>
         /// Gets or sets the hover text.
@@ -265,7 +256,7 @@ namespace BudgetExecution
             {
                 try
                 {
-                    ToolTip = ControlConfig.GetToolTip( control, control?.Tag?.ToString() );
+                    var _ = ControlConfig.GetToolTip( control, control?.Tag?.ToString() );
                 }
                 catch( Exception ex )
                 {
@@ -276,7 +267,7 @@ namespace BudgetExecution
             {
                 try
                 {
-                    ToolTip = ControlConfig.GetToolTip( this, HoverText );
+                    var _ = ControlConfig.GetToolTip( this, HoverText );
                 }
                 catch( Exception ex )
                 {

@@ -106,7 +106,6 @@
             this.StackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.StackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.StackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.StackPanel.ToolTip = null;
             // 
             // Error
             // 

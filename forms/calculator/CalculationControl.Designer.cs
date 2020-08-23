@@ -70,7 +70,6 @@
             this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.BackPanel.ToolTip = null;
             // 
             // Calculator
             // 
@@ -104,7 +103,6 @@
             this.Calculator.Size = new System.Drawing.Size(284, 294);
             this.Calculator.TabIndex = 0;
             this.Calculator.Text = "calculationPanel1";
-            this.Calculator.ToolTip = null;
             this.Calculator.UseVerticalAndHorizontalSpacing = true;
             this.Calculator.UseVisualStyle = true;
             this.Calculator.VerticalSpacing = 5;
@@ -145,7 +143,6 @@
             this.Label.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.Label.ToolTip = null;
             // 
             // CalculationControl
             // 

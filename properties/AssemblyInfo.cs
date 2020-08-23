@@ -1,11 +1,10 @@
-﻿// <copyright file = "AssemblyInfo.cs" company = "Terry D. Eppler">
-// Copyright (c) Terry D. Eppler. All rights reserved.
-// </copyright>
+﻿// // <copyright file = "AssemblyInfo.cs" company = "Terry D. Eppler">
+// // Copyright (c) Terry D. Eppler. All rights reserved.
+// // </copyright>
 
 using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Threading;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information

@@ -9,13 +9,11 @@ namespace BudgetExecution
     // ******************************************************************************************************************************
 
     using System;
-    using System;
     using System.Collections.Generic;
     using System.Data;
     using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
     using System.Linq;
-    using System.Threading;
     using System.Windows.Forms;
 
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
@@ -41,11 +39,12 @@ namespace BudgetExecution
             Field = Field.NS;
             Tag = "Make Selection";
             ToolTipText = Tag.ToString();
-            HoverText = ToolTipText;
+            HoverText = Tag.ToString();
             Text = string.Empty;
             Visible = true;
             Enabled = true;
             MouseHover += OnMouseOver;
+            MouseLeave += OnMouseOver;
         }
 
         /// <summary>
@@ -115,20 +114,23 @@ namespace BudgetExecution
         /// </param>
         public void OnMouseOver( object sender, EventArgs e )
         {
-            var button = sender as ButtonPanel;
+            var button = sender as BarComboBox;
 
             try
             {
                 if( Verify.Input( HoverText ) )
                 {
-                    var text = button?.HoverText;
-                    ToolTip = new ToolTip( button, text );
+                    if( button != null )
+                    {
+                        button.Tag = HoverText;
+                        var _ = new ToolTip( button );
+                    }
                 }
                 else
                 {
                     if( Verify.Input( Tag?.ToString() ) )
                     {
-                        ToolTip = new ToolTip( button, Tag?.ToString().SplitPascal() );
+                        var _ = new ToolTip( button, Tag?.ToString().SplitPascal() );
                     }
                 }
             }

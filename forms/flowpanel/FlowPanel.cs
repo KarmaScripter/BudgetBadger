@@ -13,7 +13,6 @@ namespace BudgetExecution
     using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
     using System.Linq;
-    using System.Threading;
     using System.Windows.Forms;
 
     /// <summary>
@@ -351,10 +350,9 @@ namespace BudgetExecution
         /// <param name="text">The text.</param>
         public void SetToolTip( string text )
         {
-            if( ToolTip == null
-                && Verify.Input( text ) )
+            if( Verify.Input( text ) )
             {
-                ToolTip = new ToolTip( this, text );
+                var _ = new ToolTip( this, text );
             }
         }
 

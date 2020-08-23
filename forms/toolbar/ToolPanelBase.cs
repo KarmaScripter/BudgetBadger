@@ -9,9 +9,7 @@ namespace BudgetExecution
     // ********************************************************************************************************************************
 
     using System;
-    using System;
     using System.Diagnostics.CodeAnalysis;
-    using System.Threading;
 
     /// <summary> </summary>
     /// <seealso cref = "Syncfusion.Windows.Forms.Tools.ToolStripEx"/>
@@ -27,9 +25,29 @@ namespace BudgetExecution
         /// </summary>
         public static readonly string ImagePath = Resource.ToolBar;
 
+        public ToolPanelBase()
+        {
+        }
+
         // ***************************************************************************************************************************
         // ****************************************************     METHODS   ********************************************************
         // ***************************************************************************************************************************
+
+        /// <summary>
+        /// Sets the field.
+        /// </summary>
+        /// <param name="field">The field.</param>
+        public void SetField( Field field )
+        {
+            try
+            {
+                Field = FormConfig.GetField( field );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
 
         /// <summary>
         /// Creates the button.

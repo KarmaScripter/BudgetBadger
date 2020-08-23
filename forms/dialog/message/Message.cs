@@ -9,8 +9,6 @@ namespace BudgetExecution
     // ********************************************************************************************************************************
 
     using System;
-    using System;
-    using System.Threading;
     using Syncfusion.Windows.Forms;
 
     public partial class Message : MetroForm
@@ -33,8 +31,8 @@ namespace BudgetExecution
         public Message( string message )
             : this()
         {
-            Text = message;
-            Info.Text = "\n\n\n    " + Text;
+            TextBox.Text = message;
+            Info.Text = "Message";
         }
 
         // **********************************************************************************************************************
