@@ -35,6 +35,7 @@ namespace BudgetExecution
             Visible = true;
             Enabled = true;
             MouseHover += OnMouseHover;
+            MouseLeave += OnMouseLeave;
             Click += OnClick;
         }
 
@@ -67,6 +68,8 @@ namespace BudgetExecution
         /// <summary> Gets or sets the binding source. </summary>
         /// <value> The binding source. </value>
         public BindingSource BindingSource { get; set; }
+
+        public ToolTip ToolTip { get; set; }
 
         // ***************************************************************************************************************************
         // *******************************************************      METHODS        ***********************************************
@@ -111,13 +114,15 @@ namespace BudgetExecution
                     && !string.IsNullOrEmpty( HoverText ) )
                 {
                     button.Tag = HoverText;
-                    var _ = new ToolTip( button );
+                    var tip = new ToolTip( button );
+                    ToolTip = tip;
                 }
                 else
                 {
                     if( !string.IsNullOrEmpty( Tag?.ToString() ) )
                     {
-                        var _ = new ToolTip( button );
+                        var tool = new ToolTip( button );
+                        ToolTip = tool;
                     }
                 }
             }
@@ -131,6 +136,11 @@ namespace BudgetExecution
         {
             try
             {
+                if( ToolTip?.Active == true )
+                {
+                    ToolTip.RemoveAll();
+                    ToolTip = null;
+                }
             }
             catch( Exception ex )
             {

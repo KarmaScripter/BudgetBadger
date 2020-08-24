@@ -164,26 +164,6 @@ namespace BudgetExecution
             }
         }
 
-        // ***************************************************************************************************************************
-        // ****************************************************   EVENTS/DELEGATES  **************************************************
-        // ***************************************************************************************************************************
-
-        /// <summary>
-        /// Called when [mouse leave].
-        /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
-        public void OnMouseLeave( object sender, EventArgs e )
-        {
-            try
-            {
-            }
-            catch( Exception ex )
-            {
-                Fail( ex );
-            }
-        }
-    
         /// <summary>
         /// Get Error Dialog.
         /// </summary>

@@ -21,7 +21,7 @@ namespace BudgetExecution
         /// <see cref = "EventArgs"/>
         /// instance containing the event data.
         /// </param>
-        void OnMouseOver( object sender, EventArgs e );
+        void OnMouseHover( object sender, EventArgs e );
 
         /// <summary> Called when [item selected]. </summary>
         /// <param name = "sender" > The sender. </param>

@@ -43,8 +43,8 @@ namespace BudgetExecution
             Text = string.Empty;
             Visible = true;
             Enabled = true;
-            MouseHover += OnMouseOver;
-            MouseLeave += OnMouseOver;
+            MouseHover += OnMouseHover;
+            MouseLeave += OnMouseLeave;
         }
 
         /// <summary>
@@ -81,6 +81,18 @@ namespace BudgetExecution
         }
 
         // ***************************************************************************************************************************
+        // ****************************************************  PROPERTIES   ********************************************************
+        // ***************************************************************************************************************************
+
+        /// <summary>
+        /// Gets or sets the tool tip.
+        /// </summary>
+        /// <value>
+        /// The tool tip.
+        /// </value>
+        public ToolTip ToolTip { get; set; }
+
+        // ***************************************************************************************************************************
         // *******************************************************      METHODS        ***********************************************
         // ***************************************************************************************************************************
 
@@ -112,26 +124,47 @@ namespace BudgetExecution
         /// <see cref = "EventArgs"/>
         /// instance containing the event data.
         /// </param>
-        public void OnMouseOver( object sender, EventArgs e )
+        public void OnMouseHover( object sender, EventArgs e )
         {
-            var button = sender as BarComboBox;
-
             try
             {
-                if( Verify.Input( HoverText ) )
+                var button = sender as BarComboBox;
+
+                if( button != null
+                    && !string.IsNullOrEmpty( HoverText ) )
                 {
-                    if( button != null )
-                    {
-                        button.Tag = HoverText;
-                        var _ = new ToolTip( button );
-                    }
+                    button.Tag = HoverText;
+                    var tip = new ToolTip( button );
+                    ToolTip = tip;
                 }
                 else
                 {
-                    if( Verify.Input( Tag?.ToString() ) )
+                    if( !string.IsNullOrEmpty( Tag?.ToString() ) )
                     {
-                        var _ = new ToolTip( button, Tag?.ToString().SplitPascal() );
+                        var tool = new ToolTip( button );
+                        ToolTip = tool;
                     }
+                }
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Called when [mouse leave].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
+        public void OnMouseLeave( object sender, EventArgs e )
+        {
+            try
+            {
+                if( ToolTip?.Active == true )
+                {
+                    ToolTip.RemoveAll();
+                    ToolTip = null;
                 }
             }
             catch( Exception ex )

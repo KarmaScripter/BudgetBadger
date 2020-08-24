@@ -38,6 +38,7 @@ namespace BudgetExecution
             BorderStyle = BorderStyle.None;
             AutoScaleMode = AutoScaleMode.Dpi;
             DoubleBuffered = true;
+            ToolButton = ToolBar?.GetButtons();
             Load += OnLoad;
         }
 
@@ -51,7 +52,7 @@ namespace BudgetExecution
         /// <value>
         /// The tool button.
         /// </value>
-        public IDictionary<string, BarButton> ToolButton { get; set; } = new SortedList<string, BarButton>();
+        public IDictionary<string, BarButton> ToolButton { get; set; } 
 
         // ***************************************************************************************************************************
         // ****************************************************     METHODS   ********************************************************
@@ -88,13 +89,17 @@ namespace BudgetExecution
         {
             try
             {
-                foreach( var item in ToolBar.Items )
+                if( ToolBar?.Items != null )
                 {
-                    var button = item as BarButton;
-
-                    if( button != null )
+                    foreach( var item in ToolBar?.Items )
                     {
-                        ToolButton = ToolBar.GetButtons();
+                        if( item is BarButton button )
+                        {
+                            if( button != null )
+                            {
+                                ToolButton?.Add( button.Name, button );
+                            }
+                        }
                     }
                 }
             }
