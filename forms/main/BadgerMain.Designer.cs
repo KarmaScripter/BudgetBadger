@@ -45,17 +45,18 @@ namespace BudgetExecution
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BadgerMain));
             this.BackPanel = new BudgetExecution.LayoutPanel();
+            this.ToolBarControl = new BudgetExecution.ToolBarControl();
+            this.BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Header = new System.Windows.Forms.TableLayoutPanel();
             this.Picture = new BudgetExecution.PicturePanel();
             this.Label = new BudgetExecution.LabelPanel();
-            this.ToolBarControl = new BudgetExecution.ToolBarControl();
-            this.closePanel1 = new BudgetExecution.ClosePanel();
+            this.CloseBox = new BudgetExecution.ClosePanel();
             this.ToolTip = new BudgetExecution.ToolTip();
-            this.BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.toolBarControl1 = new BudgetExecution.ToolBarControl();
             this.BackPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BindingSource)).BeginInit();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Picture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // BackPanel
@@ -79,7 +80,7 @@ namespace BudgetExecution
             this.BackPanel.Field = BudgetExecution.Field.NS;
             this.BackPanel.ForeColor = System.Drawing.Color.LightGray;
             this.BackPanel.Location = new System.Drawing.Point(0, 0);
-            this.BackPanel.Margin = new System.Windows.Forms.Padding(1);
+            this.BackPanel.Margin = new System.Windows.Forms.Padding(1, 1, 1, 0);
             this.BackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.BackPanel.Name = "BackPanel";
             this.BackPanel.Padding = new System.Windows.Forms.Padding(1, 1, 1, 0);
@@ -92,6 +93,26 @@ namespace BudgetExecution
             this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.BackPanel.ToolTip = null;
+            // 
+            // ToolBarControl
+            // 
+            this.ToolBarControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.ToolBarControl.BindingSource = this.BindingSource;
+            this.ToolBarControl.DataFilter = null;
+            this.ToolBarControl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ToolBarControl.Field = BudgetExecution.Field.NS;
+            this.ToolBarControl.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToolBarControl.ForeColor = System.Drawing.Color.Black;
+            this.ToolBarControl.HoverText = null;
+            this.ToolBarControl.Location = new System.Drawing.Point(0, 553);
+            this.ToolBarControl.Margin = new System.Windows.Forms.Padding(1, 1, 1, 0);
+            this.ToolBarControl.Name = "ToolBarControl";
+            this.ToolBarControl.Numeric = BudgetExecution.Numeric.Default;
+            this.ToolBarControl.Padding = new System.Windows.Forms.Padding(1, 1, 1, 0);
+            this.ToolBarControl.Size = new System.Drawing.Size(1280, 52);
+            this.ToolBarControl.TabIndex = 9;
+            this.ToolBarControl.ToolButtons = null;
             // 
             // Header
             // 
@@ -99,10 +120,10 @@ namespace BudgetExecution
             this.Header.ColumnCount = 3;
             this.Header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.917874F));
             this.Header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.08212F));
-            this.Header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 461F));
+            this.Header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 462F));
             this.Header.Controls.Add(this.Picture, 0, 0);
             this.Header.Controls.Add(this.Label, 1, 0);
-            this.Header.Controls.Add(this.closePanel1, 2, 0);
+            this.Header.Controls.Add(this.CloseBox, 2, 0);
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.Header.Location = new System.Drawing.Point(0, 0);
@@ -130,6 +151,7 @@ namespace BudgetExecution
             this.Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Picture.TabIndex = 6;
             this.Picture.TabStop = false;
+            this.Picture.ToolTip = null;
             // 
             // Label
             // 
@@ -155,10 +177,10 @@ namespace BudgetExecution
             this.Label.ShadowDirection = 315;
             this.Label.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label.ShadowOpacity = 100;
-            this.Label.Size = new System.Drawing.Size(757, 27);
+            this.Label.Size = new System.Drawing.Size(756, 27);
             this.Label.TabIndex = 7;
             this.Label.Tag = "";
-            this.Label.Text = "Budget Badger";
+            this.Label.Text = "Badger";
             this.Label.TextAlignment = System.Drawing.StringAlignment.Near;
             this.Label.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
@@ -168,53 +190,36 @@ namespace BudgetExecution
             this.Label.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.Label.ToolTip = null;
             // 
-            // ToolBarControl
+            // CloseBox
             // 
-            this.ToolBarControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ToolBarControl.BindingSource = this.BindingSource;
-            this.ToolBarControl.DataFilter = null;
-            this.ToolBarControl.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ToolBarControl.Field = BudgetExecution.Field.NS;
-            this.ToolBarControl.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ToolBarControl.ForeColor = System.Drawing.Color.LightGray;
-            this.ToolBarControl.HoverText = null;
-            this.ToolBarControl.Location = new System.Drawing.Point(0, 553);
-            this.ToolBarControl.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
-            this.ToolBarControl.Name = "ToolBarControl";
-            this.ToolBarControl.Numeric = BudgetExecution.Numeric.Default;
-            this.ToolBarControl.Padding = new System.Windows.Forms.Padding(1, 1, 1, 0);
-            this.ToolBarControl.Size = new System.Drawing.Size(1280, 52);
-            this.ToolBarControl.TabIndex = 9;
-            this.ToolBarControl.ToolButton = null;
-            // 
-            // closePanel1
-            // 
-            this.closePanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closePanel1.CloseHoverBackColor = System.Drawing.Color.Maroon;
-            this.closePanel1.CloseHoverForeColor = System.Drawing.Color.White;
-            this.closePanel1.CloseNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.closePanel1.DisabledForeColor = System.Drawing.Color.DimGray;
-            this.closePanel1.Font = new System.Drawing.Font("Roboto", 8F);
-            this.closePanel1.ForeColor = System.Drawing.Color.LightGray;
-            this.closePanel1.Location = new System.Drawing.Point(1180, 0);
-            this.closePanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.closePanel1.MaximizeBox = true;
-            this.closePanel1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.closePanel1.MaximizeHoverForeColor = System.Drawing.Color.White;
-            this.closePanel1.MaximizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.closePanel1.MinimizeBox = true;
-            this.closePanel1.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.closePanel1.MinimizeHoverForeColor = System.Drawing.Color.White;
-            this.closePanel1.MinimizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.closePanel1.Name = "closePanel1";
-            this.closePanel1.Size = new System.Drawing.Size(100, 25);
-            this.closePanel1.Style = MetroSet_UI.Design.Style.Custom;
-            this.closePanel1.StyleManager = null;
-            this.closePanel1.TabIndex = 8;
-            this.closePanel1.Text = "closePanel1";
-            this.closePanel1.ThemeAuthor = "Terry D. Eppler";
-            this.closePanel1.ThemeName = "Budget Execution";
+            this.CloseBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Maroon;
+            this.CloseBox.CloseHoverForeColor = System.Drawing.Color.White;
+            this.CloseBox.CloseNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CloseBox.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CloseBox.Font = new System.Drawing.Font("Roboto", 8F);
+            this.CloseBox.ForeColor = System.Drawing.Color.LightGray;
+            this.CloseBox.Location = new System.Drawing.Point(1180, 0);
+            this.CloseBox.Margin = new System.Windows.Forms.Padding(0);
+            this.CloseBox.MaximizeBox = true;
+            this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MaximizeHoverForeColor = System.Drawing.Color.White;
+            this.CloseBox.MaximizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CloseBox.MinimizeBox = true;
+            this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MinimizeHoverForeColor = System.Drawing.Color.White;
+            this.CloseBox.MinimizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CloseBox.Name = "CloseBox";
+            this.CloseBox.Size = new System.Drawing.Size(100, 25);
+            this.CloseBox.Style = MetroSet_UI.Design.Style.Custom;
+            this.CloseBox.StyleManager = null;
+            this.CloseBox.TabIndex = 8;
+            this.CloseBox.Text = "closePanel1";
+            this.CloseBox.ThemeAuthor = "Terry D. Eppler";
+            this.CloseBox.ThemeName = "Budget Execution";
+            this.CloseBox.ToolTip = null;
             // 
             // ToolTip
             // 
@@ -233,6 +238,24 @@ namespace BudgetExecution
             this.ToolTip.ThemeName = "Budget Execution";
             this.ToolTip.TipIcon = System.Windows.Forms.ToolTipIcon.None;
             this.ToolTip.TipTitle = "";
+            // 
+            // toolBarControl1
+            // 
+            this.toolBarControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.toolBarControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.toolBarControl1.BindingSource = null;
+            this.toolBarControl1.DataFilter = null;
+            this.toolBarControl1.Field = BudgetExecution.Field.NS;
+            this.toolBarControl1.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolBarControl1.ForeColor = System.Drawing.Color.LightGray;
+            this.toolBarControl1.HoverText = null;
+            this.toolBarControl1.Location = new System.Drawing.Point(0, 0);
+            this.toolBarControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
+            this.toolBarControl1.Name = "toolBarControl1";
+            this.toolBarControl1.Numeric = BudgetExecution.Numeric.Default;
+            this.toolBarControl1.Padding = new System.Windows.Forms.Padding(1, 1, 1, 0);
+            this.toolBarControl1.Size = new System.Drawing.Size(1299, 52);
+            this.toolBarControl1.TabIndex = 0;
             // 
             // BadgerMain
             // 
@@ -264,9 +287,9 @@ namespace BudgetExecution
             this.ShowMinimizeBox = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.BackPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BindingSource)).EndInit();
             this.Header.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Picture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BindingSource)).EndInit();
             this.ResumeLayout(false);
 
             }
@@ -280,11 +303,12 @@ namespace BudgetExecution
             public LabelPanel Label;
 
             public LayoutPanel BackPanel;
-            public ToolBarControl ToolBarControl;
 
-            public ClosePanel closePanel1;
+            public ClosePanel CloseBox;
             public BindingSource BindingSource;
             public ToolTip ToolTip;
+        public ToolBarControl ToolBarControl;
+        private ToolBarControl toolBarControl1;
     }
     
 }

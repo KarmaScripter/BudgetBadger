@@ -16,6 +16,7 @@ namespace BudgetExecution
     [ SuppressMessage( "ReSharper", "UnusedParameter.Global" ) ]
     [ SuppressMessage( "ReSharper", "ClassNeverInstantiated.Global" ) ]
     [ SuppressMessage( "ReSharper", "UsePatternMatching" ) ]
+    [ Serializable ]
     public class BarButton : BarButtonBase, IBarButton
     {
         // ***************************************************************************************************************************

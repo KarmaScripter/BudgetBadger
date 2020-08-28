@@ -133,6 +133,7 @@
             this.ToolBar.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Black;
             this.ToolBar.Padding = new System.Windows.Forms.Padding(1, 1, 1, 0);
             this.ToolBar.ShowCaption = true;
+            this.ToolBar.ShowLauncher = false;
             this.ToolBar.Size = new System.Drawing.Size(1297, 51);
             this.ToolBar.TabIndex = 0;
             this.ToolBar.Text = "Tool Bar";
@@ -183,6 +184,7 @@
             this.FirstButton.Size = new System.Drawing.Size(23, 23);
             this.FirstButton.Tag = "First Record";
             this.FirstButton.Text = "FirstButton";
+            this.FirstButton.ToolTip = null;
             // 
             // Separator3
             // 
@@ -209,6 +211,7 @@
             this.PreviousButton.Size = new System.Drawing.Size(23, 23);
             this.PreviousButton.Tag = "Previous Record";
             this.PreviousButton.Text = "PreviousButton";
+            this.PreviousButton.ToolTip = null;
             this.PreviousButton.ToolTipText = "Previous Record";
             // 
             // Separator4
@@ -257,6 +260,7 @@
             this.NextButton.Size = new System.Drawing.Size(23, 23);
             this.NextButton.Tag = "Next Record";
             this.NextButton.Text = "NextButton";
+            this.NextButton.ToolTip = null;
             this.NextButton.ToolTipText = "Next Record";
             // 
             // Separator6
@@ -284,6 +288,7 @@
             this.LastButton.Size = new System.Drawing.Size(23, 23);
             this.LastButton.Tag = "Last Record";
             this.LastButton.Text = "LastButton";
+            this.LastButton.ToolTip = null;
             this.LastButton.ToolTipText = "Last Record";
             // 
             // Separator7
@@ -312,6 +317,7 @@
             this.AddButton.Size = new System.Drawing.Size(23, 23);
             this.AddButton.Tag = "Add Record";
             this.AddButton.Text = "AddButton";
+            this.AddButton.ToolTip = null;
             this.AddButton.ToolTipText = "Add Record";
             // 
             // Separator8
@@ -339,6 +345,7 @@
             this.DeleteButton.Size = new System.Drawing.Size(23, 23);
             this.DeleteButton.Tag = "Delete";
             this.DeleteButton.Text = "barButton6";
+            this.DeleteButton.ToolTip = null;
             this.DeleteButton.ToolTipText = "DeleteButton";
             // 
             // Separator9
@@ -366,6 +373,7 @@
             this.UndoButton.Size = new System.Drawing.Size(23, 23);
             this.UndoButton.Tag = "Undo Changes";
             this.UndoButton.Text = "UndoButton";
+            this.UndoButton.ToolTip = null;
             this.UndoButton.ToolTipText = "Undo Changes";
             // 
             // Separator10
@@ -393,6 +401,7 @@
             this.RefreshButton.Size = new System.Drawing.Size(23, 23);
             this.RefreshButton.Tag = "Refresh Data";
             this.RefreshButton.Text = "RefreshButton";
+            this.RefreshButton.ToolTip = null;
             this.RefreshButton.ToolTipText = "Refresh Data";
             // 
             // Separator11
@@ -420,6 +429,7 @@
             this.SaveButton.Size = new System.Drawing.Size(23, 23);
             this.SaveButton.Tag = "Save Changes";
             this.SaveButton.Text = "SaveButton";
+            this.SaveButton.ToolTip = null;
             this.SaveButton.ToolTipText = "Save Changes";
             // 
             // Separator12
@@ -447,6 +457,7 @@
             this.CalculatorButton.Size = new System.Drawing.Size(23, 23);
             this.CalculatorButton.Tag = "Calculator";
             this.CalculatorButton.Text = "CalculatorButton";
+            this.CalculatorButton.ToolTip = null;
             this.CalculatorButton.ToolTipText = "Calculator";
             // 
             // Separator13
@@ -473,6 +484,7 @@
             this.ComboBox.Name = "ComboBox";
             this.ComboBox.Size = new System.Drawing.Size(150, 23);
             this.ComboBox.Tag = "Make Selection";
+            this.ComboBox.ToolTip = null;
             this.ComboBox.ToolTipText = "Make Selection";
             // 
             // Separator14
@@ -501,6 +513,7 @@
             this.ExcelButton.Size = new System.Drawing.Size(23, 23);
             this.ExcelButton.Tag = "Excel File";
             this.ExcelButton.Text = "ExcelButton";
+            this.ExcelButton.ToolTip = null;
             this.ExcelButton.ToolTipText = "Excel File";
             // 
             // Separator15
@@ -529,6 +542,7 @@
             this.ExitButton.Size = new System.Drawing.Size(23, 23);
             this.ExitButton.Tag = "Exit Applicaion";
             this.ExitButton.Text = "ExitButton";
+            this.ExitButton.ToolTip = null;
             this.ExitButton.ToolTipText = "Exit Applicaion";
             // 
             // Separator16
@@ -542,7 +556,7 @@
             // 
             this.ChartButton.AutoToolTip = false;
             this.ChartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ChartButton.Bar = BudgetExecution.Tool.BrowseButton;
+            this.ChartButton.Bar = BudgetExecution.Tool.ChartButton;
             this.ChartButton.BindingSource = null;
             this.ChartButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.ChartButton.Field = BudgetExecution.Field.NS;
@@ -557,6 +571,7 @@
             this.ChartButton.Size = new System.Drawing.Size(23, 23);
             this.ChartButton.Tag = "Charts";
             this.ChartButton.Text = "ChartButton";
+            this.ChartButton.ToolTip = null;
             this.ChartButton.ToolTipText = "Charts";
             // 
             // Separator17
@@ -576,7 +591,7 @@
             this.UpdateButton.Field = BudgetExecution.Field.NS;
             this.UpdateButton.Font = new System.Drawing.Font("Roboto", 8F);
             this.UpdateButton.ForeColor = System.Drawing.Color.LightGray;
-            this.UpdateButton.HoverText = "Update DataSource";
+            this.UpdateButton.HoverText = "Update Data Source";
             this.UpdateButton.Image = ((System.Drawing.Image)(resources.GetObject("UpdateButton.Image")));
             this.UpdateButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.UpdateButton.Margin = new System.Windows.Forms.Padding(5);
@@ -585,7 +600,8 @@
             this.UpdateButton.Size = new System.Drawing.Size(23, 23);
             this.UpdateButton.Tag = "Update DataSource";
             this.UpdateButton.Text = "UpdateButton";
-            this.UpdateButton.ToolTipText = "Update DataSource";
+            this.UpdateButton.ToolTip = null;
+            this.UpdateButton.ToolTipText = "Update Data Source";
             // 
             // Separator18
             // 
@@ -598,7 +614,7 @@
             // 
             this.HomeButton.AutoToolTip = false;
             this.HomeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.HomeButton.Bar = BudgetExecution.Tool.FirstButton;
+            this.HomeButton.Bar = BudgetExecution.Tool.MenuButton;
             this.HomeButton.BindingSource = null;
             this.HomeButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.HomeButton.Field = BudgetExecution.Field.NS;
@@ -613,6 +629,7 @@
             this.HomeButton.Size = new System.Drawing.Size(23, 23);
             this.HomeButton.Tag = "Home";
             this.HomeButton.Text = "HomeButton";
+            this.HomeButton.ToolTip = null;
             this.HomeButton.ToolTipText = "Home";
             // 
             // Separator19
