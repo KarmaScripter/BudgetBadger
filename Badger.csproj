@@ -54,8 +54,7 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>
-    </ApplicationIcon>
+    <ApplicationIcon>Ninja.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>BudgetExecution.Program</StartupObject>
@@ -511,7 +510,6 @@
     <Compile Include="forms\toolbar\BarLabelBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\IBarButton.cs" />
     <Compile Include="forms\toolbar\IBarComboBox.cs" />
     <Compile Include="forms\toolbar\IBarLabel.cs" />
     <Compile Include="forms\toolbar\IBarTextBox.cs" />
@@ -680,9 +678,11 @@
     <Content Include="icons\badger\ico\badger.ico" />
     <Content Include="icons\badger\ico\epabadger.ico" />
     <Content Include="icons\badger\ico\logo.ico" />
+    <Content Include="icons\badger\ico\Ninja.ico" />
     <Content Include="icons\badger\png\badger.png" />
     <Content Include="icons\badger\png\epabadger.png" />
     <Content Include="icons\badger\png\logo.png" />
+    <Content Include="icons\badger\png\Ninja.png" />
     <Content Include="icons\badger\png\runningbadger.png" />
     <Content Include="icons\close\png\CloseButton.png" />
     <Content Include="icons\codec\png\BMP.png" />
@@ -1177,6 +1177,7 @@
     <Content Include="icons\toolbar\png\VerifyButton.png" />
     <Content Include="icons\toolbar\png\WebButton.png" />
     <Content Include="icons\toolbar\png\WordButton.png" />
+    <Content Include="Ninja.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -128,7 +128,7 @@ namespace BudgetExecution
                 this.Label.Location = new System.Drawing.Point( 0, 0 );
                 this.Label.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
                 this.Label.Name = "Label";
-                this.Label.Numeric = Numeric.Default;
+                this.Label.Numeric = Numeric.NS;
                 this.Label.Orientation = System.Windows.Forms.Orientation.Horizontal;
                 this.Label.Outline = false;
 

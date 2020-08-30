@@ -493,7 +493,7 @@ namespace BudgetExecution
             this.SideLabel.Location = new System.Drawing.Point( 3, 55 );
             this.SideLabel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.SideLabel.Name = "SideLabel";
-            this.SideLabel.Numeric = Numeric.Default;
+            this.SideLabel.Numeric = Numeric.NS;
             this.SideLabel.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.SideLabel.Outline = false;
 

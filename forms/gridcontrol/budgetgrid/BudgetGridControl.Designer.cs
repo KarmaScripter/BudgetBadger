@@ -133,7 +133,7 @@ namespace BudgetExecution
             this.DataGrid.Location = new System.Drawing.Point(0, 0);
             this.DataGrid.Margin = new System.Windows.Forms.Padding(0);
             this.DataGrid.Name = "DataGrid";
-            this.DataGrid.Numeric = BudgetExecution.Numeric.Default;
+            this.DataGrid.Numeric = BudgetExecution.Numeric.NS;
             this.DataGrid.OptimizeInsertRemoveCells = true;
             this.DataGrid.Properties.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.DataGrid.Properties.GridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -200,7 +200,7 @@ namespace BudgetExecution
             this.ToolBar.Location = new System.Drawing.Point(0, 414);
             this.ToolBar.Margin = new System.Windows.Forms.Padding(3);
             this.ToolBar.Name = "ToolBar";
-            this.ToolBar.Numeric = BudgetExecution.Numeric.Default;
+            this.ToolBar.Numeric = BudgetExecution.Numeric.NS;
             this.ToolBar.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Black;
             this.ToolBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ToolBar.ShowCaption = false;

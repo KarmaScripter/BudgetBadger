@@ -166,7 +166,7 @@ namespace BudgetExecution
             this.Label.Margin = new System.Windows.Forms.Padding( 10, 3, 3, 3 );
             this.Label.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label.Name = "Label";
-            this.Label.Numeric = Numeric.Default;
+            this.Label.Numeric = Numeric.NS;
             this.Label.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label.Outline = false;
 

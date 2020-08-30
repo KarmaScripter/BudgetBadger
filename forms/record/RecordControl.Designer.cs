@@ -227,7 +227,7 @@ namespace BudgetExecution
             this.TextBox12.Location = new System.Drawing.Point(888, 111);
             this.TextBox12.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox12.Name = "TextBox12";
-            this.TextBox12.Numeric = BudgetExecution.Numeric.Default;
+            this.TextBox12.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox12.PasswordChar = '\0';
             this.TextBox12.ReadOnly = false;
             this.TextBox12.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -252,7 +252,7 @@ namespace BudgetExecution
             // BindingSource
             // 
             this.BindingSource.DataFilter = null;
-            this.BindingSource.Numeric = BudgetExecution.Numeric.Default;
+            this.BindingSource.Numeric = BudgetExecution.Numeric.NS;
             // 
             // TextBox11
             // 
@@ -295,7 +295,7 @@ namespace BudgetExecution
             this.TextBox11.Location = new System.Drawing.Point(711, 111);
             this.TextBox11.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox11.Name = "TextBox11";
-            this.TextBox11.Numeric = BudgetExecution.Numeric.Default;
+            this.TextBox11.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox11.PasswordChar = '\0';
             this.TextBox11.ReadOnly = false;
             this.TextBox11.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -329,7 +329,7 @@ namespace BudgetExecution
             this.Label12.Location = new System.Drawing.Point(888, 75);
             this.Label12.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label12.Name = "Label12";
-            this.Label12.Numeric = BudgetExecution.Numeric.Default;
+            this.Label12.Numeric = BudgetExecution.Numeric.NS;
             this.Label12.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label12.Outline = false;
             this.Label12.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -365,7 +365,7 @@ namespace BudgetExecution
             this.Label11.Location = new System.Drawing.Point(711, 75);
             this.Label11.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label11.Name = "Label11";
-            this.Label11.Numeric = BudgetExecution.Numeric.Default;
+            this.Label11.Numeric = BudgetExecution.Numeric.NS;
             this.Label11.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label11.Outline = false;
             this.Label11.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -429,7 +429,7 @@ namespace BudgetExecution
             this.TextBox7.Location = new System.Drawing.Point(3, 111);
             this.TextBox7.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox7.Name = "TextBox7";
-            this.TextBox7.Numeric = BudgetExecution.Numeric.Default;
+            this.TextBox7.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox7.PasswordChar = '\0';
             this.TextBox7.ReadOnly = false;
             this.TextBox7.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -492,7 +492,7 @@ namespace BudgetExecution
             this.TextBox6.Location = new System.Drawing.Point(357, 111);
             this.TextBox6.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox6.Name = "TextBox6";
-            this.TextBox6.Numeric = BudgetExecution.Numeric.Default;
+            this.TextBox6.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox6.PasswordChar = '\0';
             this.TextBox6.ReadOnly = false;
             this.TextBox6.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -555,7 +555,7 @@ namespace BudgetExecution
             this.TextBox9.Location = new System.Drawing.Point(180, 111);
             this.TextBox9.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox9.Name = "TextBox9";
-            this.TextBox9.Numeric = BudgetExecution.Numeric.Default;
+            this.TextBox9.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox9.PasswordChar = '\0';
             this.TextBox9.ReadOnly = false;
             this.TextBox9.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -618,7 +618,7 @@ namespace BudgetExecution
             this.TextBox5.Location = new System.Drawing.Point(711, 39);
             this.TextBox5.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox5.Name = "TextBox5";
-            this.TextBox5.Numeric = BudgetExecution.Numeric.Default;
+            this.TextBox5.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox5.PasswordChar = '\0';
             this.TextBox5.ReadOnly = false;
             this.TextBox5.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -681,7 +681,7 @@ namespace BudgetExecution
             this.TextBox4.Location = new System.Drawing.Point(534, 39);
             this.TextBox4.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox4.Name = "TextBox4";
-            this.TextBox4.Numeric = BudgetExecution.Numeric.Default;
+            this.TextBox4.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox4.PasswordChar = '\0';
             this.TextBox4.ReadOnly = false;
             this.TextBox4.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -744,7 +744,7 @@ namespace BudgetExecution
             this.TextBox3.Location = new System.Drawing.Point(357, 39);
             this.TextBox3.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox3.Name = "TextBox3";
-            this.TextBox3.Numeric = BudgetExecution.Numeric.Default;
+            this.TextBox3.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox3.PasswordChar = '\0';
             this.TextBox3.ReadOnly = false;
             this.TextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -807,7 +807,7 @@ namespace BudgetExecution
             this.TextBox2.Location = new System.Drawing.Point(180, 39);
             this.TextBox2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox2.Name = "TextBox2";
-            this.TextBox2.Numeric = BudgetExecution.Numeric.Default;
+            this.TextBox2.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox2.PasswordChar = '\0';
             this.TextBox2.ReadOnly = false;
             this.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -841,7 +841,7 @@ namespace BudgetExecution
             this.Label5.Location = new System.Drawing.Point(711, 3);
             this.Label5.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label5.Name = "Label5";
-            this.Label5.Numeric = BudgetExecution.Numeric.Default;
+            this.Label5.Numeric = BudgetExecution.Numeric.NS;
             this.Label5.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label5.Outline = false;
             this.Label5.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -877,7 +877,7 @@ namespace BudgetExecution
             this.Label4.Location = new System.Drawing.Point(534, 3);
             this.Label4.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label4.Name = "Label4";
-            this.Label4.Numeric = BudgetExecution.Numeric.Default;
+            this.Label4.Numeric = BudgetExecution.Numeric.NS;
             this.Label4.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label4.Outline = false;
             this.Label4.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -913,7 +913,7 @@ namespace BudgetExecution
             this.Label3.Location = new System.Drawing.Point(357, 3);
             this.Label3.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label3.Name = "Label3";
-            this.Label3.Numeric = BudgetExecution.Numeric.Default;
+            this.Label3.Numeric = BudgetExecution.Numeric.NS;
             this.Label3.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label3.Outline = false;
             this.Label3.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -948,7 +948,7 @@ namespace BudgetExecution
             this.Label2.Location = new System.Drawing.Point(180, 3);
             this.Label2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label2.Name = "Label2";
-            this.Label2.Numeric = BudgetExecution.Numeric.Default;
+            this.Label2.Numeric = BudgetExecution.Numeric.NS;
             this.Label2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label2.Outline = false;
             this.Label2.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -984,7 +984,7 @@ namespace BudgetExecution
             this.Label1.Location = new System.Drawing.Point(3, 3);
             this.Label1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label1.Name = "Label1";
-            this.Label1.Numeric = BudgetExecution.Numeric.Default;
+            this.Label1.Numeric = BudgetExecution.Numeric.NS;
             this.Label1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label1.Outline = false;
             this.Label1.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1049,7 +1049,7 @@ namespace BudgetExecution
             this.TextBox1.Location = new System.Drawing.Point(3, 39);
             this.TextBox1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Numeric = BudgetExecution.Numeric.Default;
+            this.TextBox1.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox1.PasswordChar = '\0';
             this.TextBox1.ReadOnly = false;
             this.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -1112,7 +1112,7 @@ namespace BudgetExecution
             this.TextBox10.Location = new System.Drawing.Point(534, 111);
             this.TextBox10.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox10.Name = "TextBox10";
-            this.TextBox10.Numeric = BudgetExecution.Numeric.Default;
+            this.TextBox10.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox10.PasswordChar = '\0';
             this.TextBox10.ReadOnly = false;
             this.TextBox10.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -1146,7 +1146,7 @@ namespace BudgetExecution
             this.Label6.Location = new System.Drawing.Point(888, 3);
             this.Label6.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label6.Name = "Label6";
-            this.Label6.Numeric = BudgetExecution.Numeric.Default;
+            this.Label6.Numeric = BudgetExecution.Numeric.NS;
             this.Label6.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label6.Outline = false;
             this.Label6.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1211,7 +1211,7 @@ namespace BudgetExecution
             this.TextBox8.Location = new System.Drawing.Point(888, 39);
             this.TextBox8.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox8.Name = "TextBox8";
-            this.TextBox8.Numeric = BudgetExecution.Numeric.Default;
+            this.TextBox8.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox8.PasswordChar = '\0';
             this.TextBox8.ReadOnly = false;
             this.TextBox8.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -1245,7 +1245,7 @@ namespace BudgetExecution
             this.Label7.Location = new System.Drawing.Point(3, 75);
             this.Label7.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label7.Name = "Label7";
-            this.Label7.Numeric = BudgetExecution.Numeric.Default;
+            this.Label7.Numeric = BudgetExecution.Numeric.NS;
             this.Label7.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label7.Outline = false;
             this.Label7.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1281,7 +1281,7 @@ namespace BudgetExecution
             this.Label8.Location = new System.Drawing.Point(180, 75);
             this.Label8.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label8.Name = "Label8";
-            this.Label8.Numeric = BudgetExecution.Numeric.Default;
+            this.Label8.Numeric = BudgetExecution.Numeric.NS;
             this.Label8.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label8.Outline = false;
             this.Label8.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1317,7 +1317,7 @@ namespace BudgetExecution
             this.Label9.Location = new System.Drawing.Point(357, 75);
             this.Label9.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label9.Name = "Label9";
-            this.Label9.Numeric = BudgetExecution.Numeric.Default;
+            this.Label9.Numeric = BudgetExecution.Numeric.NS;
             this.Label9.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label9.Outline = false;
             this.Label9.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1353,7 +1353,7 @@ namespace BudgetExecution
             this.Label10.Location = new System.Drawing.Point(534, 75);
             this.Label10.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label10.Name = "Label10";
-            this.Label10.Numeric = BudgetExecution.Numeric.Default;
+            this.Label10.Numeric = BudgetExecution.Numeric.NS;
             this.Label10.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label10.Outline = false;
             this.Label10.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1422,7 +1422,7 @@ namespace BudgetExecution
             this.ToolBar.Location = new System.Drawing.Point(0, 145);
             this.ToolBar.Margin = new System.Windows.Forms.Padding(3);
             this.ToolBar.Name = "ToolBar";
-            this.ToolBar.Numeric = BudgetExecution.Numeric.Default;
+            this.ToolBar.Numeric = BudgetExecution.Numeric.NS;
             this.ToolBar.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Black;
             this.ToolBar.ShowCaption = true;
             this.ToolBar.ShowLauncher = false;

@@ -126,12 +126,12 @@ namespace BudgetExecution
             {
                 return Enum.IsDefined( typeof( STAT ), Stat )
                     ? Stat
-                    : STAT.None;
+                    : STAT.NS;
             }
             catch( Exception ex )
             {
                 Fail( ex );
-                return STAT.None;
+                return STAT.NS;
             }
         }
 
@@ -143,12 +143,12 @@ namespace BudgetExecution
             {
                 return Enum.IsDefined( typeof( Numeric ), Numeric )
                     ? Numeric
-                    : Numeric.Default;
+                    : Numeric.NS;
             }
             catch( Exception ex )
             {
                 Fail( ex );
-                return Numeric.Default;
+                return Numeric.NS;
             }
         }
 

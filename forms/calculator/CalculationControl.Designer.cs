@@ -95,7 +95,7 @@
             this.Calculator.Margin = new System.Windows.Forms.Padding(5);
             this.Calculator.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.Calculator.Name = "Calculator";
-            this.Calculator.Numeric = BudgetExecution.Numeric.Default;
+            this.Calculator.Numeric = BudgetExecution.Numeric.NS;
             this.Calculator.Padding = new System.Windows.Forms.Padding(5);
             this.Calculator.Result = null;
             this.Calculator.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -120,7 +120,7 @@
             this.Label.Margin = new System.Windows.Forms.Padding(5);
             this.Label.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label.Name = "Label";
-            this.Label.Numeric = BudgetExecution.Numeric.Default;
+            this.Label.Numeric = BudgetExecution.Numeric.NS;
             this.Label.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label.Outline = false;
             this.Label.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));

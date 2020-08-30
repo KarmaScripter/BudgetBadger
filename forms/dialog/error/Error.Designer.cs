@@ -93,7 +93,7 @@
             this.StackPanel.MaxLength = 2147483647;
             this.StackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.StackPanel.Name = "StackPanel";
-            this.StackPanel.Numeric = BudgetExecution.Numeric.Default;
+            this.StackPanel.Numeric = BudgetExecution.Numeric.NS;
             this.StackPanel.ReadOnly = false;
             this.StackPanel.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
             this.StackPanel.ShowSelectionMargin = false;

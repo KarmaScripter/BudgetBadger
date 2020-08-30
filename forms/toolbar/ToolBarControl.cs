@@ -2,8 +2,6 @@
 // Copyright (c) Eppler. All rights reserved.
 // </copyright>
 
-using System.Diagnostics.CodeAnalysis;
-
 namespace BudgetExecution
 {
     // ********************************************************************************************************************************
@@ -13,12 +11,16 @@ namespace BudgetExecution
     using System;
     using System.Collections.Generic;
     using System.Windows.Forms;
+    using System.Diagnostics.CodeAnalysis;
 
     /// <summary>
     /// 
     /// </summary>
     /// <seealso cref="BudgetExecution.ControlBase" />
     [ SuppressMessage( "ReSharper", "UsePatternMatching" ) ]
+    [ Serializable ]
+    [ SuppressMessage( "ReSharper", "UnusedParameter.Global" ) ]
+    [ SuppressMessage( "ReSharper", "PatternAlwaysOfType" ) ]
     public partial class ToolBarControl : ControlBase
     {
         // ***************************************************************************************************************************
@@ -38,7 +40,6 @@ namespace BudgetExecution
             BorderStyle = BorderStyle.None;
             AutoScaleMode = AutoScaleMode.Dpi;
             DoubleBuffered = true;
-            ToolButtons = ToolBar?.GetButtons();
         }
 
         // ***************************************************************************************************************************
@@ -54,28 +55,6 @@ namespace BudgetExecution
         public IDictionary<string, BarButton> ToolButtons { get; set; } 
 
         // ***************************************************************************************************************************
-        // ****************************************************     METHODS   ********************************************************
-        // ***************************************************************************************************************************
-
-        /// <summary>
-        /// Gets the buttons.
-        /// </summary>
-        /// <returns></returns>
-        public IDictionary<string, BarButton> GetButtons()
-        {
-            if( ToolBar?.Items?.Count > 0 )
-            {
-                var buttons = ToolBar.GetButtons();
-
-                return buttons?.Count > 0
-                    ? buttons
-                    : default;
-            }
-
-            return default;
-        }
-
-        // ***************************************************************************************************************************
         // ****************************************************   EVENTS/DELEGATES  **************************************************
         // ***************************************************************************************************************************
 
@@ -88,16 +67,13 @@ namespace BudgetExecution
         {
             try
             {
-                if( ToolBar?.Items != null )
+                if( ToolBar?.Buttons != null )
                 {
-                    foreach( var item in ToolBar?.Items )
+                    foreach( var item in ToolBar.Buttons )
                     {
-                        if( item is BarButton button )
+                        if( item.Value is BarButton button )
                         {
-                            if( button != null )
-                            {
-                                ToolButtons?.Add( button.Name, button );
-                            }
+                            ToolButtons.Add( button?.Name, button );
                         }
                     }
                 }

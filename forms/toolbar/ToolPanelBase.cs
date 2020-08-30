@@ -64,11 +64,11 @@ namespace BudgetExecution
                 try
                 {
                     var image = new BudgetImage( imagename, ImageSource.ToolBar, ImageSizer.Small );
-                    var barbutton = new BarButton( image );
-                    Items?.Add( barbutton );
+                    var button = new BarButton( image );
+                    Items?.Add( button );
 
                     return Items?.Count > 0
-                        ? barbutton
+                        ? button
                         : default;
                 }
                 catch( Exception ex )
