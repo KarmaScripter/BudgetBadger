@@ -37,7 +37,8 @@ namespace BudgetExecution
             Tag = Name;
             ToolTipText = Tag.ToString();
             HoverText = ToolTipText;
-            MouseHover += OnMouseOver;
+            MouseHover += OnMouseHover;
+            MouseLeave += OnMouseLeave;
         }
 
         // ***************************************************************************************************************************
@@ -55,6 +56,14 @@ namespace BudgetExecution
         /// <summary> Gets or sets the field. </summary>
         /// <value> The field. </value>
         public Field Field { get; set; }
+
+        /// <summary>
+        /// Gets or sets the tool tip.
+        /// </summary>
+        /// <value>
+        /// The tool tip.
+        /// </value>
+        public ToolTip ToolTip { get; set; }
 
         // ***************************************************************************************************************************
         // *******************************************************      METHODS        ***********************************************
@@ -139,37 +148,57 @@ namespace BudgetExecution
         // ****************************************************   EVENTS/DELEGATES  **************************************************
         // ***************************************************************************************************************************
 
-        /// <summary> Called when [mouse over]. </summary>
-        /// <param name = "sender" > The sender. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
-        public void OnMouseOver( object sender, EventArgs e )
+        /// <summary>
+        /// Called when [mouse over].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        public void OnMouseHover( object sender, EventArgs e )
         {
-            if( sender is BarTextBox textbox
-                && Verify.Input( textbox?.HoverText ) )
+            try
             {
-                try
+                var button = sender as BarTextBox;
+
+                if( button != null
+                    && !string.IsNullOrEmpty( HoverText ) )
                 {
-                    if( Verify.Input( HoverText ) )
+                    button.Tag = HoverText;
+                    var tip = new ToolTip( button );
+                    ToolTip = tip;
+                }
+                else
+                {
+                    if( !string.IsNullOrEmpty( Tag?.ToString() ) )
                     {
-                        var text = textbox?.HoverText;
-                        var _ = new ToolTip( this, text );
-                    }
-                    else
-                    {
-                        if( Verify.Input( Tag?.ToString() ) )
-                        {
-                            var _ = new ToolTip( this, Tag?.ToString()?.SplitPascal() );
-                        }
+                        var tool = new ToolTip( button );
+                        ToolTip = tool;
                     }
                 }
-                catch( Exception ex )
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Called when [mouse leave].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        public void OnMouseLeave( object sender, EventArgs e )
+        {
+            try
+            {
+                if( ToolTip?.Active == true )
                 {
-                    Fail( ex );
+                    ToolTip.RemoveAll();
+                    ToolTip = null;
                 }
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
             }
         }
 

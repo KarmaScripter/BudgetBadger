@@ -2,6 +2,8 @@
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
+using System.Windows.Forms;
+
 namespace BudgetExecution
 {
     // **************************************************************************************************************************
@@ -17,6 +19,7 @@ namespace BudgetExecution
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     [ SuppressMessage( "ReSharper", "UnusedType.Global" ) ]
     [ SuppressMessage( "ReSharper", "AutoPropertyCanBeMadeGetOnly.Global" ) ]
+    [ SuppressMessage( "ReSharper", "AssignNullToNotNullAttribute" ) ]
     public class BudgetBinding : BindingData, IBindingSource
     {
         // **************************************************************************************************************************
@@ -58,6 +61,17 @@ namespace BudgetExecution
             AllowNew = false;
         }
 
+        public BudgetBinding( BindingSource bindingsource )
+        {
+            DataTable = (DataTable)bindingsource.DataSource;
+            DataSet = DataTable?.DataSet;
+            Source = (Source)Enum.Parse( typeof( Source ), DataTable?.TableName );
+            DataSource = DataTable;
+            Record = (DataRow)Current;
+            Index = Position;
+            AllowNew = false;
+        }
+
         // **************************************************************************************************************************
         // ********************************************      METHODS    *************************************************************
         // **************************************************************************************************************************
@@ -74,6 +88,11 @@ namespace BudgetExecution
             {
                 try
                 {
+                    if( DataFilter?.Count > 0 )
+                    {
+                        DataFilter.Clear();
+                    }
+
                     var datafilter = new Dictionary<string, object>
                     {
                         {

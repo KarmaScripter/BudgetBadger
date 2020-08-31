@@ -70,6 +70,7 @@
             this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.BackPanel.ToolTip = null;
             // 
             // Calculator
             // 
@@ -103,6 +104,7 @@
             this.Calculator.Size = new System.Drawing.Size(284, 294);
             this.Calculator.TabIndex = 0;
             this.Calculator.Text = "calculationPanel1";
+            this.Calculator.ToolTip = null;
             this.Calculator.UseVerticalAndHorizontalSpacing = true;
             this.Calculator.UseVisualStyle = true;
             this.Calculator.VerticalSpacing = 5;
@@ -114,8 +116,8 @@
             this.Label.DataFilter = null;
             this.Label.Dock = System.Windows.Forms.DockStyle.Top;
             this.Label.Field = BudgetExecution.Field.NS;
-            this.Label.Font = new System.Drawing.Font("Roboto", 8F);
-            this.Label.ForeColor = System.Drawing.Color.LightGray;
+            this.Label.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label.ForeColor = System.Drawing.Color.White;
             this.Label.Location = new System.Drawing.Point(0, 0);
             this.Label.Margin = new System.Windows.Forms.Padding(5);
             this.Label.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
@@ -133,7 +135,7 @@
             this.Label.ShadowOpacity = 100;
             this.Label.Size = new System.Drawing.Size(284, 43);
             this.Label.TabIndex = 1;
-            this.Label.Text = "labelPanel1";
+            this.Label.Text = "0.0";
             this.Label.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
@@ -143,6 +145,7 @@
             this.Label.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.Label.ToolTip = null;
             // 
             // CalculationControl
             // 
@@ -163,7 +166,7 @@
         #endregion
 
         public LayoutPanel BackPanel;
-        private CalculationPanel Calculator;
+        public CalculationPanel Calculator;
         public LabelPanel Label;
     }
 }

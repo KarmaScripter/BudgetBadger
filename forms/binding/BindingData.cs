@@ -53,7 +53,8 @@ namespace BudgetExecution
         /// Sets the binding source.
         /// </summary>
         /// <param name="bindingsource">The bindingsource.</param>
-        public void SetDataSource<T>( T bindingsource ) where T : IBindingList
+        public void SetDataSource<T>( T bindingsource )
+            where T : IBindingList
         {
             try
             {
@@ -62,7 +63,7 @@ namespace BudgetExecution
                 {
                     try
                     {
-                        DataSource = binder.DataSource;
+                        DataSource = binder?.DataSource;
                     }
                     catch( Exception ex )
                     {

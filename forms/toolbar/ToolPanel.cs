@@ -2,8 +2,6 @@
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
-using System.Collections.Generic;
-
 namespace BudgetExecution
 {
     // ******************************************************************************************************************************
@@ -14,6 +12,7 @@ namespace BudgetExecution
     using System.Drawing;
     using System.Windows.Forms;
     using Syncfusion.Windows.Forms.Tools;
+    using System.Collections.Generic;
 
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     [ SuppressMessage( "ReSharper", "UnusedParameter.Global" ) ]

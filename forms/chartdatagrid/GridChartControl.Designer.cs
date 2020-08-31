@@ -40,13 +40,11 @@ namespace BudgetExecution
             this.BackPanel = new BudgetExecution.LayoutPanel();
             this.Table = new System.Windows.Forms.TableLayoutPanel();
             this.DataGrid = new BudgetExecution.BudgetGridPanel();
-            this.DataBinding = new System.Windows.Forms.BindingSource(this.components);
-            this.Chart = new BudgetExecution.BudgetChartPanel();
-            this.ToolControl = new BudgetExecution.ToolBarControl();
+            this.DataChart = new BudgetExecution.BudgetChartPanel();
+            this.ToolBarControl = new BudgetExecution.ToolBarControl();
             this.BackPanel.SuspendLayout();
             this.Table.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataBinding)).BeginInit();
             this.SuspendLayout();
             // 
             // BackPanel
@@ -64,7 +62,7 @@ namespace BudgetExecution
             this.BackPanel.Border.Visible = true;
             this.BackPanel.Children = null;
             this.BackPanel.Controls.Add(this.Table);
-            this.BackPanel.Controls.Add(this.ToolControl);
+            this.BackPanel.Controls.Add(this.ToolBarControl);
             this.BackPanel.DataFilter = null;
             this.BackPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BackPanel.Field = BudgetExecution.Field.NS;
@@ -73,7 +71,7 @@ namespace BudgetExecution
             this.BackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.BackPanel.Name = "BackPanel";
             this.BackPanel.Padding = new System.Windows.Forms.Padding(1);
-            this.BackPanel.Size = new System.Drawing.Size(1294, 598);
+            this.BackPanel.Size = new System.Drawing.Size(1105, 499);
             this.BackPanel.TabIndex = 2;
             this.BackPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.BackPanel.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -82,6 +80,7 @@ namespace BudgetExecution
             this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.BackPanel.ToolTip = null;
             // 
             // Table
             // 
@@ -91,13 +90,13 @@ namespace BudgetExecution
             this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.Table.Controls.Add(this.DataGrid, 0, 0);
-            this.Table.Controls.Add(this.Chart, 1, 0);
+            this.Table.Controls.Add(this.DataChart, 1, 0);
             this.Table.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Table.Location = new System.Drawing.Point(0, 0);
             this.Table.Name = "Table";
             this.Table.RowCount = 1;
             this.Table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.Table.Size = new System.Drawing.Size(1294, 565);
+            this.Table.Size = new System.Drawing.Size(1105, 447);
             this.Table.TabIndex = 0;
             // 
             // DataGrid
@@ -105,7 +104,7 @@ namespace BudgetExecution
             this.DataGrid.AllowDragSelectedCols = true;
             this.DataGrid.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.DataGrid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.DataGrid.BindingSource = this.DataBinding;
+            this.DataGrid.BindingSource = null;
             this.DataGrid.Current = null;
             this.DataGrid.DataFilter = null;
             this.DataGrid.DefaultRowHeight = 22;
@@ -125,7 +124,7 @@ namespace BudgetExecution
             this.DataGrid.Properties.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.DataGrid.Properties.GridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.DataGrid.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus;
-            this.DataGrid.Size = new System.Drawing.Size(645, 563);
+            this.DataGrid.Size = new System.Drawing.Size(551, 445);
             this.DataGrid.SmartSizeBox = false;
             this.DataGrid.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick;
             this.DataGrid.TabIndex = 0;
@@ -146,82 +145,86 @@ namespace BudgetExecution
             this.DataGrid.UseListChangedEvent = true;
             this.DataGrid.UseRightToLeftCompatibleTextBox = true;
             // 
-            // Chart
+            // DataChart
             // 
-            this.Chart.AllowGradientPalette = true;
-            this.Chart.AllowUserEditStyles = true;
-            this.Chart.AutoHighlight = true;
-            this.Chart.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
-            this.Chart.BindingSource = this.DataBinding;
-            this.Chart.ChartArea.AutoScale = true;
-            this.Chart.ChartArea.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
-            this.Chart.ChartArea.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Chart.ChartArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Chart.ChartArea.CursorLocation = new System.Drawing.Point(0, 0);
-            this.Chart.ChartArea.CursorReDraw = false;
-            this.Chart.ChartAreaMargins = new Syncfusion.Windows.Forms.Chart.ChartMargins(3, 3, 3, 3);
-            this.Chart.ChartInterior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, System.Drawing.Color.LightGray, System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
-            this.Chart.DataSourceName = "[none]";
-            this.Chart.Depth = 250F;
-            this.Chart.DisplayChartContextMenu = false;
-            this.Chart.DisplaySeriesContextMenu = false;
-            this.Chart.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Chart.EnableMouseRotation = true;
-            this.Chart.IsWindowLess = false;
-            // 
-            // 
-            // 
-            this.Chart.Legend.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
-            this.Chart.Legend.Font = new System.Drawing.Font("Roboto", 8F);
-            this.Chart.Legend.ItemsAlignment = System.Drawing.StringAlignment.Center;
-            this.Chart.Legend.ItemsSize = new System.Drawing.Size(12, 12);
-            this.Chart.Legend.Location = new System.Drawing.Point(535, 64);
-            this.Chart.Legend.ShowItemsShadow = true;
-            this.Chart.Legend.ShowSymbol = true;
-            this.Chart.Legend.VisibleCheckBox = true;
-            this.Chart.Localize = null;
-            this.Chart.Location = new System.Drawing.Point(650, 4);
-            this.Chart.Name = "Chart";
-            this.Chart.Padding = new System.Windows.Forms.Padding(1);
-            this.Chart.Palette = Syncfusion.Windows.Forms.Chart.ChartColorPalette.Metro;
-            this.Chart.PrimaryXAxis.LogLabelsDisplayMode = Syncfusion.Windows.Forms.Chart.LogLabelsDisplayMode.Default;
-            this.Chart.PrimaryXAxis.Margin = true;
-            this.Chart.PrimaryYAxis.LogLabelsDisplayMode = Syncfusion.Windows.Forms.Chart.LogLabelsDisplayMode.Default;
-            this.Chart.PrimaryYAxis.Margin = true;
-            this.Chart.RealMode3D = true;
-            this.Chart.Rotation = 0.1F;
-            this.Chart.Series3D = true;
-            this.Chart.SeriesHighlight = true;
-            this.Chart.ShadowColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))), System.Drawing.Color.Silver);
-            this.Chart.ShowScrollBars = false;
-            this.Chart.Size = new System.Drawing.Size(640, 557);
-            this.Chart.Spacing = 5F;
-            this.Chart.SpacingBetweenPoints = 5F;
-            this.Chart.Style3D = true;
-            this.Chart.TabIndex = 1;
-            this.Chart.Text = "Title";
-            this.Chart.Tilt = 5F;
+            this.DataChart.AllowGradientPalette = true;
+            this.DataChart.AllowUserEditStyles = true;
+            this.DataChart.AutoHighlight = true;
+            this.DataChart.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
+            this.DataChart.BindingSource = null;
+            this.DataChart.ChartArea.AutoScale = true;
+            this.DataChart.ChartArea.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
+            this.DataChart.ChartArea.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.DataChart.ChartArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DataChart.ChartArea.CursorLocation = new System.Drawing.Point(0, 0);
+            this.DataChart.ChartArea.CursorReDraw = false;
+            this.DataChart.ChartAreaMargins = new Syncfusion.Windows.Forms.Chart.ChartMargins(3, 3, 3, 3);
+            this.DataChart.ChartInterior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, System.Drawing.Color.LightGray, System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
+            this.DataChart.DataSourceName = "[none]";
+            this.DataChart.Depth = 250F;
+            this.DataChart.DisplayChartContextMenu = false;
+            this.DataChart.DisplaySeriesContextMenu = false;
+            this.DataChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataChart.EnableMouseRotation = true;
+            this.DataChart.IsWindowLess = false;
             // 
             // 
             // 
-            this.Chart.Title.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Chart.Title.Name = "Default";
-            this.Chart.Titles.Add(this.Chart.Title);
+            this.DataChart.Legend.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
+            this.DataChart.Legend.Font = new System.Drawing.Font("Roboto", 8F);
+            this.DataChart.Legend.ItemsAlignment = System.Drawing.StringAlignment.Center;
+            this.DataChart.Legend.ItemsSize = new System.Drawing.Size(12, 12);
+            this.DataChart.Legend.Location = new System.Drawing.Point(440, 64);
+            this.DataChart.Legend.ShowItemsShadow = true;
+            this.DataChart.Legend.ShowSymbol = true;
+            this.DataChart.Legend.VisibleCheckBox = true;
+            this.DataChart.Localize = null;
+            this.DataChart.Location = new System.Drawing.Point(556, 4);
+            this.DataChart.Name = "DataChart";
+            this.DataChart.Padding = new System.Windows.Forms.Padding(1);
+            this.DataChart.Palette = Syncfusion.Windows.Forms.Chart.ChartColorPalette.Metro;
+            this.DataChart.PrimaryXAxis.LogLabelsDisplayMode = Syncfusion.Windows.Forms.Chart.LogLabelsDisplayMode.Default;
+            this.DataChart.PrimaryXAxis.Margin = true;
+            this.DataChart.PrimaryYAxis.LogLabelsDisplayMode = Syncfusion.Windows.Forms.Chart.LogLabelsDisplayMode.Default;
+            this.DataChart.PrimaryYAxis.Margin = true;
+            this.DataChart.RealMode3D = true;
+            this.DataChart.Rotation = 0.1F;
+            this.DataChart.Series3D = true;
+            this.DataChart.SeriesHighlight = true;
+            this.DataChart.ShadowColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))), System.Drawing.Color.Silver);
+            this.DataChart.ShowScrollBars = false;
+            this.DataChart.Size = new System.Drawing.Size(545, 439);
+            this.DataChart.Spacing = 5F;
+            this.DataChart.SpacingBetweenPoints = 5F;
+            this.DataChart.Style3D = true;
+            this.DataChart.TabIndex = 1;
+            this.DataChart.Text = "Title";
+            this.DataChart.Tilt = 5F;
             // 
-            // ToolControl
             // 
-            this.ToolControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ToolControl.ToolBar.BindingSource = this.DataBinding;
-            this.ToolControl.ToolBar.DataFilter = null;
-            this.ToolControl.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ToolControl.ToolBar.Field = BudgetExecution.Field.NS;
-            this.ToolControl.Font = new System.Drawing.Font("Roboto", 8F);
-            this.ToolControl.ForeColor = System.Drawing.Color.Black;
-            this.ToolControl.Location = new System.Drawing.Point(0, 565);
-            this.ToolControl.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.ToolControl.Name = "ToolControl";
-            this.ToolControl.Size = new System.Drawing.Size(1294, 33);
-            this.ToolControl.TabIndex = 1;
+            // 
+            this.DataChart.Title.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DataChart.Title.Name = "Default";
+            this.DataChart.Titles.Add(this.DataChart.Title);
+            // 
+            // ToolBarControl
+            // 
+            this.ToolBarControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.ToolBarControl.BindingSource = null;
+            this.ToolBarControl.DataFilter = null;
+            this.ToolBarControl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ToolBarControl.Field = BudgetExecution.Field.NS;
+            this.ToolBarControl.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToolBarControl.ForeColor = System.Drawing.Color.LightGray;
+            this.ToolBarControl.HoverText = null;
+            this.ToolBarControl.Location = new System.Drawing.Point(0, 447);
+            this.ToolBarControl.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
+            this.ToolBarControl.Name = "ToolBarControl";
+            this.ToolBarControl.Numeric = BudgetExecution.Numeric.NS;
+            this.ToolBarControl.Padding = new System.Windows.Forms.Padding(1, 1, 1, 0);
+            this.ToolBarControl.Size = new System.Drawing.Size(1105, 52);
+            this.ToolBarControl.TabIndex = 1;
+            this.ToolBarControl.ToolButtons = null;
             // 
             // ChartDataGrid
             // 
@@ -231,11 +234,10 @@ namespace BudgetExecution
             this.MaximumSize = new System.Drawing.Size(1900, 1060);
             this.MinimumSize = new System.Drawing.Size(1000, 400);
             this.Name = "ChartDataGrid";
-            this.Size = new System.Drawing.Size(1296, 600);
+            this.Size = new System.Drawing.Size(1107, 501);
             this.BackPanel.ResumeLayout(false);
             this.Table.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataBinding)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -248,11 +250,8 @@ namespace BudgetExecution
 
         public BudgetGridPanel DataGrid;
 
-        public BudgetChartPanel Chart;
-
-        private BindingSource DataBinding;
-
-        public ToolBarControl ToolControl;
+        public BudgetChartPanel DataChart;
+        public ToolBarControl ToolBarControl;
     }
     
 }

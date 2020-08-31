@@ -90,8 +90,13 @@
     <Reference Include="Syncfusion.Chart.Windows">
       <HintPath>lib\Syncfusion.Chart.Windows.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.Compression.Base, Version=15.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Grid.Windows">
       <HintPath>lib\Syncfusion.Grid.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base, Version=15.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Syncfusion.Pdf.Base.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.PdfViewer.Windows">
       <HintPath>lib\Syncfusion.PdfViewer.Windows.dll</HintPath>
@@ -127,6 +132,8 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="VisualPlus">
@@ -214,11 +221,11 @@
     <Compile Include="forms\calendar\CalendarPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\chartdatagrid\ChartDataGrid.cs">
+    <Compile Include="forms\chartdatagrid\GridChartControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\chartdatagrid\ChartDataGrid.Designer.cs">
-      <DependentUpon>ChartDataGrid.cs</DependentUpon>
+    <Compile Include="forms\chartdatagrid\GridChartControl.Designer.cs">
+      <DependentUpon>GridChartControl.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\clock\ClockPanel.cs">
       <SubType>Component</SubType>
@@ -244,6 +251,12 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="forms\control\IDataControl.cs" />
+    <Compile Include="forms\dialog\browser\FileBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\dialog\browser\FileBrowser.Designer.cs">
+      <DependentUpon>FileBrowser.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\dialog\calculator\CalculatorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,12 +286,6 @@
     </Compile>
     <Compile Include="forms\dialog\message\Message.Designer.cs">
       <DependentUpon>Message.cs</DependentUpon>
-    </Compile>
-    <Compile Include="forms\dialog\pdf\PdfBrowser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="forms\dialog\pdf\PdfBrowser.Designer.cs">
-      <DependentUpon>PdfBrowser.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\dropmenu\DropMenuPanel.cs">
       <SubType>Component</SubType>
@@ -390,11 +397,11 @@
     <Compile Include="forms\notification\SplashConfig.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\pdf\PdfDocument.cs">
+    <Compile Include="forms\pdf\PdfForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\pdf\PdfDocument.Designer.cs">
-      <DependentUpon>PdfDocument.cs</DependentUpon>
+    <Compile Include="forms\pdf\PdfForm.Designer.cs">
+      <DependentUpon>PdfForm.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\pdf\PdfPanel.cs">
       <SubType>Component</SubType>
@@ -510,6 +517,7 @@
     <Compile Include="forms\toolbar\BarLabelBase.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="forms\toolbar\IBarButton.cs" />
     <Compile Include="forms\toolbar\IBarComboBox.cs" />
     <Compile Include="forms\toolbar\IBarLabel.cs" />
     <Compile Include="forms\toolbar\IBarTextBox.cs" />
@@ -567,11 +575,14 @@
     <EmbeddedResource Include="forms\calendar\CalendarForm.resx">
       <DependentUpon>CalendarForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\chartdatagrid\ChartDataGrid.resx">
-      <DependentUpon>ChartDataGrid.cs</DependentUpon>
+    <EmbeddedResource Include="forms\chartdatagrid\GridChartControl.resx">
+      <DependentUpon>GridChartControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\control\ControlBase.resx">
       <DependentUpon>ControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\dialog\browser\FileBrowser.resx">
+      <DependentUpon>FileBrowser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\dialog\calculator\CalculatorForm.resx">
       <DependentUpon>CalculatorForm.cs</DependentUpon>
@@ -587,9 +598,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\dialog\message\Message.resx">
       <DependentUpon>Message.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\dialog\pdf\PdfBrowser.resx">
-      <DependentUpon>PdfBrowser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\editor\DataEditor.resx">
       <DependentUpon>DataEditor.cs</DependentUpon>
@@ -612,8 +620,8 @@
     <EmbeddedResource Include="forms\main\BadgerMain.resx">
       <DependentUpon>BadgerMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\pdf\PdfDocument.resx">
-      <DependentUpon>PdfDocument.cs</DependentUpon>
+    <EmbeddedResource Include="forms\pdf\PdfForm.resx">
+      <DependentUpon>PdfForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\record\RecordControl.resx">
       <DependentUpon>RecordControl.cs</DependentUpon>

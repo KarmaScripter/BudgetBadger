@@ -25,6 +25,9 @@ namespace BudgetExecution
         /// </summary>
         public static readonly string ImagePath = Resource.ToolBar;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ToolPanelBase"/> class.
+        /// </summary>
         public ToolPanelBase()
         {
         }

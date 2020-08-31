@@ -17,12 +17,15 @@ namespace BudgetExecution
     [ SuppressMessage( "ReSharper", "ClassNeverInstantiated.Global" ) ]
     [ SuppressMessage( "ReSharper", "UsePatternMatching" ) ]
     [ Serializable ]
-    public class BarButton : BarButtonBase
+    public class BarButton : BarButtonBase, IBarButton
     {
         // ***************************************************************************************************************************
         // ******************************************************  CONSTRUCTORS  *****************************************************
         // ***************************************************************************************************************************
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BarButton"/> class.
+        /// </summary>
         public BarButton()
         {
             Margin = new Padding( 5, 5, 5, 5 );
@@ -70,6 +73,12 @@ namespace BudgetExecution
         /// <value> The binding source. </value>
         public BindingSource BindingSource { get; set; }
 
+        /// <summary>
+        /// Gets or sets the tool tip.
+        /// </summary>
+        /// <value>
+        /// The tool tip.
+        /// </value>
         public ToolTip ToolTip { get; set; }
 
         // ***************************************************************************************************************************
@@ -133,6 +142,11 @@ namespace BudgetExecution
             }
         }
 
+        /// <summary>
+        /// Called when [mouse leave].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         public void OnMouseLeave( object sender, EventArgs e )
         {
             try
@@ -194,14 +208,14 @@ namespace BudgetExecution
 
                         case Tool.ExcelButton:
                         {
-                            using var message = new Message( "NOT YET IMPLEMENTED!" );
+                            using var message = new ExcelForm();
                             message?.ShowDialog();
                             break;
                         }
 
                         case Tool.PdfButton:
                         {
-                            using var message = new Message( "NOT YET IMPLEMENTED!" );
+                            using var message = new FileBrowser();
                             message?.ShowDialog();
                             break;
                         }
@@ -255,9 +269,30 @@ namespace BudgetExecution
                             break;
                         }
 
+                        case Tool.UpdateButton:
+                        {
+                            using var message = new Message( "NOT YET IMPLEMENTED!" );
+                            message?.ShowDialog();
+                            break;
+                        }
+
                         case Tool.InsertButton:
                         {
                             using var message = new Message( "NOT YET IMPLEMENTED!" );
+                            message?.ShowDialog();
+                            break;
+                        }
+
+                        case Tool.CalculatorButton:
+                        {
+                            using var message = new CalculatorForm();
+                            message?.ShowDialog();
+                            break;
+                        }
+
+                        case Tool.BrowseButton:
+                        {
+                            using var message = new FileBrowser();
                             message?.ShowDialog();
                             break;
                         }

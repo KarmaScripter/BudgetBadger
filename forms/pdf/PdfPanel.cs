@@ -38,6 +38,7 @@ namespace BudgetExecution
             ShowToolBar = true;
             ShowHorizontalScrollBar = true;
             ShowVerticalScrollBar = true;
+            PdfFileName = DefaultFile;
         }
 
         /// <summary>
@@ -56,6 +57,9 @@ namespace BudgetExecution
         // ***************************************************************************************************************************
         // ******************************************************   PROPERTIES   *****************************************************
         // ***************************************************************************************************************************
+
+        private string DefaultFile { get; } =
+            @"C:\Users\Daddy\source\repos\Badger\guidance\FundsControlManual.pdf";
 
         /// <summary>
         /// Gets or sets the tool tip.

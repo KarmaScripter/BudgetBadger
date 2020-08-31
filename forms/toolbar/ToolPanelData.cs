@@ -2,14 +2,13 @@
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
-using System;
-
 namespace BudgetExecution
 {
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Linq;
     using System.Windows.Forms;
+    using System;
     using Syncfusion.Windows.Forms.Tools;
 
     // ********************************************************************************************************************************
@@ -22,6 +21,9 @@ namespace BudgetExecution
         // *********************************************   CONSTRUCTORS **************************************************************
         // ***************************************************************************************************************************
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ToolPanelData"/> class.
+        /// </summary>
         public ToolPanelData()
         {
         }

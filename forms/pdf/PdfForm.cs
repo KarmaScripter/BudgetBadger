@@ -10,13 +10,13 @@ namespace BudgetExecution
 
     using Syncfusion.Windows.Forms;
 
-    public partial class PdfDocument : MetroForm
+    public partial class PdfForm : MetroForm
     {
         // ***************************************************************************************************************************
         // ****************************************************  CONSTRUCTORS ********************************************************
         // ***************************************************************************************************************************
 
-        public PdfDocument()
+        public PdfForm()
         {
             InitializeComponent();
         }

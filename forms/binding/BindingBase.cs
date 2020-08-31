@@ -14,6 +14,10 @@ namespace BudgetExecution
     using System.Linq;
     using System.Windows.Forms;
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="System.Windows.Forms.BindingSource" />
     public class BindingBase : BindingSource
     {
         // **************************************************************************************************************************
@@ -91,7 +95,7 @@ namespace BudgetExecution
             {
                 return Verify.Source( Source )
                     ? Source
-                    : default;
+                    : Source.NS;
             }
             catch( Exception ex )
             {
@@ -111,12 +115,12 @@ namespace BudgetExecution
             {
                 return Verify.Field( Field )
                     ? Field
-                    : default;
+                    : Field.NS;
             }
             catch( Exception ex )
             {
                 Fail( ex );
-                return default;
+                return Field.NS;
             }
         }
 
