@@ -37,9 +37,9 @@ namespace BudgetExecution
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetCopyPaste spreadsheetCopyPaste1 = new Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetCopyPaste();
-            Syncfusion.Windows.Forms.Spreadsheet.FormulaRangeSelectionController formulaRangeSelectionController1 = new Syncfusion.Windows.Forms.Spreadsheet.FormulaRangeSelectionController();
-            Syncfusion.Windows.Forms.Tools.Office2016ColorTable office2016ColorTable1 = new Syncfusion.Windows.Forms.Tools.Office2016ColorTable();
+            Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetCopyPaste spreadsheetCopyPaste2 = new Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetCopyPaste();
+            Syncfusion.Windows.Forms.Spreadsheet.FormulaRangeSelectionController formulaRangeSelectionController2 = new Syncfusion.Windows.Forms.Spreadsheet.FormulaRangeSelectionController();
+            Syncfusion.Windows.Forms.Tools.Office2016ColorTable office2016ColorTable2 = new Syncfusion.Windows.Forms.Tools.Office2016ColorTable();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExcelForm));
             this.BackPanel = new BudgetExecution.LayoutPanel();
             this.Sheet = new BudgetExecution.SheetPanel();
@@ -49,6 +49,8 @@ namespace BudgetExecution
             this.CloseBox = new BudgetExecution.ClosePanel();
             this.labelPanel1 = new BudgetExecution.LabelPanel();
             this.PictureBox = new BudgetExecution.PicturePanel();
+            this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
+            this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.BackPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ribbon)).BeginInit();
@@ -80,7 +82,7 @@ namespace BudgetExecution
             this.BackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Hover;
             this.BackPanel.Name = "BackPanel";
             this.BackPanel.Padding = new System.Windows.Forms.Padding(1);
-            this.BackPanel.Size = new System.Drawing.Size(1059, 876);
+            this.BackPanel.Size = new System.Drawing.Size(1059, 852);
             this.BackPanel.TabIndex = 0;
             this.BackPanel.Text = "layoutPanel1";
             this.BackPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
@@ -102,20 +104,20 @@ namespace BudgetExecution
             this.Sheet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.Sheet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Sheet.BindingSource = this.BudgetBinding;
-            spreadsheetCopyPaste1.AllowPasteOptionPopup = true;
-            spreadsheetCopyPaste1.DefaultPasteOption = Syncfusion.Windows.Forms.Spreadsheet.PasteOptions.Paste;
-            this.Sheet.CopyPaste = spreadsheetCopyPaste1;
+            spreadsheetCopyPaste2.AllowPasteOptionPopup = true;
+            spreadsheetCopyPaste2.DefaultPasteOption = Syncfusion.Windows.Forms.Spreadsheet.PasteOptions.Paste;
+            this.Sheet.CopyPaste = spreadsheetCopyPaste2;
             this.Sheet.DefaultColumnCount = 26;
             this.Sheet.DefaultRowCount = 66;
             this.Sheet.DisplayAlerts = true;
             this.Sheet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Sheet.FileName = "Book1";
+            this.Sheet.FileName = "Book2";
             this.Sheet.Font = new System.Drawing.Font("Roboto", 8F);
             this.Sheet.ForeColor = System.Drawing.Color.Black;
             this.Sheet.FormulaBarVisibility = true;
-            formulaRangeSelectionController1.AllowMouseSelection = true;
-            formulaRangeSelectionController1.AllowSelectionOnEditing = true;
-            this.Sheet.FormulaRangeSelectionController = formulaRangeSelectionController1;
+            formulaRangeSelectionController2.AllowMouseSelection = true;
+            formulaRangeSelectionController2.AllowSelectionOnEditing = true;
+            this.Sheet.FormulaRangeSelectionController = formulaRangeSelectionController2;
             this.Sheet.Grid = null;
             this.Sheet.IsCustomTabItemContextMenuEnabled = false;
             this.Sheet.Location = new System.Drawing.Point(0, 162);
@@ -125,7 +127,7 @@ namespace BudgetExecution
             this.Sheet.SelectedTabIndex = 0;
             this.Sheet.SelectedTabItem = null;
             this.Sheet.ShowBusyIndicator = true;
-            this.Sheet.Size = new System.Drawing.Size(1059, 714);
+            this.Sheet.Size = new System.Drawing.Size(1059, 690);
             this.Sheet.TabIndex = 1;
             this.Sheet.TabItemContextMenu = null;
             this.Sheet.Text = "sheetPanel1";
@@ -141,7 +143,8 @@ namespace BudgetExecution
             this.Ribbon.AllowCollapse = false;
             this.Ribbon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.Ribbon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Ribbon.BindingSource = null;
+            this.Ribbon.BackStageNavigationButtonStyle = Syncfusion.Windows.Forms.Tools.BackStageNavigationButtonStyles.Office2013;
+            this.Ribbon.BindingSource = this.BudgetBinding;
             this.Ribbon.BorderStyle = Syncfusion.Windows.Forms.Tools.ToolStripBorderStyle.StaticEdge;
             this.Ribbon.CaptionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ribbon.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Top;
@@ -152,18 +155,19 @@ namespace BudgetExecution
             this.Ribbon.Location = new System.Drawing.Point(0, 0);
             this.Ribbon.MenuButtonFont = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ribbon.MenuButtonText = "FILE";
+            this.Ribbon.MenuButtonVisible = false;
             this.Ribbon.MenuColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Ribbon.Model = null;
             this.Ribbon.Name = "Ribbon";
             this.Ribbon.Office2013ColorScheme = Syncfusion.Windows.Forms.Tools.Office2013ColorScheme.DarkGray;
             this.Ribbon.Office2016ColorScheme = Syncfusion.Windows.Forms.Tools.Office2016ColorScheme.Black;
-            office2016ColorTable1.BackStageTitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            office2016ColorTable1.CaptionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            office2016ColorTable1.CaptionForeColor = System.Drawing.Color.LightGray;
-            office2016ColorTable1.GalleryItemHoveredTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            office2016ColorTable1.LauncherColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            office2016ColorTable1.ToolStripItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Ribbon.Office2016ColorTable.Add(office2016ColorTable1);
+            office2016ColorTable2.BackStageTitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            office2016ColorTable2.CaptionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            office2016ColorTable2.CaptionForeColor = System.Drawing.Color.LightGray;
+            office2016ColorTable2.GalleryItemHoveredTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            office2016ColorTable2.LauncherColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            office2016ColorTable2.ToolStripItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Ribbon.Office2016ColorTable.Add(office2016ColorTable2);
             this.Ribbon.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Black;
             // 
             // Ribbon.OfficeMenu
@@ -175,7 +179,8 @@ namespace BudgetExecution
             this.Ribbon.OfficeMenu.Size = new System.Drawing.Size(12, 65);
             this.Ribbon.Padding = new System.Windows.Forms.Padding(1);
             this.Ribbon.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Ribbon.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.Custom;
+            this.Ribbon.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
+            this.Ribbon.ShowPanelOnMouseHover = true;
             this.Ribbon.ShowQuickItemsDropDownButton = false;
             this.Ribbon.ShowRibbonDisplayOptionButton = false;
             this.Ribbon.Size = new System.Drawing.Size(1059, 162);
@@ -288,6 +293,34 @@ namespace BudgetExecution
             this.PictureBox.TabStop = false;
             this.PictureBox.ToolTip = null;
             // 
+            // toolStripTabItem1
+            // 
+            this.toolStripTabItem1.Name = "toolStripTabItem1";
+            // 
+            // 
+            // 
+            this.toolStripTabItem1.Panel.Name = "";
+            this.toolStripTabItem1.Panel.ScrollPosition = 0;
+            this.toolStripTabItem1.Panel.TabIndex = 5;
+            this.toolStripTabItem1.Panel.Text = "toolStripTabItem1";
+            this.toolStripTabItem1.Position = -1;
+            this.toolStripTabItem1.Size = new System.Drawing.Size(110, 20);
+            this.toolStripTabItem1.Text = "toolStripTabItem1";
+            // 
+            // toolStripTabItem2
+            // 
+            this.toolStripTabItem2.Name = "toolStripTabItem2";
+            // 
+            // 
+            // 
+            this.toolStripTabItem2.Panel.Name = "";
+            this.toolStripTabItem2.Panel.ScrollPosition = 0;
+            this.toolStripTabItem2.Panel.TabIndex = 5;
+            this.toolStripTabItem2.Panel.Text = "toolStripTabItem2";
+            this.toolStripTabItem2.Position = -1;
+            this.toolStripTabItem2.Size = new System.Drawing.Size(110, 20);
+            this.toolStripTabItem2.Text = "toolStripTabItem2";
+            // 
             // ExcelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -299,7 +332,7 @@ namespace BudgetExecution
             this.CaptionButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CaptionButtonHoverColor = System.Drawing.Color.Red;
             this.CaptionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ClientSize = new System.Drawing.Size(1061, 908);
+            this.ClientSize = new System.Drawing.Size(1061, 884);
             this.ControlBox = false;
             this.Controls.Add(this.BackPanel);
             this.Controls.Add(this.Table);
@@ -335,5 +368,7 @@ namespace BudgetExecution
         public LabelPanel labelPanel1;
         public PicturePanel PictureBox;
         private BudgetBinding BudgetBinding;
+        private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem1;
+        private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem2;
     }
 }

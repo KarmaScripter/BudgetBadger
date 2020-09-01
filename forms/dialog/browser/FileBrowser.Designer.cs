@@ -82,7 +82,7 @@ namespace BudgetExecution
             this.visualLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.visualLabel1.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.visualLabel1.ForeColor = System.Drawing.Color.White;
-            this.visualLabel1.Location = new System.Drawing.Point(102, 3);
+            this.visualLabel1.Location = new System.Drawing.Point(105, 3);
             this.visualLabel1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualLabel1.Name = "visualLabel1";
             this.visualLabel1.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -95,7 +95,7 @@ namespace BudgetExecution
             this.visualLabel1.ShadowDirection = 315;
             this.visualLabel1.ShadowLocation = new System.Drawing.Point(0, 0);
             this.visualLabel1.ShadowOpacity = 100;
-            this.visualLabel1.Size = new System.Drawing.Size(441, 27);
+            this.visualLabel1.Size = new System.Drawing.Size(456, 27);
             this.visualLabel1.TabIndex = 0;
             this.visualLabel1.Text = "Label";
             this.visualLabel1.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -119,11 +119,11 @@ namespace BudgetExecution
             this.tableLayoutPanel2.Controls.Add(this.visualButton3, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel2.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 378);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 418);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(662, 98);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(680, 98);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // visualButton1
@@ -144,11 +144,11 @@ namespace BudgetExecution
             this.visualButton1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.visualButton1.ForeColor = System.Drawing.Color.LightGray;
             this.visualButton1.Image = null;
-            this.visualButton1.Location = new System.Drawing.Point(336, 5);
+            this.visualButton1.Location = new System.Drawing.Point(345, 5);
             this.visualButton1.Margin = new System.Windows.Forms.Padding(5);
             this.visualButton1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualButton1.Name = "visualButton1";
-            this.visualButton1.Size = new System.Drawing.Size(321, 88);
+            this.visualButton1.Size = new System.Drawing.Size(330, 88);
             this.visualButton1.TabIndex = 0;
             this.visualButton1.Text = "Cancel";
             this.visualButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
@@ -182,7 +182,7 @@ namespace BudgetExecution
             this.visualButton3.Margin = new System.Windows.Forms.Padding(5);
             this.visualButton3.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualButton3.Name = "visualButton3";
-            this.visualButton3.Size = new System.Drawing.Size(321, 88);
+            this.visualButton3.Size = new System.Drawing.Size(330, 88);
             this.visualButton3.TabIndex = 2;
             this.visualButton3.Text = "Open";
             this.visualButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
@@ -213,7 +213,7 @@ namespace BudgetExecution
             this.Table.Padding = new System.Windows.Forms.Padding(1);
             this.Table.RowCount = 1;
             this.Table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.Table.Size = new System.Drawing.Size(660, 278);
+            this.Table.Size = new System.Drawing.Size(678, 318);
             this.Table.TabIndex = 5;
             // 
             // visualRichTextBox1
@@ -229,7 +229,7 @@ namespace BudgetExecution
             this.visualRichTextBox1.Border.Visible = true;
             this.visualRichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.visualRichTextBox1.ForeColor = System.Drawing.Color.LightGray;
-            this.visualRichTextBox1.Location = new System.Drawing.Point(101, 6);
+            this.visualRichTextBox1.Location = new System.Drawing.Point(103, 6);
             this.visualRichTextBox1.Margin = new System.Windows.Forms.Padding(5);
             this.visualRichTextBox1.MaxLength = 2147483647;
             this.visualRichTextBox1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
@@ -237,7 +237,7 @@ namespace BudgetExecution
             this.visualRichTextBox1.ReadOnly = false;
             this.visualRichTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
             this.visualRichTextBox1.ShowSelectionMargin = false;
-            this.visualRichTextBox1.Size = new System.Drawing.Size(442, 266);
+            this.visualRichTextBox1.Size = new System.Drawing.Size(455, 306);
             this.visualRichTextBox1.TabIndex = 0;
             this.visualRichTextBox1.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.visualRichTextBox1.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -262,7 +262,7 @@ namespace BudgetExecution
             this.Table3.Controls.Add(this.XlsxCheckBox, 0, 1);
             this.Table3.Controls.Add(this.XlsCheckBox, 0, 2);
             this.Table3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Table3.Location = new System.Drawing.Point(551, 4);
+            this.Table3.Location = new System.Drawing.Point(566, 4);
             this.Table3.Name = "Table3";
             this.Table3.RowCount = 10;
             this.Table3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -275,7 +275,7 @@ namespace BudgetExecution
             this.Table3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.Table3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.Table3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.Table3.Size = new System.Drawing.Size(105, 270);
+            this.Table3.Size = new System.Drawing.Size(108, 310);
             this.Table3.TabIndex = 2;
             // 
             // visualCheckBox6
@@ -307,11 +307,11 @@ namespace BudgetExecution
             this.visualCheckBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.visualCheckBox6.ForeColor = System.Drawing.Color.LightGray;
             this.visualCheckBox6.IsBoxLarger = false;
-            this.visualCheckBox6.Location = new System.Drawing.Point(5, 248);
+            this.visualCheckBox6.Location = new System.Drawing.Point(5, 284);
             this.visualCheckBox6.Margin = new System.Windows.Forms.Padding(5);
             this.visualCheckBox6.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualCheckBox6.Name = "visualCheckBox6";
-            this.visualCheckBox6.Size = new System.Drawing.Size(95, 17);
+            this.visualCheckBox6.Size = new System.Drawing.Size(98, 21);
             this.visualCheckBox6.TabIndex = 13;
             this.visualCheckBox6.Text = "SQL Compact ";
             this.visualCheckBox6.TextSize = new System.Drawing.Size(73, 15);
@@ -352,11 +352,11 @@ namespace BudgetExecution
             this.visualCheckBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.visualCheckBox5.ForeColor = System.Drawing.Color.LightGray;
             this.visualCheckBox5.IsBoxLarger = false;
-            this.visualCheckBox5.Location = new System.Drawing.Point(5, 221);
+            this.visualCheckBox5.Location = new System.Drawing.Point(5, 253);
             this.visualCheckBox5.Margin = new System.Windows.Forms.Padding(5);
             this.visualCheckBox5.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualCheckBox5.Name = "visualCheckBox5";
-            this.visualCheckBox5.Size = new System.Drawing.Size(95, 17);
+            this.visualCheckBox5.Size = new System.Drawing.Size(98, 21);
             this.visualCheckBox5.TabIndex = 12;
             this.visualCheckBox5.Text = "Power Point ";
             this.visualCheckBox5.TextSize = new System.Drawing.Size(65, 15);
@@ -397,11 +397,11 @@ namespace BudgetExecution
             this.visualCheckBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.visualCheckBox4.ForeColor = System.Drawing.Color.LightGray;
             this.visualCheckBox4.IsBoxLarger = false;
-            this.visualCheckBox4.Location = new System.Drawing.Point(5, 194);
+            this.visualCheckBox4.Location = new System.Drawing.Point(5, 222);
             this.visualCheckBox4.Margin = new System.Windows.Forms.Padding(5);
             this.visualCheckBox4.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualCheckBox4.Name = "visualCheckBox4";
-            this.visualCheckBox4.Size = new System.Drawing.Size(95, 17);
+            this.visualCheckBox4.Size = new System.Drawing.Size(98, 21);
             this.visualCheckBox4.TabIndex = 11;
             this.visualCheckBox4.Text = "Excel ";
             this.visualCheckBox4.TextSize = new System.Drawing.Size(30, 15);
@@ -442,11 +442,11 @@ namespace BudgetExecution
             this.visualCheckBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.visualCheckBox2.ForeColor = System.Drawing.Color.LightGray;
             this.visualCheckBox2.IsBoxLarger = false;
-            this.visualCheckBox2.Location = new System.Drawing.Point(5, 167);
+            this.visualCheckBox2.Location = new System.Drawing.Point(5, 191);
             this.visualCheckBox2.Margin = new System.Windows.Forms.Padding(5);
             this.visualCheckBox2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualCheckBox2.Name = "visualCheckBox2";
-            this.visualCheckBox2.Size = new System.Drawing.Size(95, 17);
+            this.visualCheckBox2.Size = new System.Drawing.Size(98, 21);
             this.visualCheckBox2.TabIndex = 10;
             this.visualCheckBox2.Text = "CSV ";
             this.visualCheckBox2.TextSize = new System.Drawing.Size(25, 15);
@@ -487,11 +487,11 @@ namespace BudgetExecution
             this.visualCheckBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.visualCheckBox3.ForeColor = System.Drawing.Color.LightGray;
             this.visualCheckBox3.IsBoxLarger = false;
-            this.visualCheckBox3.Location = new System.Drawing.Point(5, 140);
+            this.visualCheckBox3.Location = new System.Drawing.Point(5, 160);
             this.visualCheckBox3.Margin = new System.Windows.Forms.Padding(5);
             this.visualCheckBox3.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualCheckBox3.Name = "visualCheckBox3";
-            this.visualCheckBox3.Size = new System.Drawing.Size(95, 17);
+            this.visualCheckBox3.Size = new System.Drawing.Size(98, 21);
             this.visualCheckBox3.TabIndex = 9;
             this.visualCheckBox3.Text = "Access ";
             this.visualCheckBox3.TextSize = new System.Drawing.Size(41, 15);
@@ -532,11 +532,11 @@ namespace BudgetExecution
             this.visualCheckBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.visualCheckBox1.ForeColor = System.Drawing.Color.LightGray;
             this.visualCheckBox1.IsBoxLarger = false;
-            this.visualCheckBox1.Location = new System.Drawing.Point(5, 113);
+            this.visualCheckBox1.Location = new System.Drawing.Point(5, 129);
             this.visualCheckBox1.Margin = new System.Windows.Forms.Padding(5);
             this.visualCheckBox1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualCheckBox1.Name = "visualCheckBox1";
-            this.visualCheckBox1.Size = new System.Drawing.Size(95, 17);
+            this.visualCheckBox1.Size = new System.Drawing.Size(98, 21);
             this.visualCheckBox1.TabIndex = 6;
             this.visualCheckBox1.Text = "SQLite ";
             this.visualCheckBox1.TextSize = new System.Drawing.Size(37, 15);
@@ -577,11 +577,11 @@ namespace BudgetExecution
             this.CsvCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CsvCheckBox.ForeColor = System.Drawing.Color.LightGray;
             this.CsvCheckBox.IsBoxLarger = false;
-            this.CsvCheckBox.Location = new System.Drawing.Point(5, 86);
+            this.CsvCheckBox.Location = new System.Drawing.Point(5, 98);
             this.CsvCheckBox.Margin = new System.Windows.Forms.Padding(5);
             this.CsvCheckBox.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.CsvCheckBox.Name = "CsvCheckBox";
-            this.CsvCheckBox.Size = new System.Drawing.Size(95, 17);
+            this.CsvCheckBox.Size = new System.Drawing.Size(98, 21);
             this.CsvCheckBox.TabIndex = 4;
             this.CsvCheckBox.Text = "SQL  Server";
             this.CsvCheckBox.TextSize = new System.Drawing.Size(62, 15);
@@ -624,11 +624,11 @@ namespace BudgetExecution
             this.XlsxCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.XlsxCheckBox.ForeColor = System.Drawing.Color.LightGray;
             this.XlsxCheckBox.IsBoxLarger = false;
-            this.XlsxCheckBox.Location = new System.Drawing.Point(5, 32);
+            this.XlsxCheckBox.Location = new System.Drawing.Point(5, 36);
             this.XlsxCheckBox.Margin = new System.Windows.Forms.Padding(5);
             this.XlsxCheckBox.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.XlsxCheckBox.Name = "XlsxCheckBox";
-            this.XlsxCheckBox.Size = new System.Drawing.Size(95, 17);
+            this.XlsxCheckBox.Size = new System.Drawing.Size(98, 21);
             this.XlsxCheckBox.TabIndex = 3;
             this.XlsxCheckBox.Text = "Adobe ";
             this.XlsxCheckBox.TextSize = new System.Drawing.Size(36, 15);
@@ -669,11 +669,11 @@ namespace BudgetExecution
             this.XlsCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.XlsCheckBox.ForeColor = System.Drawing.Color.LightGray;
             this.XlsCheckBox.IsBoxLarger = false;
-            this.XlsCheckBox.Location = new System.Drawing.Point(5, 59);
+            this.XlsCheckBox.Location = new System.Drawing.Point(5, 67);
             this.XlsCheckBox.Margin = new System.Windows.Forms.Padding(5);
             this.XlsCheckBox.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.XlsCheckBox.Name = "XlsCheckBox";
-            this.XlsCheckBox.Size = new System.Drawing.Size(95, 17);
+            this.XlsCheckBox.Size = new System.Drawing.Size(98, 21);
             this.XlsCheckBox.TabIndex = 5;
             this.XlsCheckBox.Text = "Word";
             this.XlsCheckBox.TextSize = new System.Drawing.Size(30, 15);
@@ -701,7 +701,7 @@ namespace BudgetExecution
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(662, 33);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(680, 33);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // Dialog
@@ -721,7 +721,7 @@ namespace BudgetExecution
             this.visualSeparator1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.visualSeparator1.Shadow = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.visualSeparator1.ShadowVisible = false;
-            this.visualSeparator1.Size = new System.Drawing.Size(663, 4);
+            this.visualSeparator1.Size = new System.Drawing.Size(681, 4);
             this.visualSeparator1.TabIndex = 6;
             this.visualSeparator1.Text = "visualSeparator1";
             this.visualSeparator1.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
@@ -738,14 +738,14 @@ namespace BudgetExecution
             | System.Windows.Forms.AnchorStyles.Right)));
             this.visualSeparator2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.visualSeparator2.Line = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.visualSeparator2.Location = new System.Drawing.Point(0, 366);
+            this.visualSeparator2.Location = new System.Drawing.Point(0, 406);
             this.visualSeparator2.Margin = new System.Windows.Forms.Padding(5);
             this.visualSeparator2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualSeparator2.Name = "visualSeparator2";
             this.visualSeparator2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.visualSeparator2.Shadow = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.visualSeparator2.ShadowVisible = false;
-            this.visualSeparator2.Size = new System.Drawing.Size(659, 4);
+            this.visualSeparator2.Size = new System.Drawing.Size(677, 4);
             this.visualSeparator2.TabIndex = 7;
             this.visualSeparator2.Text = "visualSeparator2";
             this.visualSeparator2.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
@@ -765,7 +765,7 @@ namespace BudgetExecution
             this.SideLabel.Field = BudgetExecution.Field.NS;
             this.SideLabel.Font = new System.Drawing.Font("Roboto", 8F);
             this.SideLabel.ForeColor = System.Drawing.Color.LightGray;
-            this.SideLabel.Location = new System.Drawing.Point(3, 6);
+            this.SideLabel.Location = new System.Drawing.Point(3, 10);
             this.SideLabel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.SideLabel.Name = "SideLabel";
             this.SideLabel.Numeric = BudgetExecution.Numeric.NS;
@@ -779,7 +779,7 @@ namespace BudgetExecution
             this.SideLabel.ShadowDirection = 315;
             this.SideLabel.ShadowLocation = new System.Drawing.Point(0, 0);
             this.SideLabel.ShadowOpacity = 100;
-            this.SideLabel.Size = new System.Drawing.Size(99, 18);
+            this.SideLabel.Size = new System.Drawing.Size(102, 18);
             this.SideLabel.TabIndex = 2;
             this.SideLabel.Text = "Browse:";
             this.SideLabel.TextAlignment = System.Drawing.StringAlignment.Near;
@@ -802,7 +802,7 @@ namespace BudgetExecution
             this.closePanel1.DisabledForeColor = System.Drawing.Color.DimGray;
             this.closePanel1.Font = new System.Drawing.Font("Roboto", 8F);
             this.closePanel1.ForeColor = System.Drawing.Color.LightGray;
-            this.closePanel1.Location = new System.Drawing.Point(562, 0);
+            this.closePanel1.Location = new System.Drawing.Point(580, 0);
             this.closePanel1.Margin = new System.Windows.Forms.Padding(0);
             this.closePanel1.MaximizeBox = true;
             this.closePanel1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -858,7 +858,7 @@ namespace BudgetExecution
             captionImage1.Name = "PdfImage";
             captionImage1.Size = new System.Drawing.Size(25, 20);
             this.CaptionImages.Add(captionImage1);
-            this.ClientSize = new System.Drawing.Size(662, 476);
+            this.ClientSize = new System.Drawing.Size(680, 516);
             this.ControlBox = false;
             this.Controls.Add(this.visualSeparator1);
             this.Controls.Add(this.tableLayoutPanel1);
