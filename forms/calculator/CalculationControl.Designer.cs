@@ -60,7 +60,7 @@
             this.BackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.BackPanel.Name = "BackPanel";
             this.BackPanel.Padding = new System.Windows.Forms.Padding(5);
-            this.BackPanel.Size = new System.Drawing.Size(284, 337);
+            this.BackPanel.Size = new System.Drawing.Size(418, 323);
             this.BackPanel.TabIndex = 0;
             this.BackPanel.Text = "layoutPanel1";
             this.BackPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
@@ -78,7 +78,7 @@
             this.Calculator.AccessibleName = "Calculator Control";
             this.Calculator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.Calculator.BackgroundColor = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
-            this.Calculator.BeforeTouchSize = new System.Drawing.Size(284, 294);
+            this.Calculator.BeforeTouchSize = new System.Drawing.Size(418, 280);
             this.Calculator.BindingSource = null;
             this.Calculator.BorderStyle = System.Windows.Forms.Border3DStyle.Flat;
             this.Calculator.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
@@ -91,7 +91,6 @@
             this.Calculator.ForeColor = System.Drawing.Color.LightGray;
             this.Calculator.HorizontalSpacing = 5;
             this.Calculator.Label = null;
-            this.Calculator.LayoutType = Syncfusion.Windows.Forms.Tools.CalculatorLayoutTypes.Financial;
             this.Calculator.Location = new System.Drawing.Point(0, 43);
             this.Calculator.Margin = new System.Windows.Forms.Padding(5);
             this.Calculator.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -101,7 +100,7 @@
             this.Calculator.Result = null;
             this.Calculator.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Calculator.ShowDisplayArea = false;
-            this.Calculator.Size = new System.Drawing.Size(284, 294);
+            this.Calculator.Size = new System.Drawing.Size(418, 280);
             this.Calculator.TabIndex = 0;
             this.Calculator.Text = "calculationPanel1";
             this.Calculator.ToolTip = null;
@@ -133,7 +132,7 @@
             this.Label.ShadowDirection = 315;
             this.Label.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label.ShadowOpacity = 100;
-            this.Label.Size = new System.Drawing.Size(284, 43);
+            this.Label.Size = new System.Drawing.Size(418, 43);
             this.Label.TabIndex = 1;
             this.Label.Text = "0.0";
             this.Label.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -157,7 +156,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "CalculationControl";
             this.Padding = new System.Windows.Forms.Padding(5);
-            this.Size = new System.Drawing.Size(294, 347);
+            this.Size = new System.Drawing.Size(428, 333);
             this.BackPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 

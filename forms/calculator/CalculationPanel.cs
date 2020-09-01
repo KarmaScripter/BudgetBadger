@@ -45,7 +45,7 @@ namespace BudgetExecution
             Visible = true;
             Enabled = true;
             MetroColor = ColorConfig.BackColorBlack;
-            LayoutType = CalculatorLayoutTypes.Financial;
+            LayoutType = CalculatorLayoutTypes.WindowsStandard;
             ShowDisplayArea = false;
             HorizontalSpacing = 5;
             VerticalSpacing = 5;
@@ -122,7 +122,7 @@ namespace BudgetExecution
         /// <param name="e">The
         /// <see cref="EventArgs" />
         /// instance containing the event data.</param>
-        public void OnEqualButtonClick( object sender, EventArgs e )
+        private void OnCalculate( object sender, EventArgs e )
         {
             try
             {

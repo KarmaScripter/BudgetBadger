@@ -80,7 +80,7 @@ namespace BudgetExecution
             this.BackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Hover;
             this.BackPanel.Name = "BackPanel";
             this.BackPanel.Padding = new System.Windows.Forms.Padding(1);
-            this.BackPanel.Size = new System.Drawing.Size(1059, 673);
+            this.BackPanel.Size = new System.Drawing.Size(1059, 876);
             this.BackPanel.TabIndex = 0;
             this.BackPanel.Text = "layoutPanel1";
             this.BackPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
@@ -109,7 +109,7 @@ namespace BudgetExecution
             this.Sheet.DefaultRowCount = 66;
             this.Sheet.DisplayAlerts = true;
             this.Sheet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Sheet.FileName = "Book2";
+            this.Sheet.FileName = "Book1";
             this.Sheet.Font = new System.Drawing.Font("Roboto", 8F);
             this.Sheet.ForeColor = System.Drawing.Color.Black;
             this.Sheet.FormulaBarVisibility = true;
@@ -125,7 +125,7 @@ namespace BudgetExecution
             this.Sheet.SelectedTabIndex = 0;
             this.Sheet.SelectedTabItem = null;
             this.Sheet.ShowBusyIndicator = true;
-            this.Sheet.Size = new System.Drawing.Size(1059, 511);
+            this.Sheet.Size = new System.Drawing.Size(1059, 714);
             this.Sheet.TabIndex = 1;
             this.Sheet.TabItemContextMenu = null;
             this.Sheet.Text = "sheetPanel1";
@@ -299,7 +299,7 @@ namespace BudgetExecution
             this.CaptionButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CaptionButtonHoverColor = System.Drawing.Color.Red;
             this.CaptionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ClientSize = new System.Drawing.Size(1061, 705);
+            this.ClientSize = new System.Drawing.Size(1061, 908);
             this.ControlBox = false;
             this.Controls.Add(this.BackPanel);
             this.Controls.Add(this.Table);

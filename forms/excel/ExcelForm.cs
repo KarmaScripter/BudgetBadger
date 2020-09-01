@@ -2,6 +2,8 @@
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
+using System.Drawing;
+
 namespace BudgetExecution
 {
     // ********************************************************************************************************************************
@@ -34,6 +36,7 @@ namespace BudgetExecution
         public ExcelForm()
         {
             InitializeComponent();
+            Size = new Size( 1073, 900 );
         }
 
         /// <summary>
@@ -43,6 +46,7 @@ namespace BudgetExecution
         public ExcelForm( string filepath )
         {
             InitializeComponent();
+            Size = new Size( 1073, 900 );
             FilePath = Path.GetFullPath( filepath );
             FileName = Path.GetFileNameWithoutExtension( FilePath );
             Sheet.Open( filepath );
