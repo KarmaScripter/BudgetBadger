@@ -118,7 +118,7 @@ namespace BudgetExecution
         /// <param name="parent">The parent.</param>
         /// <param name="bindingsource">The bindingsource.</param>
         public LabelPanel( Size size, Point location, Control parent,
-            BindingSource bindingsource )
+            BudgetBinding bindingsource )
             : this( size, location, parent )
         {
             BindingSource = bindingsource;

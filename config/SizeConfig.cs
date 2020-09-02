@@ -49,17 +49,17 @@ namespace BudgetExecution
         /// <summary>
         /// The dialog size normal
         /// </summary>
-        public static readonly Size DialogNormal = new Size( 350, 300 );
+        public static readonly Size DialogNormal = new Size( 680, 530 );
 
         /// <summary>
         /// The form size maximum
         /// </summary>
-        public static readonly Size DialogMinimum = new Size( 300, 250 );
+        public static readonly Size DialogMinimum = new Size( 300, 300 );
 
         /// <summary>
         /// The form size minimum
         /// </summary>
-        public static readonly Size DialogMaximum = new Size( 600, 450 );
+        public static readonly Size DialogMaximum = new Size( 800, 800 );
 
         /// <summary>
         /// The column configuration size

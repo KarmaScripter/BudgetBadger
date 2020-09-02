@@ -27,7 +27,7 @@ namespace BudgetExecution
         /// </summary>
         public CalendarPanel()
         {
-            Size = SizeConfig.GetSize( 305, 332 );
+            Size = SizeConfig.GetSize( 530, 375 );
             Location = ControlConfig.GetLocation();
             Font = FontConfig.FontSizeSmall;
             Margin = ControlConfig.Margin;
@@ -40,6 +40,7 @@ namespace BudgetExecution
             Style = VisualStyle.Office2010;
             Office2010Theme = Office2010Theme.Blue;
             Border3DStyle = Border3DStyle.Flat;
+            BorderColor = Color.Transparent;
             BorderStyle = BorderStyle.FixedSingle;
             FirstDayOfWeek = Day.Monday;
             BottomHeight = 30;
@@ -52,7 +53,7 @@ namespace BudgetExecution
             HeaderHeight = 40;
             HeadGradient = false;
             HeaderFont = new Font( "Roboto", 12, FontStyle.Bold );
-            HeaderStartColor = SystemColors.ControlDarkDark;
+            HeaderStartColor = Color.FromArgb( 70, 70, 70 );
         }
 
         // **************************************************************************************************************************
@@ -61,7 +62,7 @@ namespace BudgetExecution
 
         /// <summary> Gets or sets the binding source. </summary>
         /// <value> The binding source. </value>
-        public BindingSource BindingSource { get; set; }
+        public BudgetBinding BindingSource { get; set; }
 
         /// <summary> Gets or sets the tool tip. </summary>
         /// <value> The tool tip. </value>

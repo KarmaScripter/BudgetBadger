@@ -42,9 +42,11 @@ namespace BudgetExecution
             this.DataGrid = new BudgetExecution.BudgetGridPanel();
             this.DataChart = new BudgetExecution.BudgetChartPanel();
             this.ToolBarControl = new BudgetExecution.ToolBarControl();
+            this.BudgetBinding = new BudgetExecution.BudgetBinding();
             this.BackPanel.SuspendLayout();
             this.Table.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).BeginInit();
             this.SuspendLayout();
             // 
             // BackPanel
@@ -104,7 +106,7 @@ namespace BudgetExecution
             this.DataGrid.AllowDragSelectedCols = true;
             this.DataGrid.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.DataGrid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.DataGrid.BindingSource = null;
+            this.DataGrid.BindingSource = this.BudgetBinding;
             this.DataGrid.Current = null;
             this.DataGrid.DataFilter = null;
             this.DataGrid.DefaultRowHeight = 22;
@@ -151,7 +153,7 @@ namespace BudgetExecution
             this.DataChart.AllowUserEditStyles = true;
             this.DataChart.AutoHighlight = true;
             this.DataChart.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
-            this.DataChart.BindingSource = null;
+            this.DataChart.BindingSource = this.BudgetBinding;
             this.DataChart.ChartArea.AutoScale = true;
             this.DataChart.ChartArea.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
             this.DataChart.ChartArea.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -210,7 +212,7 @@ namespace BudgetExecution
             // ToolBarControl
             // 
             this.ToolBarControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ToolBarControl.BindingSource = null;
+            this.ToolBarControl.BindingSource = this.BudgetBinding;
             this.ToolBarControl.DataFilter = null;
             this.ToolBarControl.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ToolBarControl.Field = BudgetExecution.Field.NS;
@@ -226,6 +228,11 @@ namespace BudgetExecution
             this.ToolBarControl.TabIndex = 1;
             this.ToolBarControl.ToolButtons = null;
             // 
+            // BudgetBinding
+            // 
+            this.BudgetBinding.DataFilter = null;
+            this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
+            // 
             // ChartDataGrid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,6 +245,7 @@ namespace BudgetExecution
             this.BackPanel.ResumeLayout(false);
             this.Table.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -252,6 +260,7 @@ namespace BudgetExecution
 
         public BudgetChartPanel DataChart;
         public ToolBarControl ToolBarControl;
+        public BudgetBinding BudgetBinding;
     }
     
 }

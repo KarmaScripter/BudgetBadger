@@ -27,7 +27,7 @@ namespace BudgetExecution
         /// <summary>
         /// The blue border
         /// </summary>
-        public static readonly Color BorderColorBlue = Color.SteelBlue;
+        public static readonly Color BorderColorBlue = Color.Blue;
 
         /// <summary>
         /// The gray border

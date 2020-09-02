@@ -37,7 +37,7 @@ namespace BudgetExecution
         /// <value>
         /// The binding source.
         /// </value>
-        public BindingSource BindingSource { get; set; }
+        public BudgetBinding BindingSource { get; set; }
 
         /// <summary>
         /// Gets or sets the field.

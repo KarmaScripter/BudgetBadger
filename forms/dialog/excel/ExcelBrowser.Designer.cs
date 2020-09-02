@@ -49,21 +49,23 @@ namespace BudgetExecution
             this.visualButton1 = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
             this.Dialog = new System.Windows.Forms.OpenFileDialog();
             this.Table2 = new System.Windows.Forms.TableLayoutPanel();
-            this.visualRichTextBox1 = new VisualPlus.Toolkit.Controls.Editors.VisualRichTextBox();
-            this.Table1 = new System.Windows.Forms.TableLayoutPanel();
-            this.PictureBox = new BudgetExecution.PicturePanel();
-            this.CloseBox = new BudgetExecution.ClosePanel();
             this.Table3 = new System.Windows.Forms.TableLayoutPanel();
             this.CsvCheckBox = new VisualPlus.Toolkit.Controls.Interactivity.VisualCheckBox();
             this.SideLabel = new BudgetExecution.LabelPanel();
             this.XlsxCheckBox = new VisualPlus.Toolkit.Controls.Interactivity.VisualCheckBox();
             this.XlsCheckBox = new VisualPlus.Toolkit.Controls.Interactivity.VisualCheckBox();
+            this.visualRichTextBox1 = new VisualPlus.Toolkit.Controls.Editors.VisualRichTextBox();
+            this.Table1 = new System.Windows.Forms.TableLayoutPanel();
+            this.PictureBox = new BudgetExecution.PicturePanel();
+            this.CloseBox = new BudgetExecution.ClosePanel();
+            this.Separator1 = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
+            this.Separator2 = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
             this.BackPanel.SuspendLayout();
             this.Table4.SuspendLayout();
             this.Table2.SuspendLayout();
+            this.Table3.SuspendLayout();
             this.Table1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
-            this.Table3.SuspendLayout();
             this.SuspendLayout();
             // 
             // Label
@@ -71,7 +73,7 @@ namespace BudgetExecution
             this.Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label.ForeColor = System.Drawing.Color.LightGray;
-            this.Label.Location = new System.Drawing.Point(43, 3);
+            this.Label.Location = new System.Drawing.Point(44, 3);
             this.Label.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label.Name = "Label";
             this.Label.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -84,7 +86,7 @@ namespace BudgetExecution
             this.Label.ShadowDirection = 315;
             this.Label.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label.ShadowOpacity = 100;
-            this.Label.Size = new System.Drawing.Size(471, 26);
+            this.Label.Size = new System.Drawing.Size(481, 26);
             this.Label.TabIndex = 1;
             this.Label.Text = "Label";
             this.Label.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -111,11 +113,11 @@ namespace BudgetExecution
             this.BackPanel.Controls.Add(this.Table4);
             this.BackPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BackPanel.ForeColor = System.Drawing.Color.LightGray;
-            this.BackPanel.Location = new System.Drawing.Point(1, 358);
+            this.BackPanel.Location = new System.Drawing.Point(1, 426);
             this.BackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.BackPanel.Name = "BackPanel";
             this.BackPanel.Padding = new System.Windows.Forms.Padding(1);
-            this.BackPanel.Size = new System.Drawing.Size(654, 91);
+            this.BackPanel.Size = new System.Drawing.Size(666, 91);
             this.BackPanel.TabIndex = 2;
             this.BackPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.BackPanel.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -130,10 +132,10 @@ namespace BudgetExecution
             this.Table4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.Table4.ColumnCount = 5;
             this.Table4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.Table4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
-            this.Table4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.Table4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 135F));
-            this.Table4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
+            this.Table4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
+            this.Table4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148F));
+            this.Table4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.Table4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
             this.Table4.Controls.Add(this.visualButton3, 1, 0);
             this.Table4.Controls.Add(this.visualButton2, 2, 0);
             this.Table4.Controls.Add(this.visualButton1, 3, 0);
@@ -142,7 +144,7 @@ namespace BudgetExecution
             this.Table4.Name = "Table4";
             this.Table4.RowCount = 1;
             this.Table4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.Table4.Size = new System.Drawing.Size(654, 91);
+            this.Table4.Size = new System.Drawing.Size(666, 91);
             this.Table4.TabIndex = 2;
             // 
             // visualButton3
@@ -162,10 +164,10 @@ namespace BudgetExecution
             this.visualButton3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.visualButton3.ForeColor = System.Drawing.Color.LightGray;
             this.visualButton3.Image = null;
-            this.visualButton3.Location = new System.Drawing.Point(97, 3);
+            this.visualButton3.Location = new System.Drawing.Point(93, 3);
             this.visualButton3.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualButton3.Name = "visualButton3";
-            this.visualButton3.Size = new System.Drawing.Size(141, 85);
+            this.visualButton3.Size = new System.Drawing.Size(157, 85);
             this.visualButton3.TabIndex = 2;
             this.visualButton3.Text = "Browse";
             this.visualButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
@@ -194,10 +196,10 @@ namespace BudgetExecution
             this.visualButton2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.visualButton2.ForeColor = System.Drawing.Color.LightGray;
             this.visualButton2.Image = null;
-            this.visualButton2.Location = new System.Drawing.Point(244, 3);
+            this.visualButton2.Location = new System.Drawing.Point(256, 3);
             this.visualButton2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualButton2.Name = "visualButton2";
-            this.visualButton2.Size = new System.Drawing.Size(134, 85);
+            this.visualButton2.Size = new System.Drawing.Size(142, 85);
             this.visualButton2.TabIndex = 1;
             this.visualButton2.Text = "Accept";
             this.visualButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
@@ -226,10 +228,10 @@ namespace BudgetExecution
             this.visualButton1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.visualButton1.ForeColor = System.Drawing.Color.LightGray;
             this.visualButton1.Image = null;
-            this.visualButton1.Location = new System.Drawing.Point(384, 3);
+            this.visualButton1.Location = new System.Drawing.Point(404, 3);
             this.visualButton1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualButton1.Name = "visualButton1";
-            this.visualButton1.Size = new System.Drawing.Size(129, 85);
+            this.visualButton1.Size = new System.Drawing.Size(144, 85);
             this.visualButton1.TabIndex = 0;
             this.visualButton1.Text = "Cancel";
             this.visualButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
@@ -252,9 +254,9 @@ namespace BudgetExecution
             // 
             this.Table2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.Table2.ColumnCount = 3;
-            this.Table2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28923F));
-            this.Table2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85.71077F));
-            this.Table2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
+            this.Table2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.4265F));
+            this.Table2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.5735F));
+            this.Table2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
             this.Table2.Controls.Add(this.Table3, 2, 0);
             this.Table2.Controls.Add(this.visualRichTextBox1, 1, 0);
             this.Table2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -263,103 +265,8 @@ namespace BudgetExecution
             this.Table2.Padding = new System.Windows.Forms.Padding(1);
             this.Table2.RowCount = 1;
             this.Table2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.Table2.Size = new System.Drawing.Size(654, 325);
+            this.Table2.Size = new System.Drawing.Size(666, 393);
             this.Table2.TabIndex = 5;
-            // 
-            // visualRichTextBox1
-            // 
-            this.visualRichTextBox1.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.visualRichTextBox1.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.visualRichTextBox1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.visualRichTextBox1.Border.HoverColor = System.Drawing.Color.SteelBlue;
-            this.visualRichTextBox1.Border.HoverVisible = false;
-            this.visualRichTextBox1.Border.Rounding = 6;
-            this.visualRichTextBox1.Border.Thickness = 1;
-            this.visualRichTextBox1.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-            this.visualRichTextBox1.Border.Visible = true;
-            this.visualRichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.visualRichTextBox1.ForeColor = System.Drawing.Color.LightGray;
-            this.visualRichTextBox1.Location = new System.Drawing.Point(77, 4);
-            this.visualRichTextBox1.MaxLength = 2147483647;
-            this.visualRichTextBox1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-            this.visualRichTextBox1.Name = "visualRichTextBox1";
-            this.visualRichTextBox1.ReadOnly = false;
-            this.visualRichTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
-            this.visualRichTextBox1.ShowSelectionMargin = false;
-            this.visualRichTextBox1.Size = new System.Drawing.Size(436, 317);
-            this.visualRichTextBox1.TabIndex = 0;
-            this.visualRichTextBox1.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-            this.visualRichTextBox1.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.visualRichTextBox1.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.visualRichTextBox1.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.visualRichTextBox1.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.visualRichTextBox1.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-            this.visualRichTextBox1.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            // 
-            // Table1
-            // 
-            this.Table1.ColumnCount = 3;
-            this.Table1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.862903F));
-            this.Table1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 92.1371F));
-            this.Table1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
-            this.Table1.Controls.Add(this.PictureBox, 0, 0);
-            this.Table1.Controls.Add(this.CloseBox, 2, 0);
-            this.Table1.Controls.Add(this.Label, 1, 0);
-            this.Table1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Table1.Location = new System.Drawing.Point(1, 1);
-            this.Table1.Name = "Table1";
-            this.Table1.RowCount = 1;
-            this.Table1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.Table1.Size = new System.Drawing.Size(654, 32);
-            this.Table1.TabIndex = 6;
-            // 
-            // PictureBox
-            // 
-            this.PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.PictureBox.BindingSource = null;
-            this.PictureBox.DataFilter = null;
-            this.PictureBox.Field = BudgetExecution.Field.NS;
-            this.PictureBox.HoverText = null;
-            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
-            this.PictureBox.ImageList = null;
-            this.PictureBox.Location = new System.Drawing.Point(6, 3);
-            this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Padding = new System.Windows.Forms.Padding(1);
-            this.PictureBox.Size = new System.Drawing.Size(28, 26);
-            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBox.TabIndex = 0;
-            this.PictureBox.TabStop = false;
-            this.PictureBox.ToolTip = null;
-            // 
-            // CloseBox
-            // 
-            this.CloseBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Maroon;
-            this.CloseBox.CloseHoverForeColor = System.Drawing.Color.White;
-            this.CloseBox.CloseNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.CloseBox.DisabledForeColor = System.Drawing.Color.DimGray;
-            this.CloseBox.Font = new System.Drawing.Font("Roboto", 8F);
-            this.CloseBox.ForeColor = System.Drawing.Color.LightGray;
-            this.CloseBox.Location = new System.Drawing.Point(554, 0);
-            this.CloseBox.Margin = new System.Windows.Forms.Padding(0);
-            this.CloseBox.MaximizeBox = true;
-            this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.CloseBox.MaximizeHoverForeColor = System.Drawing.Color.White;
-            this.CloseBox.MaximizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.CloseBox.MinimizeBox = true;
-            this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.CloseBox.MinimizeHoverForeColor = System.Drawing.Color.White;
-            this.CloseBox.MinimizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.CloseBox.Name = "CloseBox";
-            this.CloseBox.Size = new System.Drawing.Size(100, 25);
-            this.CloseBox.Style = MetroSet_UI.Design.Style.Custom;
-            this.CloseBox.StyleManager = null;
-            this.CloseBox.TabIndex = 1;
-            this.CloseBox.Text = "closePanel1";
-            this.CloseBox.ThemeAuthor = "Terry D. Eppler";
-            this.CloseBox.ThemeName = "Budget Execution";
-            this.CloseBox.ToolTip = null;
             // 
             // Table3
             // 
@@ -369,16 +276,16 @@ namespace BudgetExecution
             this.Table3.Controls.Add(this.SideLabel, 0, 0);
             this.Table3.Controls.Add(this.XlsxCheckBox, 0, 1);
             this.Table3.Controls.Add(this.XlsCheckBox, 0, 2);
-            this.Table3.Location = new System.Drawing.Point(519, 4);
+            this.Table3.Location = new System.Drawing.Point(555, 4);
             this.Table3.Name = "Table3";
             this.Table3.RowCount = 5;
-            this.Table3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72.88136F));
-            this.Table3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.11864F));
-            this.Table3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
-            this.Table3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.Table3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.30508F));
+            this.Table3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.69492F));
+            this.Table3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.Table3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.Table3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.Table3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.Table3.Size = new System.Drawing.Size(130, 233);
+            this.Table3.Size = new System.Drawing.Size(106, 229);
             this.Table3.TabIndex = 3;
             // 
             // CsvCheckBox
@@ -410,11 +317,11 @@ namespace BudgetExecution
             this.CsvCheckBox.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.CsvCheckBox.ForeColor = System.Drawing.Color.LightGray;
             this.CsvCheckBox.IsBoxLarger = false;
-            this.CsvCheckBox.Location = new System.Drawing.Point(10, 168);
+            this.CsvCheckBox.Location = new System.Drawing.Point(10, 122);
             this.CsvCheckBox.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.CsvCheckBox.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.CsvCheckBox.Name = "CsvCheckBox";
-            this.CsvCheckBox.Size = new System.Drawing.Size(117, 23);
+            this.CsvCheckBox.Size = new System.Drawing.Size(93, 23);
             this.CsvCheckBox.TabIndex = 4;
             this.CsvCheckBox.Text = "    .CSV";
             this.CsvCheckBox.TextSize = new System.Drawing.Size(39, 15);
@@ -435,7 +342,7 @@ namespace BudgetExecution
             this.SideLabel.Field = BudgetExecution.Field.NS;
             this.SideLabel.Font = new System.Drawing.Font("Roboto", 8F);
             this.SideLabel.ForeColor = System.Drawing.Color.LightGray;
-            this.SideLabel.Location = new System.Drawing.Point(3, 60);
+            this.SideLabel.Location = new System.Drawing.Point(3, 7);
             this.SideLabel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.SideLabel.Name = "SideLabel";
             this.SideLabel.Numeric = BudgetExecution.Numeric.NS;
@@ -449,7 +356,7 @@ namespace BudgetExecution
             this.SideLabel.ShadowDirection = 315;
             this.SideLabel.ShadowLocation = new System.Drawing.Point(0, 0);
             this.SideLabel.ShadowOpacity = 100;
-            this.SideLabel.Size = new System.Drawing.Size(124, 23);
+            this.SideLabel.Size = new System.Drawing.Size(100, 23);
             this.SideLabel.TabIndex = 2;
             this.SideLabel.Text = "Inlude";
             this.SideLabel.TextAlignment = System.Drawing.StringAlignment.Near;
@@ -494,11 +401,11 @@ namespace BudgetExecution
             this.XlsxCheckBox.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.XlsxCheckBox.ForeColor = System.Drawing.Color.LightGray;
             this.XlsxCheckBox.IsBoxLarger = false;
-            this.XlsxCheckBox.Location = new System.Drawing.Point(10, 92);
+            this.XlsxCheckBox.Location = new System.Drawing.Point(10, 43);
             this.XlsxCheckBox.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.XlsxCheckBox.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.XlsxCheckBox.Name = "XlsxCheckBox";
-            this.XlsxCheckBox.Size = new System.Drawing.Size(117, 23);
+            this.XlsxCheckBox.Size = new System.Drawing.Size(93, 23);
             this.XlsxCheckBox.TabIndex = 3;
             this.XlsxCheckBox.Text = "    .XLSX";
             this.XlsxCheckBox.TextSize = new System.Drawing.Size(45, 15);
@@ -539,11 +446,11 @@ namespace BudgetExecution
             this.XlsCheckBox.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.XlsCheckBox.ForeColor = System.Drawing.Color.LightGray;
             this.XlsCheckBox.IsBoxLarger = false;
-            this.XlsCheckBox.Location = new System.Drawing.Point(10, 129);
+            this.XlsCheckBox.Location = new System.Drawing.Point(10, 84);
             this.XlsCheckBox.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.XlsCheckBox.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.XlsCheckBox.Name = "XlsCheckBox";
-            this.XlsCheckBox.Size = new System.Drawing.Size(117, 23);
+            this.XlsCheckBox.Size = new System.Drawing.Size(93, 23);
             this.XlsCheckBox.TabIndex = 5;
             this.XlsCheckBox.Text = "    ..XLS";
             this.XlsCheckBox.TextSize = new System.Drawing.Size(41, 15);
@@ -554,6 +461,144 @@ namespace BudgetExecution
             this.XlsCheckBox.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.XlsCheckBox.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.XlsCheckBox.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // visualRichTextBox1
+            // 
+            this.visualRichTextBox1.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.visualRichTextBox1.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.visualRichTextBox1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.visualRichTextBox1.Border.HoverColor = System.Drawing.Color.SteelBlue;
+            this.visualRichTextBox1.Border.HoverVisible = false;
+            this.visualRichTextBox1.Border.Rounding = 6;
+            this.visualRichTextBox1.Border.Thickness = 1;
+            this.visualRichTextBox1.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+            this.visualRichTextBox1.Border.Visible = true;
+            this.visualRichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.visualRichTextBox1.ForeColor = System.Drawing.Color.LightGray;
+            this.visualRichTextBox1.Location = new System.Drawing.Point(89, 4);
+            this.visualRichTextBox1.MaxLength = 2147483647;
+            this.visualRichTextBox1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+            this.visualRichTextBox1.Name = "visualRichTextBox1";
+            this.visualRichTextBox1.ReadOnly = false;
+            this.visualRichTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
+            this.visualRichTextBox1.ShowSelectionMargin = false;
+            this.visualRichTextBox1.Size = new System.Drawing.Size(460, 385);
+            this.visualRichTextBox1.TabIndex = 0;
+            this.visualRichTextBox1.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+            this.visualRichTextBox1.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.visualRichTextBox1.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.visualRichTextBox1.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.visualRichTextBox1.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.visualRichTextBox1.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            this.visualRichTextBox1.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // Table1
+            // 
+            this.Table1.ColumnCount = 3;
+            this.Table1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.862903F));
+            this.Table1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 92.1371F));
+            this.Table1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137F));
+            this.Table1.Controls.Add(this.PictureBox, 0, 0);
+            this.Table1.Controls.Add(this.CloseBox, 2, 0);
+            this.Table1.Controls.Add(this.Label, 1, 0);
+            this.Table1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Table1.Location = new System.Drawing.Point(1, 1);
+            this.Table1.Name = "Table1";
+            this.Table1.RowCount = 1;
+            this.Table1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Table1.Size = new System.Drawing.Size(666, 32);
+            this.Table1.TabIndex = 6;
+            // 
+            // PictureBox
+            // 
+            this.PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox.BindingSource = null;
+            this.PictureBox.DataFilter = null;
+            this.PictureBox.Field = BudgetExecution.Field.NS;
+            this.PictureBox.HoverText = null;
+            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
+            this.PictureBox.ImageList = null;
+            this.PictureBox.Location = new System.Drawing.Point(6, 3);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Padding = new System.Windows.Forms.Padding(1);
+            this.PictureBox.Size = new System.Drawing.Size(28, 26);
+            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox.TabIndex = 0;
+            this.PictureBox.TabStop = false;
+            this.PictureBox.ToolTip = null;
+            // 
+            // CloseBox
+            // 
+            this.CloseBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Maroon;
+            this.CloseBox.CloseHoverForeColor = System.Drawing.Color.White;
+            this.CloseBox.CloseNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CloseBox.DisabledForeColor = System.Drawing.Color.DimGray;
+            this.CloseBox.Font = new System.Drawing.Font("Roboto", 8F);
+            this.CloseBox.ForeColor = System.Drawing.Color.LightGray;
+            this.CloseBox.Location = new System.Drawing.Point(566, 0);
+            this.CloseBox.Margin = new System.Windows.Forms.Padding(0);
+            this.CloseBox.MaximizeBox = true;
+            this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MaximizeHoverForeColor = System.Drawing.Color.White;
+            this.CloseBox.MaximizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CloseBox.MinimizeBox = true;
+            this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MinimizeHoverForeColor = System.Drawing.Color.White;
+            this.CloseBox.MinimizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CloseBox.Name = "CloseBox";
+            this.CloseBox.Size = new System.Drawing.Size(100, 25);
+            this.CloseBox.Style = MetroSet_UI.Design.Style.Custom;
+            this.CloseBox.StyleManager = null;
+            this.CloseBox.TabIndex = 1;
+            this.CloseBox.Text = "closePanel1";
+            this.CloseBox.ThemeAuthor = "Terry D. Eppler";
+            this.CloseBox.ThemeName = "Budget Execution";
+            this.CloseBox.ToolTip = null;
+            // 
+            // Separator1
+            // 
+            this.Separator1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.Separator1.Line = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Separator1.Location = new System.Drawing.Point(7, 39);
+            this.Separator1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+            this.Separator1.Name = "Separator1";
+            this.Separator1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.Separator1.Shadow = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Separator1.ShadowVisible = true;
+            this.Separator1.Size = new System.Drawing.Size(648, 4);
+            this.Separator1.TabIndex = 7;
+            this.Separator1.Text = "visualSeparator1";
+            this.Separator1.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+            this.Separator1.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Separator1.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Separator1.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Separator1.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Separator1.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            this.Separator1.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // Separator2
+            // 
+            this.Separator2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Separator2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.Separator2.Line = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Separator2.Location = new System.Drawing.Point(1, 422);
+            this.Separator2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+            this.Separator2.Name = "Separator2";
+            this.Separator2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.Separator2.Shadow = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Separator2.ShadowVisible = true;
+            this.Separator2.Size = new System.Drawing.Size(666, 4);
+            this.Separator2.TabIndex = 8;
+            this.Separator2.Text = "visualSeparator1";
+            this.Separator2.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+            this.Separator2.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Separator2.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Separator2.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Separator2.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Separator2.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            this.Separator2.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
             // ExcelBrowser
             // 
@@ -572,8 +617,10 @@ namespace BudgetExecution
             captionImage1.Name = "CaptionImage1";
             captionImage1.Size = new System.Drawing.Size(25, 20);
             this.CaptionImages.Add(captionImage1);
-            this.ClientSize = new System.Drawing.Size(656, 450);
+            this.ClientSize = new System.Drawing.Size(668, 518);
             this.ControlBox = false;
+            this.Controls.Add(this.Separator2);
+            this.Controls.Add(this.Separator1);
             this.Controls.Add(this.Table2);
             this.Controls.Add(this.BackPanel);
             this.Controls.Add(this.Table1);
@@ -593,9 +640,9 @@ namespace BudgetExecution
             this.BackPanel.ResumeLayout(false);
             this.Table4.ResumeLayout(false);
             this.Table2.ResumeLayout(false);
+            this.Table3.ResumeLayout(false);
             this.Table1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
-            this.Table3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -626,6 +673,8 @@ namespace BudgetExecution
         private LabelPanel SideLabel;
         public VisualCheckBox XlsxCheckBox;
         public VisualCheckBox XlsCheckBox;
+        public VisualSeparator Separator1;
+        public VisualSeparator Separator2;
     }
 
 }
