@@ -1,273 +1,290 @@
-﻿// <copyright file = "Notification.cs" company = "Terry D. Eppler">
-// Copyright (c) Terry D. Eppler. All rights reserved.
-// </copyright>
+﻿// // <copyright file = "ExNotifyBalloon.cs" company = "Terry D. Eppler">
+// // Copyright (c) Terry D. Eppler. All rights reserved.
+// // </copyright>
 
 namespace BudgetExecution
 {
-    // ******************************************************************************************************************************
-    // ******************************************************   ASSEMBLIES   ********************************************************
-    // ******************************************************************************************************************************
+    // ********************************************************************************************************************************
+    // *********************************************************  ASSEMBLIES   ********************************************************
+    // ********************************************************************************************************************************
 
+    using System.Diagnostics.CodeAnalysis;
+    using System.Media;
     using System;
+    using System.Collections.Generic;
     using System.Drawing;
+    using System.Reflection;
+    using System.Threading.Tasks;
     using System.Windows.Forms;
-    using Syncfusion.Drawing;
-    using Syncfusion.Windows.Forms.Tools;
+    using Syncfusion.Windows.Forms;
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <seealso cref="SplashConfig" />
-    /// <seealso />
-    public class Notification : SplashConfig
+    [ SuppressMessage( "ReSharper", "InconsistentNaming" ) ]
+    [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
+    [ SuppressMessage( "ReSharper", "SuggestBaseTypeForParameter" ) ]
+    public partial class Notification : MetroForm
     {
-        // **************************************************************************************************************************
-        // ********************************************   CONSTRUCTORS     **********************************************************
-        // **************************************************************************************************************************
-
-        /// <summary>
-        /// Initializes a new instance of the
-        /// <see cref="Notification" />
-        /// class.
-        /// </summary>
-        /// <remarks>
-        /// The default value for the
-        /// <see cref="P:Syncfusion.Windows.Forms.Tools.SplashPanel.TimerInterval" />
-        /// is set to 5000 milli seconds. The splash panel has animation turned and by default will appear in
-        /// the middle of the screen.
-        /// </remarks>
-        public Notification()
-        {
-            // Basic Properties
-            TabIndex = 0;
-            AllowMove = true;
-            AllowResize = true;
-            ShowInTaskbar = true;
-            CloseOnClick = true;
-            ShowAsTopMost = true;
-            ShowAnimation = true;
-            Font = FontConfig.GetFont();
-            ForeColor = ColorConfig.GetColor( Color.White );
-            Location = ControlConfig.GetLocation();
-            TransparentColor = ColorConfig.GetColor( Color.White );
-
-            // Color Configuration
-            BackColor = ColorConfig.BackColorBlack;
-            BackgroundColor = new BrushInfo( GradientStyle.PathRectangle, Color.AliceBlue, Color.SteelBlue );
-
-            // Border COnfiguration
-            BorderStyle = Border3DStyle.Flat;
-            BorderType = SplashBorderType.Border3D;
-
-            // Animation Configuration
-            AnimationSpeed = 30;
-            AnimationDirection = AnimationDirection.RightToLeft;
-            SlideStyle = SlideStyle.FadeIn;
-            TimerInterval = 7000;
-            SuspendAutoCloseWhenMouseOver = false;
-            DesktopAlignment = SplashAlignment.SystemTray;
-
-            // Event Wiring
-            SplashDisplayed += OnDisplayed;
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the
-        /// <see cref="Notification" />
-        /// class.
-        /// </summary>
-        /// <param name="text">The text displayed by the control.</param>
-        public Notification( string text )
-            : this()
-        {
-            Text = text;
-        }
-
         // ***************************************************************************************************************************
-        // ****************************************************     METHODS   ********************************************************
+        // ****************************************************    FIELDS     ********************************************************
         // ***************************************************************************************************************************
 
-        /// <summary>
-        /// Sets the color of the gradient.
-        /// </summary>
-        /// <param name="start">The start.</param>
-        /// <param name="end">The end.</param>
-        /// <param name="style">The style.</param>
-        public void SetBackgroundGradient( Color start, Color end,
-            GradientStyle style = GradientStyle.PathRectangle )
+        private const int WM_MOUSEACTIVATE = 0x0021, MA_NOACTIVATE = 0x0003;
+
+        private static readonly List<Notification> OpenNotifications = new List<Notification>();
+
+        private const int WS_EX_NOACTIVATE = 0x08000000;
+
+        private const int WS_EX_TOPMOST = 0x00000008;
+
+        private bool stopFadeOut;
+
+        // ***************************************************************************************************************************
+        // ****************************************************  CONSTRUCTORS ********************************************************
+        // ***************************************************************************************************************************
+
+        public Notification( Bitmap notifyIcon,
+            string notifyTitle,
+            string notifyBody,
+            int notifyTimeout )
         {
-            if( Enum.IsDefined( typeof( GradientStyle ), style )
-                && start != Color.Empty
-                && end != Color.Empty )
+            InitializeComponent();
+            var notifySound = new SoundPlayer( @"C:\Users\Daddy\source\repos\Badger\icons\notification\normal.wav" );
+            notifySound.Play();
+            PictureBox.Image = notifyIcon;
+            Title.Text = notifyTitle;
+            Body.Text = notifyBody;
+            Footer.Text = Assembly.GetExecutingAssembly().GetName().Name;
+            notifyTimer.Interval = notifyTimeout;
+            notifyTimer.Start();
+        }
+
+        public new void Show()
+        {
+            base.Show();
+            FadeIn( this, 20 );
+        }
+
+        public void CloseNotify()
+        {
+            stopFadeOut = false;
+            notifyTimer.Stop();
+            Close();
+        }
+
+        #region WinApi
+
+        protected override void WndProc( ref System.Windows.Forms.Message m )
+        {
+            if( m.Msg == Notification.WM_MOUSEACTIVATE )
             {
-                try
-                {
-                    BackgroundColor = new BrushInfo( GradientStyle.PathRectangle, Color.AliceBlue,
-                        Color.SteelBlue );
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
+                m.Result = (IntPtr)Notification.MA_NOACTIVATE;
+                return;
+            }
+
+            base.WndProc( ref m );
+        }
+
+        protected override bool ShowWithoutActivation
+        {
+            get { return true; }
+        }
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                var param = base.CreateParams;
+                param.ExStyle |= Notification.WS_EX_TOPMOST;
+                param.ExStyle |= Notification.WS_EX_NOACTIVATE;
+                return param;
             }
         }
 
-        /// <summary>
-        /// Sets the color of the fore.
-        /// </summary>
-        /// <param name="color">The color.</param>
-        public void SetForeColor( Color color )
+        #endregion
+
+        #region Animations
+
+        private async void FadeIn( Form o,
+            int interval = 80 )
         {
-            if( color != Color.Empty )
+            while( o.Opacity < 1.0 )
             {
-                try
+                await Task.Delay( interval );
+                o.Opacity += 0.05;
+            }
+
+            o.Opacity = 1;
+        }
+
+        private async void FadeOut( Form o,
+            int interval = 80 )
+        {
+            while( o.Opacity > 0.0 )
+            {
+                if( stopFadeOut )
                 {
-                    ForeColor = color;
+                    return;
                 }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
+
+                await Task.Delay( interval );
+                o.Opacity -= 0.05;
+            }
+
+            o.Opacity = 0;
+            Close();
+        }
+
+        #endregion
+
+        #region Event Handlers
+
+        private void ExNotifyBalloon_Load( object sender,
+            EventArgs e )
+        {
+            Location = new Point( Screen.PrimaryScreen.WorkingArea.Width - Width - 20, Screen.PrimaryScreen.WorkingArea.Height - Height - 20 );
+
+            foreach( var openForm in Notification.OpenNotifications )
+            {
+                openForm.Top -= Height;
+            }
+
+            Notification.OpenNotifications.Add( this );
+
+            if( Body.PreferredWidth > Body.Width )
+            {
+                Title.Location = new Point( 77, 8 );
+                Body.Location = new Point( 78, 32 );
+                Body.Size = new Size( 262, 53 );
             }
         }
 
-        /// <summary>
-        /// Sets the color of the back.
-        /// </summary>
-        /// <param name="color">The color.</param>
-        public void SetBackColor( Color color )
+        private void ExNotifyBalloon_FormClosed( object sender,
+            FormClosedEventArgs e )
         {
-            if( color != Color.Empty )
+            foreach( var openForm in Notification.OpenNotifications )
             {
-                try
+                if( openForm == this )
                 {
-                    BackColor = color;
+                    break;
                 }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
+
+                openForm.Top += Height;
             }
+
+            Notification.OpenNotifications.Remove( this );
         }
 
-        /// <summary>
-        /// Sets the border configuration.
-        /// </summary>
-        /// <param name="style">The style.</param>
-        /// <param name="type">The type.</param>
-        public void SetBorderStyle( Border3DStyle style = Border3DStyle.Flat,
-            SplashBorderType type = SplashBorderType.Border3D )
+        private void NotifyTimer_Tick( object sender,
+            EventArgs e )
         {
-            if( Enum.IsDefined( typeof( Border3DStyle ), style )
-                && Enum.IsDefined( typeof( SplashBorderType ), type ) )
-            {
-                try
-                {
-                    BorderStyle = style;
-                    BorderType = type;
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
-            }
+            stopFadeOut = false;
+            FadeOut( this, 40 );
+            notifyTimer.Stop();
         }
 
-        /// <summary>
-        /// Sets the animation speed.
-        /// </summary>
-        /// <param name="speed">The speed.</param>
-        public void SetAnimationSpeed( int speed = 30 )
+        private void PictureBoxIcon_Click( object sender,
+            EventArgs e )
         {
-            if( speed > 0
-                && speed < 100 )
-            {
-                try
-                {
-                    AnimationSpeed = speed;
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
-            }
+            CloseNotify();
         }
 
-        /// <summary>
-        /// Sets the animation direction.
-        /// </summary>
-        /// <param name="direction">The direction.</param>
-        public void SetAnimationDirection( AnimationDirection direction = AnimationDirection.RightToLeft )
+        private void ExNotifyBalloon_Click( object sender,
+            EventArgs e )
         {
-            if( Enum.IsDefined( typeof( AnimationDirection ), direction ) )
-            {
-                try
-                {
-                    AnimationDirection = direction;
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
-            }
+            CloseNotify();
         }
 
-        /// <summary>
-        /// Sets the slide style.
-        /// </summary>
-        /// <param name="slidestyle">The slidestyle.</param>
-        public void SetSlideStyle( SlideStyle slidestyle = SlideStyle.FadeIn )
+        private void LabelTitle_Click( object sender,
+            EventArgs e )
         {
-            if( Enum.IsDefined( typeof( SlideStyle ), slidestyle ) )
-            {
-                try
-                {
-                    SlideStyle = slidestyle;
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
-            }
+            CloseNotify();
         }
 
-        /// <summary>
-        /// Sets the time interval.
-        /// </summary>
-        /// <param name="time">The time.</param>
-        public void SetTimeInterval( int time = 7000 )
+        private void LabelBody_Click( object sender,
+            EventArgs e )
         {
-            if( time > 0
-                && time < 10000 )
-            {
-                try
-                {
-                    TimerInterval = time;
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
-            }
+            CloseNotify();
         }
 
-        /// <summary>
-        /// Sets the desk top a lignment.
-        /// </summary>
-        /// <param name="alignment">The alignment.</param>
-        public void SetDeskTopAlignment( SplashAlignment alignment = SplashAlignment.RightBottom )
+        private void LabelApp_Click( object sender,
+            EventArgs e )
         {
-            if( Enum.IsDefined( typeof( SplashAlignment ), alignment ) )
-            {
-                try
-                {
-                    DesktopAlignment = alignment;
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
-            }
+            CloseNotify();
         }
+
+        private void Panel1_Click( object sender,
+            EventArgs e )
+        {
+            CloseNotify();
+        }
+
+        private void LabelClose_Click( object sender,
+            EventArgs e )
+        {
+            CloseNotify();
+        }
+
+        private void LabelClose_MouseEnter( object sender,
+            EventArgs e )
+        {
+            labelClose.ForeColor = Color.DarkGray;
+            notifyTimer.Stop();
+            stopFadeOut = true;
+            Opacity = 1;
+        }
+
+        private void LabelClose_MouseLeave( object sender,
+            EventArgs e )
+        {
+            labelClose.ForeColor = Color.DimGray;
+        }
+
+        private void PictureBoxIcon_MouseEnter( object sender,
+            EventArgs e )
+        {
+            notifyTimer.Stop();
+            stopFadeOut = true;
+            Opacity = 1;
+        }
+
+        private void LabelTitle_MouseEnter( object sender,
+            EventArgs e )
+        {
+            notifyTimer.Stop();
+            stopFadeOut = true;
+            Opacity = 1;
+        }
+
+        private void LabelBody_MouseEnter( object sender,
+            EventArgs e )
+        {
+            notifyTimer.Stop();
+            stopFadeOut = true;
+            Opacity = 1;
+        }
+
+        private void LabelApp_MouseEnter( object sender,
+            EventArgs e )
+        {
+            notifyTimer.Stop();
+            stopFadeOut = true;
+            Opacity = 1;
+        }
+
+        private void Panel1_MouseLeave( object sender,
+            EventArgs e )
+        {
+            notifyTimer.Start();
+            stopFadeOut = false;
+        }
+
+        private void Panel1_MouseEnter( object sender,
+            EventArgs e )
+        {
+            notifyTimer.Stop();
+            stopFadeOut = true;
+            Opacity = 1;
+        }
+
+        #endregion
     }
 }

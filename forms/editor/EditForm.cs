@@ -1,5 +1,5 @@
-﻿// <copyright file = "DataEditor.cs" company = "Terry D. Eppler">
-// Copyright (c) Terry D. Eppler. All rights reserved.
+﻿// <copyright file="{ClassName}.cs" company="Terry D. Eppler">
+// Copyright (c) Eppler. All rights reserved.
 // </copyright>
 
 namespace BudgetExecution
@@ -7,20 +7,17 @@ namespace BudgetExecution
     // ********************************************************************************************************************************
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <seealso cref="System.Windows.Forms.UserControl" />
-    public partial class DataEditor : ControlData
+
+    using System;
+    using Syncfusion.Windows.Forms;
+
+    public partial class EditForm : MetroForm
     {
         // ***************************************************************************************************************************
         // ****************************************************  CONSTRUCTORS ********************************************************
         // ***************************************************************************************************************************
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="DataEditor"/> class.
-        /// </summary>
-        public DataEditor()
+        public EditForm()
         {
             InitializeComponent();
         }

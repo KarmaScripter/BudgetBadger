@@ -111,8 +111,11 @@ namespace BudgetExecution
         {
             try
             {
-                var source = Data.Select( r => r ).FirstOrDefault();
-                var tablename = source?.Table?.TableName;
+                var source = Data.Select( r => r )
+                    ?.FirstOrDefault();
+
+                var tablename = source?.Table
+                    ?.TableName;
 
                 return !string.IsNullOrEmpty( tablename )
                     ? source != null
@@ -123,7 +126,7 @@ namespace BudgetExecution
             catch( Exception ex )
             {
                 Fail( ex );
-                return default;
+                return Source.NS;
             }
         }
 

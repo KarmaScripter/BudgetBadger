@@ -69,6 +69,9 @@
     <Reference Include="BudgetStatic">
       <HintPath>..\Static\bin\Debug\BudgetStatic.dll</HintPath>
     </Reference>
+    <Reference Include="CharmNotification">
+      <HintPath>..\..\..\OneDrive\Desktop\lib\ui\CharmNotification.dll</HintPath>
+    </Reference>
     <Reference Include="DocumentFormat.OpenXml, Version=2.11.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
       <HintPath>packages\DocumentFormat.OpenXml.2.11.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
     </Reference>
@@ -142,6 +145,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="forms\editor\EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\editor\EditForm.Designer.cs">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\calculator\CalculationControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -291,11 +300,11 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="forms\dropmenu\IDropMenu.cs" />
-    <Compile Include="forms\editor\DataEditor.cs">
+    <Compile Include="forms\editor\EditControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\editor\DataEditor.Designer.cs">
-      <DependentUpon>DataEditor.cs</DependentUpon>
+    <Compile Include="forms\editor\EditControl.Designer.cs">
+      <DependentUpon>EditControl.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\excel\ExcelData.cs">
       <SubType>UserControl</SubType>
@@ -392,6 +401,10 @@
     <Compile Include="forms\metric\imetric\IMetric.cs" />
     <Compile Include="forms\metric\MetricBase.cs" />
     <Compile Include="forms\notification\Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\notification\Notification.designer.cs" />
+    <Compile Include="forms\notification\SplashWindow.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="forms\notification\SplashConfig.cs">
@@ -563,6 +576,9 @@
     <Compile Include="forms\toolbar\ToolBarControl.Designer.cs">
       <DependentUpon>ToolBarControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="forms\editor\EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\calculator\CalculationControl.resx">
       <DependentUpon>CalculationControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -599,8 +615,8 @@
     <EmbeddedResource Include="forms\dialog\message\Message.resx">
       <DependentUpon>Message.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\editor\DataEditor.resx">
-      <DependentUpon>DataEditor.cs</DependentUpon>
+    <EmbeddedResource Include="forms\editor\EditControl.resx">
+      <DependentUpon>EditControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\excel\ExcelForm.resx">
       <DependentUpon>ExcelForm.cs</DependentUpon>
@@ -620,6 +636,7 @@
     <EmbeddedResource Include="forms\main\BadgerMain.resx">
       <DependentUpon>BadgerMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\notification\Notification.resx" />
     <EmbeddedResource Include="forms\pdf\PdfForm.resx">
       <DependentUpon>PdfForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -1033,6 +1050,10 @@
     <Content Include="icons\navigation\png\TopLeft.png" />
     <Content Include="icons\navigation\png\TopRight.png" />
     <Content Include="icons\navigation\png\Up.png" />
+    <Content Include="icons\notification\error.png" />
+    <Content Include="icons\notification\info.png" />
+    <Content Include="icons\notification\normal.wav" />
+    <Content Include="icons\notification\warning.png" />
     <Content Include="icons\objectclass\png\Contracts.png" />
     <Content Include="icons\objectclass\png\Expenses.png" />
     <Content Include="icons\objectclass\png\FTE.png" />

@@ -62,6 +62,8 @@
             this.Separator14 = new BudgetExecution.ToolSeparator();
             this.BrowseButton = new BudgetExecution.BarButton();
             this.Separator15 = new BudgetExecution.ToolSeparator();
+            this.ProgressBar = new System.Windows.Forms.ToolStripProgressBar();
+            this.Separator16 = new BudgetExecution.ToolSeparator();
             this.ToolBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).BeginInit();
             this.SuspendLayout();
@@ -78,7 +80,7 @@
             this.ToolBar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ToolBar.Field = BudgetExecution.Field.NS;
             this.ToolBar.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ToolBar.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ToolBar.ForeColor = System.Drawing.Color.Black;
             this.ToolBar.GripMargin = new System.Windows.Forms.Padding(0);
             this.ToolBar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.ToolBar.Image = null;
@@ -113,7 +115,9 @@
             this.ExcelButton,
             this.Separator14,
             this.BrowseButton,
-            this.Separator15});
+            this.Separator15,
+            this.ProgressBar,
+            this.Separator16});
             this.ToolBar.Location = new System.Drawing.Point(1, 1);
             this.ToolBar.Margin = new System.Windows.Forms.Padding(0);
             this.ToolBar.Name = "ToolBar";
@@ -122,9 +126,8 @@
             this.ToolBar.Padding = new System.Windows.Forms.Padding(1, 1, 1, 0);
             this.ToolBar.ShowCaption = true;
             this.ToolBar.ShowLauncher = false;
-            this.ToolBar.Size = new System.Drawing.Size(916, 51);
+            this.ToolBar.Size = new System.Drawing.Size(1025, 51);
             this.ToolBar.TabIndex = 0;
-            this.ToolBar.Text = "Tool Bar";
             // 
             // Separator1
             // 
@@ -548,6 +551,19 @@
             this.Separator15.Name = "Separator15";
             this.Separator15.Size = new System.Drawing.Size(6, 23);
             // 
+            // ProgressBar
+            // 
+            this.ProgressBar.Margin = new System.Windows.Forms.Padding(5);
+            this.ProgressBar.Name = "ProgressBar";
+            this.ProgressBar.Size = new System.Drawing.Size(100, 23);
+            // 
+            // Separator16
+            // 
+            this.Separator16.ForeColor = System.Drawing.Color.Black;
+            this.Separator16.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.Separator16.Name = "Separator16";
+            this.Separator16.Size = new System.Drawing.Size(6, 33);
+            // 
             // ToolBarControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -559,7 +575,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
             this.Name = "ToolBarControl";
             this.Padding = new System.Windows.Forms.Padding(1, 1, 1, 0);
-            this.Size = new System.Drawing.Size(918, 52);
+            this.Size = new System.Drawing.Size(1027, 52);
             this.ToolBar.ResumeLayout(false);
             this.ToolBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).EndInit();
@@ -603,5 +619,7 @@
         public ToolSeparator Separator17;
         public BarButton UpdateButton;
         public BudgetBinding BudgetBinding;
+        public System.Windows.Forms.ToolStripProgressBar ProgressBar;
+        public ToolSeparator Separator16;
     }
 }
