@@ -145,6 +145,25 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="forms\budgetchart\ChartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\budgetchart\ChartForm.Designer.cs">
+      <DependentUpon>ChartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\chartdatagrid\ChartDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\chartdatagrid\ChartDataForm.Designer.cs">
+      <DependentUpon>ChartDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\clock\ClockControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\clock\ClockControl.Designer.cs">
+      <DependentUpon>ClockControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\clock\IClock.cs" />
     <Compile Include="forms\tile\ButtonTileControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -248,11 +267,11 @@
     <Compile Include="forms\calendar\CalendarPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\chartdatagrid\GridChartControl.cs">
+    <Compile Include="forms\chartdatagrid\ChartDataControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\chartdatagrid\GridChartControl.Designer.cs">
-      <DependentUpon>GridChartControl.cs</DependentUpon>
+    <Compile Include="forms\chartdatagrid\ChartDataControl.Designer.cs">
+      <DependentUpon>ChartDataControl.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\clock\ClockPanel.cs">
       <SubType>Component</SubType>
@@ -446,10 +465,10 @@
     <Compile Include="forms\picturebox\PicturePanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\record\RecordControl.cs">
+    <Compile Include="forms\editor\RecordControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\record\RecordControl.Designer.cs">
+    <Compile Include="forms\editor\RecordControl.Designer.cs">
       <DependentUpon>RecordControl.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\richtextbox\IRichTextBox.cs" />
@@ -484,18 +503,18 @@
     <Compile Include="forms\streamer\StreamerControl.Designer.cs">
       <DependentUpon>StreamerControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\tabpanel\ITabControl.cs" />
-    <Compile Include="forms\tabpanel\ITabPage.cs" />
-    <Compile Include="forms\tabpanel\TabControl.cs">
+    <Compile Include="forms\tabcontrol\ITabControl.cs" />
+    <Compile Include="forms\tabcontrol\ITabPage.cs" />
+    <Compile Include="forms\tabcontrol\TabControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\tabpanel\TabControl.Designer.cs">
+    <Compile Include="forms\tabcontrol\TabControl.Designer.cs">
       <DependentUpon>TabControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\tabpanel\TabPage.cs">
+    <Compile Include="forms\tabcontrol\TabPage.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\tabpanel\TabPanel.cs">
+    <Compile Include="forms\tabcontrol\TabPanel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="forms\textbox\ITextBox.cs" />
@@ -605,10 +624,10 @@
     <Compile Include="forms\toolbar\ToolBarControl.Designer.cs">
       <DependentUpon>ToolBarControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\record\RecordForm.cs">
+    <Compile Include="forms\editor\RecordForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\record\RecordForm.Designer.cs">
+    <Compile Include="forms\editor\RecordForm.Designer.cs">
       <DependentUpon>RecordForm.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\textbox\TextBoxControl.cs">
@@ -635,6 +654,15 @@
     <Compile Include="forms\tile\RotatingTileControl.Designer.cs">
       <DependentUpon>RotatingTileControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="forms\budgetchart\ChartForm.resx">
+      <DependentUpon>ChartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\chartdatagrid\ChartDataForm.resx">
+      <DependentUpon>ChartDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\clock\ClockControl.resx">
+      <DependentUpon>ClockControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\tile\ButtonTileControl.resx">
       <DependentUpon>ButtonTileControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -659,8 +687,8 @@
     <EmbeddedResource Include="forms\calendar\CalendarForm.resx">
       <DependentUpon>CalendarForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\chartdatagrid\GridChartControl.resx">
-      <DependentUpon>GridChartControl.cs</DependentUpon>
+    <EmbeddedResource Include="forms\chartdatagrid\ChartDataControl.resx">
+      <DependentUpon>ChartDataControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\control\ControlBase.resx">
       <DependentUpon>ControlBase.cs</DependentUpon>
@@ -711,7 +739,7 @@
     <EmbeddedResource Include="forms\pdf\PdfForm.resx">
       <DependentUpon>PdfForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\record\RecordControl.resx">
+    <EmbeddedResource Include="forms\editor\RecordControl.resx">
       <DependentUpon>RecordControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\selector\SelectionControl.resx">
@@ -720,7 +748,7 @@
     <EmbeddedResource Include="forms\streamer\StreamerControl.resx">
       <DependentUpon>StreamerControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\tabpanel\TabControl.resx">
+    <EmbeddedResource Include="forms\tabcontrol\TabControl.resx">
       <DependentUpon>TabControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\tilelayout\TileLayoutControl.resx">
@@ -742,7 +770,7 @@
     <EmbeddedResource Include="forms\toolbar\ToolBarControl.resx">
       <DependentUpon>ToolBarControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\record\RecordForm.resx">
+    <EmbeddedResource Include="forms\editor\RecordForm.resx">
       <DependentUpon>RecordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\textbox\TextBoxControl.resx">

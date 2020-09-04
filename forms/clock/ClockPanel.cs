@@ -19,7 +19,7 @@ namespace BudgetExecution
     /// </summary>
     /// <seealso cref="Syncfusion.Windows.Forms.Tools.Clock" />
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
-    public class ClockPanel : Clock
+    public class ClockPanel : Clock, IClock
     {
         // ***************************************************************************************************************************
         // ******************************************************  CONSTRUCTORS  *****************************************************
@@ -249,6 +249,14 @@ namespace BudgetExecution
                     throw;
                 }
             }
+        }
+
+        /// <summary>
+        /// Sets the time.
+        /// </summary>
+        public void SetTime()
+        {
+            Now = DateTime.Now;
         }
 
         /// <summary>

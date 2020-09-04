@@ -6,7 +6,7 @@ namespace BudgetExecution
     using System.Threading;
     using System.Windows.Forms;
 
-    partial class ChartDataGrid
+    partial class ChartDataControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -40,9 +40,10 @@ namespace BudgetExecution
             this.BackPanel = new BudgetExecution.LayoutPanel();
             this.Table = new System.Windows.Forms.TableLayoutPanel();
             this.DataGrid = new BudgetExecution.BudgetGridPanel();
+            this.BudgetBinding = new BudgetExecution.BudgetBinding();
             this.DataChart = new BudgetExecution.BudgetChartPanel();
             this.ToolBarControl = new BudgetExecution.ToolBarControl();
-            this.BudgetBinding = new BudgetExecution.BudgetBinding();
+            this.ToolTip = new BudgetExecution.ToolTip();
             this.BackPanel.SuspendLayout();
             this.Table.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
@@ -147,6 +148,11 @@ namespace BudgetExecution
             this.DataGrid.UseListChangedEvent = true;
             this.DataGrid.UseRightToLeftCompatibleTextBox = true;
             // 
+            // BudgetBinding
+            // 
+            this.BudgetBinding.DataFilter = null;
+            this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
+            // 
             // DataChart
             // 
             this.DataChart.AllowGradientPalette = true;
@@ -228,10 +234,23 @@ namespace BudgetExecution
             this.ToolBarControl.TabIndex = 1;
             this.ToolBarControl.ToolButtons = null;
             // 
-            // BudgetBinding
+            // ToolTip
             // 
-            this.BudgetBinding.DataFilter = null;
-            this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
+            this.ToolTip.AutoPopDelay = 5000;
+            this.ToolTip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.ToolTip.BindingSource = null;
+            this.ToolTip.BorderColor = System.Drawing.Color.Blue;
+            this.ToolTip.ForeColor = System.Drawing.Color.LightGray;
+            this.ToolTip.InitialDelay = 500;
+            this.ToolTip.Name = null;
+            this.ToolTip.OwnerDraw = true;
+            this.ToolTip.ReshowDelay = 100;
+            this.ToolTip.Style = MetroSet_UI.Design.Style.Custom;
+            this.ToolTip.StyleManager = null;
+            this.ToolTip.ThemeAuthor = "Terry D. Eppler";
+            this.ToolTip.ThemeName = "Budget Execution";
+            this.ToolTip.TipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.ToolTip.TipTitle = "";
             // 
             // ChartDataGrid
             // 
@@ -240,7 +259,7 @@ namespace BudgetExecution
             this.Controls.Add(this.BackPanel);
             this.MaximumSize = new System.Drawing.Size(1900, 1060);
             this.MinimumSize = new System.Drawing.Size(1000, 400);
-            this.Name = "ChartDataGrid";
+            this.Name = "ChartDataControl";
             this.Size = new System.Drawing.Size(1107, 501);
             this.BackPanel.ResumeLayout(false);
             this.Table.ResumeLayout(false);
@@ -261,6 +280,7 @@ namespace BudgetExecution
         public BudgetChartPanel DataChart;
         public ToolBarControl ToolBarControl;
         public BudgetBinding BudgetBinding;
+        public ToolTip ToolTip;
     }
     
 }
