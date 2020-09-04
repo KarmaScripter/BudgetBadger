@@ -606,6 +606,12 @@
     <Compile Include="forms\label\LabelControl.Designer.cs">
       <DependentUpon>LabelControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="PictureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PictureControl.Designer.cs">
+      <DependentUpon>PictureControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="forms\binding\BindingBase.cs">
@@ -756,6 +762,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\label\LabelControl.resx">
       <DependentUpon>LabelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PictureControl.resx">
+      <DependentUpon>PictureControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

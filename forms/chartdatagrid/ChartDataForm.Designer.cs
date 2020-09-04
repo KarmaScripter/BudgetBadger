@@ -32,11 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChartDataForm));
             this.Table = new System.Windows.Forms.TableLayoutPanel();
             this.CloseBox = new BudgetExecution.ClosePanel();
-            this.ChartDataControl = new BudgetExecution.ChartDataControl();
             this.Label = new BudgetExecution.LabelPanel();
             this.BudgetBinding = new BudgetExecution.BudgetBinding();
-            this.ToolTip = new BudgetExecution.ToolTip();
             this.PictureBox = new BudgetExecution.PicturePanel();
+            this.ChartDataControl = new BudgetExecution.ChartDataControl();
+            this.ToolTip = new BudgetExecution.ToolTip();
             this.Table.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
@@ -47,7 +47,7 @@
             this.Table.ColumnCount = 3;
             this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.598407F));
             this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 93.4016F));
-            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 238F));
+            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 241F));
             this.Table.Controls.Add(this.CloseBox, 2, 0);
             this.Table.Controls.Add(this.Label, 1, 0);
             this.Table.Controls.Add(this.PictureBox, 0, 0);
@@ -56,26 +56,26 @@
             this.Table.Name = "Table";
             this.Table.RowCount = 1;
             this.Table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.Table.Size = new System.Drawing.Size(1118, 26);
+            this.Table.Size = new System.Drawing.Size(1228, 26);
             this.Table.TabIndex = 0;
             // 
             // CloseBox
             // 
             this.CloseBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Maroon;
+            this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Red;
             this.CloseBox.CloseHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.CloseNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.DisabledForeColor = System.Drawing.Color.DimGray;
             this.CloseBox.Font = new System.Drawing.Font("Roboto", 8F);
             this.CloseBox.ForeColor = System.Drawing.Color.LightGray;
-            this.CloseBox.Location = new System.Drawing.Point(1018, 0);
+            this.CloseBox.Location = new System.Drawing.Point(1128, 0);
             this.CloseBox.Margin = new System.Windows.Forms.Padding(0);
             this.CloseBox.MaximizeBox = true;
-            this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.Blue;
             this.CloseBox.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.MaximizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.MinimizeBox = true;
-            this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.Blue;
             this.CloseBox.MinimizeHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.MinimizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.Name = "CloseBox";
@@ -88,26 +88,6 @@
             this.CloseBox.ThemeName = "Budget Execution";
             this.CloseBox.ToolTip = null;
             // 
-            // ChartDataGrid
-            // 
-            this.ChartDataControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ChartDataControl.BindingSource = this.BudgetBinding;
-            this.ChartDataControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ChartDataControl.DataFilter = null;
-            this.ChartDataControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ChartDataControl.Field = BudgetExecution.Field.NS;
-            this.ChartDataControl.Font = new System.Drawing.Font("Roboto", 8F);
-            this.ChartDataControl.ForeColor = System.Drawing.Color.LightGray;
-            this.ChartDataControl.HoverText = null;
-            this.ChartDataControl.Location = new System.Drawing.Point(0, 26);
-            this.ChartDataControl.MaximumSize = new System.Drawing.Size(1900, 1060);
-            this.ChartDataControl.MinimumSize = new System.Drawing.Size(1000, 400);
-            this.ChartDataControl.Name = "ChartDataControl";
-            this.ChartDataControl.Numeric = BudgetExecution.Numeric.NS;
-            this.ChartDataControl.Padding = new System.Windows.Forms.Padding(1);
-            this.ChartDataControl.Size = new System.Drawing.Size(1118, 524);
-            this.ChartDataControl.TabIndex = 1;
-            // 
             // Label
             // 
             this.Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -117,7 +97,7 @@
             this.Label.Field = BudgetExecution.Field.NS;
             this.Label.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label.ForeColor = System.Drawing.Color.LightGray;
-            this.Label.Location = new System.Drawing.Point(61, 3);
+            this.Label.Location = new System.Drawing.Point(68, 3);
             this.Label.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label.Name = "Label";
             this.Label.Numeric = BudgetExecution.Numeric.NS;
@@ -131,7 +111,7 @@
             this.Label.ShadowDirection = 315;
             this.Label.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label.ShadowOpacity = 100;
-            this.Label.Size = new System.Drawing.Size(815, 20);
+            this.Label.Size = new System.Drawing.Size(915, 20);
             this.Label.TabIndex = 1;
             this.Label.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label.TextLineAlignment = System.Drawing.StringAlignment.Center;
@@ -148,6 +128,45 @@
             // 
             this.BudgetBinding.DataFilter = null;
             this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
+            // 
+            // PictureBox
+            // 
+            this.PictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox.BindingSource = null;
+            this.PictureBox.DataFilter = null;
+            this.PictureBox.Field = BudgetExecution.Field.NS;
+            this.PictureBox.HoverText = null;
+            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
+            this.PictureBox.ImageList = null;
+            this.PictureBox.Location = new System.Drawing.Point(0, 0);
+            this.PictureBox.Margin = new System.Windows.Forms.Padding(0);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Padding = new System.Windows.Forms.Padding(1);
+            this.PictureBox.Size = new System.Drawing.Size(48, 18);
+            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox.TabIndex = 2;
+            this.PictureBox.TabStop = false;
+            this.PictureBox.ToolTip = null;
+            // 
+            // ChartDataControl
+            // 
+            this.ChartDataControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.ChartDataControl.BindingSource = this.BudgetBinding;
+            this.ChartDataControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ChartDataControl.DataFilter = null;
+            this.ChartDataControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ChartDataControl.Field = BudgetExecution.Field.NS;
+            this.ChartDataControl.Font = new System.Drawing.Font("Roboto", 8F);
+            this.ChartDataControl.ForeColor = System.Drawing.Color.LightGray;
+            this.ChartDataControl.HoverText = null;
+            this.ChartDataControl.Location = new System.Drawing.Point(0, 26);
+            this.ChartDataControl.MaximumSize = new System.Drawing.Size(1900, 1060);
+            this.ChartDataControl.MinimumSize = new System.Drawing.Size(1000, 400);
+            this.ChartDataControl.Name = "ChartDataControl";
+            this.ChartDataControl.Numeric = BudgetExecution.Numeric.NS;
+            this.ChartDataControl.Padding = new System.Windows.Forms.Padding(1);
+            this.ChartDataControl.Size = new System.Drawing.Size(1228, 620);
+            this.ChartDataControl.TabIndex = 1;
             // 
             // ToolTip
             // 
@@ -167,24 +186,6 @@
             this.ToolTip.TipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.ToolTip.TipTitle = "";
             // 
-            // PictureBox
-            // 
-            this.PictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.PictureBox.BindingSource = null;
-            this.PictureBox.DataFilter = null;
-            this.PictureBox.Field = BudgetExecution.Field.NS;
-            this.PictureBox.HoverText = null;
-            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
-            this.PictureBox.ImageList = null;
-            this.PictureBox.Location = new System.Drawing.Point(0, 0);
-            this.PictureBox.Margin = new System.Windows.Forms.Padding(0);
-            this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Size = new System.Drawing.Size(48, 23);
-            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBox.TabIndex = 2;
-            this.PictureBox.TabStop = false;
-            this.PictureBox.ToolTip = null;
-            // 
             // ChartDataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,7 +193,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.BorderColor = System.Drawing.Color.Blue;
             this.CaptionBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ClientSize = new System.Drawing.Size(1118, 550);
+            this.ClientSize = new System.Drawing.Size(1228, 646);
             this.ControlBox = false;
             this.Controls.Add(this.ChartDataControl);
             this.Controls.Add(this.Table);

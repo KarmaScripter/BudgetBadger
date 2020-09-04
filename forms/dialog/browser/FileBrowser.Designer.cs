@@ -80,9 +80,9 @@ namespace BudgetExecution
             // visualLabel1
             // 
             this.visualLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.visualLabel1.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visualLabel1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.visualLabel1.ForeColor = System.Drawing.Color.White;
-            this.visualLabel1.Location = new System.Drawing.Point(103, 3);
+            this.visualLabel1.Location = new System.Drawing.Point(102, 3);
             this.visualLabel1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualLabel1.Name = "visualLabel1";
             this.visualLabel1.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -95,7 +95,7 @@ namespace BudgetExecution
             this.visualLabel1.ShadowDirection = 315;
             this.visualLabel1.ShadowLocation = new System.Drawing.Point(0, 0);
             this.visualLabel1.ShadowOpacity = 100;
-            this.visualLabel1.Size = new System.Drawing.Size(445, 35);
+            this.visualLabel1.Size = new System.Drawing.Size(444, 20);
             this.visualLabel1.TabIndex = 0;
             this.visualLabel1.Text = "Label";
             this.visualLabel1.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -727,7 +727,7 @@ namespace BudgetExecution
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.13187F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.86813F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
             this.tableLayoutPanel1.Controls.Add(this.visualLabel1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.closePanel1, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.PictureBox, 0, 0);
@@ -738,13 +738,13 @@ namespace BudgetExecution
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(668, 41);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(668, 26);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // closePanel1
             // 
             this.closePanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closePanel1.CloseHoverBackColor = System.Drawing.Color.Maroon;
+            this.closePanel1.CloseHoverBackColor = System.Drawing.Color.Red;
             this.closePanel1.CloseHoverForeColor = System.Drawing.Color.White;
             this.closePanel1.CloseNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.closePanel1.DisabledForeColor = System.Drawing.Color.DimGray;
@@ -753,11 +753,11 @@ namespace BudgetExecution
             this.closePanel1.Location = new System.Drawing.Point(568, 0);
             this.closePanel1.Margin = new System.Windows.Forms.Padding(0);
             this.closePanel1.MaximizeBox = true;
-            this.closePanel1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.closePanel1.MaximizeHoverBackColor = System.Drawing.Color.Blue;
             this.closePanel1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.closePanel1.MaximizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.closePanel1.MinimizeBox = true;
-            this.closePanel1.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.closePanel1.MinimizeHoverBackColor = System.Drawing.Color.Blue;
             this.closePanel1.MinimizeHoverForeColor = System.Drawing.Color.White;
             this.closePanel1.MinimizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.closePanel1.Name = "closePanel1";
@@ -782,6 +782,7 @@ namespace BudgetExecution
             this.PictureBox.Location = new System.Drawing.Point(0, 0);
             this.PictureBox.Margin = new System.Windows.Forms.Padding(0, 0, 3, 3);
             this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Padding = new System.Windows.Forms.Padding(1);
             this.PictureBox.Size = new System.Drawing.Size(51, 18);
             this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox.TabIndex = 2;
@@ -899,7 +900,6 @@ namespace BudgetExecution
             public VisualRichTextBox visualRichTextBox1;
         private TableLayoutPanel tableLayoutPanel2;
         private TableLayoutPanel tableLayoutPanel1;
-        private ClosePanel closePanel1;
         public TableLayoutPanel Table3;
         public VisualCheckBox CsvCheckBox;
         private LabelPanel SideLabel;
@@ -915,6 +915,7 @@ namespace BudgetExecution
         public VisualSeparator visualSeparator1;
         private VisualSeparator visualSeparator2;
         public PicturePanel PictureBox;
+        public ClosePanel closePanel1;
     }
     
 }

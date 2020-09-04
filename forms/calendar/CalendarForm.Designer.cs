@@ -60,7 +60,7 @@ namespace BudgetExecution
             // CloseBox
             // 
             this.CloseBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Maroon;
+            this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Red;
             this.CloseBox.CloseHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.CloseNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.DisabledForeColor = System.Drawing.Color.DimGray;
@@ -69,11 +69,11 @@ namespace BudgetExecution
             this.CloseBox.Location = new System.Drawing.Point(418, 0);
             this.CloseBox.Margin = new System.Windows.Forms.Padding(0);
             this.CloseBox.MaximizeBox = true;
-            this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.Blue;
             this.CloseBox.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.MaximizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.MinimizeBox = true;
-            this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.Blue;
             this.CloseBox.MinimizeHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.MinimizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.Name = "CloseBox";
@@ -130,7 +130,7 @@ namespace BudgetExecution
             this.Label.DataFilter = null;
             this.Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label.Field = BudgetExecution.Field.NS;
-            this.Label.Font = new System.Drawing.Font("Roboto", 8F);
+            this.Label.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label.ForeColor = System.Drawing.Color.LightGray;
             this.Label.Location = new System.Drawing.Point(117, 3);
             this.Label.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
@@ -148,7 +148,7 @@ namespace BudgetExecution
             this.Label.ShadowOpacity = 100;
             this.Label.Size = new System.Drawing.Size(286, 23);
             this.Label.TabIndex = 4;
-            this.Label.Text = "labelPanel1";
+            this.Label.Text = "Title";
             this.Label.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));

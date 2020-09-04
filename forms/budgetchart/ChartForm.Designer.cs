@@ -32,10 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChartForm));
             this.Table = new System.Windows.Forms.TableLayoutPanel();
             this.CloseBox = new BudgetExecution.ClosePanel();
+            this.PictureBox = new BudgetExecution.PicturePanel();
+            this.HeaderLabel = new BudgetExecution.LabelPanel();
             this.Chart = new BudgetExecution.BudgetChartControl();
+            this.BudgetBinding = new BudgetExecution.BudgetBinding();
             this.Navigator = new BudgetExecution.ToolPanel();
             this.Separator1 = new BudgetExecution.ToolSeparator();
             this.BarLabel = new BudgetExecution.BarLabel();
+            this.ToolTip = new BudgetExecution.ToolTip();
             this.Separator2 = new BudgetExecution.ToolSeparator();
             this.FirstButton = new BudgetExecution.BarButton();
             this.Separator3 = new BudgetExecution.ToolSeparator();
@@ -57,14 +61,10 @@
             this.Separator12 = new BudgetExecution.ToolSeparator();
             this.ComboBox = new BudgetExecution.BarComboBox();
             this.Separator11 = new BudgetExecution.ToolSeparator();
-            this.BudgetBinding = new BudgetExecution.BudgetBinding();
-            this.ToolTip = new BudgetExecution.ToolTip();
-            this.PictureBox = new BudgetExecution.PicturePanel();
-            this.HeaderLabel = new BudgetExecution.LabelPanel();
             this.Table.SuspendLayout();
-            this.Navigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).BeginInit();
+            this.Navigator.SuspendLayout();
             this.SuspendLayout();
             // 
             // Table
@@ -73,7 +73,7 @@
             this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.81076F));
             this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.18924F));
             this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 226F));
-            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 144F));
+            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 146F));
             this.Table.Controls.Add(this.CloseBox, 3, 0);
             this.Table.Controls.Add(this.PictureBox, 0, 0);
             this.Table.Controls.Add(this.HeaderLabel, 1, 0);
@@ -88,7 +88,7 @@
             // CloseBox
             // 
             this.CloseBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Maroon;
+            this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Red;
             this.CloseBox.CloseHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.CloseNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.DisabledForeColor = System.Drawing.Color.DimGray;
@@ -97,11 +97,11 @@
             this.CloseBox.Location = new System.Drawing.Point(845, 0);
             this.CloseBox.Margin = new System.Windows.Forms.Padding(0);
             this.CloseBox.MaximizeBox = true;
-            this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.Blue;
             this.CloseBox.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.MaximizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.MinimizeBox = true;
-            this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.Blue;
             this.CloseBox.MinimizeHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.MinimizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.Name = "CloseBox";
@@ -114,10 +114,67 @@
             this.CloseBox.ThemeName = "Budget Execution";
             this.CloseBox.ToolTip = null;
             // 
+            // PictureBox
+            // 
+            this.PictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox.BindingSource = null;
+            this.PictureBox.DataFilter = null;
+            this.PictureBox.Field = BudgetExecution.Field.NS;
+            this.PictureBox.HoverText = null;
+            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
+            this.PictureBox.ImageList = null;
+            this.PictureBox.Location = new System.Drawing.Point(0, 0);
+            this.PictureBox.Margin = new System.Windows.Forms.Padding(0);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Padding = new System.Windows.Forms.Padding(1);
+            this.PictureBox.Size = new System.Drawing.Size(47, 18);
+            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox.TabIndex = 1;
+            this.PictureBox.TabStop = false;
+            this.PictureBox.ToolTip = null;
+            // 
+            // HeaderLabel
+            // 
+            this.HeaderLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.HeaderLabel.BindingSource = null;
+            this.HeaderLabel.DataFilter = null;
+            this.HeaderLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.HeaderLabel.Field = BudgetExecution.Field.NS;
+            this.HeaderLabel.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HeaderLabel.ForeColor = System.Drawing.Color.LightGray;
+            this.HeaderLabel.Location = new System.Drawing.Point(105, 3);
+            this.HeaderLabel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+            this.HeaderLabel.Name = "HeaderLabel";
+            this.HeaderLabel.Numeric = BudgetExecution.Numeric.NS;
+            this.HeaderLabel.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.HeaderLabel.Outline = false;
+            this.HeaderLabel.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.HeaderLabel.OutlineLocation = new System.Drawing.Point(0, 0);
+            this.HeaderLabel.ReflectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.HeaderLabel.ReflectionSpacing = 0;
+            this.HeaderLabel.ShadowColor = System.Drawing.Color.Black;
+            this.HeaderLabel.ShadowDirection = 315;
+            this.HeaderLabel.ShadowLocation = new System.Drawing.Point(0, 0);
+            this.HeaderLabel.ShadowOpacity = 100;
+            this.HeaderLabel.Size = new System.Drawing.Size(464, 20);
+            this.HeaderLabel.TabIndex = 2;
+            this.HeaderLabel.Text = "Title";
+            this.HeaderLabel.TextAlignment = System.Drawing.StringAlignment.Near;
+            this.HeaderLabel.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            this.HeaderLabel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+            this.HeaderLabel.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.HeaderLabel.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.HeaderLabel.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.HeaderLabel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.HeaderLabel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            this.HeaderLabel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.HeaderLabel.ToolTip = null;
+            // 
             // Chart
             // 
             this.Chart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.Chart.BindingSource = this.BudgetBinding;
+            this.Chart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Chart.DataFilter = null;
             this.Chart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Chart.Field = BudgetExecution.Field.NS;
@@ -130,6 +187,11 @@
             this.Chart.Padding = new System.Windows.Forms.Padding(1);
             this.Chart.Size = new System.Drawing.Size(945, 583);
             this.Chart.TabIndex = 1;
+            // 
+            // BudgetBinding
+            // 
+            this.BudgetBinding.DataFilter = null;
+            this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
             // 
             // Navigator
             // 
@@ -198,6 +260,24 @@
             this.BarLabel.Tag = "Label";
             this.BarLabel.Text = "Data Source";
             this.BarLabel.ToolTip = this.ToolTip;
+            // 
+            // ToolTip
+            // 
+            this.ToolTip.AutoPopDelay = 5000;
+            this.ToolTip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.ToolTip.BindingSource = null;
+            this.ToolTip.BorderColor = System.Drawing.Color.Blue;
+            this.ToolTip.ForeColor = System.Drawing.Color.LightGray;
+            this.ToolTip.InitialDelay = 500;
+            this.ToolTip.Name = null;
+            this.ToolTip.OwnerDraw = true;
+            this.ToolTip.ReshowDelay = 100;
+            this.ToolTip.Style = MetroSet_UI.Design.Style.Custom;
+            this.ToolTip.StyleManager = null;
+            this.ToolTip.ThemeAuthor = "Terry D. Eppler";
+            this.ToolTip.ThemeName = "Budget Execution";
+            this.ToolTip.TipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.ToolTip.TipTitle = "";
             // 
             // Separator2
             // 
@@ -453,84 +533,6 @@
             this.Separator11.Name = "Separator11";
             this.Separator11.Size = new System.Drawing.Size(6, 31);
             // 
-            // BudgetBinding
-            // 
-            this.BudgetBinding.DataFilter = null;
-            this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
-            // 
-            // ToolTip
-            // 
-            this.ToolTip.AutoPopDelay = 5000;
-            this.ToolTip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ToolTip.BindingSource = null;
-            this.ToolTip.BorderColor = System.Drawing.Color.Blue;
-            this.ToolTip.ForeColor = System.Drawing.Color.LightGray;
-            this.ToolTip.InitialDelay = 500;
-            this.ToolTip.Name = null;
-            this.ToolTip.OwnerDraw = true;
-            this.ToolTip.ReshowDelay = 100;
-            this.ToolTip.Style = MetroSet_UI.Design.Style.Custom;
-            this.ToolTip.StyleManager = null;
-            this.ToolTip.ThemeAuthor = "Terry D. Eppler";
-            this.ToolTip.ThemeName = "Budget Execution";
-            this.ToolTip.TipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.ToolTip.TipTitle = "";
-            // 
-            // PictureBox
-            // 
-            this.PictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.PictureBox.BindingSource = null;
-            this.PictureBox.DataFilter = null;
-            this.PictureBox.Field = BudgetExecution.Field.NS;
-            this.PictureBox.HoverText = null;
-            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
-            this.PictureBox.ImageList = null;
-            this.PictureBox.Location = new System.Drawing.Point(0, 0);
-            this.PictureBox.Margin = new System.Windows.Forms.Padding(0);
-            this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Size = new System.Drawing.Size(47, 18);
-            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBox.TabIndex = 1;
-            this.PictureBox.TabStop = false;
-            this.PictureBox.ToolTip = null;
-            // 
-            // HeaderLabel
-            // 
-            this.HeaderLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.HeaderLabel.BindingSource = null;
-            this.HeaderLabel.DataFilter = null;
-            this.HeaderLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.HeaderLabel.Field = BudgetExecution.Field.NS;
-            this.HeaderLabel.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HeaderLabel.ForeColor = System.Drawing.Color.LightGray;
-            this.HeaderLabel.Location = new System.Drawing.Point(105, 3);
-            this.HeaderLabel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-            this.HeaderLabel.Name = "HeaderLabel";
-            this.HeaderLabel.Numeric = BudgetExecution.Numeric.NS;
-            this.HeaderLabel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.HeaderLabel.Outline = false;
-            this.HeaderLabel.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.HeaderLabel.OutlineLocation = new System.Drawing.Point(0, 0);
-            this.HeaderLabel.ReflectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.HeaderLabel.ReflectionSpacing = 0;
-            this.HeaderLabel.ShadowColor = System.Drawing.Color.Black;
-            this.HeaderLabel.ShadowDirection = 315;
-            this.HeaderLabel.ShadowLocation = new System.Drawing.Point(0, 0);
-            this.HeaderLabel.ShadowOpacity = 100;
-            this.HeaderLabel.Size = new System.Drawing.Size(466, 20);
-            this.HeaderLabel.TabIndex = 2;
-            this.HeaderLabel.Text = "Title";
-            this.HeaderLabel.TextAlignment = System.Drawing.StringAlignment.Near;
-            this.HeaderLabel.TextLineAlignment = System.Drawing.StringAlignment.Center;
-            this.HeaderLabel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-            this.HeaderLabel.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.HeaderLabel.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.HeaderLabel.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.HeaderLabel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.HeaderLabel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-            this.HeaderLabel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.HeaderLabel.ToolTip = null;
-            // 
             // ChartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -549,10 +551,10 @@
             this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.Name = "ChartForm";
             this.Table.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).EndInit();
             this.Navigator.ResumeLayout(false);
             this.Navigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -566,7 +568,6 @@
         private BarButton ExcelButton;
         private BarComboBox ComboBox;
         public PicturePanel PictureBox;
-        public BudgetBinding BudgetBinding;
         public ToolTip ToolTip;
         public BarLabel BarLabel;
         public ToolSeparator Separator1;
@@ -591,5 +592,6 @@
         public BarButton PrintButton;
         public LabelPanel HeaderLabel;
         public ClosePanel CloseBox;
+        private BudgetBinding BudgetBinding;
     }
 }

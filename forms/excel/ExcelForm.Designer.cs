@@ -109,7 +109,7 @@ namespace BudgetExecution
             this.Sheet.DefaultRowCount = 66;
             this.Sheet.DisplayAlerts = true;
             this.Sheet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Sheet.FileName = "Book4";
+            this.Sheet.FileName = "Book7";
             this.Sheet.Font = new System.Drawing.Font("Roboto", 8F);
             this.Sheet.ForeColor = System.Drawing.Color.Black;
             this.Sheet.FormulaBarVisibility = true;
@@ -199,6 +199,7 @@ namespace BudgetExecution
             this.Table.Controls.Add(this.Label, 1, 0);
             this.Table.Controls.Add(this.PictureBox, 0, 0);
             this.Table.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Table.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Table.Location = new System.Drawing.Point(1, 1);
             this.Table.Margin = new System.Windows.Forms.Padding(5);
             this.Table.Name = "Table";
@@ -210,7 +211,7 @@ namespace BudgetExecution
             // CloseBox
             // 
             this.CloseBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Maroon;
+            this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Red;
             this.CloseBox.CloseHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.CloseNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.DisabledForeColor = System.Drawing.Color.DimGray;
@@ -219,11 +220,11 @@ namespace BudgetExecution
             this.CloseBox.Location = new System.Drawing.Point(1014, 0);
             this.CloseBox.Margin = new System.Windows.Forms.Padding(0);
             this.CloseBox.MaximizeBox = true;
-            this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.Blue;
             this.CloseBox.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.MaximizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.MinimizeBox = true;
-            this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.Blue;
             this.CloseBox.MinimizeHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.MinimizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.Name = "CloseBox";

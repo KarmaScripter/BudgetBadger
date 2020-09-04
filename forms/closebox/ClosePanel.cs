@@ -46,13 +46,13 @@ namespace BudgetExecution
             Anchor = AnchorStyles.Top & AnchorStyles.Right;
             Visible = true;
             Enabled = true;
-            CloseHoverBackColor = Color.Maroon;
+            CloseHoverBackColor = Color.Red;
             CloseHoverForeColor = Color.White;
             CloseNormalForeColor = ColorConfig.BackColorBlack;
-            MaximizeHoverBackColor = ColorConfig.ControlHoverGray;
+            MaximizeHoverBackColor = Color.Blue;
             MaximizeHoverForeColor = Color.White;
             MaximizeNormalForeColor = ColorConfig.BackColorBlack;
-            MinimizeHoverBackColor = ColorConfig.ControlHoverGray;
+            MinimizeHoverBackColor = Color.Blue;
             MinimizeHoverForeColor = Color.White;
             MinimizeNormalForeColor = ColorConfig.BackColorBlack;
             Style = Style.Custom;

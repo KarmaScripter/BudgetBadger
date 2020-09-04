@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.BackPanel = new BudgetExecution.LayoutPanel();
+            this.RecordControl = new BudgetExecution.RecordControl();
             this.Table = new System.Windows.Forms.TableLayoutPanel();
             this.CloseBox = new BudgetExecution.ClosePanel();
-            this.RecordControl = new BudgetExecution.RecordControl();
             this.BudgetBinding = new BudgetExecution.BudgetBinding();
             this.BackPanel.SuspendLayout();
             this.Table.SuspendLayout();
@@ -74,6 +74,25 @@
             this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.BackPanel.ToolTip = null;
             // 
+            // RecordControl
+            // 
+            this.RecordControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.RecordControl.BindingSource = null;
+            this.RecordControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RecordControl.DataFilter = null;
+            this.RecordControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RecordControl.Field = BudgetExecution.Field.NS;
+            this.RecordControl.Font = new System.Drawing.Font("Roboto", 8F);
+            this.RecordControl.ForeColor = System.Drawing.Color.LightGray;
+            this.RecordControl.HoverText = null;
+            this.RecordControl.Location = new System.Drawing.Point(0, 27);
+            this.RecordControl.Margin = new System.Windows.Forms.Padding(0);
+            this.RecordControl.Name = "RecordControl";
+            this.RecordControl.Numeric = BudgetExecution.Numeric.NS;
+            this.RecordControl.Padding = new System.Windows.Forms.Padding(1);
+            this.RecordControl.Size = new System.Drawing.Size(1078, 202);
+            this.RecordControl.TabIndex = 1;
+            // 
             // Table
             // 
             this.Table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -93,7 +112,7 @@
             // CloseBox
             // 
             this.CloseBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Maroon;
+            this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Red;
             this.CloseBox.CloseHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.CloseNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.DisabledForeColor = System.Drawing.Color.DimGray;
@@ -102,11 +121,11 @@
             this.CloseBox.Location = new System.Drawing.Point(978, 0);
             this.CloseBox.Margin = new System.Windows.Forms.Padding(0);
             this.CloseBox.MaximizeBox = true;
-            this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.Blue;
             this.CloseBox.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.MaximizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.MinimizeBox = true;
-            this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.Blue;
             this.CloseBox.MinimizeHoverForeColor = System.Drawing.Color.White;
             this.CloseBox.MinimizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.CloseBox.Name = "CloseBox";
@@ -118,25 +137,6 @@
             this.CloseBox.ThemeAuthor = "Terry D. Eppler";
             this.CloseBox.ThemeName = "Budget Execution";
             this.CloseBox.ToolTip = null;
-            // 
-            // RecordControl
-            // 
-            this.RecordControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.RecordControl.BindingSource = null;
-            this.RecordControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RecordControl.DataFilter = null;
-            this.RecordControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RecordControl.Field = BudgetExecution.Field.NS;
-            this.RecordControl.Font = new System.Drawing.Font("Roboto", 8F);
-            this.RecordControl.ForeColor = System.Drawing.Color.LightGray;
-            this.RecordControl.HoverText = null;
-            this.RecordControl.Location = new System.Drawing.Point(0, 27);
-            this.RecordControl.Margin = new System.Windows.Forms.Padding(0);
-            this.RecordControl.Name = "RecordControl";
-            this.RecordControl.Numeric = BudgetExecution.Numeric.NS;
-            this.RecordControl.Padding = new System.Windows.Forms.Padding(1);
-            this.RecordControl.Size = new System.Drawing.Size(1078, 202);
-            this.RecordControl.TabIndex = 1;
             // 
             // BudgetBinding
             // 
