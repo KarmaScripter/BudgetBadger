@@ -81,6 +81,7 @@ namespace BudgetExecution
             this.Calculator.Numeric = BudgetExecution.Numeric.NS;
             this.Calculator.Padding = new System.Windows.Forms.Padding(1);
             this.Calculator.Result = null;
+            this.Calculator.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Calculator.ShowDisplayArea = false;
             this.Calculator.Size = new System.Drawing.Size(436, 325);
             this.Calculator.TabIndex = 0;
@@ -126,9 +127,9 @@ namespace BudgetExecution
             // Table
             // 
             this.Table.ColumnCount = 3;
-            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.2429F));
-            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.7571F));
-            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
+            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.08861F));
+            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.91139F));
+            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119F));
             this.Table.Controls.Add(this.CloseBox, 2, 0);
             this.Table.Controls.Add(this.PictureBox, 0, 0);
             this.Table.Dock = System.Windows.Forms.DockStyle.Top;
@@ -152,7 +153,7 @@ namespace BudgetExecution
             this.PictureBox.Location = new System.Drawing.Point(3, 3);
             this.PictureBox.Name = "PictureBox";
             this.PictureBox.Padding = new System.Windows.Forms.Padding(1);
-            this.PictureBox.Size = new System.Drawing.Size(55, 18);
+            this.PictureBox.Size = new System.Drawing.Size(48, 18);
             this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox.TabIndex = 2;
             this.PictureBox.TabStop = false;
@@ -161,7 +162,7 @@ namespace BudgetExecution
             // Label
             // 
             this.Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Label.BindingSource = null;
+            this.Label.BindingSource = this.BudgetBinding;
             this.Label.DataFilter = null;
             this.Label.Dock = System.Windows.Forms.DockStyle.Top;
             this.Label.Field = BudgetExecution.Field.NS;

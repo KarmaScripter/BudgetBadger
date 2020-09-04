@@ -43,11 +43,11 @@ namespace BudgetExecution
             private void InitializeComponent()
             {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecordControl));
             this.BackPanel = new BudgetExecution.LayoutPanel();
+            this.ToolBarControl = new BudgetExecution.ToolBarControl();
+            this.BudgetBinding = new BudgetExecution.BudgetBinding();
             this.Table = new System.Windows.Forms.TableLayoutPanel();
             this.TextBox12 = new BudgetExecution.TextBoxPanel();
-            this.BindingSource = new BudgetExecution.BudgetBinding();
             this.TextBox11 = new BudgetExecution.TextBoxPanel();
             this.Label12 = new BudgetExecution.LabelPanel();
             this.Label11 = new BudgetExecution.LabelPanel();
@@ -71,38 +71,10 @@ namespace BudgetExecution
             this.Label8 = new BudgetExecution.LabelPanel();
             this.Label9 = new BudgetExecution.LabelPanel();
             this.Label10 = new BudgetExecution.LabelPanel();
-            this.ToolBar = new BudgetExecution.ToolPanel();
-            this.Separator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.Label = new BudgetExecution.BarLabel();
-            this.Separator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.FirstButton = new BudgetExecution.BarButton();
-            this.Separator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.PreviousButton = new BudgetExecution.BarButton();
-            this.Separator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.TextBox = new BudgetExecution.BarTextBox();
-            this.Separator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.NextButton = new BudgetExecution.BarButton();
-            this.Separator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.LastButton = new BudgetExecution.BarButton();
-            this.Separator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.AddButton = new BudgetExecution.BarButton();
-            this.Separator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.DeleteButton = new BudgetExecution.BarButton();
-            this.Separator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.UndoButton = new BudgetExecution.BarButton();
-            this.Separator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.RefreshButton = new BudgetExecution.BarButton();
-            this.Separator11 = new System.Windows.Forms.ToolStripSeparator();
-            this.CalculatorButton = new BudgetExecution.BarButton();
-            this.Separator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.SaveButton = new BudgetExecution.BarButton();
-            this.Separator13 = new System.Windows.Forms.ToolStripSeparator();
-            this.UploadButton = new BudgetExecution.BarButton();
-            this.Separator14 = new System.Windows.Forms.ToolStripSeparator();
+            this.ToolTip = new BudgetExecution.ToolTip();
             this.BackPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).BeginInit();
             this.Table.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BindingSource)).BeginInit();
-            this.ToolBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // BackPanel
@@ -119,8 +91,8 @@ namespace BudgetExecution
             this.BackPanel.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
             this.BackPanel.Border.Visible = true;
             this.BackPanel.Children = null;
+            this.BackPanel.Controls.Add(this.ToolBarControl);
             this.BackPanel.Controls.Add(this.Table);
-            this.BackPanel.Controls.Add(this.ToolBar);
             this.BackPanel.DataFilter = null;
             this.BackPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BackPanel.Field = BudgetExecution.Field.NS;
@@ -139,6 +111,31 @@ namespace BudgetExecution
             this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.BackPanel.ToolTip = null;
+            // 
+            // ToolBarControl
+            // 
+            this.ToolBarControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.ToolBarControl.BindingSource = this.BudgetBinding;
+            this.ToolBarControl.DataFilter = null;
+            this.ToolBarControl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ToolBarControl.Field = BudgetExecution.Field.NS;
+            this.ToolBarControl.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToolBarControl.ForeColor = System.Drawing.Color.LightGray;
+            this.ToolBarControl.HoverText = null;
+            this.ToolBarControl.Location = new System.Drawing.Point(0, 140);
+            this.ToolBarControl.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
+            this.ToolBarControl.Name = "ToolBarControl";
+            this.ToolBarControl.Numeric = BudgetExecution.Numeric.NS;
+            this.ToolBarControl.Padding = new System.Windows.Forms.Padding(1, 1, 1, 0);
+            this.ToolBarControl.Size = new System.Drawing.Size(1064, 52);
+            this.ToolBarControl.TabIndex = 2;
+            this.ToolBarControl.ToolButtons = null;
+            // 
+            // BudgetBinding
+            // 
+            this.BudgetBinding.DataFilter = null;
+            this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
             // 
             // Table
             // 
@@ -174,7 +171,7 @@ namespace BudgetExecution
             this.Table.Controls.Add(this.Label8, 1, 2);
             this.Table.Controls.Add(this.Label9, 2, 2);
             this.Table.Controls.Add(this.Label10, 3, 2);
-            this.Table.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Table.Dock = System.Windows.Forms.DockStyle.Top;
             this.Table.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.Table.Location = new System.Drawing.Point(0, 0);
             this.Table.Name = "Table";
@@ -192,7 +189,7 @@ namespace BudgetExecution
             this.TextBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox12.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.TextBox12.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox12.BindingSource = this.BindingSource;
+            this.TextBox12.BindingSource = this.BudgetBinding;
             this.TextBox12.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox12.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
             this.TextBox12.Border.HoverVisible = true;
@@ -242,6 +239,7 @@ namespace BudgetExecution
             this.TextBox12.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox12.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox12.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.TextBox12.ToolTip = null;
             this.TextBox12.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox12.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox12.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -249,18 +247,13 @@ namespace BudgetExecution
             this.TextBox12.Watermark.Visible = false;
             this.TextBox12.WordWrap = true;
             // 
-            // BindingSource
-            // 
-            this.BindingSource.DataFilter = null;
-            this.BindingSource.Numeric = BudgetExecution.Numeric.NS;
-            // 
             // TextBox11
             // 
             this.TextBox11.AlphaNumeric = false;
             this.TextBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox11.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.TextBox11.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox11.BindingSource = this.BindingSource;
+            this.TextBox11.BindingSource = this.BudgetBinding;
             this.TextBox11.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox11.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
             this.TextBox11.Border.HoverVisible = true;
@@ -310,6 +303,7 @@ namespace BudgetExecution
             this.TextBox11.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox11.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox11.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.TextBox11.ToolTip = null;
             this.TextBox11.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox11.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox11.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -320,7 +314,7 @@ namespace BudgetExecution
             // Label12
             // 
             this.Label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Label12.BindingSource = this.BindingSource;
+            this.Label12.BindingSource = this.BudgetBinding;
             this.Label12.DataFilter = null;
             this.Label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label12.Field = BudgetExecution.Field.NS;
@@ -352,11 +346,12 @@ namespace BudgetExecution
             this.Label12.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label12.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label12.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.Label12.ToolTip = null;
             // 
             // Label11
             // 
             this.Label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Label11.BindingSource = this.BindingSource;
+            this.Label11.BindingSource = this.BudgetBinding;
             this.Label11.DataFilter = null;
             this.Label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label11.Field = BudgetExecution.Field.NS;
@@ -388,13 +383,15 @@ namespace BudgetExecution
             this.Label11.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label11.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label11.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.Label11.ToolTip = null;
+            // 
             // TextBox7
             // 
             this.TextBox7.AlphaNumeric = false;
             this.TextBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox7.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.TextBox7.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox7.BindingSource = this.BindingSource;
+            this.TextBox7.BindingSource = this.BudgetBinding;
             this.TextBox7.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox7.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
             this.TextBox7.Border.HoverVisible = true;
@@ -444,6 +441,7 @@ namespace BudgetExecution
             this.TextBox7.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox7.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox7.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.TextBox7.ToolTip = null;
             this.TextBox7.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox7.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox7.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -457,7 +455,7 @@ namespace BudgetExecution
             this.TextBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox6.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.TextBox6.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox6.BindingSource = this.BindingSource;
+            this.TextBox6.BindingSource = this.BudgetBinding;
             this.TextBox6.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox6.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
             this.TextBox6.Border.HoverVisible = true;
@@ -507,6 +505,7 @@ namespace BudgetExecution
             this.TextBox6.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox6.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox6.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.TextBox6.ToolTip = null;
             this.TextBox6.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox6.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox6.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -520,7 +519,7 @@ namespace BudgetExecution
             this.TextBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox9.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.TextBox9.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox9.BindingSource = this.BindingSource;
+            this.TextBox9.BindingSource = this.BudgetBinding;
             this.TextBox9.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox9.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
             this.TextBox9.Border.HoverVisible = true;
@@ -570,6 +569,7 @@ namespace BudgetExecution
             this.TextBox9.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox9.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox9.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.TextBox9.ToolTip = null;
             this.TextBox9.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox9.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox9.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -583,7 +583,7 @@ namespace BudgetExecution
             this.TextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox5.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.TextBox5.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox5.BindingSource = this.BindingSource;
+            this.TextBox5.BindingSource = this.BudgetBinding;
             this.TextBox5.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox5.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
             this.TextBox5.Border.HoverVisible = true;
@@ -633,6 +633,7 @@ namespace BudgetExecution
             this.TextBox5.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox5.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox5.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.TextBox5.ToolTip = null;
             this.TextBox5.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox5.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox5.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -646,7 +647,7 @@ namespace BudgetExecution
             this.TextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox4.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.TextBox4.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox4.BindingSource = this.BindingSource;
+            this.TextBox4.BindingSource = this.BudgetBinding;
             this.TextBox4.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox4.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
             this.TextBox4.Border.HoverVisible = true;
@@ -696,6 +697,7 @@ namespace BudgetExecution
             this.TextBox4.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox4.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox4.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.TextBox4.ToolTip = null;
             this.TextBox4.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox4.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox4.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -709,7 +711,7 @@ namespace BudgetExecution
             this.TextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox3.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.TextBox3.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox3.BindingSource = this.BindingSource;
+            this.TextBox3.BindingSource = this.BudgetBinding;
             this.TextBox3.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox3.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
             this.TextBox3.Border.HoverVisible = true;
@@ -759,6 +761,7 @@ namespace BudgetExecution
             this.TextBox3.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox3.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox3.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.TextBox3.ToolTip = null;
             this.TextBox3.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox3.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox3.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -772,7 +775,7 @@ namespace BudgetExecution
             this.TextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox2.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.TextBox2.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox2.BindingSource = this.BindingSource;
+            this.TextBox2.BindingSource = this.BudgetBinding;
             this.TextBox2.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox2.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
             this.TextBox2.Border.HoverVisible = true;
@@ -822,6 +825,7 @@ namespace BudgetExecution
             this.TextBox2.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox2.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox2.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.TextBox2.ToolTip = null;
             this.TextBox2.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox2.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox2.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -832,7 +836,7 @@ namespace BudgetExecution
             // Label5
             // 
             this.Label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Label5.BindingSource = this.BindingSource;
+            this.Label5.BindingSource = this.BudgetBinding;
             this.Label5.DataFilter = null;
             this.Label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label5.Field = BudgetExecution.Field.NS;
@@ -864,11 +868,12 @@ namespace BudgetExecution
             this.Label5.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label5.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label5.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.Label5.ToolTip = null;
             // 
             // Label4
             // 
             this.Label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Label4.BindingSource = this.BindingSource;
+            this.Label4.BindingSource = this.BudgetBinding;
             this.Label4.DataFilter = null;
             this.Label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label4.Field = BudgetExecution.Field.NS;
@@ -900,11 +905,12 @@ namespace BudgetExecution
             this.Label4.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label4.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label4.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.Label4.ToolTip = null;
             // 
             // Label3
             // 
             this.Label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Label3.BindingSource = this.BindingSource;
+            this.Label3.BindingSource = this.BudgetBinding;
             this.Label3.DataFilter = null;
             this.Label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label3.Field = BudgetExecution.Field.NS;
@@ -936,10 +942,12 @@ namespace BudgetExecution
             this.Label3.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label3.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label3.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.Label3.ToolTip = null;
+            // 
             // Label2
             // 
             this.Label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Label2.BindingSource = this.BindingSource;
+            this.Label2.BindingSource = this.BudgetBinding;
             this.Label2.DataFilter = null;
             this.Label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label2.Field = BudgetExecution.Field.NS;
@@ -971,11 +979,12 @@ namespace BudgetExecution
             this.Label2.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label2.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label2.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.Label2.ToolTip = null;
             // 
             // Label1
             // 
             this.Label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Label1.BindingSource = this.BindingSource;
+            this.Label1.BindingSource = this.BudgetBinding;
             this.Label1.DataFilter = null;
             this.Label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label1.Field = BudgetExecution.Field.NS;
@@ -1007,6 +1016,7 @@ namespace BudgetExecution
             this.Label1.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label1.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label1.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.Label1.ToolTip = null;
             // 
             // TextBox1
             // 
@@ -1014,7 +1024,7 @@ namespace BudgetExecution
             this.TextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox1.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.TextBox1.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox1.BindingSource = this.BindingSource;
+            this.TextBox1.BindingSource = this.BudgetBinding;
             this.TextBox1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox1.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
             this.TextBox1.Border.HoverVisible = true;
@@ -1064,6 +1074,7 @@ namespace BudgetExecution
             this.TextBox1.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox1.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox1.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.TextBox1.ToolTip = null;
             this.TextBox1.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox1.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox1.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1077,7 +1088,7 @@ namespace BudgetExecution
             this.TextBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox10.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.TextBox10.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox10.BindingSource = this.BindingSource;
+            this.TextBox10.BindingSource = this.BudgetBinding;
             this.TextBox10.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox10.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
             this.TextBox10.Border.HoverVisible = true;
@@ -1127,6 +1138,7 @@ namespace BudgetExecution
             this.TextBox10.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox10.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox10.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.TextBox10.ToolTip = null;
             this.TextBox10.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox10.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox10.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1137,7 +1149,7 @@ namespace BudgetExecution
             // Label6
             // 
             this.Label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Label6.BindingSource = this.BindingSource;
+            this.Label6.BindingSource = this.BudgetBinding;
             this.Label6.DataFilter = null;
             this.Label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label6.Field = BudgetExecution.Field.NS;
@@ -1169,6 +1181,7 @@ namespace BudgetExecution
             this.Label6.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label6.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label6.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.Label6.ToolTip = null;
             // 
             // TextBox8
             // 
@@ -1176,7 +1189,7 @@ namespace BudgetExecution
             this.TextBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox8.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.TextBox8.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox8.BindingSource = this.BindingSource;
+            this.TextBox8.BindingSource = this.BudgetBinding;
             this.TextBox8.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox8.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
             this.TextBox8.Border.HoverVisible = true;
@@ -1226,6 +1239,7 @@ namespace BudgetExecution
             this.TextBox8.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox8.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.TextBox8.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.TextBox8.ToolTip = null;
             this.TextBox8.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.TextBox8.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox8.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1236,7 +1250,7 @@ namespace BudgetExecution
             // Label7
             // 
             this.Label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Label7.BindingSource = this.BindingSource;
+            this.Label7.BindingSource = this.BudgetBinding;
             this.Label7.DataFilter = null;
             this.Label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label7.Field = BudgetExecution.Field.NS;
@@ -1268,11 +1282,12 @@ namespace BudgetExecution
             this.Label7.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label7.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label7.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.Label7.ToolTip = null;
             // 
             // Label8
             // 
             this.Label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Label8.BindingSource = this.BindingSource;
+            this.Label8.BindingSource = this.BudgetBinding;
             this.Label8.DataFilter = null;
             this.Label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label8.Field = BudgetExecution.Field.NS;
@@ -1304,11 +1319,12 @@ namespace BudgetExecution
             this.Label8.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label8.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label8.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.Label8.ToolTip = null;
             // 
             // Label9
             // 
             this.Label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Label9.BindingSource = this.BindingSource;
+            this.Label9.BindingSource = this.BudgetBinding;
             this.Label9.DataFilter = null;
             this.Label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label9.Field = BudgetExecution.Field.NS;
@@ -1340,11 +1356,12 @@ namespace BudgetExecution
             this.Label9.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label9.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label9.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.Label9.ToolTip = null;
             // 
             // Label10
             // 
             this.Label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Label10.BindingSource = this.BindingSource;
+            this.Label10.BindingSource = this.BudgetBinding;
             this.Label10.DataFilter = null;
             this.Label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label10.Field = BudgetExecution.Field.NS;
@@ -1376,382 +1393,39 @@ namespace BudgetExecution
             this.Label10.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label10.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.Label10.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.Label10.ToolTip = null;
             // 
-            // ToolBar
+            // ToolTip
             // 
-            this.ToolBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ToolBar.BindingSource = this.BindingSource;
-            this.ToolBar.BorderStyle = Syncfusion.Windows.Forms.Tools.ToolStripBorderStyle.StaticEdge;
-            this.ToolBar.CanOverflow = false;
-            this.ToolBar.CaptionAlignment = Syncfusion.Windows.Forms.Tools.CaptionAlignment.Far;
-            this.ToolBar.DataFilter = null;
-            this.ToolBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ToolBar.Field = BudgetExecution.Field.NS;
-            this.ToolBar.Font = new System.Drawing.Font("Roboto", 8F);
-            this.ToolBar.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.ToolBar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.ToolBar.Image = null;
-            this.ToolBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Separator1,
-            this.Label,
-            this.Separator2,
-            this.FirstButton,
-            this.Separator3,
-            this.PreviousButton,
-            this.Separator4,
-            this.TextBox,
-            this.Separator5,
-            this.NextButton,
-            this.Separator6,
-            this.LastButton,
-            this.Separator7,
-            this.AddButton,
-            this.Separator8,
-            this.DeleteButton,
-            this.Separator9,
-            this.UndoButton,
-            this.Separator10,
-            this.RefreshButton,
-            this.Separator11,
-            this.CalculatorButton,
-            this.Separator12,
-            this.SaveButton,
-            this.Separator13,
-            this.UploadButton,
-            this.Separator14});
-            this.ToolBar.Location = new System.Drawing.Point(0, 145);
-            this.ToolBar.Margin = new System.Windows.Forms.Padding(3);
-            this.ToolBar.Name = "ToolBar";
-            this.ToolBar.Numeric = BudgetExecution.Numeric.NS;
-            this.ToolBar.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Black;
-            this.ToolBar.ShowCaption = true;
-            this.ToolBar.ShowLauncher = false;
-            this.ToolBar.Size = new System.Drawing.Size(1064, 47);
-            this.ToolBar.TabIndex = 0;
-            // 
-            // Separator1
-            // 
-            this.Separator1.Margin = new System.Windows.Forms.Padding(1);
-            this.Separator1.Name = "Separator1";
-            this.Separator1.Size = new System.Drawing.Size(6, 30);
-            // 
-            // Label
-            // 
-            this.Label.BindingSource = this.BindingSource;
-            this.Label.Field = BudgetExecution.Field.NS;
-            this.Label.Font = new System.Drawing.Font("Roboto", 8F);
-            this.Label.ForeColor = System.Drawing.Color.Black;
-            this.Label.HoverText = null;
-            this.Label.Margin = new System.Windows.Forms.Padding(3, 5, 10, 5);
-            this.Label.Name = "Label";
-            this.Label.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-            this.Label.Size = new System.Drawing.Size(110, 22);
-            this.Label.Tag = "Label";
-            this.Label.Text = "Data Source:             ";
-            // 
-            // Separator2
-            // 
-            this.Separator2.Margin = new System.Windows.Forms.Padding(1);
-            this.Separator2.Name = "Separator2";
-            this.Separator2.Size = new System.Drawing.Size(6, 30);
-            // 
-            // FirstButton
-            // 
-            this.FirstButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.FirstButton.Bar = BudgetExecution.Tool.FirstButton;
-            this.FirstButton.BindingSource = this.BindingSource;
-            this.FirstButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.FirstButton.Field = BudgetExecution.Field.NS;
-            this.FirstButton.Font = new System.Drawing.Font("Roboto", 8F);
-            this.FirstButton.ForeColor = System.Drawing.Color.LightGray;
-            this.FirstButton.HoverText = null;
-            this.FirstButton.Image = ((System.Drawing.Image)(resources.GetObject("FirstButton.Image")));
-            this.FirstButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.FirstButton.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.FirstButton.Name = "FirstButton";
-            this.FirstButton.Padding = new System.Windows.Forms.Padding(1);
-            this.FirstButton.Size = new System.Drawing.Size(23, 22);
-            this.FirstButton.Text = "barButton1";
-            // 
-            // Separator3
-            // 
-            this.Separator3.Margin = new System.Windows.Forms.Padding(1);
-            this.Separator3.Name = "Separator3";
-            this.Separator3.Size = new System.Drawing.Size(6, 30);
-            // 
-            // PreviousButton
-            // 
-            this.PreviousButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.PreviousButton.Bar = BudgetExecution.Tool.PreviousButton;
-            this.PreviousButton.BindingSource = this.BindingSource;
-            this.PreviousButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.PreviousButton.Field = BudgetExecution.Field.NS;
-            this.PreviousButton.Font = new System.Drawing.Font("Roboto", 8F);
-            this.PreviousButton.ForeColor = System.Drawing.Color.LightGray;
-            this.PreviousButton.HoverText = null;
-            this.PreviousButton.Image = ((System.Drawing.Image)(resources.GetObject("PreviousButton.Image")));
-            this.PreviousButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.PreviousButton.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.PreviousButton.Name = "PreviousButton";
-            this.PreviousButton.Padding = new System.Windows.Forms.Padding(1);
-            this.PreviousButton.Size = new System.Drawing.Size(23, 22);
-            this.PreviousButton.Text = "barButton2";
-            // 
-            // Separator4
-            // 
-            this.Separator4.Margin = new System.Windows.Forms.Padding(1);
-            this.Separator4.Name = "Separator4";
-            this.Separator4.Size = new System.Drawing.Size(6, 30);
-            // 
-            // TextBox
-            // 
-            this.TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox.BindingSource = this.BindingSource;
-            this.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox.Field = BudgetExecution.Field.NS;
-            this.TextBox.Font = new System.Drawing.Font("Roboto", 8F);
-            this.TextBox.ForeColor = System.Drawing.Color.LightGray;
-            this.TextBox.HoverText = null;
-            this.TextBox.Margin = new System.Windows.Forms.Padding(5, 1, 5, 1);
-            this.TextBox.Name = "TextBox";
-            this.TextBox.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-            this.TextBox.Padding = new System.Windows.Forms.Padding(1);
-            this.TextBox.Size = new System.Drawing.Size(158, 30);
-            this.TextBox.Tag = "";
-            this.TextBox.Text = "Record";
-            this.TextBox.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Separator5
-            // 
-            this.Separator5.Margin = new System.Windows.Forms.Padding(1);
-            this.Separator5.Name = "Separator5";
-            this.Separator5.Size = new System.Drawing.Size(6, 30);
-            // 
-            // NextButton
-            // 
-            this.NextButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.NextButton.Bar = BudgetExecution.Tool.NextButton;
-            this.NextButton.BindingSource = this.BindingSource;
-            this.NextButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.NextButton.Field = BudgetExecution.Field.NS;
-            this.NextButton.Font = new System.Drawing.Font("Roboto", 8F);
-            this.NextButton.ForeColor = System.Drawing.Color.LightGray;
-            this.NextButton.HoverText = null;
-            this.NextButton.Image = ((System.Drawing.Image)(resources.GetObject("NextButton.Image")));
-            this.NextButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.NextButton.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Padding = new System.Windows.Forms.Padding(1);
-            this.NextButton.Size = new System.Drawing.Size(23, 22);
-            this.NextButton.Text = "barButton3";
-            // 
-            // Separator6
-            // 
-            this.Separator6.Margin = new System.Windows.Forms.Padding(1);
-            this.Separator6.Name = "Separator6";
-            this.Separator6.Size = new System.Drawing.Size(6, 30);
-            // 
-            // LastButton
-            // 
-            this.LastButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.LastButton.Bar = BudgetExecution.Tool.LastButton;
-            this.LastButton.BindingSource = this.BindingSource;
-            this.LastButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.LastButton.Field = BudgetExecution.Field.NS;
-            this.LastButton.Font = new System.Drawing.Font("Roboto", 8F);
-            this.LastButton.ForeColor = System.Drawing.Color.LightGray;
-            this.LastButton.HoverText = null;
-            this.LastButton.Image = ((System.Drawing.Image)(resources.GetObject("LastButton.Image")));
-            this.LastButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.LastButton.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.LastButton.Name = "LastButton";
-            this.LastButton.Padding = new System.Windows.Forms.Padding(1);
-            this.LastButton.Size = new System.Drawing.Size(23, 22);
-            this.LastButton.Text = "barButton4";
-            // 
-            // Separator7
-            // 
-            this.Separator7.Margin = new System.Windows.Forms.Padding(1);
-            this.Separator7.Name = "Separator7";
-            this.Separator7.Size = new System.Drawing.Size(6, 30);
-            // 
-            // AddButton
-            // 
-            this.AddButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.AddButton.Bar = BudgetExecution.Tool.AddButton;
-            this.AddButton.BindingSource = this.BindingSource;
-            this.AddButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.AddButton.Field = BudgetExecution.Field.NS;
-            this.AddButton.Font = new System.Drawing.Font("Roboto", 8F);
-            this.AddButton.ForeColor = System.Drawing.Color.LightGray;
-            this.AddButton.HoverText = null;
-            this.AddButton.Image = ((System.Drawing.Image)(resources.GetObject("AddButton.Image")));
-            this.AddButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.AddButton.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.Padding = new System.Windows.Forms.Padding(1);
-            this.AddButton.Size = new System.Drawing.Size(23, 22);
-            this.AddButton.Text = "barButton5";
-            // 
-            // Separator8
-            // 
-            this.Separator8.Margin = new System.Windows.Forms.Padding(1);
-            this.Separator8.Name = "Separator8";
-            this.Separator8.Size = new System.Drawing.Size(6, 30);
-            // 
-            // DeleteButton
-            // 
-            this.DeleteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.DeleteButton.Bar = BudgetExecution.Tool.DeleteButton;
-            this.DeleteButton.BindingSource = this.BindingSource;
-            this.DeleteButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.DeleteButton.Field = BudgetExecution.Field.NS;
-            this.DeleteButton.Font = new System.Drawing.Font("Roboto", 8F);
-            this.DeleteButton.ForeColor = System.Drawing.Color.LightGray;
-            this.DeleteButton.HoverText = null;
-            this.DeleteButton.Image = ((System.Drawing.Image)(resources.GetObject("DeleteButton.Image")));
-            this.DeleteButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.DeleteButton.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Padding = new System.Windows.Forms.Padding(1);
-            this.DeleteButton.Size = new System.Drawing.Size(23, 22);
-            this.DeleteButton.Text = "barButton6";
-            // 
-            // Separator9
-            // 
-            this.Separator9.Margin = new System.Windows.Forms.Padding(1);
-            this.Separator9.Name = "Separator9";
-            this.Separator9.Size = new System.Drawing.Size(6, 30);
-            // 
-            // UndoButton
-            // 
-            this.UndoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.UndoButton.Bar = BudgetExecution.Tool.UndoButton;
-            this.UndoButton.BindingSource = this.BindingSource;
-            this.UndoButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.UndoButton.Field = BudgetExecution.Field.NS;
-            this.UndoButton.Font = new System.Drawing.Font("Roboto", 8F);
-            this.UndoButton.ForeColor = System.Drawing.Color.LightGray;
-            this.UndoButton.HoverText = null;
-            this.UndoButton.Image = ((System.Drawing.Image)(resources.GetObject("UndoButton.Image")));
-            this.UndoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.UndoButton.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.UndoButton.Name = "UndoButton";
-            this.UndoButton.Padding = new System.Windows.Forms.Padding(1);
-            this.UndoButton.Size = new System.Drawing.Size(23, 22);
-            this.UndoButton.Text = "barButton7";
-            // 
-            // Separator10
-            // 
-            this.Separator10.Margin = new System.Windows.Forms.Padding(1);
-            this.Separator10.Name = "Separator10";
-            this.Separator10.Size = new System.Drawing.Size(6, 30);
-            // 
-            // RefreshButton
-            // 
-            this.RefreshButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.RefreshButton.Bar = BudgetExecution.Tool.RefreshButton;
-            this.RefreshButton.BindingSource = this.BindingSource;
-            this.RefreshButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.RefreshButton.Field = BudgetExecution.Field.NS;
-            this.RefreshButton.Font = new System.Drawing.Font("Roboto", 8F);
-            this.RefreshButton.ForeColor = System.Drawing.Color.LightGray;
-            this.RefreshButton.HoverText = null;
-            this.RefreshButton.Image = ((System.Drawing.Image)(resources.GetObject("RefreshButton.Image")));
-            this.RefreshButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.RefreshButton.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.RefreshButton.Name = "RefreshButton";
-            this.RefreshButton.Padding = new System.Windows.Forms.Padding(1);
-            this.RefreshButton.Size = new System.Drawing.Size(23, 22);
-            this.RefreshButton.Text = "barButton8";
-            // 
-            // Separator11
-            // 
-            this.Separator11.Name = "Separator11";
-            this.Separator11.Size = new System.Drawing.Size(6, 32);
-            // 
-            // CalculatorButton
-            // 
-            this.CalculatorButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.CalculatorButton.Bar = BudgetExecution.Tool.CalculatorButton;
-            this.CalculatorButton.BindingSource = this.BindingSource;
-            this.CalculatorButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.CalculatorButton.Field = BudgetExecution.Field.NS;
-            this.CalculatorButton.Font = new System.Drawing.Font("Roboto", 8F);
-            this.CalculatorButton.ForeColor = System.Drawing.Color.LightGray;
-            this.CalculatorButton.HoverText = null;
-            this.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("CalculatorButton.Image")));
-            this.CalculatorButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.CalculatorButton.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.CalculatorButton.Name = "CalculatorButton";
-            this.CalculatorButton.Padding = new System.Windows.Forms.Padding(1);
-            this.CalculatorButton.Size = new System.Drawing.Size(23, 22);
-            // 
-            // Separator12
-            // 
-            this.Separator12.Name = "Separator12";
-            this.Separator12.Size = new System.Drawing.Size(6, 32);
-            // 
-            // SaveButton
-            // 
-            this.SaveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.SaveButton.Bar = BudgetExecution.Tool.SaveButton;
-            this.SaveButton.BindingSource = this.BindingSource;
-            this.SaveButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.SaveButton.Field = BudgetExecution.Field.NS;
-            this.SaveButton.Font = new System.Drawing.Font("Roboto", 8F);
-            this.SaveButton.ForeColor = System.Drawing.Color.LightGray;
-            this.SaveButton.HoverText = null;
-            this.SaveButton.Image = ((System.Drawing.Image)(resources.GetObject("SaveButton.Image")));
-            this.SaveButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.SaveButton.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Padding = new System.Windows.Forms.Padding(1);
-            this.SaveButton.Size = new System.Drawing.Size(23, 22);
-            this.SaveButton.Text = "barButton9";
-            // 
-            // Separator13
-            // 
-            this.Separator13.Name = "Separator13";
-            this.Separator13.Size = new System.Drawing.Size(6, 32);
-            // 
-            // UploadButton
-            // 
-            this.UploadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.UploadButton.Bar = BudgetExecution.Tool.UpdateButton;
-            this.UploadButton.BindingSource = this.BindingSource;
-            this.UploadButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.UploadButton.Field = BudgetExecution.Field.NS;
-            this.UploadButton.Font = new System.Drawing.Font("Roboto", 8F);
-            this.UploadButton.ForeColor = System.Drawing.Color.LightGray;
-            this.UploadButton.HoverText = null;
-            this.UploadButton.Image = ((System.Drawing.Image)(resources.GetObject("UploadButton.Image")));
-            this.UploadButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.UploadButton.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.UploadButton.Name = "UploadButton";
-            this.UploadButton.Padding = new System.Windows.Forms.Padding(1);
-            this.UploadButton.Size = new System.Drawing.Size(23, 22);
-            this.UploadButton.Text = "barButton10";
-            // 
-            // Separator14
-            // 
-            this.Separator14.Name = "Separator14";
-            this.Separator14.Size = new System.Drawing.Size(6, 32);
+            this.ToolTip.AutoPopDelay = 5000;
+            this.ToolTip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.ToolTip.BindingSource = null;
+            this.ToolTip.BorderColor = System.Drawing.Color.Blue;
+            this.ToolTip.ForeColor = System.Drawing.Color.LightGray;
+            this.ToolTip.InitialDelay = 500;
+            this.ToolTip.Name = null;
+            this.ToolTip.OwnerDraw = true;
+            this.ToolTip.ReshowDelay = 100;
+            this.ToolTip.Style = MetroSet_UI.Design.Style.Custom;
+            this.ToolTip.StyleManager = null;
+            this.ToolTip.ThemeAuthor = "Terry D. Eppler";
+            this.ToolTip.ThemeName = "Budget Execution";
+            this.ToolTip.TipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.ToolTip.TipTitle = "";
             // 
             // RecordControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BindingSource = this.BudgetBinding;
             this.Controls.Add(this.BackPanel);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "RecordControl";
             this.Size = new System.Drawing.Size(1066, 194);
             this.BackPanel.ResumeLayout(false);
-            this.BackPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).EndInit();
             this.Table.ResumeLayout(false);
             this.Table.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BindingSource)).EndInit();
-            this.ToolBar.ResumeLayout(false);
-            this.ToolBar.PerformLayout();
             this.ResumeLayout(false);
 
             }
@@ -1800,62 +1474,6 @@ namespace BudgetExecution
 
             public TextBoxPanel TextBox10;
 
-            public ToolPanel ToolBar;
-
-            private ToolStripSeparator Separator1;
-
-            public BarLabel Label;
-
-            public ToolStripSeparator Separator2;
-
-            public BarButton FirstButton;
-
-            public ToolStripSeparator Separator3;
-
-            public BarButton PreviousButton;
-
-            public ToolStripSeparator Separator4;
-
-            private BarTextBox TextBox;
-
-            public ToolStripSeparator Separator5;
-
-            public BarButton NextButton;
-
-            public ToolStripSeparator Separator6;
-
-            public BarButton LastButton;
-
-            public ToolStripSeparator Separator7;
-
-            public BarButton AddButton;
-
-            public ToolStripSeparator Separator8;
-
-            public BarButton DeleteButton;
-
-            public ToolStripSeparator Separator9;
-
-            public BarButton UndoButton;
-
-            public ToolStripSeparator Separator10;
-
-            public BarButton RefreshButton;
-
-            private ToolStripSeparator Separator11;
-
-            public BarButton SaveButton;
-
-            private ToolStripSeparator Separator12;
-
-            public BarButton UploadButton;
-
-            private ToolStripSeparator Separator13;
-
-            public BarButton CalculatorButton;
-
-            public ToolStripSeparator Separator14;
-
             public TextBoxPanel TextBox12;
 
             public TextBoxPanel TextBox11;
@@ -1863,10 +1481,10 @@ namespace BudgetExecution
             public LabelPanel Label12;
 
             public LabelPanel Label11;
-
-            public new BudgetBinding BindingSource;
-
-        public LayoutPanel BackPanel;
+        public ToolBarControl ToolBarControl;
+        public BudgetBinding BudgetBinding;
+        private LayoutPanel BackPanel;
+        private ToolTip ToolTip;
     }
     
 }

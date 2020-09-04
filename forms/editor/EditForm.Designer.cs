@@ -28,24 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataEditor1 = new BudgetExecution.EditControl();
+            this.EditControl = new BudgetExecution.EditControl();
+            this.BudgetBinding = new BudgetExecution.BudgetBinding();
+            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataEditor1
+            // EditControl
             // 
-            this.dataEditor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.dataEditor1.BindingSource = null;
-            this.dataEditor1.DataFilter = null;
-            this.dataEditor1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataEditor1.Field = BudgetExecution.Field.NS;
-            this.dataEditor1.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataEditor1.ForeColor = System.Drawing.Color.DarkGray;
-            this.dataEditor1.Location = new System.Drawing.Point(0, 0);
-            this.dataEditor1.Name = "dataEditor1";
-            this.dataEditor1.Numeric = BudgetExecution.Numeric.NS;
-            this.dataEditor1.Padding = new System.Windows.Forms.Padding(1);
-            this.dataEditor1.Size = new System.Drawing.Size(1101, 330);
-            this.dataEditor1.TabIndex = 0;
+            this.EditControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.EditControl.BindingSource = this.BudgetBinding;
+            this.EditControl.DataFilter = null;
+            this.EditControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EditControl.Field = BudgetExecution.Field.NS;
+            this.EditControl.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditControl.ForeColor = System.Drawing.Color.DarkGray;
+            this.EditControl.Location = new System.Drawing.Point(0, 0);
+            this.EditControl.Name = "EditControl";
+            this.EditControl.Numeric = BudgetExecution.Numeric.NS;
+            this.EditControl.Padding = new System.Windows.Forms.Padding(1);
+            this.EditControl.Size = new System.Drawing.Size(1101, 330);
+            this.EditControl.TabIndex = 0;
+            // 
+            // BudgetBinding
+            // 
+            this.BudgetBinding.DataFilter = null;
+            this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
             // 
             // EditForm
             // 
@@ -57,17 +64,19 @@
             this.CaptionButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.ClientSize = new System.Drawing.Size(1101, 330);
             this.ControlBox = false;
-            this.Controls.Add(this.dataEditor1);
+            this.Controls.Add(this.EditControl);
             this.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.LightGray;
             this.Name = "EditForm";
             this.ShowIcon = false;
+            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private EditControl dataEditor1;
+        public BudgetBinding BudgetBinding;
+        public EditControl EditControl;
     }
 }

@@ -32,7 +32,9 @@
             this.BackPanel = new BudgetExecution.LayoutPanel();
             this.Calculator = new BudgetExecution.CalculationPanel();
             this.Label = new BudgetExecution.LabelPanel();
+            this.BudgetBinding = new BudgetExecution.BudgetBinding();
             this.BackPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).BeginInit();
             this.SuspendLayout();
             // 
             // BackPanel
@@ -111,7 +113,7 @@
             // Label
             // 
             this.Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Label.BindingSource = null;
+            this.Label.BindingSource = this.BudgetBinding;
             this.Label.DataFilter = null;
             this.Label.Dock = System.Windows.Forms.DockStyle.Top;
             this.Label.Field = BudgetExecution.Field.NS;
@@ -146,6 +148,11 @@
             this.Label.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.Label.ToolTip = null;
             // 
+            // BudgetBinding
+            // 
+            this.BudgetBinding.DataFilter = null;
+            this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
+            // 
             // CalculationControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +165,7 @@
             this.Padding = new System.Windows.Forms.Padding(5);
             this.Size = new System.Drawing.Size(428, 333);
             this.BackPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -167,5 +175,6 @@
         public LayoutPanel BackPanel;
         public CalculationPanel Calculator;
         public LabelPanel Label;
+        public BudgetBinding BudgetBinding;
     }
 }

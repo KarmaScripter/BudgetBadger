@@ -53,17 +53,19 @@ namespace BudgetExecution
             this.CloseBox = new BudgetExecution.ClosePanel();
             this.BackPanel = new BudgetExecution.LayoutPanel();
             this.PdfDocument = new BudgetExecution.PdfPanel();
+            this.BudgetBinding = new BudgetExecution.BudgetBinding();
             this.Table.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.BackPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).BeginInit();
             this.SuspendLayout();
             // 
             // Table
             // 
             this.Table.ColumnCount = 3;
-            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.66667F));
-            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 89.33334F));
-            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 214F));
+            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.026756F));
+            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.97324F));
+            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 217F));
             this.Table.Controls.Add(this.PictureBox, 0, 0);
             this.Table.Controls.Add(this.Label, 1, 0);
             this.Table.Controls.Add(this.CloseBox, 2, 0);
@@ -73,7 +75,7 @@ namespace BudgetExecution
             this.Table.Name = "Table";
             this.Table.RowCount = 1;
             this.Table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.Table.Size = new System.Drawing.Size(1114, 40);
+            this.Table.Size = new System.Drawing.Size(1114, 26);
             this.Table.TabIndex = 1;
             // 
             // PictureBox
@@ -89,7 +91,7 @@ namespace BudgetExecution
             this.PictureBox.Location = new System.Drawing.Point(3, 3);
             this.PictureBox.Name = "PictureBox";
             this.PictureBox.Padding = new System.Windows.Forms.Padding(1);
-            this.PictureBox.Size = new System.Drawing.Size(90, 34);
+            this.PictureBox.Size = new System.Drawing.Size(66, 20);
             this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox.TabIndex = 0;
             this.PictureBox.TabStop = false;
@@ -104,7 +106,8 @@ namespace BudgetExecution
             this.Label.Field = BudgetExecution.Field.NS;
             this.Label.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label.ForeColor = System.Drawing.Color.White;
-            this.Label.Location = new System.Drawing.Point(99, 3);
+            this.Label.Location = new System.Drawing.Point(77, 5);
+            this.Label.Margin = new System.Windows.Forms.Padding(5);
             this.Label.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label.Name = "Label";
             this.Label.Numeric = BudgetExecution.Numeric.NS;
@@ -118,7 +121,7 @@ namespace BudgetExecution
             this.Label.ShadowDirection = 315;
             this.Label.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label.ShadowOpacity = 100;
-            this.Label.Size = new System.Drawing.Size(797, 34);
+            this.Label.Size = new System.Drawing.Size(814, 16);
             this.Label.TabIndex = 1;
             this.Label.Text = "Title";
             this.Label.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -180,12 +183,12 @@ namespace BudgetExecution
             this.BackPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BackPanel.Field = BudgetExecution.Field.NS;
             this.BackPanel.ForeColor = System.Drawing.Color.LightGray;
-            this.BackPanel.Location = new System.Drawing.Point(1, 41);
+            this.BackPanel.Location = new System.Drawing.Point(1, 27);
             this.BackPanel.Margin = new System.Windows.Forms.Padding(5);
             this.BackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.BackPanel.Name = "BackPanel";
             this.BackPanel.Padding = new System.Windows.Forms.Padding(5);
-            this.BackPanel.Size = new System.Drawing.Size(1114, 842);
+            this.BackPanel.Size = new System.Drawing.Size(1114, 856);
             this.BackPanel.TabIndex = 2;
             this.BackPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.BackPanel.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -217,10 +220,15 @@ namespace BudgetExecution
             this.PdfDocument.ShowHorizontalScrollBar = true;
             this.PdfDocument.ShowToolBar = true;
             this.PdfDocument.ShowVerticalScrollBar = true;
-            this.PdfDocument.Size = new System.Drawing.Size(1114, 842);
+            this.PdfDocument.Size = new System.Drawing.Size(1114, 856);
             this.PdfDocument.TabIndex = 0;
             this.PdfDocument.ToolTip = null;
             this.PdfDocument.ZoomMode = Syncfusion.Windows.Forms.PdfViewer.ZoomMode.Default;
+            // 
+            // BudgetBinding
+            // 
+            this.BudgetBinding.DataFilter = null;
+            this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
             // 
             // PdfForm
             // 
@@ -259,6 +267,7 @@ namespace BudgetExecution
             this.Table.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
             this.BackPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).EndInit();
             this.ResumeLayout(false);
 
             }
@@ -271,6 +280,7 @@ namespace BudgetExecution
         public ClosePanel CloseBox;
         public LayoutPanel BackPanel;
         public PdfPanel PdfDocument;
+        public BudgetBinding BudgetBinding;
     }
     
 }

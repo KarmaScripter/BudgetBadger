@@ -1,10 +1,12 @@
-﻿// // <copyright file = "ListBoxControl.cs" company = "Terry D. Eppler">
+﻿// // <copyright file = "GroupBoxControl.cs" company = "Terry D. Eppler">
 // // Copyright (c) Terry D. Eppler. All rights reserved.
 // // </copyright>
 
-using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
+using System.Windows.Forms;
+using VisualPlus.Toolkit.Controls.Layout;
 
 namespace BudgetExecution
 {
@@ -12,13 +14,15 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    public partial class ListBoxControl : ControlBase, IListBox
+    using System;
+
+    public partial class GroupBoxControl : ControlBase, IGroupBox
     {
         // ***************************************************************************************************************************
         // ****************************************************  CONSTRUCTORS ********************************************************
         // ***************************************************************************************************************************
 
-        public ListBoxControl()
+        public GroupBoxControl()
         {
             InitializeComponent();
         }
@@ -30,40 +34,82 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the color of the border.
         /// </summary>
-        /// <param name="format">The format.</param>
-        public void SetBorderColor( ColorFormat format )
+        /// <param name="color">The color.</param>
+        public void SetBorderColor( Color color )
         {
-            ListBox.SetBorderColor( format );
+            GroupBox.SetBorderColor( color );
         }
 
         /// <summary>
-        /// Sets the height of the item.
+        /// Sets the color of the border.
+        /// </summary>
+        /// <param name="color">The color.</param>
+        public void SetHoverBorderColor( Color color )
+        {
+            GroupBox.SetHoverBorderColor( color );
+        }
+
+        /// <summary>
+        /// Sets the color of the border.
+        /// </summary>
+        /// <param name="hovercolor">if set to <c>true</c> [hovercolor].</param>
+        public void SetBorderConfiguration( bool hovercolor )
+        {
+            GroupBox.SetBorderConfiguration( hovercolor );
+        }
+
+        /// <summary>
+        /// Sets the text alignment.
+        /// </summary>
+        /// <param name="alignment">The alignment.</param>
+        public void SetTextAlignment( StringAlignment alignment = StringAlignment.Center )
+        {
+            GroupBox.SetTextAlignment( alignment );
+        }
+
+        /// <summary>
+        /// Sets the height of the title box.
         /// </summary>
         /// <param name="height">The height.</param>
-        public void SetItemHeight( int height )
+        public void SetTitleBoxHeight( int height = 30 )
         {
-            ListBox.SetItemHeight( height );
+            GroupBox.SetTitleBoxHeight( height );
         }
 
         /// <summary>
-        /// Sets the item color configuration.
+        /// Sets the header text.
         /// </summary>
-        /// <param name="format">The format.</param>
-        public void SetItemColorStyle( ColorFormat format )
+        /// <param name="text">The text.</param>
+        public void SetHeaderText( string text )
         {
-            ListBox.SetItemColorStyle( format );
+            GroupBox.SetHeaderText( text );
         }
 
         /// <summary>
-        /// Called when [mouse hover].
+        /// Sets the box style.
         /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The
-        /// <see cref="EventArgs" />
-        /// instance containing the event data.</param>
-        public void OnMouseHover( object sender, EventArgs e )
+        /// <param name="style">The style.</param>
+        public void SetBoxStyle( VisualGroupBox.GroupBoxStyle style = VisualGroupBox.GroupBoxStyle.Default )
         {
-            ListBox.OnMouseHover( sender, e );
+            GroupBox.SetBoxStyle( style );
+        }
+
+        /// <summary>
+        /// Adds the control item.
+        /// </summary>
+        /// <param name="item">The item.</param>
+        public void AddControl( Control item )
+        {
+            GroupBox.AddControl( item );
+        }
+
+        /// <summary>
+        /// Adds the control item.
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerable<Control> GetChildren()
+        {
+            return GroupBox.GetChildren();
         }
 
         /// <summary>
@@ -72,7 +118,7 @@ namespace BudgetExecution
         /// <param name="data">The data.</param>
         public new void SetDataSource<T>( IEnumerable<T> data ) where T : IEnumerable<DataRow>
         {
-            ( (IListBox)ListBox ).SetDataSource( data );
+            ( (IGroupBox)GroupBox ).SetDataSource( data );
         }
 
         /// <summary>
@@ -84,7 +130,7 @@ namespace BudgetExecution
         public new void SetDataSource<T1>( IEnumerable<T1> data, IDictionary<string, object> dict )
             where T1 : IEnumerable<DataRow>
         {
-            ( (IListBox)ListBox ).SetDataSource( data, dict );
+            ( (IGroupBox)GroupBox ).SetDataSource( data, dict );
         }
 
         /// <summary>
@@ -99,7 +145,7 @@ namespace BudgetExecution
         public new void SetDataSource<T1, T2, T3>( IEnumerable<T1> data, T2 field, T3 filter )
             where T1 : IEnumerable<DataRow> where T2 : struct
         {
-            ( (IListBox)ListBox ).SetDataSource( data, field, filter );
+            ( (IGroupBox)GroupBox ).SetDataSource( data, field, filter );
         }
 
         /// <summary>
@@ -111,7 +157,7 @@ namespace BudgetExecution
         public new void SetDataSource<T1>( IEnumerable<T1> data, object field = null )
             where T1 : IEnumerable<DataRow>
         {
-            ( (IListBox)ListBox ).SetDataSource( data, field );
+            ( (IGroupBox)GroupBox ).SetDataSource( data, field );
         }
 
         /// <summary>
@@ -123,7 +169,7 @@ namespace BudgetExecution
         public new void SetDataSource<T1, T2>( IEnumerable<T1> data, T2 dict )
             where T1 : IEnumerable<DataRow> where T2 : IDictionary<string, object>
         {
-            ( (IListBox)ListBox ).SetDataSource( data, dict );
+            ( (IGroupBox)GroupBox ).SetDataSource( data, dict );
         }
 
         /// <summary>
@@ -135,7 +181,7 @@ namespace BudgetExecution
         public new void SetDataSource<T1, T2>( IEnumerable<T1> data, T2 field, object filter = null )
             where T1 : IEnumerable<DataRow> where T2 : struct
         {
-            ( (IListBox)ListBox ).SetDataSource( data, field, filter );
+            ( (IGroupBox)GroupBox ).SetDataSource( data, field, filter );
         }
     }
 }

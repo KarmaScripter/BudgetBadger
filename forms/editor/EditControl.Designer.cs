@@ -57,6 +57,7 @@ namespace BudgetExecution
             this.Label11 = new BudgetExecution.LabelPanel();
             this.Label12 = new BudgetExecution.LabelPanel();
             this.ComboBox7 = new BudgetExecution.ComboBoxPanel();
+            this.ToolTip = new BudgetExecution.ToolTip();
             this.ComboBox8 = new BudgetExecution.ComboBoxPanel();
             this.ComboBox9 = new BudgetExecution.ComboBoxPanel();
             this.ComboBox10 = new BudgetExecution.ComboBoxPanel();
@@ -85,7 +86,6 @@ namespace BudgetExecution
             this.Separator = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
             this.TopTablePanel = new System.Windows.Forms.TableLayoutPanel();
             this.TopLabel2 = new BudgetExecution.LabelPanel();
-            this.ToolTip = new BudgetExecution.ToolTip();
             this.ToolBarControl = new BudgetExecution.ToolBarControl();
             this.BackPanel.SuspendLayout();
             this.BottomPanel.SuspendLayout();
@@ -179,7 +179,7 @@ namespace BudgetExecution
             this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 202F));
             this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182F));
             this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
-            this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 196F));
+            this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 198F));
             this.SecondRow.Controls.Add(this.TextBox9, 0, 2);
             this.SecondRow.Controls.Add(this.TextBox8, 0, 2);
             this.SecondRow.Controls.Add(this.TextBox7, 0, 2);
@@ -248,7 +248,7 @@ namespace BudgetExecution
             this.TextBox9.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox9.ImageVisible = false;
             this.TextBox9.ImageWidth = 35;
-            this.TextBox9.Location = new System.Drawing.Point(386, 63);
+            this.TextBox9.Location = new System.Drawing.Point(384, 63);
             this.TextBox9.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox9.Name = "TextBox9";
             this.TextBox9.Numeric = BudgetExecution.Numeric.NS;
@@ -317,17 +317,17 @@ namespace BudgetExecution
             this.TextBox8.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox8.ImageVisible = false;
             this.TextBox8.ImageWidth = 35;
-            this.TextBox8.Location = new System.Drawing.Point(186, 63);
+            this.TextBox8.Location = new System.Drawing.Point(185, 63);
             this.TextBox8.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox8.Name = "TextBox8";
             this.TextBox8.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox8.PasswordChar = '\0';
             this.TextBox8.ReadOnly = false;
             this.TextBox8.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox8.Size = new System.Drawing.Size(194, 23);
+            this.TextBox8.Size = new System.Drawing.Size(193, 23);
             this.TextBox8.TabIndex = 17;
             this.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox8.TextBoxWidth = 184;
+            this.TextBox8.TextBoxWidth = 183;
             this.TextBox8.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox8.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox8.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -388,10 +388,10 @@ namespace BudgetExecution
             this.TextBox7.PasswordChar = '\0';
             this.TextBox7.ReadOnly = false;
             this.TextBox7.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox7.Size = new System.Drawing.Size(177, 23);
+            this.TextBox7.Size = new System.Drawing.Size(176, 23);
             this.TextBox7.TabIndex = 16;
             this.TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox7.TextBoxWidth = 167;
+            this.TextBox7.TextBoxWidth = 166;
             this.TextBox7.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox7.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox7.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -445,17 +445,17 @@ namespace BudgetExecution
             this.TextBox12.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox12.ImageVisible = false;
             this.TextBox12.ImageWidth = 35;
-            this.TextBox12.Location = new System.Drawing.Point(953, 63);
+            this.TextBox12.Location = new System.Drawing.Point(951, 63);
             this.TextBox12.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox12.Name = "TextBox12";
             this.TextBox12.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox12.PasswordChar = '\0';
             this.TextBox12.ReadOnly = false;
             this.TextBox12.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox12.Size = new System.Drawing.Size(191, 23);
+            this.TextBox12.Size = new System.Drawing.Size(193, 23);
             this.TextBox12.TabIndex = 15;
             this.TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox12.TextBoxWidth = 181;
+            this.TextBox12.TextBoxWidth = 183;
             this.TextBox12.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox12.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox12.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -509,7 +509,7 @@ namespace BudgetExecution
             this.TextBox11.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox11.ImageVisible = false;
             this.TextBox11.ImageWidth = 35;
-            this.TextBox11.Location = new System.Drawing.Point(770, 63);
+            this.TextBox11.Location = new System.Drawing.Point(768, 63);
             this.TextBox11.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox11.Name = "TextBox11";
             this.TextBox11.Numeric = BudgetExecution.Numeric.NS;
@@ -573,7 +573,7 @@ namespace BudgetExecution
             this.TextBox10.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox10.ImageVisible = false;
             this.TextBox10.ImageWidth = 35;
-            this.TextBox10.Location = new System.Drawing.Point(588, 63);
+            this.TextBox10.Location = new System.Drawing.Point(586, 63);
             this.TextBox10.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox10.Name = "TextBox10";
             this.TextBox10.Numeric = BudgetExecution.Numeric.NS;
@@ -622,7 +622,7 @@ namespace BudgetExecution
             this.Label7.ShadowDirection = 315;
             this.Label7.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label7.ShadowOpacity = 100;
-            this.Label7.Size = new System.Drawing.Size(177, 22);
+            this.Label7.Size = new System.Drawing.Size(176, 22);
             this.Label7.TabIndex = 1;
             this.Label7.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label7.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -644,7 +644,7 @@ namespace BudgetExecution
             this.Label8.Field = BudgetExecution.Field.NS;
             this.Label8.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label8.ForeColor = System.Drawing.Color.LightGray;
-            this.Label8.Location = new System.Drawing.Point(186, 3);
+            this.Label8.Location = new System.Drawing.Point(185, 3);
             this.Label8.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label8.Name = "Label8";
             this.Label8.Numeric = BudgetExecution.Numeric.NS;
@@ -658,7 +658,7 @@ namespace BudgetExecution
             this.Label8.ShadowDirection = 315;
             this.Label8.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label8.ShadowOpacity = 100;
-            this.Label8.Size = new System.Drawing.Size(194, 22);
+            this.Label8.Size = new System.Drawing.Size(193, 22);
             this.Label8.TabIndex = 2;
             this.Label8.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label8.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -680,7 +680,7 @@ namespace BudgetExecution
             this.Label9.Field = BudgetExecution.Field.NS;
             this.Label9.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label9.ForeColor = System.Drawing.Color.LightGray;
-            this.Label9.Location = new System.Drawing.Point(386, 3);
+            this.Label9.Location = new System.Drawing.Point(384, 3);
             this.Label9.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label9.Name = "Label9";
             this.Label9.Numeric = BudgetExecution.Numeric.NS;
@@ -716,7 +716,7 @@ namespace BudgetExecution
             this.Label10.Field = BudgetExecution.Field.NS;
             this.Label10.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label10.ForeColor = System.Drawing.Color.LightGray;
-            this.Label10.Location = new System.Drawing.Point(588, 3);
+            this.Label10.Location = new System.Drawing.Point(586, 3);
             this.Label10.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label10.Name = "Label10";
             this.Label10.Numeric = BudgetExecution.Numeric.NS;
@@ -752,7 +752,7 @@ namespace BudgetExecution
             this.Label11.Field = BudgetExecution.Field.NS;
             this.Label11.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label11.ForeColor = System.Drawing.Color.LightGray;
-            this.Label11.Location = new System.Drawing.Point(770, 3);
+            this.Label11.Location = new System.Drawing.Point(768, 3);
             this.Label11.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label11.Name = "Label11";
             this.Label11.Numeric = BudgetExecution.Numeric.NS;
@@ -788,7 +788,7 @@ namespace BudgetExecution
             this.Label12.Field = BudgetExecution.Field.NS;
             this.Label12.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label12.ForeColor = System.Drawing.Color.LightGray;
-            this.Label12.Location = new System.Drawing.Point(953, 3);
+            this.Label12.Location = new System.Drawing.Point(951, 3);
             this.Label12.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label12.Name = "Label12";
             this.Label12.Numeric = BudgetExecution.Numeric.NS;
@@ -802,7 +802,7 @@ namespace BudgetExecution
             this.Label12.ShadowDirection = 315;
             this.Label12.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label12.ShadowOpacity = 100;
-            this.Label12.Size = new System.Drawing.Size(191, 22);
+            this.Label12.Size = new System.Drawing.Size(193, 22);
             this.Label12.TabIndex = 6;
             this.Label12.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label12.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -860,7 +860,7 @@ namespace BudgetExecution
             this.ComboBox7.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox7.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox7.SeparatorVisible = false;
-            this.ComboBox7.Size = new System.Drawing.Size(177, 30);
+            this.ComboBox7.Size = new System.Drawing.Size(176, 30);
             this.ComboBox7.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox7.TabIndex = 7;
             this.ComboBox7.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -875,12 +875,30 @@ namespace BudgetExecution
             this.ComboBox7.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox7.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox7.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.ComboBox7.ToolTip = null;
+            this.ComboBox7.ToolTip = this.ToolTip;
             this.ComboBox7.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ComboBox7.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox7.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
             this.ComboBox7.Watermark.Text = "Watermark text";
             this.ComboBox7.Watermark.Visible = false;
+            // 
+            // ToolTip
+            // 
+            this.ToolTip.AutoPopDelay = 5000;
+            this.ToolTip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.ToolTip.BindingSource = null;
+            this.ToolTip.BorderColor = System.Drawing.SystemColors.HotTrack;
+            this.ToolTip.ForeColor = System.Drawing.Color.LightGray;
+            this.ToolTip.InitialDelay = 500;
+            this.ToolTip.Name = null;
+            this.ToolTip.OwnerDraw = true;
+            this.ToolTip.ReshowDelay = 100;
+            this.ToolTip.Style = MetroSet_UI.Design.Style.Custom;
+            this.ToolTip.StyleManager = null;
+            this.ToolTip.ThemeAuthor = "Terry D. Eppler";
+            this.ToolTip.ThemeName = "Budget Execution";
+            this.ToolTip.TipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.ToolTip.TipTitle = "";
             // 
             // ComboBox8
             // 
@@ -917,7 +935,7 @@ namespace BudgetExecution
             this.ComboBox8.IntegralHeight = false;
             this.ComboBox8.ItemHeight = 24;
             this.ComboBox8.ItemImageVisible = true;
-            this.ComboBox8.Location = new System.Drawing.Point(186, 31);
+            this.ComboBox8.Location = new System.Drawing.Point(185, 31);
             this.ComboBox8.MaxDropDownItems = 100;
             this.ComboBox8.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox8.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -927,7 +945,7 @@ namespace BudgetExecution
             this.ComboBox8.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox8.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox8.SeparatorVisible = false;
-            this.ComboBox8.Size = new System.Drawing.Size(194, 30);
+            this.ComboBox8.Size = new System.Drawing.Size(193, 30);
             this.ComboBox8.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox8.TabIndex = 8;
             this.ComboBox8.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -942,7 +960,7 @@ namespace BudgetExecution
             this.ComboBox8.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox8.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox8.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.ComboBox8.ToolTip = null;
+            this.ComboBox8.ToolTip = this.ToolTip;
             this.ComboBox8.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ComboBox8.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox8.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -984,7 +1002,7 @@ namespace BudgetExecution
             this.ComboBox9.IntegralHeight = false;
             this.ComboBox9.ItemHeight = 24;
             this.ComboBox9.ItemImageVisible = true;
-            this.ComboBox9.Location = new System.Drawing.Point(386, 31);
+            this.ComboBox9.Location = new System.Drawing.Point(384, 31);
             this.ComboBox9.MaxDropDownItems = 100;
             this.ComboBox9.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox9.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1009,7 +1027,7 @@ namespace BudgetExecution
             this.ComboBox9.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox9.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox9.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.ComboBox9.ToolTip = null;
+            this.ComboBox9.ToolTip = this.ToolTip;
             this.ComboBox9.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ComboBox9.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox9.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1051,7 +1069,7 @@ namespace BudgetExecution
             this.ComboBox10.IntegralHeight = false;
             this.ComboBox10.ItemHeight = 24;
             this.ComboBox10.ItemImageVisible = true;
-            this.ComboBox10.Location = new System.Drawing.Point(588, 31);
+            this.ComboBox10.Location = new System.Drawing.Point(586, 31);
             this.ComboBox10.MaxDropDownItems = 100;
             this.ComboBox10.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox10.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1076,7 +1094,7 @@ namespace BudgetExecution
             this.ComboBox10.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox10.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox10.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.ComboBox10.ToolTip = null;
+            this.ComboBox10.ToolTip = this.ToolTip;
             this.ComboBox10.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ComboBox10.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox10.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1118,7 +1136,7 @@ namespace BudgetExecution
             this.ComboBox11.IntegralHeight = false;
             this.ComboBox11.ItemHeight = 24;
             this.ComboBox11.ItemImageVisible = true;
-            this.ComboBox11.Location = new System.Drawing.Point(770, 31);
+            this.ComboBox11.Location = new System.Drawing.Point(768, 31);
             this.ComboBox11.MaxDropDownItems = 100;
             this.ComboBox11.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox11.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1143,7 +1161,7 @@ namespace BudgetExecution
             this.ComboBox11.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox11.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox11.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.ComboBox11.ToolTip = null;
+            this.ComboBox11.ToolTip = this.ToolTip;
             this.ComboBox11.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ComboBox11.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox11.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1185,7 +1203,7 @@ namespace BudgetExecution
             this.ComboBox12.IntegralHeight = false;
             this.ComboBox12.ItemHeight = 24;
             this.ComboBox12.ItemImageVisible = true;
-            this.ComboBox12.Location = new System.Drawing.Point(953, 31);
+            this.ComboBox12.Location = new System.Drawing.Point(951, 31);
             this.ComboBox12.MaxDropDownItems = 100;
             this.ComboBox12.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox12.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1195,7 +1213,7 @@ namespace BudgetExecution
             this.ComboBox12.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox12.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox12.SeparatorVisible = false;
-            this.ComboBox12.Size = new System.Drawing.Size(191, 30);
+            this.ComboBox12.Size = new System.Drawing.Size(193, 30);
             this.ComboBox12.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox12.TabIndex = 12;
             this.ComboBox12.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -1210,7 +1228,7 @@ namespace BudgetExecution
             this.ComboBox12.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox12.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox12.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.ComboBox12.ToolTip = null;
+            this.ComboBox12.ToolTip = this.ToolTip;
             this.ComboBox12.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ComboBox12.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox12.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1226,7 +1244,7 @@ namespace BudgetExecution
             this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201F));
             this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
             this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
-            this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 196F));
+            this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 198F));
             this.FirtsRow.Controls.Add(this.TextBox6, 5, 2);
             this.FirtsRow.Controls.Add(this.TextBox5, 4, 2);
             this.FirtsRow.Controls.Add(this.TextBox4, 3, 2);
@@ -1295,17 +1313,17 @@ namespace BudgetExecution
             this.TextBox6.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox6.ImageVisible = false;
             this.TextBox6.ImageWidth = 35;
-            this.TextBox6.Location = new System.Drawing.Point(953, 69);
+            this.TextBox6.Location = new System.Drawing.Point(951, 69);
             this.TextBox6.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox6.Name = "TextBox6";
             this.TextBox6.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox6.PasswordChar = '\0';
             this.TextBox6.ReadOnly = false;
             this.TextBox6.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox6.Size = new System.Drawing.Size(191, 23);
+            this.TextBox6.Size = new System.Drawing.Size(193, 23);
             this.TextBox6.TabIndex = 17;
             this.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox6.TextBoxWidth = 181;
+            this.TextBox6.TextBoxWidth = 183;
             this.TextBox6.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox6.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox6.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -1359,7 +1377,7 @@ namespace BudgetExecution
             this.TextBox5.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox5.ImageVisible = false;
             this.TextBox5.ImageWidth = 35;
-            this.TextBox5.Location = new System.Drawing.Point(770, 69);
+            this.TextBox5.Location = new System.Drawing.Point(768, 69);
             this.TextBox5.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox5.Name = "TextBox5";
             this.TextBox5.Numeric = BudgetExecution.Numeric.NS;
@@ -1423,7 +1441,7 @@ namespace BudgetExecution
             this.TextBox4.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox4.ImageVisible = false;
             this.TextBox4.ImageWidth = 35;
-            this.TextBox4.Location = new System.Drawing.Point(587, 69);
+            this.TextBox4.Location = new System.Drawing.Point(585, 69);
             this.TextBox4.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox4.Name = "TextBox4";
             this.TextBox4.Numeric = BudgetExecution.Numeric.NS;
@@ -1488,7 +1506,7 @@ namespace BudgetExecution
             this.TextBox3.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox3.ImageVisible = false;
             this.TextBox3.ImageWidth = 35;
-            this.TextBox3.Location = new System.Drawing.Point(386, 69);
+            this.TextBox3.Location = new System.Drawing.Point(384, 69);
             this.TextBox3.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox3.Name = "TextBox3";
             this.TextBox3.Numeric = BudgetExecution.Numeric.NS;
@@ -1552,17 +1570,17 @@ namespace BudgetExecution
             this.TextBox2.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox2.ImageVisible = false;
             this.TextBox2.ImageWidth = 35;
-            this.TextBox2.Location = new System.Drawing.Point(185, 69);
+            this.TextBox2.Location = new System.Drawing.Point(184, 69);
             this.TextBox2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox2.Name = "TextBox2";
             this.TextBox2.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox2.PasswordChar = '\0';
             this.TextBox2.ReadOnly = false;
             this.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox2.Size = new System.Drawing.Size(195, 23);
+            this.TextBox2.Size = new System.Drawing.Size(194, 23);
             this.TextBox2.TabIndex = 13;
             this.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox2.TextBoxWidth = 185;
+            this.TextBox2.TextBoxWidth = 184;
             this.TextBox2.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox2.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox2.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -1613,7 +1631,7 @@ namespace BudgetExecution
             this.ComboBox6.IntegralHeight = false;
             this.ComboBox6.ItemHeight = 24;
             this.ComboBox6.ItemImageVisible = true;
-            this.ComboBox6.Location = new System.Drawing.Point(953, 36);
+            this.ComboBox6.Location = new System.Drawing.Point(951, 36);
             this.ComboBox6.MaxDropDownItems = 100;
             this.ComboBox6.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox6.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1623,7 +1641,7 @@ namespace BudgetExecution
             this.ComboBox6.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox6.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox6.SeparatorVisible = false;
-            this.ComboBox6.Size = new System.Drawing.Size(191, 30);
+            this.ComboBox6.Size = new System.Drawing.Size(193, 30);
             this.ComboBox6.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox6.TabIndex = 11;
             this.ComboBox6.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -1638,7 +1656,7 @@ namespace BudgetExecution
             this.ComboBox6.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox6.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox6.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.ComboBox6.ToolTip = null;
+            this.ComboBox6.ToolTip = this.ToolTip;
             this.ComboBox6.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ComboBox6.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox6.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1680,7 +1698,7 @@ namespace BudgetExecution
             this.ComboBox5.IntegralHeight = false;
             this.ComboBox5.ItemHeight = 24;
             this.ComboBox5.ItemImageVisible = true;
-            this.ComboBox5.Location = new System.Drawing.Point(770, 36);
+            this.ComboBox5.Location = new System.Drawing.Point(768, 36);
             this.ComboBox5.MaxDropDownItems = 100;
             this.ComboBox5.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox5.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1705,7 +1723,7 @@ namespace BudgetExecution
             this.ComboBox5.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox5.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox5.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.ComboBox5.ToolTip = null;
+            this.ComboBox5.ToolTip = this.ToolTip;
             this.ComboBox5.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ComboBox5.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox5.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1747,7 +1765,7 @@ namespace BudgetExecution
             this.ComboBox4.IntegralHeight = false;
             this.ComboBox4.ItemHeight = 24;
             this.ComboBox4.ItemImageVisible = true;
-            this.ComboBox4.Location = new System.Drawing.Point(587, 36);
+            this.ComboBox4.Location = new System.Drawing.Point(585, 36);
             this.ComboBox4.MaxDropDownItems = 100;
             this.ComboBox4.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox4.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1772,7 +1790,7 @@ namespace BudgetExecution
             this.ComboBox4.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox4.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox4.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.ComboBox4.ToolTip = null;
+            this.ComboBox4.ToolTip = this.ToolTip;
             this.ComboBox4.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ComboBox4.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox4.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1814,7 +1832,7 @@ namespace BudgetExecution
             this.ComboBox3.IntegralHeight = false;
             this.ComboBox3.ItemHeight = 24;
             this.ComboBox3.ItemImageVisible = true;
-            this.ComboBox3.Location = new System.Drawing.Point(386, 36);
+            this.ComboBox3.Location = new System.Drawing.Point(384, 36);
             this.ComboBox3.MaxDropDownItems = 100;
             this.ComboBox3.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox3.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1839,7 +1857,7 @@ namespace BudgetExecution
             this.ComboBox3.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox3.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox3.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.ComboBox3.ToolTip = null;
+            this.ComboBox3.ToolTip = this.ToolTip;
             this.ComboBox3.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ComboBox3.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox3.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1881,7 +1899,7 @@ namespace BudgetExecution
             this.ComboBox2.IntegralHeight = false;
             this.ComboBox2.ItemHeight = 24;
             this.ComboBox2.ItemImageVisible = true;
-            this.ComboBox2.Location = new System.Drawing.Point(185, 36);
+            this.ComboBox2.Location = new System.Drawing.Point(184, 36);
             this.ComboBox2.MaxDropDownItems = 100;
             this.ComboBox2.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox2.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1891,7 +1909,7 @@ namespace BudgetExecution
             this.ComboBox2.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox2.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox2.SeparatorVisible = false;
-            this.ComboBox2.Size = new System.Drawing.Size(195, 30);
+            this.ComboBox2.Size = new System.Drawing.Size(194, 30);
             this.ComboBox2.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox2.TabIndex = 7;
             this.ComboBox2.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -1906,7 +1924,7 @@ namespace BudgetExecution
             this.ComboBox2.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox2.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox2.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.ComboBox2.ToolTip = null;
+            this.ComboBox2.ToolTip = this.ToolTip;
             this.ComboBox2.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ComboBox2.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox2.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -1922,7 +1940,7 @@ namespace BudgetExecution
             this.Label6.Field = BudgetExecution.Field.NS;
             this.Label6.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label6.ForeColor = System.Drawing.Color.LightGray;
-            this.Label6.Location = new System.Drawing.Point(953, 3);
+            this.Label6.Location = new System.Drawing.Point(951, 3);
             this.Label6.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label6.Name = "Label6";
             this.Label6.Numeric = BudgetExecution.Numeric.NS;
@@ -1936,7 +1954,7 @@ namespace BudgetExecution
             this.Label6.ShadowDirection = 315;
             this.Label6.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label6.ShadowOpacity = 100;
-            this.Label6.Size = new System.Drawing.Size(191, 27);
+            this.Label6.Size = new System.Drawing.Size(193, 27);
             this.Label6.TabIndex = 5;
             this.Label6.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label6.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -1958,7 +1976,7 @@ namespace BudgetExecution
             this.Label5.Field = BudgetExecution.Field.NS;
             this.Label5.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label5.ForeColor = System.Drawing.Color.LightGray;
-            this.Label5.Location = new System.Drawing.Point(770, 3);
+            this.Label5.Location = new System.Drawing.Point(768, 3);
             this.Label5.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label5.Name = "Label5";
             this.Label5.Numeric = BudgetExecution.Numeric.NS;
@@ -1994,7 +2012,7 @@ namespace BudgetExecution
             this.Label4.Field = BudgetExecution.Field.NS;
             this.Label4.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label4.ForeColor = System.Drawing.Color.LightGray;
-            this.Label4.Location = new System.Drawing.Point(587, 3);
+            this.Label4.Location = new System.Drawing.Point(585, 3);
             this.Label4.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label4.Name = "Label4";
             this.Label4.Numeric = BudgetExecution.Numeric.NS;
@@ -2030,7 +2048,7 @@ namespace BudgetExecution
             this.Label3.Field = BudgetExecution.Field.NS;
             this.Label3.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label3.ForeColor = System.Drawing.Color.LightGray;
-            this.Label3.Location = new System.Drawing.Point(386, 3);
+            this.Label3.Location = new System.Drawing.Point(384, 3);
             this.Label3.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label3.Name = "Label3";
             this.Label3.Numeric = BudgetExecution.Numeric.NS;
@@ -2066,7 +2084,7 @@ namespace BudgetExecution
             this.Label2.Field = BudgetExecution.Field.NS;
             this.Label2.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label2.ForeColor = System.Drawing.Color.LightGray;
-            this.Label2.Location = new System.Drawing.Point(185, 3);
+            this.Label2.Location = new System.Drawing.Point(184, 3);
             this.Label2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label2.Name = "Label2";
             this.Label2.Numeric = BudgetExecution.Numeric.NS;
@@ -2080,7 +2098,7 @@ namespace BudgetExecution
             this.Label2.ShadowDirection = 315;
             this.Label2.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label2.ShadowOpacity = 100;
-            this.Label2.Size = new System.Drawing.Size(195, 27);
+            this.Label2.Size = new System.Drawing.Size(194, 27);
             this.Label2.TabIndex = 1;
             this.Label2.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label2.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -2116,7 +2134,7 @@ namespace BudgetExecution
             this.Label1.ShadowDirection = 315;
             this.Label1.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label1.ShadowOpacity = 100;
-            this.Label1.Size = new System.Drawing.Size(176, 27);
+            this.Label1.Size = new System.Drawing.Size(175, 27);
             this.Label1.TabIndex = 0;
             this.Label1.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label1.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -2174,7 +2192,7 @@ namespace BudgetExecution
             this.ComboBox1.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox1.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox1.SeparatorVisible = false;
-            this.ComboBox1.Size = new System.Drawing.Size(176, 30);
+            this.ComboBox1.Size = new System.Drawing.Size(175, 30);
             this.ComboBox1.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox1.TabIndex = 6;
             this.ComboBox1.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -2189,7 +2207,7 @@ namespace BudgetExecution
             this.ComboBox1.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox1.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.ComboBox1.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.ComboBox1.ToolTip = null;
+            this.ComboBox1.ToolTip = this.ToolTip;
             this.ComboBox1.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ComboBox1.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox1.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -2241,10 +2259,10 @@ namespace BudgetExecution
             this.TextBox1.PasswordChar = '\0';
             this.TextBox1.ReadOnly = false;
             this.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox1.Size = new System.Drawing.Size(176, 23);
+            this.TextBox1.Size = new System.Drawing.Size(175, 23);
             this.TextBox1.TabIndex = 12;
             this.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox1.TextBoxWidth = 166;
+            this.TextBox1.TextBoxWidth = 165;
             this.TextBox1.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox1.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox1.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -2338,7 +2356,7 @@ namespace BudgetExecution
             // TopLabel2
             // 
             this.TopLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TopLabel2.BindingSource = null;
+            this.TopLabel2.BindingSource = this.BudgetBinding;
             this.TopLabel2.DataFilter = null;
             this.TopLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TopLabel2.Field = BudgetExecution.Field.NS;
@@ -2372,24 +2390,6 @@ namespace BudgetExecution
             this.TopLabel2.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.TopLabel2.ToolTip = null;
             // 
-            // ToolTip
-            // 
-            this.ToolTip.AutoPopDelay = 5000;
-            this.ToolTip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ToolTip.BindingSource = null;
-            this.ToolTip.BorderColor = System.Drawing.SystemColors.HotTrack;
-            this.ToolTip.ForeColor = System.Drawing.Color.LightGray;
-            this.ToolTip.InitialDelay = 500;
-            this.ToolTip.Name = null;
-            this.ToolTip.OwnerDraw = true;
-            this.ToolTip.ReshowDelay = 100;
-            this.ToolTip.Style = MetroSet_UI.Design.Style.Custom;
-            this.ToolTip.StyleManager = null;
-            this.ToolTip.ThemeAuthor = "Terry D. Eppler";
-            this.ToolTip.ThemeName = "Budget Execution";
-            this.ToolTip.TipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.ToolTip.TipTitle = "";
-            // 
             // ToolBarControl
             // 
             this.ToolBarControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -2414,6 +2414,7 @@ namespace BudgetExecution
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BindingSource = this.BudgetBinding;
             this.Controls.Add(this.BackPanel);
             this.Controls.Add(this.ToolBarControl);
             this.DoubleBuffered = true;
