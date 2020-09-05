@@ -30,18 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.ComboBox = new BudgetExecution.ComboBoxPanel();
-            this.BackPanel = new BudgetExecution.LayoutPanel();
             this.BudgetBinding = new BudgetExecution.BudgetBinding();
             this.ToolTip = new BudgetExecution.ToolTip();
-            this.BackPanel.SuspendLayout();
+            this.BackPanel = new BudgetExecution.LayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).BeginInit();
+            this.BackPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // ComboBox
             // 
-            this.ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ComboBox.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ComboBox.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.ComboBox.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.ComboBox.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.ComboBox.BindingSource = this.BudgetBinding;
             this.ComboBox.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox.Border.HoverColor = System.Drawing.Color.Blue;
@@ -104,14 +104,37 @@
             this.ComboBox.Watermark.Text = "Watermark text";
             this.ComboBox.Watermark.Visible = false;
             // 
+            // BudgetBinding
+            // 
+            this.BudgetBinding.DataFilter = null;
+            this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
+            // 
+            // ToolTip
+            // 
+            this.ToolTip.AutoPopDelay = 5000;
+            this.ToolTip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.ToolTip.BindingSource = null;
+            this.ToolTip.BorderColor = System.Drawing.Color.Blue;
+            this.ToolTip.ForeColor = System.Drawing.Color.LightGray;
+            this.ToolTip.InitialDelay = 500;
+            this.ToolTip.Name = null;
+            this.ToolTip.OwnerDraw = true;
+            this.ToolTip.ReshowDelay = 100;
+            this.ToolTip.Style = MetroSet_UI.Design.Style.Custom;
+            this.ToolTip.StyleManager = null;
+            this.ToolTip.ThemeAuthor = "Terry D. Eppler";
+            this.ToolTip.ThemeName = "Budget Execution";
+            this.ToolTip.TipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.ToolTip.TipTitle = "";
+            // 
             // BackPanel
             // 
-            this.BackPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BackPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.BackPanel.BindingSource = null;
-            this.BackPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.Border.HoverColor = System.Drawing.Color.Blue;
+            this.BackPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.BackPanel.Border.HoverColor = System.Drawing.Color.SteelBlue;
             this.BackPanel.Border.HoverVisible = false;
             this.BackPanel.Border.Rounding = 6;
             this.BackPanel.Border.Thickness = 1;
@@ -139,39 +162,17 @@
             this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.BackPanel.ToolTip = null;
             // 
-            // BudgetBinding
-            // 
-            this.BudgetBinding.DataFilter = null;
-            this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
-            // 
-            // ToolTip
-            // 
-            this.ToolTip.AutoPopDelay = 5000;
-            this.ToolTip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ToolTip.BindingSource = null;
-            this.ToolTip.BorderColor = System.Drawing.Color.Blue;
-            this.ToolTip.ForeColor = System.Drawing.Color.LightGray;
-            this.ToolTip.InitialDelay = 500;
-            this.ToolTip.Name = null;
-            this.ToolTip.OwnerDraw = true;
-            this.ToolTip.ReshowDelay = 100;
-            this.ToolTip.Style = MetroSet_UI.Design.Style.Custom;
-            this.ToolTip.StyleManager = null;
-            this.ToolTip.ThemeAuthor = "Terry D. Eppler";
-            this.ToolTip.ThemeName = "Budget Execution";
-            this.ToolTip.TipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.ToolTip.TipTitle = "";
-            // 
             // ComboBoxControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.BindingSource = this.BudgetBinding;
             this.Controls.Add(this.BackPanel);
             this.Name = "ComboBoxControl";
             this.Size = new System.Drawing.Size(193, 35);
-            this.BackPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).EndInit();
+            this.BackPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

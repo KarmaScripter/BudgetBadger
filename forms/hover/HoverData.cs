@@ -68,7 +68,7 @@ namespace BudgetExecution
             // Header Properties
             HeaderInfo = new ToolTipInfo();
             HeaderInfo.BackColor = ColorConfig.BackColorBlack;
-            HeaderInfo.BorderColor = ColorConfig.BorderColorBlue;
+            HeaderInfo.BorderColor = ColorConfig.BorderColorLight;
             HeaderInfo.ForeColor = ColorConfig.ForeColorGray;
             HeaderInfo.Separator = true;
             HeaderInfo.Header.ForeColor = ColorConfig.ForeColorGray;
@@ -82,7 +82,7 @@ namespace BudgetExecution
             // Body Properties
             BodyInfo = new ToolTipInfo();
             BodyInfo.BackColor = ColorConfig.BackColorBlack;
-            BodyInfo.BorderColor = ColorConfig.BorderColorBlue;
+            BodyInfo.BorderColor = ColorConfig.BorderColorLight;
             BodyInfo.ForeColor = ColorConfig.ForeColorGray;
             BodyInfo.Separator = true;
             BodyInfo.Body.ForeColor = ColorConfig.ForeColorGray;
@@ -94,7 +94,7 @@ namespace BudgetExecution
             // Footer Properties
             FooterInfo = new ToolTipInfo();
             FooterInfo.BackColor = ColorConfig.BackColorBlack;
-            FooterInfo.BorderColor = ColorConfig.BorderColorBlue;
+            FooterInfo.BorderColor = ColorConfig.BorderColorLight;
             FooterInfo.ForeColor = ColorConfig.ForeColorGray;
             FooterInfo.Separator = true;
             FooterInfo.Footer.ForeColor = ColorConfig.ForeColorGray;

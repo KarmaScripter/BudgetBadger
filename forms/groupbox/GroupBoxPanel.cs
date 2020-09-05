@@ -51,9 +51,9 @@ namespace BudgetExecution
 
             // Border Configuration.
             Border.Type = ShapeTypes.Rounded;
-            Border.Color = ColorConfig.BorderColorGray;
+            Border.Color = ColorConfig.BorderColorDark;
             Border.Thickness = BorderConfig.SizeThin;
-            Border.HoverColor = ColorConfig.BorderColorBlue;
+            Border.HoverColor = ColorConfig.BorderColorLight;
             Border.HoverVisible = true;
 
             // BackColor Configuration.
@@ -67,7 +67,7 @@ namespace BudgetExecution
 
             // Style Configuration.
             BoxStyle = GroupBoxStyle.Default;
-            SeparatorColor = ColorConfig.BorderColorGray;
+            SeparatorColor = ColorConfig.BorderColorDark;
             Separate = true;
         }
 
@@ -237,7 +237,7 @@ namespace BudgetExecution
                     {
                         Border.Color = Color.FromArgb( 64, 64, 64 );
                         Border.Thickness = BorderConfig.SizeThin;
-                        Border.HoverColor = ColorConfig.BorderColorBlue;
+                        Border.HoverColor = ColorConfig.BorderColorLight;
                         Border.HoverVisible = true;
                         SeparatorColor = Color.FromArgb( 64, 64, 64 );
                         Separate = true;

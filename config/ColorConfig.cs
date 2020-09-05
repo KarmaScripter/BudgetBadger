@@ -25,19 +25,14 @@ namespace BudgetExecution
         // **************************************************************************************************************************
 
         /// <summary>
-        /// The blue border
+        /// The orange border
         /// </summary>
-        public static readonly Color BorderColorBlue = Color.Blue;
+        public static readonly Color BorderColorLight = Color.FromArgb( 128, 64, 0 );
 
         /// <summary>
         /// The gray border
         /// </summary>
-        public static readonly Color BorderColorGray = Color.FromArgb( 30, 30, 30 );
-
-        /// <summary>
-        /// The black border
-        /// </summary>
-        public static readonly Color BorderColorBlack = Color.Black;
+        public static readonly Color BorderColorDark = Color.FromArgb( 40, 40, 41 );
 
         /// <summary>
         /// The red border
@@ -47,7 +42,7 @@ namespace BudgetExecution
         /// <summary>
         /// The black background
         /// </summary>
-        public static readonly Color BackColorBlack = Color.FromArgb( 5, 5, 5 );
+        public static readonly Color BackColorBlack = Color.FromArgb( 10, 10, 11 );
 
         /// <summary>
         /// The red foreground
@@ -77,12 +72,12 @@ namespace BudgetExecution
         /// <summary>
         /// The gray background
         /// </summary>
-        public static readonly Color ControlInteriorBlack = Color.FromArgb( 10, 10, 10 );
+        public static readonly Color ControlInteriorBlack = Color.FromArgb( 20, 20, 21 );
 
         /// <summary>
         /// The gray back hover
         /// </summary>
-        public static readonly Color ControlHoverGray = Color.FromArgb( 40, 40, 40 );
+        public static readonly Color ControlHoverGray = Color.FromArgb( 28, 28, 29 );
 
         /// <summary>
         /// The blue back hover

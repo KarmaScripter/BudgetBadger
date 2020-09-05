@@ -38,12 +38,12 @@
             // 
             // GroupBox
             // 
-            this.GroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.GroupBox.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.GroupBox.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.GroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.GroupBox.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.GroupBox.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.GroupBox.BindingSource = this.BudgetBinding;
-            this.GroupBox.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.GroupBox.Border.HoverColor = System.Drawing.Color.Blue;
+            this.GroupBox.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.GroupBox.Border.HoverColor = System.Drawing.Color.SteelBlue;
             this.GroupBox.Border.HoverVisible = true;
             this.GroupBox.Border.Rounding = 6;
             this.GroupBox.Border.Thickness = 1;
@@ -64,10 +64,10 @@
             this.GroupBox.Numeric = BudgetExecution.Numeric.NS;
             this.GroupBox.Padding = new System.Windows.Forms.Padding(1);
             this.GroupBox.Separator = true;
-            this.GroupBox.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.GroupBox.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(41)))));
             this.GroupBox.Size = new System.Drawing.Size(709, 440);
             this.GroupBox.TabIndex = 0;
-            this.GroupBox.Text = "groupBoxPanel1";
+            this.GroupBox.Text = "Text";
             this.GroupBox.TextAlignment = System.Drawing.StringAlignment.Center;
             this.GroupBox.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.GroupBox.TextLineAlignment = System.Drawing.StringAlignment.Center;

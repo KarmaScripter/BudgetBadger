@@ -54,7 +54,7 @@ namespace BudgetExecution
 
             // BackColor Configuration
             BackColor = ColorConfig.ControlInteriorBlack;
-            BorderColor = ColorConfig.BorderColorGray;
+            BorderColor = ColorConfig.BorderColorDark;
             DisabledBackColor = ColorConfig.BackColorBlack;
             DisabledForeColor = ColorConfig.BackColorBlack;
 
@@ -62,7 +62,7 @@ namespace BudgetExecution
             ItemHeight = 30;
             HoveredItemBackColor = ColorConfig.ControlHoverGray;
             HoveredItemColor = Color.White;
-            SelectedItemBackColor = ColorConfig.BorderColorBlue;
+            SelectedItemBackColor = ColorConfig.BorderColorLight;
             SelectedItemColor = Color.White;
 
             // Event Wiring

@@ -208,7 +208,7 @@ namespace BudgetExecution
         /// <param name="color">The color.</param>
         public void SetPrimaryAxisTitle( string text, Font font, Color color )
         {
-            ( (IBudgetChart)DataChart ).SetPrimaryAxisTitle( text, font, color );
+            ( (IBudgetChart)Chart ).SetPrimaryAxisTitle( text, font, color );
         }
 
         /// <summary>
@@ -219,7 +219,7 @@ namespace BudgetExecution
         /// <param name="color"></param>
         public void SetMainTitle( string text, Font font, Color color )
         {
-            ( (IBudgetChart)DataChart ).SetMainTitle( text, font, color );
+            ( (IBudgetChart)Chart ).SetMainTitle( text, font, color );
         }
 
         /// <summary>
@@ -230,7 +230,7 @@ namespace BudgetExecution
         /// <param name="backcolor">The backcolor.</param>
         public void SetLegend( Font font, Size size, Color backcolor )
         {
-            ( (IBudgetChart)DataChart ).SetLegend( font, size, backcolor );
+            ( (IBudgetChart)Chart ).SetLegend( font, size, backcolor );
         }
 
         /// <summary>
@@ -239,7 +239,7 @@ namespace BudgetExecution
         /// <returns></returns>
         public IChartConfig GetStyleConfiguration()
         {
-            return ( (IBudgetChart)DataChart ).GetStyleConfiguration();
+            return ( (IBudgetChart)Chart ).GetStyleConfiguration();
         }
 
         /// <summary>
@@ -248,7 +248,7 @@ namespace BudgetExecution
         /// <returns></returns>
         public ISourceModel GetSourceModel()
         {
-            return ( (IBudgetChart)DataChart ).GetSourceModel();
+            return ( (IBudgetChart)Chart ).GetSourceModel();
         }
 
         /// <summary>
@@ -257,7 +257,7 @@ namespace BudgetExecution
         /// <returns></returns>
         public ISeriesConfig GetSeriesConfiguration()
         {
-            return ( (IBudgetChart)DataChart ).GetSeriesConfiguration();
+            return ( (IBudgetChart)Chart ).GetSeriesConfiguration();
         }
 
         /// <summary>
@@ -266,7 +266,7 @@ namespace BudgetExecution
         /// <returns></returns>
         public IDataMetric GetDataMetric()
         {
-            return ( (IBudgetChart)DataChart ).GetDataMetric();
+            return ( (IBudgetChart)Chart ).GetDataMetric();
         }
 
         /// <summary>
@@ -275,7 +275,7 @@ namespace BudgetExecution
         /// <returns></returns>
         public ISeriesModel GetChartData()
         {
-            return ( (IBudgetChart)DataChart ).GetChartData();
+            return ( (IBudgetChart)Chart ).GetChartData();
         }
 
         /// <summary>
@@ -284,7 +284,7 @@ namespace BudgetExecution
         /// <returns></returns>
         public IDataSeries GetDataSeries()
         {
-            return ( (IBudgetChart)DataChart ).GetDataSeries();
+            return ( (IBudgetChart)Chart ).GetDataSeries();
         }
 
         /// <summary>
@@ -293,7 +293,7 @@ namespace BudgetExecution
         /// <returns></returns>
         public ITitleInfo GetTileInfo()
         {
-            return ( (IBudgetChart)DataChart ).GetTileInfo();
+            return ( (IBudgetChart)Chart ).GetTileInfo();
         }
 
         // ***************************************************************************************************************************
@@ -331,6 +331,5 @@ namespace BudgetExecution
         {
             DataGrid.ModelOnSelectionChanged( sender, e );
         }
-
     }
 }

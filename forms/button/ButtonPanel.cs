@@ -56,7 +56,7 @@ namespace BudgetExecution
             BackColorState.Disabled = ColorConfig.BackColorBlack;
             BackColorState.Enabled = ColorConfig.BackColorBlack;
             BackColorState.Hover = ColorConfig.ControlHoverGray;
-            BackColorState.Pressed = ColorConfig.BorderColorBlue;
+            BackColorState.Pressed = ColorConfig.BorderColorLight;
 
             // BorderColor Configuration
             Border.Color = ColorConfig.BackColorBlack;

@@ -41,7 +41,7 @@ namespace BudgetExecution
             ThemeName = "Budget Execution";
             Style = Style.Custom;
             BackColor = ColorConfig.BackColorBlack;
-            BorderColor = ColorConfig.BorderColorBlue;
+            BorderColor = ColorConfig.BorderColorLight;
             ForeColor = ColorConfig.ForeColorGray;
             UseAnimation = true;
             UseFading = true;

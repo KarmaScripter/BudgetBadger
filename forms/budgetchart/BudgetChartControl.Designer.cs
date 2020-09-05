@@ -45,12 +45,12 @@ namespace BudgetExecution
             private void InitializeComponent()
             {
             this.components = new System.ComponentModel.Container();
-            this.Chart = new BudgetExecution.BudgetChartPanel();
-            this.BackPanel = new BudgetExecution.LayoutPanel();
+            this.Chart = new BudgetExecution.ChartPanel();
             this.BudgetBinding = new BudgetExecution.BudgetBinding();
+            this.BackPanel = new BudgetExecution.LayoutPanel();
             this.ToolTip = new BudgetExecution.ToolTip();
-            this.BackPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).BeginInit();
+            this.BackPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Chart
@@ -58,16 +58,16 @@ namespace BudgetExecution
             this.Chart.AllowGradientPalette = true;
             this.Chart.AllowUserEditStyles = true;
             this.Chart.AutoHighlight = true;
-            this.Chart.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
+            this.Chart.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11))))));
             this.Chart.BindingSource = this.BudgetBinding;
             this.Chart.ChartArea.AutoScale = true;
-            this.Chart.ChartArea.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
-            this.Chart.ChartArea.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Chart.ChartArea.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11))))));
+            this.Chart.ChartArea.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.Chart.ChartArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Chart.ChartArea.CursorLocation = new System.Drawing.Point(0, 0);
             this.Chart.ChartArea.CursorReDraw = false;
             this.Chart.ChartAreaMargins = new Syncfusion.Windows.Forms.Chart.ChartMargins(3, 3, 3, 3);
-            this.Chart.ChartInterior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, System.Drawing.Color.LightGray, System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
+            this.Chart.ChartInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11))))));
             this.Chart.DataSourceName = "[none]";
             this.Chart.Depth = 250F;
             this.Chart.DisplayChartContextMenu = false;
@@ -78,7 +78,7 @@ namespace BudgetExecution
             // 
             // 
             // 
-            this.Chart.Legend.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
+            this.Chart.Legend.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11))))));
             this.Chart.Legend.Font = new System.Drawing.Font("Roboto", 8F);
             this.Chart.Legend.ItemsAlignment = System.Drawing.StringAlignment.Center;
             this.Chart.Legend.ItemsSize = new System.Drawing.Size(12, 12);
@@ -114,14 +114,19 @@ namespace BudgetExecution
             this.Chart.Title.Name = "Default";
             this.Chart.Titles.Add(this.Chart.Title);
             // 
+            // BudgetBinding
+            // 
+            this.BudgetBinding.DataFilter = null;
+            this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
+            // 
             // BackPanel
             // 
-            this.BackPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BackPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.BackPanel.BindingSource = null;
-            this.BackPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
+            this.BackPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BackPanel.Border.HoverColor = System.Drawing.Color.SteelBlue;
             this.BackPanel.Border.HoverVisible = false;
             this.BackPanel.Border.Rounding = 6;
             this.BackPanel.Border.Thickness = 1;
@@ -149,11 +154,6 @@ namespace BudgetExecution
             this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.BackPanel.ToolTip = null;
             // 
-            // BudgetBinding
-            // 
-            this.BudgetBinding.DataFilter = null;
-            this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
-            // 
             // ToolTip
             // 
             this.ToolTip.AutoPopDelay = 5000;
@@ -176,21 +176,21 @@ namespace BudgetExecution
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.BindingSource = this.BudgetBinding;
             this.Controls.Add(this.BackPanel);
             this.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "BudgetChartControl";
             this.Size = new System.Drawing.Size(820, 564);
-            this.BackPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).EndInit();
+            this.BackPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
             }
 
             #endregion
 
-            public BudgetChartPanel Chart;
+            public ChartPanel Chart;
 
             public LayoutPanel BackPanel;
         public BudgetBinding BudgetBinding;

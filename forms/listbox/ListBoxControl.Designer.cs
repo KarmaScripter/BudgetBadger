@@ -54,18 +54,19 @@ namespace BudgetExecution
             // ListBox
             // 
             this.ListBox.BindingSource = this.BudgetBinding;
-            this.ListBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.ListBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.ListBox.DataFilter = null;
-            this.ListBox.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ListBox.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.ListBox.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.ListBox.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.ListBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListBox.Field = BudgetExecution.Field.NS;
             this.ListBox.Font = new System.Drawing.Font("Roboto", 8F);
-            this.ListBox.HoveredItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.ListBox.HoveredItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(29)))));
             this.ListBox.HoveredItemColor = System.Drawing.Color.White;
             this.ListBox.HoverText = null;
             this.ListBox.ItemHeight = 30;
             this.ListBox.Location = new System.Drawing.Point(0, 0);
+            this.ListBox.Margin = new System.Windows.Forms.Padding(5);
             this.ListBox.MultiSelect = false;
             this.ListBox.Name = "ListBox";
             this.ListBox.Numeric = BudgetExecution.Numeric.NS;
@@ -144,25 +145,25 @@ namespace BudgetExecution
             // 
             // Label
             // 
-            this.Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.Label.BindingSource = this.BudgetBinding;
             this.Label.DataFilter = null;
             this.Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label.Field = BudgetExecution.Field.NS;
-            this.Label.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label.ForeColor = System.Drawing.Color.LightGray;
             this.Label.Location = new System.Drawing.Point(0, 0);
-            this.Label.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.Label.Margin = new System.Windows.Forms.Padding(5);
             this.Label.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label.Name = "Label";
             this.Label.Numeric = BudgetExecution.Numeric.NS;
             this.Label.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label.Outline = false;
-            this.Label.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.Label.OutlineLocation = new System.Drawing.Point(0, 0);
             this.Label.ReflectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Label.ReflectionSpacing = 0;
-            this.Label.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.Label.ShadowDirection = 315;
             this.Label.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label.ShadowOpacity = 100;
@@ -182,11 +183,11 @@ namespace BudgetExecution
             // 
             // BottomPanel
             // 
-            this.BottomPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BottomPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BottomPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BottomPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BottomPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BottomPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.BottomPanel.BindingSource = null;
-            this.BottomPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BottomPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.BottomPanel.Border.HoverColor = System.Drawing.Color.SteelBlue;
             this.BottomPanel.Border.HoverVisible = true;
             this.BottomPanel.Border.Rounding = 6;

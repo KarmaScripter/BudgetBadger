@@ -2,6 +2,8 @@
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
+using System.Diagnostics.CodeAnalysis;
+
 namespace BudgetExecution
 {
     // **************************************************************************************************************************
@@ -19,11 +21,19 @@ namespace BudgetExecution
     /// 
     /// </summary>
     /// <seealso cref="Syncfusion.Windows.Forms.Chart.ChartControl" />
+    [ SuppressMessage( "ReSharper", "MemberCanBeProtected.Global" ) ]
     public class ChartBase : ChartControl
     {
         // **************************************************************************************************************************
         // ********************************************      FIELDS     *************************************************************
         // **************************************************************************************************************************
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ChartBase"/> class.
+        /// </summary>
+        public ChartBase()
+        {
+        }
 
         /// <summary>
         /// The style

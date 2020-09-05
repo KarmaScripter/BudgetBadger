@@ -39,11 +39,11 @@
             // 
             // BackPanel
             // 
-            this.BackPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BackPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.BackPanel.BindingSource = null;
-            this.BackPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BackPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.BackPanel.Border.HoverColor = System.Drawing.Color.SteelBlue;
             this.BackPanel.Border.HoverVisible = false;
             this.BackPanel.Border.Rounding = 6;
@@ -78,10 +78,10 @@
             // 
             this.Calculator.AccessibleDescription = "Calculator control";
             this.Calculator.AccessibleName = "Calculator Control";
-            this.Calculator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Calculator.BackgroundColor = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
+            this.Calculator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.Calculator.BackgroundColor = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11))))));
             this.Calculator.BeforeTouchSize = new System.Drawing.Size(418, 280);
-            this.Calculator.BindingSource = null;
+            this.Calculator.BindingSource = this.BudgetBinding;
             this.Calculator.BorderStyle = System.Windows.Forms.Border3DStyle.Flat;
             this.Calculator.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
             this.Calculator.Culture = new System.Globalization.CultureInfo("en-US");
@@ -95,7 +95,7 @@
             this.Calculator.Label = null;
             this.Calculator.Location = new System.Drawing.Point(0, 43);
             this.Calculator.Margin = new System.Windows.Forms.Padding(5);
-            this.Calculator.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Calculator.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.Calculator.Name = "Calculator";
             this.Calculator.Numeric = BudgetExecution.Numeric.NS;
             this.Calculator.Padding = new System.Windows.Forms.Padding(5);
@@ -104,7 +104,6 @@
             this.Calculator.ShowDisplayArea = false;
             this.Calculator.Size = new System.Drawing.Size(418, 280);
             this.Calculator.TabIndex = 0;
-            this.Calculator.Text = "calculationPanel1";
             this.Calculator.ToolTip = null;
             this.Calculator.UseVerticalAndHorizontalSpacing = true;
             this.Calculator.UseVisualStyle = true;
@@ -112,7 +111,7 @@
             // 
             // Label
             // 
-            this.Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.Label.BindingSource = this.BudgetBinding;
             this.Label.DataFilter = null;
             this.Label.Dock = System.Windows.Forms.DockStyle.Top;
@@ -157,7 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Controls.Add(this.BackPanel);
             this.Margin = new System.Windows.Forms.Padding(5);

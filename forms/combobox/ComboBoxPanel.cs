@@ -52,9 +52,9 @@ namespace BudgetExecution
 
             // Border Configuration
             Border.Visible = true;
-            Border.Color = ColorConfig.BorderColorGray;
+            Border.Color = ColorConfig.BorderColorDark;
             Border.HoverVisible = true;
-            Border.HoverColor = ColorConfig.BorderColorBlue;
+            Border.HoverColor = ColorConfig.BorderColorLight;
             Border.Type = ShapeTypes.Rounded;
             Border.Rounding = 1;
             Border.Thickness = 1;

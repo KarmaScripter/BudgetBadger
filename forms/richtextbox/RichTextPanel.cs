@@ -54,7 +54,7 @@ namespace BudgetExecution
             Border.Type = ShapeTypes.Rounded;
             Border.Color = ColorConfig.ControlHoverGray;
             Border.HoverVisible = true;
-            Border.HoverColor = ColorConfig.BorderColorBlue;
+            Border.HoverColor = ColorConfig.BorderColorLight;
             Border.Thickness = BorderConfig.SizeThin;
         }
 

@@ -28,7 +28,7 @@ namespace BudgetExecution
         /// <summary>
         /// The margin
         /// </summary>
-        public static readonly Padding Margin = new Padding( 3 );
+        public static readonly Padding Margin = new Padding( 5 );
 
         /// <summary>
         /// The padding

@@ -68,8 +68,8 @@ namespace BudgetExecution
             // 
             // BackPanel
             // 
-            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.BackPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.BackPanel.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
             this.BackPanel.Border.HoverVisible = false;
@@ -98,14 +98,14 @@ namespace BudgetExecution
             // NoButton
             // 
             this.NoButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.NoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.NoButton.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.NoButton.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.NoButton.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.NoButton.BackColorState.Pressed = System.Drawing.Color.Red;
+            this.NoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.NoButton.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.NoButton.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.NoButton.BackColorState.Hover = System.Drawing.Color.SteelBlue;
+            this.NoButton.BackColorState.Pressed = System.Drawing.Color.SteelBlue;
             this.NoButton.BindingSource = null;
-            this.NoButton.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.NoButton.Border.HoverColor = System.Drawing.Color.Red;
+            this.NoButton.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.NoButton.Border.HoverColor = System.Drawing.Color.SteelBlue;
             this.NoButton.Border.HoverVisible = true;
             this.NoButton.Border.Rounding = 6;
             this.NoButton.Border.Thickness = 1;
@@ -139,14 +139,14 @@ namespace BudgetExecution
             // YesButton
             // 
             this.YesButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.YesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.YesButton.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.YesButton.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.YesButton.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.YesButton.BackColorState.Pressed = System.Drawing.Color.Green;
+            this.YesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.YesButton.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.YesButton.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.YesButton.BackColorState.Hover = System.Drawing.Color.SteelBlue;
+            this.YesButton.BackColorState.Pressed = System.Drawing.Color.SteelBlue;
             this.YesButton.BindingSource = null;
-            this.YesButton.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.YesButton.Border.HoverColor = System.Drawing.Color.Lime;
+            this.YesButton.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.YesButton.Border.HoverColor = System.Drawing.Color.SteelBlue;
             this.YesButton.Border.HoverVisible = true;
             this.YesButton.Border.Rounding = 6;
             this.YesButton.Border.Thickness = 1;
@@ -179,11 +179,11 @@ namespace BudgetExecution
             // 
             // Table
             // 
-            this.Table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.Table.ColumnCount = 3;
             this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.75129F));
             this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85.24871F));
-            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
+            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
             this.Table.Controls.Add(this.TextBox, 1, 0);
             this.Table.Location = new System.Drawing.Point(1, 76);
             this.Table.Name = "Table";
@@ -213,7 +213,7 @@ namespace BudgetExecution
             this.TextBox.ReadOnly = false;
             this.TextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
             this.TextBox.ShowSelectionMargin = false;
-            this.TextBox.Size = new System.Drawing.Size(473, 313);
+            this.TextBox.Size = new System.Drawing.Size(471, 313);
             this.TextBox.TabIndex = 0;
             this.TextBox.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -228,7 +228,7 @@ namespace BudgetExecution
             this.Info.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Info.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Info.ForeColor = System.Drawing.Color.White;
-            this.Info.Location = new System.Drawing.Point(41, 3);
+            this.Info.Location = new System.Drawing.Point(30, 3);
             this.Info.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Info.Name = "Info";
             this.Info.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -241,7 +241,7 @@ namespace BudgetExecution
             this.Info.ShadowDirection = 315;
             this.Info.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Info.ShadowOpacity = 100;
-            this.Info.Size = new System.Drawing.Size(491, 26);
+            this.Info.Size = new System.Drawing.Size(502, 20);
             this.Info.TabIndex = 5;
             this.Info.Text = "Label";
             this.Info.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -284,19 +284,19 @@ namespace BudgetExecution
             // 
             // PictureBox
             // 
+            this.PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PictureBox.BackColor = System.Drawing.Color.Transparent;
             this.PictureBox.BindingSource = null;
             this.PictureBox.DataFilter = null;
-            this.PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PictureBox.ErrorImage = null;
             this.PictureBox.Field = BudgetExecution.Field.NS;
             this.PictureBox.HoverText = null;
             this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
             this.PictureBox.ImageList = null;
-            this.PictureBox.Location = new System.Drawing.Point(3, 3);
+            this.PictureBox.Location = new System.Drawing.Point(3, 5);
             this.PictureBox.Name = "PictureBox";
             this.PictureBox.Padding = new System.Windows.Forms.Padding(1);
-            this.PictureBox.Size = new System.Drawing.Size(32, 26);
+            this.PictureBox.Size = new System.Drawing.Size(21, 16);
             this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox.TabIndex = 6;
             this.PictureBox.TabStop = false;
@@ -306,8 +306,8 @@ namespace BudgetExecution
             // 
             this.TopTablePanel.BackColor = System.Drawing.Color.Transparent;
             this.TopTablePanel.ColumnCount = 3;
-            this.TopTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.102804F));
-            this.TopTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 92.89719F));
+            this.TopTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.046729F));
+            this.TopTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.95327F));
             this.TopTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
             this.TopTablePanel.Controls.Add(this.PictureBox, 0, 0);
             this.TopTablePanel.Controls.Add(this.CloseBox, 2, 0);
@@ -317,20 +317,20 @@ namespace BudgetExecution
             this.TopTablePanel.Name = "TopTablePanel";
             this.TopTablePanel.RowCount = 1;
             this.TopTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TopTablePanel.Size = new System.Drawing.Size(648, 32);
+            this.TopTablePanel.Size = new System.Drawing.Size(648, 26);
             this.TopTablePanel.TabIndex = 3;
             // 
             // Message
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BorderColor = System.Drawing.Color.Blue;
-            this.CaptionBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.CaptionButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.CaptionBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.CaptionButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.CaptionButtonHoverColor = System.Drawing.Color.White;
             this.CaptionFont = new System.Drawing.Font("Roboto", 8.25F);
-            this.CaptionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CaptionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             captionImage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             captionImage1.Image = ((System.Drawing.Image)(resources.GetObject("captionImage1.Image")));
             captionImage1.Location = new System.Drawing.Point(20, 10);
@@ -348,7 +348,7 @@ namespace BudgetExecution
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.MinimizeBox = false;
             this.Name = "Message";
             this.Padding = new System.Windows.Forms.Padding(1);

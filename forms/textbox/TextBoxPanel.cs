@@ -53,9 +53,9 @@ namespace BudgetExecution
             BackColorState.Enabled = ColorConfig.ControlInteriorBlack;
             BackColor = ColorConfig.ControlInteriorBlack;
             Border.Type = ShapeTypes.Rounded;
-            Border.Color = ColorConfig.BorderColorGray;
+            Border.Color = ColorConfig.BorderColorDark;
             Border.HoverVisible = true;
-            Border.HoverColor = ColorConfig.BorderColorBlue;
+            Border.HoverColor = ColorConfig.BorderColorLight;
             Border.Thickness = BorderConfig.SizeThin;
             TextAlign = HorizontalAlignment.Center;
         }

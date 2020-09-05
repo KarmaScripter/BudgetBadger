@@ -34,7 +34,7 @@ namespace BudgetExecution
         /// </summary>
         public PicturePanel()
         {
-            Anchor = ControlConfig.GetAnchorStyle();
+            Anchor = ControlConfig.GetAnchorStyle( AnchorStyles.Left & AnchorStyles.Top );
             Location = ControlConfig.GetLocation();
             BackColor = Color.Transparent;
             Margin = ControlConfig.Margin;

@@ -43,24 +43,19 @@ namespace BudgetExecution
             /// </summary>
             private void InitializeComponent()
             {
-                this.SuspendLayout();
-
-                // 
-                // ControlBase
-                // 
-                this.BackColor = System.Drawing.Color.FromArgb( ( (int)( ( (byte)( 15 ) ) ) ),
-                    ( (int)( ( (byte)( 15 ) ) ) ), ( (int)( ( (byte)( 15 ) ) ) ) );
-
-                this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-                this.DoubleBuffered = true;
-
-                this.Font = new System.Drawing.Font( "Roboto", 8.25F, System.Drawing.FontStyle.Regular,
-                    System.Drawing.GraphicsUnit.Point, ( (byte)( 0 ) ) );
-
-                this.Name = "ControlBase";
-                this.Padding = new System.Windows.Forms.Padding( 1 );
-                this.Size = new System.Drawing.Size( 148, 148 );
-                this.ResumeLayout( false );
+            this.SuspendLayout();
+            // 
+            // ControlBase
+            // 
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.LightGray;
+            this.Name = "ControlBase";
+            this.Padding = new System.Windows.Forms.Padding(1);
+            this.Size = new System.Drawing.Size(148, 148);
+            this.ResumeLayout(false);
 
             }
 

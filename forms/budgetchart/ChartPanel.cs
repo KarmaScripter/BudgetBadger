@@ -20,7 +20,7 @@ namespace BudgetExecution
 
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     [ SuppressMessage( "ReSharper", "MemberCanBeInternal" ) ]
-    public class BudgetChartPanel : ChartBase, IBudgetChart
+    public class ChartPanel : ChartBase, IBudgetChart
     {
         // ***************************************************************************************************************************
         // ******************************************************  CONSTRUCTORS  *****************************************************
@@ -28,9 +28,9 @@ namespace BudgetExecution
 
         // Sets Starting Properties
         /// <summary>
-        /// Initializes a new instance of the <see cref="BudgetChartPanel"/> class.
+        /// Initializes a new instance of the <see cref="ChartPanel"/> class.
         /// </summary>
-        public BudgetChartPanel()
+        public ChartPanel()
         {
             //Basic Control Properties
             Size = SizeConfig.GetSize( 600, 400 );
@@ -59,7 +59,7 @@ namespace BudgetExecution
             ChartArea.AutoScale = true;
             ChartArea.BackInterior = new BrushInfo( ColorConfig.BackColorBlack );
             ChartArea.BorderWidth = BorderConfig.SizeThin;
-            ChartArea.BorderColor = ColorConfig.BackColorBlack;
+            ChartArea.BorderColor = ColorConfig.BackColorClear;
             ChartArea.BorderStyle = BorderStyle.FixedSingle;
             ChartAreaMargins = new ChartMargins( 3, 3, 3, 3 );
 
@@ -113,11 +113,11 @@ namespace BudgetExecution
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="BudgetChartPanel" /> class.
+        /// Initializes a new instance of the <see cref="ChartPanel" /> class.
         /// </summary>
         /// <param name="table">The table.</param>
         /// <param name="seriesconfig">The seriesconfig.</param>
-        public BudgetChartPanel( DataTable table, ISeriesConfig seriesconfig )
+        public ChartPanel( DataTable table, ISeriesConfig seriesconfig )
             : this()
         {
             SourceModel = new SourceModel( table, seriesconfig );
@@ -131,11 +131,11 @@ namespace BudgetExecution
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="BudgetChartPanel" /> class.
+        /// Initializes a new instance of the <see cref="ChartPanel" /> class.
         /// </summary>
         /// <param name="data">The data.</param>
         /// <param name="seriesconfig">The seriesconfig.</param>
-        public BudgetChartPanel( IEnumerable<DataRow> data, ISeriesConfig seriesconfig )
+        public ChartPanel( IEnumerable<DataRow> data, ISeriesConfig seriesconfig )
             : this()
         {
             SourceModel = new SourceModel( data, seriesconfig );
@@ -150,11 +150,11 @@ namespace BudgetExecution
 
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="BudgetChartPanel" />
+        /// <see cref="ChartPanel" />
         /// class.
         /// </summary>
         /// <param name="sourcebinding">The sourcebinding.</param>
-        public BudgetChartPanel( IChartBinding sourcebinding )
+        public ChartPanel( IChartBinding sourcebinding )
             : this()
         {
             SourceModel = new SourceModel( sourcebinding );
@@ -169,11 +169,11 @@ namespace BudgetExecution
 
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="BudgetChartPanel" />
+        /// <see cref="ChartPanel" />
         /// class.
         /// </summary>
         /// <param name="model">The model.</param>
-        public BudgetChartPanel( ISourceModel model )
+        public ChartPanel( ISourceModel model )
             : this()
         {
             SourceModel = model;
@@ -188,12 +188,12 @@ namespace BudgetExecution
 
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="BudgetChartPanel" />
+        /// <see cref="ChartPanel" />
         /// class.
         /// </summary>
         /// <param name="model">The model.</param>
         /// <param name="title">The title.</param>
-        public BudgetChartPanel( ISourceModel model, ITitleInfo title )
+        public ChartPanel( ISourceModel model, ITitleInfo title )
             : this()
         {
             SourceModel = model;
@@ -208,12 +208,12 @@ namespace BudgetExecution
 
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="BudgetChartPanel" />
+        /// <see cref="ChartPanel" />
         /// class.
         /// </summary>
         /// <param name="chartdata">The chartdata.</param>
         /// <param name="title">The title.</param>
-        public BudgetChartPanel( ISeriesModel chartdata, ITitleInfo title )
+        public ChartPanel( ISeriesModel chartdata, ITitleInfo title )
             : this()
         {
             ChartData = chartdata;

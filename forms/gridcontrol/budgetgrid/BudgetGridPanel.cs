@@ -70,7 +70,7 @@ namespace BudgetExecution
             AllowResizeToFit = true;
             ExcelLikeSelectionFrame = true;
             ExcelLikeAlignment = true;
-            AlphaBlendSelectionColor = ColorConfig.BorderColorBlue;
+            AlphaBlendSelectionColor = ColorConfig.BorderColorLight;
             Properties.BackgroundColor = ColorConfig.BackColorBlack;
             Properties.CenterHorizontal = true;
             Properties.CenterVertical = true;
@@ -394,7 +394,7 @@ namespace BudgetExecution
                 var location = new Point( Location.X - 6, Location.Y - 6 );
                 var size = new Size( Size.Width + 3, Size.Height + 66 );
                 var gridpanel = new GroupBoxPanel( size, location );
-                gridpanel.Border.Color = ColorConfig.BorderColorBlue;
+                gridpanel.Border.Color = ColorConfig.BorderColorLight;
                 gridpanel.Padding = new Padding( 3, 1, 3, 1 );
 
                 if( ToolBar != null )

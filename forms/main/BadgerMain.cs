@@ -69,8 +69,8 @@ namespace BudgetExecution
 
         private void OnClose( object sender, EventArgs e )
         {
-            Picture?.Image?.Dispose();
-            Picture?.InitialImage?.Dispose();
+            PictureBox?.Image?.Dispose();
+            PictureBox?.InitialImage?.Dispose();
         }
     }
 }

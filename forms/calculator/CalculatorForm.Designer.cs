@@ -60,7 +60,8 @@ namespace BudgetExecution
             // 
             this.Calculator.AccessibleDescription = "Calculator control";
             this.Calculator.AccessibleName = "Calculator Control";
-            this.Calculator.BackgroundColor = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5))))));
+            this.Calculator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.Calculator.BackgroundColor = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11))))));
             this.Calculator.BeforeTouchSize = new System.Drawing.Size(436, 325);
             this.Calculator.BindingSource = this.BudgetBinding;
             this.Calculator.BorderStyle = System.Windows.Forms.Border3DStyle.Flat;
@@ -76,7 +77,7 @@ namespace BudgetExecution
             this.Calculator.Label = null;
             this.Calculator.Location = new System.Drawing.Point(0, 64);
             this.Calculator.Margin = new System.Windows.Forms.Padding(5);
-            this.Calculator.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Calculator.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.Calculator.Name = "Calculator";
             this.Calculator.Numeric = BudgetExecution.Numeric.NS;
             this.Calculator.Padding = new System.Windows.Forms.Padding(1);
@@ -100,7 +101,7 @@ namespace BudgetExecution
             this.CloseBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CloseBox.CloseHoverBackColor = System.Drawing.Color.Red;
             this.CloseBox.CloseHoverForeColor = System.Drawing.Color.White;
-            this.CloseBox.CloseNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CloseBox.CloseNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.CloseBox.DisabledForeColor = System.Drawing.Color.DimGray;
             this.CloseBox.Font = new System.Drawing.Font("Roboto", 8F);
             this.CloseBox.ForeColor = System.Drawing.Color.LightGray;
@@ -109,27 +110,27 @@ namespace BudgetExecution
             this.CloseBox.MaximizeBox = true;
             this.CloseBox.MaximizeHoverBackColor = System.Drawing.Color.Blue;
             this.CloseBox.MaximizeHoverForeColor = System.Drawing.Color.White;
-            this.CloseBox.MaximizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CloseBox.MaximizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.CloseBox.MinimizeBox = true;
             this.CloseBox.MinimizeHoverBackColor = System.Drawing.Color.Blue;
             this.CloseBox.MinimizeHoverForeColor = System.Drawing.Color.White;
-            this.CloseBox.MinimizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CloseBox.MinimizeNormalForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.CloseBox.Name = "CloseBox";
             this.CloseBox.Size = new System.Drawing.Size(100, 25);
             this.CloseBox.Style = MetroSet_UI.Design.Style.Custom;
             this.CloseBox.StyleManager = null;
             this.CloseBox.TabIndex = 1;
-            this.CloseBox.Text = "closePanel1";
             this.CloseBox.ThemeAuthor = "Terry D. Eppler";
             this.CloseBox.ThemeName = "Budget Execution";
             this.CloseBox.ToolTip = null;
             // 
             // Table
             // 
+            this.Table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.Table.ColumnCount = 3;
             this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.08861F));
             this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.91139F));
-            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121F));
+            this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122F));
             this.Table.Controls.Add(this.CloseBox, 2, 0);
             this.Table.Controls.Add(this.PictureBox, 0, 0);
             this.Table.Dock = System.Windows.Forms.DockStyle.Top;
@@ -161,7 +162,7 @@ namespace BudgetExecution
             // 
             // Label
             // 
-            this.Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.Label.BindingSource = this.BudgetBinding;
             this.Label.DataFilter = null;
             this.Label.Dock = System.Windows.Forms.DockStyle.Top;
@@ -175,7 +176,7 @@ namespace BudgetExecution
             this.Label.Numeric = BudgetExecution.Numeric.NS;
             this.Label.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label.Outline = false;
-            this.Label.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.Label.OutlineLocation = new System.Drawing.Point(0, 0);
             this.Label.ReflectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Label.ReflectionSpacing = 0;
@@ -200,12 +201,12 @@ namespace BudgetExecution
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BorderColor = System.Drawing.Color.Blue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.CaptionBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CaptionBarColor = System.Drawing.Color.Empty;
             this.CaptionBarHeight = 0;
-            this.CaptionButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CaptionButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.CaptionButtonHoverColor = System.Drawing.Color.White;
             this.CaptionFont = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CaptionForeColor = System.Drawing.Color.LightGray;
@@ -219,7 +220,7 @@ namespace BudgetExecution
             this.ForeColor = System.Drawing.Color.LightGray;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.MinimizeBox = false;
             this.Name = "CalculatorForm";
             this.ShowIcon = false;

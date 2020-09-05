@@ -41,7 +41,7 @@ namespace BudgetExecution
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;
             BackColor = ColorConfig.BackColorBlack;
-            BorderColor = ColorConfig.BorderColorBlue;
+            BorderColor = ColorConfig.BorderColorLight;
             ForeColor = ColorConfig.ForeColorGray;
             Anchor = ControlConfig.GetAnchorStyle();
             Padding = ControlConfig.Padding;

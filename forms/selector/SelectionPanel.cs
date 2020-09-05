@@ -50,7 +50,7 @@ namespace BudgetExecution
             MinimumSize = Size;
             Font = FontConfig.FontSizeSmall;
             ForeColor = ColorConfig.ForeColorGray;
-            HighlightColor = ColorConfig.BorderColorBlue;
+            HighlightColor = ColorConfig.BorderColorLight;
             ImageSlides = true;
             Margin = new Padding( 10 );
             Padding = ControlConfig.Padding;

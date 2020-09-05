@@ -219,7 +219,7 @@
     <Compile Include="forms\budgetchart\BudgetChartControl.Designer.cs">
       <DependentUpon>BudgetChartControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\budgetchart\BudgetChartPanel.cs">
+    <Compile Include="forms\budgetchart\ChartPanel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="forms\budgetchart\CallOut.cs" />
@@ -668,6 +668,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\clock\ClockControl.resx">
       <DependentUpon>ClockControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\ControlData.resx">
+      <DependentUpon>ControlData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\tile\ButtonTileControl.resx">
       <DependentUpon>ButtonTileControl.cs</DependentUpon>

@@ -244,7 +244,7 @@ namespace BudgetExecution
                     case true:
                     {
                         BorderStyle = BorderStyle.FixedSingle;
-                        BorderColor = ColorConfig.BorderColorBlue;
+                        BorderColor = ColorConfig.BorderColorLight;
                         BorderVisible = true;
                         BorderWidth = BorderConfig.SizeThin;
                         break;
@@ -253,7 +253,7 @@ namespace BudgetExecution
                     case false:
                     {
                         BorderStyle = BorderStyle.None;
-                        BorderColor = ColorConfig.BorderColorBlue;
+                        BorderColor = ColorConfig.BorderColorLight;
                         BorderVisible = false;
                         break;
                     }

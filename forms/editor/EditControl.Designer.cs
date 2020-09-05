@@ -153,12 +153,12 @@ namespace BudgetExecution
             this.BottomPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BottomPanel.Field = BudgetExecution.Field.NS;
             this.BottomPanel.ForeColor = System.Drawing.Color.LightGray;
-            this.BottomPanel.Location = new System.Drawing.Point(0, 39);
+            this.BottomPanel.Location = new System.Drawing.Point(0, 29);
             this.BottomPanel.Margin = new System.Windows.Forms.Padding(5);
             this.BottomPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.BottomPanel.Name = "BottomPanel";
             this.BottomPanel.Padding = new System.Windows.Forms.Padding(1);
-            this.BottomPanel.Size = new System.Drawing.Size(1147, 216);
+            this.BottomPanel.Size = new System.Drawing.Size(1147, 226);
             this.BottomPanel.TabIndex = 3;
             this.BottomPanel.Text = "layoutPanel1";
             this.BottomPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
@@ -174,12 +174,12 @@ namespace BudgetExecution
             // 
             this.SecondRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.SecondRow.ColumnCount = 6;
-            this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.80488F));
-            this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.19512F));
-            this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 202F));
-            this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182F));
-            this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
-            this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 198F));
+            this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.SecondRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.SecondRow.Controls.Add(this.TextBox9, 0, 2);
             this.SecondRow.Controls.Add(this.TextBox8, 0, 2);
             this.SecondRow.Controls.Add(this.TextBox7, 0, 2);
@@ -200,14 +200,14 @@ namespace BudgetExecution
             this.SecondRow.Controls.Add(this.ComboBox12, 5, 1);
             this.SecondRow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SecondRow.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.SecondRow.Location = new System.Drawing.Point(0, 111);
+            this.SecondRow.Location = new System.Drawing.Point(0, 109);
             this.SecondRow.Margin = new System.Windows.Forms.Padding(5);
             this.SecondRow.Name = "SecondRow";
             this.SecondRow.RowCount = 3;
-            this.SecondRow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.2963F));
-            this.SecondRow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.7037F));
-            this.SecondRow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.SecondRow.Size = new System.Drawing.Size(1147, 105);
+            this.SecondRow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.SecondRow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.SecondRow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.SecondRow.Size = new System.Drawing.Size(1147, 117);
             this.SecondRow.TabIndex = 1;
             // 
             // TextBox9
@@ -215,7 +215,7 @@ namespace BudgetExecution
             this.TextBox9.AlphaNumeric = false;
             this.TextBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.TextBox9.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox9.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.TextBox9.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.TextBox9.BindingSource = this.BudgetBinding;
             this.TextBox9.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox9.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -248,17 +248,18 @@ namespace BudgetExecution
             this.TextBox9.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox9.ImageVisible = false;
             this.TextBox9.ImageWidth = 35;
-            this.TextBox9.Location = new System.Drawing.Point(384, 63);
+            this.TextBox9.Location = new System.Drawing.Point(387, 81);
+            this.TextBox9.Margin = new System.Windows.Forms.Padding(5);
             this.TextBox9.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox9.Name = "TextBox9";
             this.TextBox9.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox9.PasswordChar = '\0';
             this.TextBox9.ReadOnly = false;
             this.TextBox9.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox9.Size = new System.Drawing.Size(196, 23);
+            this.TextBox9.Size = new System.Drawing.Size(181, 23);
             this.TextBox9.TabIndex = 18;
             this.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox9.TextBoxWidth = 186;
+            this.TextBox9.TextBoxWidth = 171;
             this.TextBox9.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox9.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox9.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -284,7 +285,7 @@ namespace BudgetExecution
             this.TextBox8.AlphaNumeric = false;
             this.TextBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.TextBox8.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox8.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.TextBox8.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.TextBox8.BindingSource = this.BudgetBinding;
             this.TextBox8.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox8.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -317,17 +318,18 @@ namespace BudgetExecution
             this.TextBox8.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox8.ImageVisible = false;
             this.TextBox8.ImageWidth = 35;
-            this.TextBox8.Location = new System.Drawing.Point(185, 63);
+            this.TextBox8.Location = new System.Drawing.Point(196, 81);
+            this.TextBox8.Margin = new System.Windows.Forms.Padding(5);
             this.TextBox8.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox8.Name = "TextBox8";
             this.TextBox8.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox8.PasswordChar = '\0';
             this.TextBox8.ReadOnly = false;
             this.TextBox8.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox8.Size = new System.Drawing.Size(193, 23);
+            this.TextBox8.Size = new System.Drawing.Size(181, 23);
             this.TextBox8.TabIndex = 17;
             this.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox8.TextBoxWidth = 183;
+            this.TextBox8.TextBoxWidth = 171;
             this.TextBox8.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox8.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox8.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -348,7 +350,7 @@ namespace BudgetExecution
             this.TextBox7.AlphaNumeric = false;
             this.TextBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.TextBox7.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox7.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.TextBox7.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.TextBox7.BindingSource = this.BudgetBinding;
             this.TextBox7.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox7.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -381,17 +383,18 @@ namespace BudgetExecution
             this.TextBox7.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox7.ImageVisible = false;
             this.TextBox7.ImageWidth = 35;
-            this.TextBox7.Location = new System.Drawing.Point(3, 63);
+            this.TextBox7.Location = new System.Drawing.Point(5, 81);
+            this.TextBox7.Margin = new System.Windows.Forms.Padding(5);
             this.TextBox7.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox7.Name = "TextBox7";
             this.TextBox7.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox7.PasswordChar = '\0';
             this.TextBox7.ReadOnly = false;
             this.TextBox7.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox7.Size = new System.Drawing.Size(176, 23);
+            this.TextBox7.Size = new System.Drawing.Size(181, 23);
             this.TextBox7.TabIndex = 16;
             this.TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox7.TextBoxWidth = 166;
+            this.TextBox7.TextBoxWidth = 171;
             this.TextBox7.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox7.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox7.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -412,7 +415,7 @@ namespace BudgetExecution
             this.TextBox12.AlphaNumeric = false;
             this.TextBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.TextBox12.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox12.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.TextBox12.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.TextBox12.BindingSource = this.BudgetBinding;
             this.TextBox12.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox12.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -445,17 +448,18 @@ namespace BudgetExecution
             this.TextBox12.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox12.ImageVisible = false;
             this.TextBox12.ImageWidth = 35;
-            this.TextBox12.Location = new System.Drawing.Point(951, 63);
+            this.TextBox12.Location = new System.Drawing.Point(960, 81);
+            this.TextBox12.Margin = new System.Windows.Forms.Padding(5);
             this.TextBox12.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox12.Name = "TextBox12";
             this.TextBox12.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox12.PasswordChar = '\0';
             this.TextBox12.ReadOnly = false;
             this.TextBox12.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox12.Size = new System.Drawing.Size(193, 23);
+            this.TextBox12.Size = new System.Drawing.Size(182, 23);
             this.TextBox12.TabIndex = 15;
             this.TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox12.TextBoxWidth = 183;
+            this.TextBox12.TextBoxWidth = 172;
             this.TextBox12.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox12.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox12.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -476,7 +480,7 @@ namespace BudgetExecution
             this.TextBox11.AlphaNumeric = false;
             this.TextBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.TextBox11.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox11.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.TextBox11.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.TextBox11.BindingSource = this.BudgetBinding;
             this.TextBox11.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox11.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -509,17 +513,18 @@ namespace BudgetExecution
             this.TextBox11.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox11.ImageVisible = false;
             this.TextBox11.ImageWidth = 35;
-            this.TextBox11.Location = new System.Drawing.Point(768, 63);
+            this.TextBox11.Location = new System.Drawing.Point(769, 81);
+            this.TextBox11.Margin = new System.Windows.Forms.Padding(5);
             this.TextBox11.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox11.Name = "TextBox11";
             this.TextBox11.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox11.PasswordChar = '\0';
             this.TextBox11.ReadOnly = false;
             this.TextBox11.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox11.Size = new System.Drawing.Size(177, 23);
+            this.TextBox11.Size = new System.Drawing.Size(181, 23);
             this.TextBox11.TabIndex = 14;
             this.TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox11.TextBoxWidth = 167;
+            this.TextBox11.TextBoxWidth = 171;
             this.TextBox11.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox11.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox11.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -540,7 +545,7 @@ namespace BudgetExecution
             this.TextBox10.AlphaNumeric = false;
             this.TextBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.TextBox10.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox10.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.TextBox10.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.TextBox10.BindingSource = this.BudgetBinding;
             this.TextBox10.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox10.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -573,17 +578,18 @@ namespace BudgetExecution
             this.TextBox10.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox10.ImageVisible = false;
             this.TextBox10.ImageWidth = 35;
-            this.TextBox10.Location = new System.Drawing.Point(586, 63);
+            this.TextBox10.Location = new System.Drawing.Point(578, 81);
+            this.TextBox10.Margin = new System.Windows.Forms.Padding(5);
             this.TextBox10.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox10.Name = "TextBox10";
             this.TextBox10.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox10.PasswordChar = '\0';
             this.TextBox10.ReadOnly = false;
             this.TextBox10.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox10.Size = new System.Drawing.Size(176, 23);
+            this.TextBox10.Size = new System.Drawing.Size(181, 23);
             this.TextBox10.TabIndex = 13;
             this.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox10.TextBoxWidth = 166;
+            this.TextBox10.TextBoxWidth = 171;
             this.TextBox10.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox10.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox10.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -601,14 +607,15 @@ namespace BudgetExecution
             // 
             // Label7
             // 
-            this.Label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.Label7.BindingSource = this.BudgetBinding;
             this.Label7.DataFilter = null;
             this.Label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label7.Field = BudgetExecution.Field.NS;
             this.Label7.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label7.ForeColor = System.Drawing.Color.LightGray;
-            this.Label7.Location = new System.Drawing.Point(3, 3);
+            this.Label7.Location = new System.Drawing.Point(5, 5);
+            this.Label7.Margin = new System.Windows.Forms.Padding(5);
             this.Label7.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label7.Name = "Label7";
             this.Label7.Numeric = BudgetExecution.Numeric.NS;
@@ -622,7 +629,7 @@ namespace BudgetExecution
             this.Label7.ShadowDirection = 315;
             this.Label7.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label7.ShadowOpacity = 100;
-            this.Label7.Size = new System.Drawing.Size(176, 22);
+            this.Label7.Size = new System.Drawing.Size(181, 28);
             this.Label7.TabIndex = 1;
             this.Label7.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label7.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -637,14 +644,15 @@ namespace BudgetExecution
             // 
             // Label8
             // 
-            this.Label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.Label8.BindingSource = this.BudgetBinding;
             this.Label8.DataFilter = null;
             this.Label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label8.Field = BudgetExecution.Field.NS;
             this.Label8.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label8.ForeColor = System.Drawing.Color.LightGray;
-            this.Label8.Location = new System.Drawing.Point(185, 3);
+            this.Label8.Location = new System.Drawing.Point(196, 5);
+            this.Label8.Margin = new System.Windows.Forms.Padding(5);
             this.Label8.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label8.Name = "Label8";
             this.Label8.Numeric = BudgetExecution.Numeric.NS;
@@ -658,7 +666,7 @@ namespace BudgetExecution
             this.Label8.ShadowDirection = 315;
             this.Label8.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label8.ShadowOpacity = 100;
-            this.Label8.Size = new System.Drawing.Size(193, 22);
+            this.Label8.Size = new System.Drawing.Size(181, 28);
             this.Label8.TabIndex = 2;
             this.Label8.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label8.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -673,14 +681,15 @@ namespace BudgetExecution
             // 
             // Label9
             // 
-            this.Label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.Label9.BindingSource = this.BudgetBinding;
             this.Label9.DataFilter = null;
             this.Label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label9.Field = BudgetExecution.Field.NS;
             this.Label9.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label9.ForeColor = System.Drawing.Color.LightGray;
-            this.Label9.Location = new System.Drawing.Point(384, 3);
+            this.Label9.Location = new System.Drawing.Point(387, 5);
+            this.Label9.Margin = new System.Windows.Forms.Padding(5);
             this.Label9.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label9.Name = "Label9";
             this.Label9.Numeric = BudgetExecution.Numeric.NS;
@@ -694,7 +703,7 @@ namespace BudgetExecution
             this.Label9.ShadowDirection = 315;
             this.Label9.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label9.ShadowOpacity = 100;
-            this.Label9.Size = new System.Drawing.Size(196, 22);
+            this.Label9.Size = new System.Drawing.Size(181, 28);
             this.Label9.TabIndex = 3;
             this.Label9.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label9.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -709,14 +718,15 @@ namespace BudgetExecution
             // 
             // Label10
             // 
-            this.Label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.Label10.BindingSource = this.BudgetBinding;
             this.Label10.DataFilter = null;
             this.Label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label10.Field = BudgetExecution.Field.NS;
             this.Label10.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label10.ForeColor = System.Drawing.Color.LightGray;
-            this.Label10.Location = new System.Drawing.Point(586, 3);
+            this.Label10.Location = new System.Drawing.Point(578, 5);
+            this.Label10.Margin = new System.Windows.Forms.Padding(5);
             this.Label10.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label10.Name = "Label10";
             this.Label10.Numeric = BudgetExecution.Numeric.NS;
@@ -730,7 +740,7 @@ namespace BudgetExecution
             this.Label10.ShadowDirection = 315;
             this.Label10.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label10.ShadowOpacity = 100;
-            this.Label10.Size = new System.Drawing.Size(176, 22);
+            this.Label10.Size = new System.Drawing.Size(181, 28);
             this.Label10.TabIndex = 4;
             this.Label10.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label10.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -745,14 +755,15 @@ namespace BudgetExecution
             // 
             // Label11
             // 
-            this.Label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.Label11.BindingSource = this.BudgetBinding;
             this.Label11.DataFilter = null;
             this.Label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label11.Field = BudgetExecution.Field.NS;
             this.Label11.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label11.ForeColor = System.Drawing.Color.LightGray;
-            this.Label11.Location = new System.Drawing.Point(768, 3);
+            this.Label11.Location = new System.Drawing.Point(769, 5);
+            this.Label11.Margin = new System.Windows.Forms.Padding(5);
             this.Label11.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label11.Name = "Label11";
             this.Label11.Numeric = BudgetExecution.Numeric.NS;
@@ -766,7 +777,7 @@ namespace BudgetExecution
             this.Label11.ShadowDirection = 315;
             this.Label11.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label11.ShadowOpacity = 100;
-            this.Label11.Size = new System.Drawing.Size(177, 22);
+            this.Label11.Size = new System.Drawing.Size(181, 28);
             this.Label11.TabIndex = 5;
             this.Label11.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label11.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -781,20 +792,21 @@ namespace BudgetExecution
             // 
             // Label12
             // 
-            this.Label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.Label12.BindingSource = this.BudgetBinding;
             this.Label12.DataFilter = null;
             this.Label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label12.Field = BudgetExecution.Field.NS;
             this.Label12.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label12.ForeColor = System.Drawing.Color.LightGray;
-            this.Label12.Location = new System.Drawing.Point(951, 3);
+            this.Label12.Location = new System.Drawing.Point(960, 5);
+            this.Label12.Margin = new System.Windows.Forms.Padding(5);
             this.Label12.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label12.Name = "Label12";
             this.Label12.Numeric = BudgetExecution.Numeric.NS;
             this.Label12.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.Label12.Outline = false;
-            this.Label12.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label12.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.Label12.OutlineLocation = new System.Drawing.Point(0, 0);
             this.Label12.ReflectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Label12.ReflectionSpacing = 0;
@@ -802,7 +814,7 @@ namespace BudgetExecution
             this.Label12.ShadowDirection = 315;
             this.Label12.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label12.ShadowOpacity = 100;
-            this.Label12.Size = new System.Drawing.Size(193, 22);
+            this.Label12.Size = new System.Drawing.Size(182, 28);
             this.Label12.TabIndex = 6;
             this.Label12.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label12.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -817,9 +829,9 @@ namespace BudgetExecution
             // 
             // ComboBox7
             // 
-            this.ComboBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ComboBox7.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ComboBox7.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ComboBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox7.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox7.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.ComboBox7.BindingSource = this.BudgetBinding;
             this.ComboBox7.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox7.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
@@ -850,7 +862,8 @@ namespace BudgetExecution
             this.ComboBox7.IntegralHeight = false;
             this.ComboBox7.ItemHeight = 24;
             this.ComboBox7.ItemImageVisible = true;
-            this.ComboBox7.Location = new System.Drawing.Point(3, 31);
+            this.ComboBox7.Location = new System.Drawing.Point(5, 43);
+            this.ComboBox7.Margin = new System.Windows.Forms.Padding(5);
             this.ComboBox7.MaxDropDownItems = 100;
             this.ComboBox7.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox7.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -860,7 +873,7 @@ namespace BudgetExecution
             this.ComboBox7.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox7.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox7.SeparatorVisible = false;
-            this.ComboBox7.Size = new System.Drawing.Size(176, 30);
+            this.ComboBox7.Size = new System.Drawing.Size(181, 30);
             this.ComboBox7.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox7.TabIndex = 7;
             this.ComboBox7.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -902,9 +915,9 @@ namespace BudgetExecution
             // 
             // ComboBox8
             // 
-            this.ComboBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ComboBox8.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ComboBox8.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ComboBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox8.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox8.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.ComboBox8.BindingSource = this.BudgetBinding;
             this.ComboBox8.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox8.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -935,7 +948,8 @@ namespace BudgetExecution
             this.ComboBox8.IntegralHeight = false;
             this.ComboBox8.ItemHeight = 24;
             this.ComboBox8.ItemImageVisible = true;
-            this.ComboBox8.Location = new System.Drawing.Point(185, 31);
+            this.ComboBox8.Location = new System.Drawing.Point(196, 43);
+            this.ComboBox8.Margin = new System.Windows.Forms.Padding(5);
             this.ComboBox8.MaxDropDownItems = 100;
             this.ComboBox8.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox8.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -945,7 +959,7 @@ namespace BudgetExecution
             this.ComboBox8.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox8.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox8.SeparatorVisible = false;
-            this.ComboBox8.Size = new System.Drawing.Size(193, 30);
+            this.ComboBox8.Size = new System.Drawing.Size(181, 30);
             this.ComboBox8.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox8.TabIndex = 8;
             this.ComboBox8.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -969,9 +983,9 @@ namespace BudgetExecution
             // 
             // ComboBox9
             // 
-            this.ComboBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ComboBox9.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ComboBox9.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ComboBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox9.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox9.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.ComboBox9.BindingSource = this.BudgetBinding;
             this.ComboBox9.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox9.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -1002,7 +1016,8 @@ namespace BudgetExecution
             this.ComboBox9.IntegralHeight = false;
             this.ComboBox9.ItemHeight = 24;
             this.ComboBox9.ItemImageVisible = true;
-            this.ComboBox9.Location = new System.Drawing.Point(384, 31);
+            this.ComboBox9.Location = new System.Drawing.Point(387, 43);
+            this.ComboBox9.Margin = new System.Windows.Forms.Padding(5);
             this.ComboBox9.MaxDropDownItems = 100;
             this.ComboBox9.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox9.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1012,7 +1027,7 @@ namespace BudgetExecution
             this.ComboBox9.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox9.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox9.SeparatorVisible = false;
-            this.ComboBox9.Size = new System.Drawing.Size(196, 30);
+            this.ComboBox9.Size = new System.Drawing.Size(181, 30);
             this.ComboBox9.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox9.TabIndex = 9;
             this.ComboBox9.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -1036,9 +1051,9 @@ namespace BudgetExecution
             // 
             // ComboBox10
             // 
-            this.ComboBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ComboBox10.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ComboBox10.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ComboBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox10.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox10.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.ComboBox10.BindingSource = this.BudgetBinding;
             this.ComboBox10.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox10.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -1069,7 +1084,8 @@ namespace BudgetExecution
             this.ComboBox10.IntegralHeight = false;
             this.ComboBox10.ItemHeight = 24;
             this.ComboBox10.ItemImageVisible = true;
-            this.ComboBox10.Location = new System.Drawing.Point(586, 31);
+            this.ComboBox10.Location = new System.Drawing.Point(578, 43);
+            this.ComboBox10.Margin = new System.Windows.Forms.Padding(5);
             this.ComboBox10.MaxDropDownItems = 100;
             this.ComboBox10.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox10.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1079,7 +1095,7 @@ namespace BudgetExecution
             this.ComboBox10.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox10.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox10.SeparatorVisible = false;
-            this.ComboBox10.Size = new System.Drawing.Size(176, 30);
+            this.ComboBox10.Size = new System.Drawing.Size(181, 30);
             this.ComboBox10.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox10.TabIndex = 10;
             this.ComboBox10.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -1103,9 +1119,9 @@ namespace BudgetExecution
             // 
             // ComboBox11
             // 
-            this.ComboBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ComboBox11.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ComboBox11.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ComboBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox11.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox11.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.ComboBox11.BindingSource = this.BudgetBinding;
             this.ComboBox11.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox11.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -1136,7 +1152,8 @@ namespace BudgetExecution
             this.ComboBox11.IntegralHeight = false;
             this.ComboBox11.ItemHeight = 24;
             this.ComboBox11.ItemImageVisible = true;
-            this.ComboBox11.Location = new System.Drawing.Point(768, 31);
+            this.ComboBox11.Location = new System.Drawing.Point(769, 43);
+            this.ComboBox11.Margin = new System.Windows.Forms.Padding(5);
             this.ComboBox11.MaxDropDownItems = 100;
             this.ComboBox11.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox11.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1146,7 +1163,7 @@ namespace BudgetExecution
             this.ComboBox11.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox11.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox11.SeparatorVisible = false;
-            this.ComboBox11.Size = new System.Drawing.Size(177, 30);
+            this.ComboBox11.Size = new System.Drawing.Size(181, 30);
             this.ComboBox11.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox11.TabIndex = 11;
             this.ComboBox11.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -1170,9 +1187,9 @@ namespace BudgetExecution
             // 
             // ComboBox12
             // 
-            this.ComboBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ComboBox12.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ComboBox12.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ComboBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox12.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox12.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.ComboBox12.BindingSource = this.BudgetBinding;
             this.ComboBox12.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox12.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -1203,7 +1220,8 @@ namespace BudgetExecution
             this.ComboBox12.IntegralHeight = false;
             this.ComboBox12.ItemHeight = 24;
             this.ComboBox12.ItemImageVisible = true;
-            this.ComboBox12.Location = new System.Drawing.Point(951, 31);
+            this.ComboBox12.Location = new System.Drawing.Point(960, 43);
+            this.ComboBox12.Margin = new System.Windows.Forms.Padding(5);
             this.ComboBox12.MaxDropDownItems = 100;
             this.ComboBox12.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox12.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1213,7 +1231,7 @@ namespace BudgetExecution
             this.ComboBox12.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox12.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox12.SeparatorVisible = false;
-            this.ComboBox12.Size = new System.Drawing.Size(193, 30);
+            this.ComboBox12.Size = new System.Drawing.Size(182, 30);
             this.ComboBox12.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox12.TabIndex = 12;
             this.ComboBox12.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -1239,12 +1257,12 @@ namespace BudgetExecution
             // 
             this.FirtsRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.FirtsRow.ColumnCount = 6;
-            this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.60563F));
-            this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.39437F));
-            this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201F));
-            this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
-            this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
-            this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 198F));
+            this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.FirtsRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.FirtsRow.Controls.Add(this.TextBox6, 5, 2);
             this.FirtsRow.Controls.Add(this.TextBox5, 4, 2);
             this.FirtsRow.Controls.Add(this.TextBox4, 3, 2);
@@ -1269,10 +1287,10 @@ namespace BudgetExecution
             this.FirtsRow.Margin = new System.Windows.Forms.Padding(5);
             this.FirtsRow.Name = "FirtsRow";
             this.FirtsRow.RowCount = 3;
-            this.FirtsRow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.FirtsRow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.FirtsRow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.FirtsRow.Size = new System.Drawing.Size(1147, 111);
+            this.FirtsRow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.FirtsRow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.FirtsRow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.FirtsRow.Size = new System.Drawing.Size(1147, 109);
             this.FirtsRow.TabIndex = 0;
             // 
             // TextBox6
@@ -1280,7 +1298,7 @@ namespace BudgetExecution
             this.TextBox6.AlphaNumeric = false;
             this.TextBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.TextBox6.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox6.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.TextBox6.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.TextBox6.BindingSource = this.BudgetBinding;
             this.TextBox6.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox6.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -1313,17 +1331,18 @@ namespace BudgetExecution
             this.TextBox6.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox6.ImageVisible = false;
             this.TextBox6.ImageWidth = 35;
-            this.TextBox6.Location = new System.Drawing.Point(951, 69);
+            this.TextBox6.Location = new System.Drawing.Point(960, 77);
+            this.TextBox6.Margin = new System.Windows.Forms.Padding(5);
             this.TextBox6.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox6.Name = "TextBox6";
             this.TextBox6.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox6.PasswordChar = '\0';
             this.TextBox6.ReadOnly = false;
             this.TextBox6.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox6.Size = new System.Drawing.Size(193, 23);
+            this.TextBox6.Size = new System.Drawing.Size(182, 23);
             this.TextBox6.TabIndex = 17;
             this.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox6.TextBoxWidth = 183;
+            this.TextBox6.TextBoxWidth = 172;
             this.TextBox6.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox6.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox6.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -1342,9 +1361,9 @@ namespace BudgetExecution
             // TextBox5
             // 
             this.TextBox5.AlphaNumeric = false;
-            this.TextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.TextBox5.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox5.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.TextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.TextBox5.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.TextBox5.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.TextBox5.BindingSource = this.BudgetBinding;
             this.TextBox5.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox5.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -1377,17 +1396,18 @@ namespace BudgetExecution
             this.TextBox5.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox5.ImageVisible = false;
             this.TextBox5.ImageWidth = 35;
-            this.TextBox5.Location = new System.Drawing.Point(768, 69);
+            this.TextBox5.Location = new System.Drawing.Point(769, 77);
+            this.TextBox5.Margin = new System.Windows.Forms.Padding(5);
             this.TextBox5.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox5.Name = "TextBox5";
             this.TextBox5.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox5.PasswordChar = '\0';
             this.TextBox5.ReadOnly = false;
             this.TextBox5.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox5.Size = new System.Drawing.Size(177, 23);
+            this.TextBox5.Size = new System.Drawing.Size(181, 23);
             this.TextBox5.TabIndex = 16;
             this.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox5.TextBoxWidth = 167;
+            this.TextBox5.TextBoxWidth = 171;
             this.TextBox5.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox5.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox5.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -1408,7 +1428,7 @@ namespace BudgetExecution
             this.TextBox4.AlphaNumeric = false;
             this.TextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.TextBox4.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox4.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.TextBox4.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.TextBox4.BindingSource = this.BudgetBinding;
             this.TextBox4.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox4.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -1441,17 +1461,18 @@ namespace BudgetExecution
             this.TextBox4.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox4.ImageVisible = false;
             this.TextBox4.ImageWidth = 35;
-            this.TextBox4.Location = new System.Drawing.Point(585, 69);
+            this.TextBox4.Location = new System.Drawing.Point(578, 77);
+            this.TextBox4.Margin = new System.Windows.Forms.Padding(5);
             this.TextBox4.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox4.Name = "TextBox4";
             this.TextBox4.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox4.PasswordChar = '\0';
             this.TextBox4.ReadOnly = false;
             this.TextBox4.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox4.Size = new System.Drawing.Size(177, 23);
+            this.TextBox4.Size = new System.Drawing.Size(181, 23);
             this.TextBox4.TabIndex = 15;
             this.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox4.TextBoxWidth = 167;
+            this.TextBox4.TextBoxWidth = 171;
             this.TextBox4.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox4.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox4.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -1472,7 +1493,7 @@ namespace BudgetExecution
             this.TextBox3.AlphaNumeric = false;
             this.TextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.TextBox3.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox3.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.TextBox3.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.TextBox3.BindingSource = this.BudgetBinding;
             this.TextBox3.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox3.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -1506,17 +1527,18 @@ namespace BudgetExecution
             this.TextBox3.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox3.ImageVisible = false;
             this.TextBox3.ImageWidth = 35;
-            this.TextBox3.Location = new System.Drawing.Point(384, 69);
+            this.TextBox3.Location = new System.Drawing.Point(387, 77);
+            this.TextBox3.Margin = new System.Windows.Forms.Padding(5);
             this.TextBox3.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox3.Name = "TextBox3";
             this.TextBox3.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox3.PasswordChar = '\0';
             this.TextBox3.ReadOnly = false;
             this.TextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox3.Size = new System.Drawing.Size(195, 23);
+            this.TextBox3.Size = new System.Drawing.Size(181, 23);
             this.TextBox3.TabIndex = 14;
             this.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox3.TextBoxWidth = 185;
+            this.TextBox3.TextBoxWidth = 171;
             this.TextBox3.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox3.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox3.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -1537,7 +1559,7 @@ namespace BudgetExecution
             this.TextBox2.AlphaNumeric = false;
             this.TextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.TextBox2.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox2.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.TextBox2.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.TextBox2.BindingSource = this.BudgetBinding;
             this.TextBox2.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox2.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -1570,17 +1592,18 @@ namespace BudgetExecution
             this.TextBox2.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox2.ImageVisible = false;
             this.TextBox2.ImageWidth = 35;
-            this.TextBox2.Location = new System.Drawing.Point(184, 69);
+            this.TextBox2.Location = new System.Drawing.Point(196, 77);
+            this.TextBox2.Margin = new System.Windows.Forms.Padding(5);
             this.TextBox2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox2.Name = "TextBox2";
             this.TextBox2.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox2.PasswordChar = '\0';
             this.TextBox2.ReadOnly = false;
             this.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox2.Size = new System.Drawing.Size(194, 23);
+            this.TextBox2.Size = new System.Drawing.Size(181, 23);
             this.TextBox2.TabIndex = 13;
             this.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox2.TextBoxWidth = 184;
+            this.TextBox2.TextBoxWidth = 171;
             this.TextBox2.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox2.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox2.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -1598,9 +1621,9 @@ namespace BudgetExecution
             // 
             // ComboBox6
             // 
-            this.ComboBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ComboBox6.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ComboBox6.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ComboBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox6.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox6.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.ComboBox6.BindingSource = this.BudgetBinding;
             this.ComboBox6.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox6.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -1631,7 +1654,8 @@ namespace BudgetExecution
             this.ComboBox6.IntegralHeight = false;
             this.ComboBox6.ItemHeight = 24;
             this.ComboBox6.ItemImageVisible = true;
-            this.ComboBox6.Location = new System.Drawing.Point(951, 36);
+            this.ComboBox6.Location = new System.Drawing.Point(960, 41);
+            this.ComboBox6.Margin = new System.Windows.Forms.Padding(5);
             this.ComboBox6.MaxDropDownItems = 100;
             this.ComboBox6.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox6.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1641,7 +1665,7 @@ namespace BudgetExecution
             this.ComboBox6.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox6.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox6.SeparatorVisible = false;
-            this.ComboBox6.Size = new System.Drawing.Size(193, 30);
+            this.ComboBox6.Size = new System.Drawing.Size(182, 30);
             this.ComboBox6.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox6.TabIndex = 11;
             this.ComboBox6.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -1665,9 +1689,9 @@ namespace BudgetExecution
             // 
             // ComboBox5
             // 
-            this.ComboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ComboBox5.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ComboBox5.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ComboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox5.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox5.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.ComboBox5.BindingSource = this.BudgetBinding;
             this.ComboBox5.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox5.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -1698,7 +1722,8 @@ namespace BudgetExecution
             this.ComboBox5.IntegralHeight = false;
             this.ComboBox5.ItemHeight = 24;
             this.ComboBox5.ItemImageVisible = true;
-            this.ComboBox5.Location = new System.Drawing.Point(768, 36);
+            this.ComboBox5.Location = new System.Drawing.Point(769, 41);
+            this.ComboBox5.Margin = new System.Windows.Forms.Padding(5);
             this.ComboBox5.MaxDropDownItems = 100;
             this.ComboBox5.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox5.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1708,7 +1733,7 @@ namespace BudgetExecution
             this.ComboBox5.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox5.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox5.SeparatorVisible = false;
-            this.ComboBox5.Size = new System.Drawing.Size(177, 30);
+            this.ComboBox5.Size = new System.Drawing.Size(181, 30);
             this.ComboBox5.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox5.TabIndex = 10;
             this.ComboBox5.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -1732,9 +1757,9 @@ namespace BudgetExecution
             // 
             // ComboBox4
             // 
-            this.ComboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ComboBox4.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ComboBox4.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ComboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox4.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox4.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.ComboBox4.BindingSource = this.BudgetBinding;
             this.ComboBox4.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox4.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -1765,7 +1790,8 @@ namespace BudgetExecution
             this.ComboBox4.IntegralHeight = false;
             this.ComboBox4.ItemHeight = 24;
             this.ComboBox4.ItemImageVisible = true;
-            this.ComboBox4.Location = new System.Drawing.Point(585, 36);
+            this.ComboBox4.Location = new System.Drawing.Point(578, 41);
+            this.ComboBox4.Margin = new System.Windows.Forms.Padding(5);
             this.ComboBox4.MaxDropDownItems = 100;
             this.ComboBox4.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox4.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1775,7 +1801,7 @@ namespace BudgetExecution
             this.ComboBox4.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox4.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox4.SeparatorVisible = false;
-            this.ComboBox4.Size = new System.Drawing.Size(177, 30);
+            this.ComboBox4.Size = new System.Drawing.Size(181, 30);
             this.ComboBox4.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox4.TabIndex = 9;
             this.ComboBox4.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -1799,9 +1825,9 @@ namespace BudgetExecution
             // 
             // ComboBox3
             // 
-            this.ComboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ComboBox3.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ComboBox3.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ComboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox3.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox3.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.ComboBox3.BindingSource = this.BudgetBinding;
             this.ComboBox3.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox3.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -1832,7 +1858,8 @@ namespace BudgetExecution
             this.ComboBox3.IntegralHeight = false;
             this.ComboBox3.ItemHeight = 24;
             this.ComboBox3.ItemImageVisible = true;
-            this.ComboBox3.Location = new System.Drawing.Point(384, 36);
+            this.ComboBox3.Location = new System.Drawing.Point(387, 41);
+            this.ComboBox3.Margin = new System.Windows.Forms.Padding(5);
             this.ComboBox3.MaxDropDownItems = 100;
             this.ComboBox3.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox3.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1842,7 +1869,7 @@ namespace BudgetExecution
             this.ComboBox3.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox3.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox3.SeparatorVisible = false;
-            this.ComboBox3.Size = new System.Drawing.Size(195, 30);
+            this.ComboBox3.Size = new System.Drawing.Size(181, 30);
             this.ComboBox3.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox3.TabIndex = 8;
             this.ComboBox3.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -1866,9 +1893,9 @@ namespace BudgetExecution
             // 
             // ComboBox2
             // 
-            this.ComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ComboBox2.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ComboBox2.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox2.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox2.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.ComboBox2.BindingSource = this.BudgetBinding;
             this.ComboBox2.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox2.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -1899,7 +1926,8 @@ namespace BudgetExecution
             this.ComboBox2.IntegralHeight = false;
             this.ComboBox2.ItemHeight = 24;
             this.ComboBox2.ItemImageVisible = true;
-            this.ComboBox2.Location = new System.Drawing.Point(184, 36);
+            this.ComboBox2.Location = new System.Drawing.Point(196, 41);
+            this.ComboBox2.Margin = new System.Windows.Forms.Padding(5);
             this.ComboBox2.MaxDropDownItems = 100;
             this.ComboBox2.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox2.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -1909,7 +1937,7 @@ namespace BudgetExecution
             this.ComboBox2.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox2.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox2.SeparatorVisible = false;
-            this.ComboBox2.Size = new System.Drawing.Size(194, 30);
+            this.ComboBox2.Size = new System.Drawing.Size(181, 30);
             this.ComboBox2.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox2.TabIndex = 7;
             this.ComboBox2.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -1933,14 +1961,15 @@ namespace BudgetExecution
             // 
             // Label6
             // 
-            this.Label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.Label6.BindingSource = this.BudgetBinding;
             this.Label6.DataFilter = null;
             this.Label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label6.Field = BudgetExecution.Field.NS;
             this.Label6.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label6.ForeColor = System.Drawing.Color.LightGray;
-            this.Label6.Location = new System.Drawing.Point(951, 3);
+            this.Label6.Location = new System.Drawing.Point(960, 5);
+            this.Label6.Margin = new System.Windows.Forms.Padding(5);
             this.Label6.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label6.Name = "Label6";
             this.Label6.Numeric = BudgetExecution.Numeric.NS;
@@ -1954,7 +1983,7 @@ namespace BudgetExecution
             this.Label6.ShadowDirection = 315;
             this.Label6.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label6.ShadowOpacity = 100;
-            this.Label6.Size = new System.Drawing.Size(193, 27);
+            this.Label6.Size = new System.Drawing.Size(182, 26);
             this.Label6.TabIndex = 5;
             this.Label6.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label6.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -1969,14 +1998,15 @@ namespace BudgetExecution
             // 
             // Label5
             // 
-            this.Label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.Label5.BindingSource = this.BudgetBinding;
             this.Label5.DataFilter = null;
             this.Label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label5.Field = BudgetExecution.Field.NS;
             this.Label5.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label5.ForeColor = System.Drawing.Color.LightGray;
-            this.Label5.Location = new System.Drawing.Point(768, 3);
+            this.Label5.Location = new System.Drawing.Point(769, 5);
+            this.Label5.Margin = new System.Windows.Forms.Padding(5);
             this.Label5.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label5.Name = "Label5";
             this.Label5.Numeric = BudgetExecution.Numeric.NS;
@@ -1990,7 +2020,7 @@ namespace BudgetExecution
             this.Label5.ShadowDirection = 315;
             this.Label5.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label5.ShadowOpacity = 100;
-            this.Label5.Size = new System.Drawing.Size(177, 27);
+            this.Label5.Size = new System.Drawing.Size(181, 26);
             this.Label5.TabIndex = 4;
             this.Label5.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label5.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -2005,14 +2035,15 @@ namespace BudgetExecution
             // 
             // Label4
             // 
-            this.Label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.Label4.BindingSource = this.BudgetBinding;
             this.Label4.DataFilter = null;
             this.Label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label4.Field = BudgetExecution.Field.NS;
             this.Label4.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label4.ForeColor = System.Drawing.Color.LightGray;
-            this.Label4.Location = new System.Drawing.Point(585, 3);
+            this.Label4.Location = new System.Drawing.Point(578, 5);
+            this.Label4.Margin = new System.Windows.Forms.Padding(5);
             this.Label4.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label4.Name = "Label4";
             this.Label4.Numeric = BudgetExecution.Numeric.NS;
@@ -2026,7 +2057,7 @@ namespace BudgetExecution
             this.Label4.ShadowDirection = 315;
             this.Label4.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label4.ShadowOpacity = 100;
-            this.Label4.Size = new System.Drawing.Size(177, 27);
+            this.Label4.Size = new System.Drawing.Size(181, 26);
             this.Label4.TabIndex = 3;
             this.Label4.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label4.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -2041,14 +2072,15 @@ namespace BudgetExecution
             // 
             // Label3
             // 
-            this.Label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.Label3.BindingSource = this.BudgetBinding;
             this.Label3.DataFilter = null;
             this.Label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label3.Field = BudgetExecution.Field.NS;
             this.Label3.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label3.ForeColor = System.Drawing.Color.LightGray;
-            this.Label3.Location = new System.Drawing.Point(384, 3);
+            this.Label3.Location = new System.Drawing.Point(387, 5);
+            this.Label3.Margin = new System.Windows.Forms.Padding(5);
             this.Label3.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label3.Name = "Label3";
             this.Label3.Numeric = BudgetExecution.Numeric.NS;
@@ -2062,7 +2094,7 @@ namespace BudgetExecution
             this.Label3.ShadowDirection = 315;
             this.Label3.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label3.ShadowOpacity = 100;
-            this.Label3.Size = new System.Drawing.Size(195, 27);
+            this.Label3.Size = new System.Drawing.Size(181, 26);
             this.Label3.TabIndex = 2;
             this.Label3.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label3.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -2077,14 +2109,15 @@ namespace BudgetExecution
             // 
             // Label2
             // 
-            this.Label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.Label2.BindingSource = this.BudgetBinding;
             this.Label2.DataFilter = null;
             this.Label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label2.Field = BudgetExecution.Field.NS;
             this.Label2.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label2.ForeColor = System.Drawing.Color.LightGray;
-            this.Label2.Location = new System.Drawing.Point(184, 3);
+            this.Label2.Location = new System.Drawing.Point(196, 5);
+            this.Label2.Margin = new System.Windows.Forms.Padding(5);
             this.Label2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label2.Name = "Label2";
             this.Label2.Numeric = BudgetExecution.Numeric.NS;
@@ -2098,7 +2131,7 @@ namespace BudgetExecution
             this.Label2.ShadowDirection = 315;
             this.Label2.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label2.ShadowOpacity = 100;
-            this.Label2.Size = new System.Drawing.Size(194, 27);
+            this.Label2.Size = new System.Drawing.Size(181, 26);
             this.Label2.TabIndex = 1;
             this.Label2.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label2.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -2113,14 +2146,15 @@ namespace BudgetExecution
             // 
             // Label1
             // 
-            this.Label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.Label1.BindingSource = this.BudgetBinding;
             this.Label1.DataFilter = null;
             this.Label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label1.Field = BudgetExecution.Field.NS;
             this.Label1.Font = new System.Drawing.Font("Roboto", 8F);
             this.Label1.ForeColor = System.Drawing.Color.LightGray;
-            this.Label1.Location = new System.Drawing.Point(3, 3);
+            this.Label1.Location = new System.Drawing.Point(5, 5);
+            this.Label1.Margin = new System.Windows.Forms.Padding(5);
             this.Label1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Label1.Name = "Label1";
             this.Label1.Numeric = BudgetExecution.Numeric.NS;
@@ -2134,7 +2168,7 @@ namespace BudgetExecution
             this.Label1.ShadowDirection = 315;
             this.Label1.ShadowLocation = new System.Drawing.Point(0, 0);
             this.Label1.ShadowOpacity = 100;
-            this.Label1.Size = new System.Drawing.Size(175, 27);
+            this.Label1.Size = new System.Drawing.Size(181, 26);
             this.Label1.TabIndex = 0;
             this.Label1.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Label1.TextLineAlignment = System.Drawing.StringAlignment.Far;
@@ -2149,9 +2183,9 @@ namespace BudgetExecution
             // 
             // ComboBox1
             // 
-            this.ComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ComboBox1.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.ComboBox1.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox1.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.ComboBox1.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.ComboBox1.BindingSource = this.BudgetBinding;
             this.ComboBox1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox1.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -2182,7 +2216,8 @@ namespace BudgetExecution
             this.ComboBox1.IntegralHeight = false;
             this.ComboBox1.ItemHeight = 24;
             this.ComboBox1.ItemImageVisible = true;
-            this.ComboBox1.Location = new System.Drawing.Point(3, 36);
+            this.ComboBox1.Location = new System.Drawing.Point(5, 41);
+            this.ComboBox1.Margin = new System.Windows.Forms.Padding(5);
             this.ComboBox1.MaxDropDownItems = 100;
             this.ComboBox1.MenuItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ComboBox1.MenuItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -2192,7 +2227,7 @@ namespace BudgetExecution
             this.ComboBox1.Numeric = BudgetExecution.Numeric.NS;
             this.ComboBox1.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.ComboBox1.SeparatorVisible = false;
-            this.ComboBox1.Size = new System.Drawing.Size(175, 30);
+            this.ComboBox1.Size = new System.Drawing.Size(181, 30);
             this.ComboBox1.State = VisualPlus.Enumerators.MouseStates.Normal;
             this.ComboBox1.TabIndex = 6;
             this.ComboBox1.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -2219,7 +2254,7 @@ namespace BudgetExecution
             this.TextBox1.AlphaNumeric = false;
             this.TextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.TextBox1.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox1.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.TextBox1.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.TextBox1.BindingSource = this.BudgetBinding;
             this.TextBox1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.TextBox1.Border.HoverColor = System.Drawing.Color.SteelBlue;
@@ -2252,17 +2287,18 @@ namespace BudgetExecution
             this.TextBox1.ImageSize = new System.Drawing.Size(16, 16);
             this.TextBox1.ImageVisible = false;
             this.TextBox1.ImageWidth = 35;
-            this.TextBox1.Location = new System.Drawing.Point(3, 69);
+            this.TextBox1.Location = new System.Drawing.Point(5, 77);
+            this.TextBox1.Margin = new System.Windows.Forms.Padding(5);
             this.TextBox1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox1.Name = "TextBox1";
             this.TextBox1.Numeric = BudgetExecution.Numeric.NS;
             this.TextBox1.PasswordChar = '\0';
             this.TextBox1.ReadOnly = false;
             this.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox1.Size = new System.Drawing.Size(175, 23);
+            this.TextBox1.Size = new System.Drawing.Size(181, 23);
             this.TextBox1.TabIndex = 12;
             this.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox1.TextBoxWidth = 165;
+            this.TextBox1.TextBoxWidth = 171;
             this.TextBox1.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.TextBox1.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TextBox1.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -2281,11 +2317,11 @@ namespace BudgetExecution
             // TopPanel
             // 
             this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TopPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TopPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.TopPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.TopPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.TopPanel.BindingSource = null;
-            this.TopPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TopPanel.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
+            this.TopPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.TopPanel.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.TopPanel.Border.HoverVisible = true;
             this.TopPanel.Border.Rounding = 6;
             this.TopPanel.Border.Thickness = 1;
@@ -2303,7 +2339,7 @@ namespace BudgetExecution
             this.TopPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TopPanel.Name = "TopPanel";
             this.TopPanel.Padding = new System.Windows.Forms.Padding(1);
-            this.TopPanel.Size = new System.Drawing.Size(1147, 39);
+            this.TopPanel.Size = new System.Drawing.Size(1147, 29);
             this.TopPanel.TabIndex = 2;
             this.TopPanel.Text = "layoutPanel1";
             this.TopPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
@@ -2317,15 +2353,15 @@ namespace BudgetExecution
             // 
             // Separator
             // 
-            this.Separator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Separator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.Separator.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Separator.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.Separator.Line = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.Separator.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.Separator.Line = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Separator.Location = new System.Drawing.Point(0, 22);
             this.Separator.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.Separator.Name = "Separator";
             this.Separator.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.Separator.Shadow = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.Separator.Shadow = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Separator.ShadowVisible = true;
             this.Separator.Size = new System.Drawing.Size(1147, 4);
             this.Separator.TabIndex = 1;
@@ -2339,7 +2375,7 @@ namespace BudgetExecution
             // 
             // TopTablePanel
             // 
-            this.TopTablePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.TopTablePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.TopTablePanel.ColumnCount = 1;
             this.TopTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1147F));
             this.TopTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -2355,20 +2391,21 @@ namespace BudgetExecution
             // 
             // TopLabel2
             // 
-            this.TopLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.TopLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.TopLabel2.BindingSource = this.BudgetBinding;
             this.TopLabel2.DataFilter = null;
             this.TopLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TopLabel2.Field = BudgetExecution.Field.NS;
-            this.TopLabel2.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TopLabel2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TopLabel2.ForeColor = System.Drawing.Color.LightGray;
-            this.TopLabel2.Location = new System.Drawing.Point(3, 3);
+            this.TopLabel2.Location = new System.Drawing.Point(0, 0);
+            this.TopLabel2.Margin = new System.Windows.Forms.Padding(0);
             this.TopLabel2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TopLabel2.Name = "TopLabel2";
             this.TopLabel2.Numeric = BudgetExecution.Numeric.NS;
             this.TopLabel2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.TopLabel2.Outline = false;
-            this.TopLabel2.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.TopLabel2.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.TopLabel2.OutlineLocation = new System.Drawing.Point(0, 0);
             this.TopLabel2.ReflectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TopLabel2.ReflectionSpacing = 0;
@@ -2376,7 +2413,7 @@ namespace BudgetExecution
             this.TopLabel2.ShadowDirection = 315;
             this.TopLabel2.ShadowLocation = new System.Drawing.Point(0, 0);
             this.TopLabel2.ShadowOpacity = 100;
-            this.TopLabel2.Size = new System.Drawing.Size(1141, 16);
+            this.TopLabel2.Size = new System.Drawing.Size(1147, 22);
             this.TopLabel2.TabIndex = 2;
             this.TopLabel2.Text = "Title ";
             this.TopLabel2.TextAlignment = System.Drawing.StringAlignment.Center;

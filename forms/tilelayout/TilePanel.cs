@@ -37,7 +37,7 @@ namespace BudgetExecution
             Padding = ControlConfig.Padding;
             Font = FontConfig.FontSizeSmall;
             Border3DStyle = Border3DStyle.Flat;
-            BorderColor = ColorConfig.BorderColorGray;
+            BorderColor = ColorConfig.BorderColorDark;
             BorderStyle = BorderStyle.FixedSingle;
             BackgroundColor = new BrushInfo( BackColor );
             SetParentFormFlat = true;

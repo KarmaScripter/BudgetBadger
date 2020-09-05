@@ -64,22 +64,22 @@ namespace BudgetExecution
             this.SideLabel = new BudgetExecution.LabelPanel();
             this.XlsxCheckBox = new VisualPlus.Toolkit.Controls.Interactivity.VisualCheckBox();
             this.XlsCheckBox = new VisualPlus.Toolkit.Controls.Interactivity.VisualCheckBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.closePanel1 = new BudgetExecution.ClosePanel();
+            this.Header = new System.Windows.Forms.TableLayoutPanel();
             this.PictureBox = new BudgetExecution.PicturePanel();
+            this.closePanel1 = new BudgetExecution.ClosePanel();
             this.Dialog = new System.Windows.Forms.OpenFileDialog();
             this.visualSeparator1 = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
             this.visualSeparator2 = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
             this.tableLayoutPanel2.SuspendLayout();
             this.Table.SuspendLayout();
             this.Table3.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // visualLabel1
             // 
-            this.visualLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.visualLabel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.visualLabel1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.visualLabel1.ForeColor = System.Drawing.Color.White;
             this.visualLabel1.Location = new System.Drawing.Point(102, 3);
@@ -95,7 +95,7 @@ namespace BudgetExecution
             this.visualLabel1.ShadowDirection = 315;
             this.visualLabel1.ShadowLocation = new System.Drawing.Point(0, 0);
             this.visualLabel1.ShadowOpacity = 100;
-            this.visualLabel1.Size = new System.Drawing.Size(444, 20);
+            this.visualLabel1.Size = new System.Drawing.Size(442, 20);
             this.visualLabel1.TabIndex = 0;
             this.visualLabel1.Text = "Label";
             this.visualLabel1.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -129,12 +129,12 @@ namespace BudgetExecution
             // visualButton1
             // 
             this.visualButton1.BackColor = System.Drawing.Color.Transparent;
-            this.visualButton1.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.visualButton1.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.visualButton1.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.visualButton1.BackColorState.Pressed = System.Drawing.Color.Maroon;
-            this.visualButton1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.visualButton1.Border.HoverColor = System.Drawing.Color.Maroon;
+            this.visualButton1.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.visualButton1.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.visualButton1.BackColorState.Hover = System.Drawing.Color.SteelBlue;
+            this.visualButton1.BackColorState.Pressed = System.Drawing.Color.SteelBlue;
+            this.visualButton1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.visualButton1.Border.HoverColor = System.Drawing.Color.SteelBlue;
             this.visualButton1.Border.HoverVisible = true;
             this.visualButton1.Border.Rounding = 6;
             this.visualButton1.Border.Thickness = 1;
@@ -163,12 +163,12 @@ namespace BudgetExecution
             // visualButton3
             // 
             this.visualButton3.BackColor = System.Drawing.Color.Transparent;
-            this.visualButton3.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.visualButton3.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.visualButton3.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.visualButton3.BackColorState.Pressed = System.Drawing.Color.Green;
-            this.visualButton3.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.visualButton3.Border.HoverColor = System.Drawing.Color.Lime;
+            this.visualButton3.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.visualButton3.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.visualButton3.BackColorState.Hover = System.Drawing.Color.SteelBlue;
+            this.visualButton3.BackColorState.Pressed = System.Drawing.Color.SteelBlue;
+            this.visualButton3.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.visualButton3.Border.HoverColor = System.Drawing.Color.SteelBlue;
             this.visualButton3.Border.HoverVisible = true;
             this.visualButton3.Border.Rounding = 6;
             this.visualButton3.Border.Thickness = 1;
@@ -199,7 +199,7 @@ namespace BudgetExecution
             this.Table.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.Table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.Table.ColumnCount = 3;
             this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.43769F));
             this.Table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.69301F));
@@ -218,10 +218,11 @@ namespace BudgetExecution
             // 
             // visualRichTextBox1
             // 
+            this.visualRichTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.visualRichTextBox1.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.visualRichTextBox1.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.visualRichTextBox1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.visualRichTextBox1.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
+            this.visualRichTextBox1.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.visualRichTextBox1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.visualRichTextBox1.Border.HoverColor = System.Drawing.Color.SteelBlue;
             this.visualRichTextBox1.Border.HoverVisible = false;
             this.visualRichTextBox1.Border.Rounding = 6;
             this.visualRichTextBox1.Border.Thickness = 1;
@@ -249,6 +250,7 @@ namespace BudgetExecution
             // 
             // Table3
             // 
+            this.Table3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.Table3.ColumnCount = 1;
             this.Table3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.Table3.Controls.Add(this.visualCheckBox6, 0, 9);
@@ -595,7 +597,7 @@ namespace BudgetExecution
             // 
             // SideLabel
             // 
-            this.SideLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.SideLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.SideLabel.BindingSource = null;
             this.SideLabel.DataFilter = null;
             this.SideLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -608,7 +610,7 @@ namespace BudgetExecution
             this.SideLabel.Numeric = BudgetExecution.Numeric.NS;
             this.SideLabel.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.SideLabel.Outline = false;
-            this.SideLabel.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.SideLabel.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.SideLabel.OutlineLocation = new System.Drawing.Point(0, 0);
             this.SideLabel.ReflectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.SideLabel.ReflectionSpacing = 0;
@@ -722,24 +724,44 @@ namespace BudgetExecution
             this.XlsCheckBox.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
             this.XlsCheckBox.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
-            // tableLayoutPanel1
+            // Header
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.13187F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.86813F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
-            this.tableLayoutPanel1.Controls.Add(this.visualLabel1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.closePanel1, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.PictureBox, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(668, 26);
-            this.tableLayoutPanel1.TabIndex = 1;
+            this.Header.BackColor = System.Drawing.Color.Transparent;
+            this.Header.ColumnCount = 3;
+            this.Header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.13187F));
+            this.Header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.86813F));
+            this.Header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.Header.Controls.Add(this.PictureBox, 0, 0);
+            this.Header.Controls.Add(this.closePanel1, 2, 0);
+            this.Header.Controls.Add(this.visualLabel1, 1, 0);
+            this.Header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Header.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.Header.Location = new System.Drawing.Point(0, 0);
+            this.Header.Margin = new System.Windows.Forms.Padding(0);
+            this.Header.Name = "Header";
+            this.Header.RowCount = 1;
+            this.Header.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Header.Size = new System.Drawing.Size(668, 26);
+            this.Header.TabIndex = 1;
+            // 
+            // PictureBox
+            // 
+            this.PictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox.BindingSource = null;
+            this.PictureBox.DataFilter = null;
+            this.PictureBox.Field = BudgetExecution.Field.NS;
+            this.PictureBox.HoverText = null;
+            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
+            this.PictureBox.ImageList = null;
+            this.PictureBox.Location = new System.Drawing.Point(0, 0);
+            this.PictureBox.Margin = new System.Windows.Forms.Padding(0);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Padding = new System.Windows.Forms.Padding(1);
+            this.PictureBox.Size = new System.Drawing.Size(26, 16);
+            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox.TabIndex = 2;
+            this.PictureBox.TabStop = false;
+            this.PictureBox.ToolTip = null;
             // 
             // closePanel1
             // 
@@ -770,35 +792,14 @@ namespace BudgetExecution
             this.closePanel1.ThemeName = "Budget Execution";
             this.closePanel1.ToolTip = null;
             // 
-            // PictureBox
-            // 
-            this.PictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.PictureBox.BindingSource = null;
-            this.PictureBox.DataFilter = null;
-            this.PictureBox.Field = BudgetExecution.Field.NS;
-            this.PictureBox.HoverText = null;
-            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
-            this.PictureBox.ImageList = null;
-            this.PictureBox.Location = new System.Drawing.Point(0, 0);
-            this.PictureBox.Margin = new System.Windows.Forms.Padding(0, 0, 3, 3);
-            this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Padding = new System.Windows.Forms.Padding(1);
-            this.PictureBox.Size = new System.Drawing.Size(51, 18);
-            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBox.TabIndex = 2;
-            this.PictureBox.TabStop = false;
-            this.PictureBox.ToolTip = null;
-            // 
             // Dialog
             // 
             this.Dialog.Filter = "Document FIles | *.PDF | *.DOCX | *.DOC ";
             // 
             // visualSeparator1
             // 
-            this.visualSeparator1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.visualSeparator1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.visualSeparator1.Line = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.visualSeparator1.Line = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.visualSeparator1.Location = new System.Drawing.Point(0, 51);
             this.visualSeparator1.Margin = new System.Windows.Forms.Padding(5);
             this.visualSeparator1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
@@ -819,18 +820,17 @@ namespace BudgetExecution
             // 
             // visualSeparator2
             // 
-            this.visualSeparator2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.visualSeparator2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.visualSeparator2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.visualSeparator2.Line = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.visualSeparator2.Location = new System.Drawing.Point(0, 408);
+            this.visualSeparator2.Line = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.visualSeparator2.Location = new System.Drawing.Point(0, 416);
             this.visualSeparator2.Margin = new System.Windows.Forms.Padding(5);
             this.visualSeparator2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.visualSeparator2.Name = "visualSeparator2";
             this.visualSeparator2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.visualSeparator2.Shadow = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.visualSeparator2.ShadowVisible = false;
-            this.visualSeparator2.Size = new System.Drawing.Size(665, 4);
+            this.visualSeparator2.Size = new System.Drawing.Size(668, 4);
             this.visualSeparator2.TabIndex = 7;
             this.visualSeparator2.Text = "visualSeparator2";
             this.visualSeparator2.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
@@ -845,13 +845,13 @@ namespace BudgetExecution
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BorderColor = System.Drawing.Color.Blue;
-            this.CaptionBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.CaptionButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.CaptionBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.CaptionButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.CaptionButtonHoverColor = System.Drawing.Color.Red;
             this.CaptionFont = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CaptionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.CaptionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             captionImage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             captionImage1.Image = ((System.Drawing.Image)(resources.GetObject("captionImage1.Image")));
             captionImage1.Location = new System.Drawing.Point(20, 10);
@@ -861,16 +861,16 @@ namespace BudgetExecution
             this.ClientSize = new System.Drawing.Size(668, 518);
             this.ControlBox = false;
             this.Controls.Add(this.visualSeparator1);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.Table);
             this.Controls.Add(this.visualSeparator2);
             this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.Header);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.LightGray;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.MinimizeBox = false;
             this.Name = "FileBrowser";
             this.ShowIcon = false;
@@ -881,7 +881,7 @@ namespace BudgetExecution
             this.tableLayoutPanel2.ResumeLayout(false);
             this.Table.ResumeLayout(false);
             this.Table3.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.Header.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -899,10 +899,8 @@ namespace BudgetExecution
 
             public VisualRichTextBox visualRichTextBox1;
         private TableLayoutPanel tableLayoutPanel2;
-        private TableLayoutPanel tableLayoutPanel1;
         public TableLayoutPanel Table3;
         public VisualCheckBox CsvCheckBox;
-        private LabelPanel SideLabel;
         public VisualCheckBox XlsxCheckBox;
         public VisualCheckBox XlsCheckBox;
         public OpenFileDialog Dialog;
@@ -916,6 +914,8 @@ namespace BudgetExecution
         private VisualSeparator visualSeparator2;
         public PicturePanel PictureBox;
         public ClosePanel closePanel1;
+        public LabelPanel SideLabel;
+        public TableLayoutPanel Header;
     }
     
 }

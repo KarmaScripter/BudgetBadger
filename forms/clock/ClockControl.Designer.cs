@@ -42,8 +42,8 @@
             // Clock
             // 
             this.Clock.BackColor = System.Drawing.Color.Transparent;
-            this.Clock.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.Clock.BeforeTouchSize = new System.Drawing.Size(188, 93);
+            this.Clock.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.Clock.BeforeTouchSize = new System.Drawing.Size(188, 94);
             this.Clock.BindingSource = null;
             this.Clock.BorderColor = System.Drawing.Color.Transparent;
             this.Clock.ClockFormat = "HH:mm:ss";
@@ -51,7 +51,7 @@
             this.Clock.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Rectangle;
             this.Clock.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital;
             this.Clock.CurrentDateTime = new System.DateTime(2020, 9, 4, 12, 42, 34, 16);
-            this.Clock.CustomTime = new System.DateTime(2020, 9, 4, 12, 44, 1, 863);
+            this.Clock.CustomTime = new System.DateTime(2020, 9, 5, 6, 48, 9, 824);
             this.Clock.DigitalRenderer = digitalClockRenderer1;
             this.Clock.DisplayDates = true;
             this.Clock.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -68,7 +68,7 @@
             this.Clock.ShowClockFrame = false;
             this.Clock.ShowCustomTimeClock = false;
             this.Clock.ShowHourDesignator = true;
-            this.Clock.Size = new System.Drawing.Size(188, 93);
+            this.Clock.Size = new System.Drawing.Size(188, 94);
             this.Clock.StopTimer = false;
             this.Clock.TabIndex = 0;
             this.Clock.Text = "clockPanel1";
@@ -76,12 +76,12 @@
             // 
             // BackPanel
             // 
-            this.BackPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.BackPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
             this.BackPanel.BindingSource = null;
-            this.BackPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.Border.HoverColor = System.Drawing.Color.Blue;
+            this.BackPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.BackPanel.Border.HoverColor = System.Drawing.Color.SteelBlue;
             this.BackPanel.Border.HoverVisible = false;
             this.BackPanel.Border.Rounding = 6;
             this.BackPanel.Border.Thickness = 1;
@@ -147,8 +147,8 @@
         #endregion
 
         private ClockPanel Clock;
-        private LayoutPanel BackPanel;
         public BudgetBinding BudgetBinding;
         public ToolTip ToolTip;
+        public LayoutPanel BackPanel;
     }
 }

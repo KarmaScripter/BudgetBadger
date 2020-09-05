@@ -394,6 +394,5 @@ namespace BudgetExecution
         {
             ( (IBudgetGrid)ChartDataControl ).ModelOnSelectionChanged( sender, e );
         }
-
     }
 }
