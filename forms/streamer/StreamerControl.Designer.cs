@@ -46,8 +46,9 @@ namespace BudgetExecution
             this.components = new System.ComponentModel.Container();
             this.ImageStreamer = new BudgetExecution.Streamer();
             this.BudgetBinding = new BudgetExecution.BudgetBinding();
-            this.BackPanel = new BudgetExecution.LayoutPanel();
+            this.ImageList = new BudgetExecution.ImageList();
             this.ToolTip = new BudgetExecution.ToolTip();
+            this.BackPanel = new BudgetExecution.LayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).BeginInit();
             this.BackPanel.SuspendLayout();
             this.SuspendLayout();
@@ -61,9 +62,10 @@ namespace BudgetExecution
             this.ImageStreamer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ImageStreamer.Field = BudgetExecution.Field.NS;
             this.ImageStreamer.HoverText = null;
-            this.ImageStreamer.ImageList = null;
+            this.ImageStreamer.ImageList = this.ImageList;
             this.ImageStreamer.InternalBackColor = System.Drawing.Color.Transparent;
             this.ImageStreamer.Location = new System.Drawing.Point(0, 0);
+            this.ImageStreamer.Margin = new System.Windows.Forms.Padding(5);
             this.ImageStreamer.Name = "ImageStreamer";
             this.ImageStreamer.Padding = new System.Windows.Forms.Padding(1);
             this.ImageStreamer.ShowNavigator = true;
@@ -78,39 +80,12 @@ namespace BudgetExecution
             this.BudgetBinding.DataFilter = null;
             this.BudgetBinding.Numeric = BudgetExecution.Numeric.NS;
             // 
-            // BackPanel
+            // ImageList
             // 
-            this.BackPanel.BackColor = System.Drawing.Color.Transparent;
-            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.Transparent;
-            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.Transparent;
-            this.BackPanel.BindingSource = null;
-            this.BackPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.Border.HoverColor = System.Drawing.SystemColors.HotTrack;
-            this.BackPanel.Border.HoverVisible = true;
-            this.BackPanel.Border.Rounding = 6;
-            this.BackPanel.Border.Thickness = 1;
-            this.BackPanel.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-            this.BackPanel.Border.Visible = true;
-            this.BackPanel.Children = null;
-            this.BackPanel.Controls.Add(this.ImageStreamer);
-            this.BackPanel.DataFilter = null;
-            this.BackPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BackPanel.Field = BudgetExecution.Field.NS;
-            this.BackPanel.ForeColor = System.Drawing.Color.LightGray;
-            this.BackPanel.Location = new System.Drawing.Point(1, 1);
-            this.BackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-            this.BackPanel.Name = "BackPanel";
-            this.BackPanel.Padding = new System.Windows.Forms.Padding(1);
-            this.BackPanel.Size = new System.Drawing.Size(118, 118);
-            this.BackPanel.TabIndex = 1;
-            this.BackPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-            this.BackPanel.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BackPanel.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BackPanel.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-            this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.BackPanel.ToolTip = null;
+            this.ImageList.BindingSouce = null;
+            this.ImageList.BudgetImage = null;
+            this.ImageList.BudgetImages = null;
+            this.ImageList.Source = BudgetExecution.ImageSource.NS;
             // 
             // ToolTip
             // 
@@ -129,6 +104,41 @@ namespace BudgetExecution
             this.ToolTip.ThemeName = "Budget Execution";
             this.ToolTip.TipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.ToolTip.TipTitle = "";
+            // 
+            // BackPanel
+            // 
+            this.BackPanel.BackColor = System.Drawing.Color.Transparent;
+            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.Transparent;
+            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.Transparent;
+            this.BackPanel.BindingSource = null;
+            this.BackPanel.Border.Color = System.Drawing.Color.Transparent;
+            this.BackPanel.Border.HoverColor = System.Drawing.Color.SteelBlue;
+            this.BackPanel.Border.HoverVisible = true;
+            this.BackPanel.Border.Rounding = 6;
+            this.BackPanel.Border.Thickness = 1;
+            this.BackPanel.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+            this.BackPanel.Border.Visible = true;
+            this.BackPanel.Children = null;
+            this.BackPanel.Controls.Add(this.ImageStreamer);
+            this.BackPanel.DataFilter = null;
+            this.BackPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BackPanel.Field = BudgetExecution.Field.NS;
+            this.BackPanel.ForeColor = System.Drawing.Color.LightGray;
+            this.BackPanel.Location = new System.Drawing.Point(1, 1);
+            this.BackPanel.Margin = new System.Windows.Forms.Padding(5);
+            this.BackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+            this.BackPanel.Name = "BackPanel";
+            this.BackPanel.Padding = new System.Windows.Forms.Padding(1);
+            this.BackPanel.Size = new System.Drawing.Size(118, 118);
+            this.BackPanel.TabIndex = 1;
+            this.BackPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+            this.BackPanel.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BackPanel.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BackPanel.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.BackPanel.ToolTip = null;
             // 
             // StreamerControl
             // 
@@ -151,6 +161,7 @@ namespace BudgetExecution
             public LayoutPanel BackPanel;
         public BudgetBinding BudgetBinding;
         public ToolTip ToolTip;
+        public ImageList ImageList;
     }
     
 }

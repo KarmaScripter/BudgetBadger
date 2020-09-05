@@ -21,7 +21,7 @@ namespace BudgetExecution
     [ Serializable ]
     [ SuppressMessage( "ReSharper", "UnusedParameter.Global" ) ]
     [ SuppressMessage( "ReSharper", "PatternAlwaysOfType" ) ]
-    public partial class ToolBarControl : ControlBase
+    public partial class ToolBarControl : ControlBase, IToolBar
     {
         // ***************************************************************************************************************************
         // ****************************************************  CONSTRUCTORS ********************************************************
@@ -82,6 +82,67 @@ namespace BudgetExecution
             {
                 Fail( ex );
             }
+        }
+
+        /// <summary>
+        /// Gets the buttons.
+        /// </summary>
+        /// <returns></returns>
+        public IDictionary<string, BarButton> GetButtons()
+        {
+            return ToolBar.GetButtons();
+        }
+
+        /// <summary>
+        /// Creates the button.
+        /// </summary>
+        /// <param name = "imagename" >
+        /// The name.
+        /// </param>
+        /// <returns>
+        /// </returns>
+        public BarButton CreateButton( string imagename )
+        {
+            return ( (IToolBar)ToolBar ).CreateButton( imagename );
+        }
+
+        /// <summary>
+        /// Creates the label.
+        /// </summary>
+        /// <returns>
+        /// </returns>
+        public BarLabel CreateLabel()
+        {
+            return ( (IToolBar)ToolBar ).CreateLabel();
+        }
+
+        /// <summary>
+        /// Creates the ComboBox.
+        /// </summary>
+        /// <returns>
+        /// </returns>
+        public BarComboBox CreateComboBox()
+        {
+            return ( (IToolBar)ToolBar ).CreateComboBox();
+        }
+
+        /// <summary>
+        /// Creates the text box.
+        /// </summary>
+        /// <returns>
+        /// </returns>
+        public BarTextBox CreateTextBox()
+        {
+            return ( (IToolBar)ToolBar ).CreateTextBox();
+        }
+
+        /// <summary>
+        /// Gets the items.
+        /// </summary>
+        /// <returns></returns>
+        public ToolStripItemCollection GetItems()
+        {
+            return ( (IToolBar)ToolBar ).GetItems();
         }
     }
 }

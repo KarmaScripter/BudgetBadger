@@ -1,4 +1,4 @@
-﻿// // <copyright file = "BudgetNotification.cs" company = "Terry D. Eppler">
+﻿// // <copyright file = "Notification.cs" company = "Terry D. Eppler">
 // // Copyright (c) Terry D. Eppler. All rights reserved.
 // // </copyright>
 
@@ -131,7 +131,7 @@ namespace BudgetExecution
             Timer.Interval = time;
             Timer.Start();
         }
-        
+
         /// <summary>
         /// Initializes the component.
         /// </summary>
@@ -153,7 +153,7 @@ namespace BudgetExecution
             // Footer
             // 
             Footer.AutoSize = true;
-            Footer.BackColor = Color.FromArgb( 38, 38, 39 );
+            Footer.BackColor = Color.FromArgb( 10, 10, 11 );
             Footer.Font = new Font( "Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 204 );
             Footer.ForeColor = Color.DimGray;
             Footer.Location = new Point( 76, 78 );
@@ -161,21 +161,17 @@ namespace BudgetExecution
             Footer.Size = new Size( 100, 13 );
             Footer.TabIndex = 6;
             Footer.Text = "App located name";
-            Footer.Click += LabelApp_Click;
-            Footer.MouseEnter += LabelApp_MouseEnter;
 
             // 
             // PictureBox
             // 
-            PictureBox.BackColor = Color.FromArgb( 38, 38, 39 );
+            PictureBox.BackColor = Color.FromArgb( 10, 10, 11 );
             PictureBox.Location = new Point( 13, 27 );
             PictureBox.Name = "PictureBox";
             PictureBox.Size = new Size( 36, 36 );
             PictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             PictureBox.TabIndex = 5;
             PictureBox.TabStop = false;
-            PictureBox.Click += PictureBoxIcon_Click;
-            PictureBox.MouseEnter += PictureBoxIcon_MouseEnter;
 
             // 
             // Title
@@ -183,7 +179,7 @@ namespace BudgetExecution
             Title.Anchor = AnchorStyles.None;
             Title.AutoEllipsis = true;
             Title.AutoSize = true;
-            Title.BackColor = Color.FromArgb( 38, 38, 39 );
+            Title.BackColor = Color.FromArgb( 10, 10, 11 );
             Title.Font = new Font( "Segoe UI Semibold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 204 );
             Title.ForeColor = Color.LightGray;
             Title.Location = new Point( 75, 9 );
@@ -192,15 +188,13 @@ namespace BudgetExecution
             Title.TabIndex = 3;
             Title.Text = "Title located here";
             Title.TextAlign = ContentAlignment.MiddleLeft;
-            Title.Click += LabelTitle_Click;
-            Title.MouseEnter += LabelTitle_MouseEnter;
 
             // 
             // Body
             // 
             Body.Anchor = AnchorStyles.None;
             Body.AutoEllipsis = true;
-            Body.BackColor = Color.FromArgb( 38, 38, 39 );
+            Body.BackColor = Color.FromArgb( 10, 10, 11 );
             Body.Font = new Font( "Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204 );
             Body.ForeColor = Color.DarkGray;
             Body.Location = new Point( 76, 34 );
@@ -208,21 +202,15 @@ namespace BudgetExecution
             Body.Size = new Size( 262, 29 );
             Body.TabIndex = 4;
             Body.Text = "Body located here";
-            Body.Click += LabelBody_Click;
-            Body.MouseEnter += LabelBody_MouseEnter;
 
             // 
-            // notifyTimer
+            // Panel
             // 
-            Timer.Tick += NotifyTimer_Tick;
-
-            // 
-            // panel1
-            // 
-            Panel.BackColorState.Disabled = Color.FromArgb( 38, 38, 39 );
-            Panel.BackColorState.Enabled = Color.FromArgb( 38, 38, 39 );
-            Panel.Border.Color = Color.Blue;
-            Panel.Border.HoverColor = Color.Blue;
+            Panel.BackColor = Color.FromArgb( 10, 10, 11 );
+            Panel.BackColorState.Disabled = Color.FromArgb( 10, 10, 11 );
+            Panel.BackColorState.Enabled = Color.FromArgb( 10, 10, 11 );
+            Panel.Border.Color = Color.FromArgb( 128, 64, 0 );
+            Panel.Border.HoverColor = Color.FromArgb( 128, 64, 0 );
             Panel.Border.HoverVisible = true;
             Panel.Border.Rounding = 6;
             Panel.Border.Thickness = 1;
@@ -250,11 +238,11 @@ namespace BudgetExecution
             Panel.TextStyle.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
 
             // 
-            // labelClose
+            // Label
             // 
             Label.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             Label.AutoSize = true;
-            Label.BackColor = Color.FromArgb( 38, 38, 39 );
+            Label.BackColor = Color.FromArgb( 10, 10, 11 );
             Label.Cursor = Cursors.Hand;
             Label.Font = new Font( "Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 204 );
             Label.ForeColor = Color.DimGray;
@@ -263,16 +251,13 @@ namespace BudgetExecution
             Label.Size = new Size( 17, 18 );
             Label.TabIndex = 8;
             Label.Text = "x";
-            Label.Click += LabelClose_Click;
-            Label.MouseEnter += LabelClose_MouseEnter;
-            Label.MouseLeave += LabelClose_MouseLeave;
 
             // 
-            // ExNotifyBalloon
+            // Notification
             // 
             AutoScaleDimensions = new SizeF( 6F, 13F );
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb( 38, 38, 39 );
+            BackColor = Color.FromArgb( 10, 10, 11 );
             ClientSize = new Size( 360, 100 );
             Controls.Add( Panel );
             FormBorderStyle = FormBorderStyle.None;
@@ -281,9 +266,6 @@ namespace BudgetExecution
             ShowIcon = false;
             ShowInTaskbar = false;
             Text = "ExNotify";
-            FormClosed += ExNotifyBalloon_FormClosed;
-            Load += ExNotifyBalloon_Load;
-            Click += ExNotifyBalloon_Click;
             ( (ISupportInitialize)PictureBox ).EndInit();
             Panel.ResumeLayout( false );
             Panel.PerformLayout();

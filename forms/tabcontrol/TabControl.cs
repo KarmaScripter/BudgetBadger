@@ -4,8 +4,10 @@
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Windows.Forms;
 using MetroSet_UI.Enums;
+using Syncfusion.Windows.Forms.Tools;
 
 namespace BudgetExecution
 {
@@ -13,6 +15,8 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
+    [ SuppressMessage( "ReSharper", "AutoPropertyCanBeMadeGetOnly.Global" ) ]
+    [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     public partial class TabControl : ControlBase, ITabControl
     {
         // ***************************************************************************************************************************
@@ -22,7 +26,23 @@ namespace BudgetExecution
         public TabControl()
         {
             InitializeComponent();
+            ActiveTab = Tab.TabPages[ 0 ];
+            TabPages = Tab.TabPages;
         }
+
+        // ***************************************************************************************************************************
+        // ****************************************************  PROPERTIES   ********************************************************
+        // ***************************************************************************************************************************
+
+        /// <summary>
+        /// Gets or sets the active tab.
+        /// </summary>
+        /// <value>
+        /// The active tab.
+        /// </value>
+        public TabPageAdv ActiveTab { get; set; }
+
+        public TabPageAdvCollection TabPages { get; set; }
 
         // ***************************************************************************************************************************
         // ****************************************************     METHODS   ********************************************************

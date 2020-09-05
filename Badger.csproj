@@ -60,6 +60,9 @@
     <StartupObject>BudgetExecution.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BudgetData">
+      <HintPath>..\Data\bin\Debug\BudgetData.dll</HintPath>
+    </Reference>
     <Reference Include="BudgetEnumerations">
       <HintPath>..\Enumerations\bin\Debug\BudgetEnumerations.dll</HintPath>
     </Reference>
@@ -164,6 +167,10 @@
       <DependentUpon>ClockControl.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\clock\IClock.cs" />
+    <Compile Include="forms\conversion\mdb\ConversionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\conversion\mdb\ConversionForm.Designer.cs" />
     <Compile Include="forms\tile\ButtonTileControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -606,10 +613,10 @@
     <Compile Include="forms\label\LabelControl.Designer.cs">
       <DependentUpon>LabelControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="PictureControl.cs">
+    <Compile Include="forms\picturebox\PictureControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PictureControl.Designer.cs">
+    <Compile Include="forms\picturebox\PictureControl.Designer.cs">
       <DependentUpon>PictureControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -660,6 +667,12 @@
     <Compile Include="forms\tile\RotatingTileControl.Designer.cs">
       <DependentUpon>RotatingTileControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\splitter\SplitControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\splitter\SplitControl.Designer.cs">
+      <DependentUpon>SplitControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="forms\budgetchart\ChartForm.resx">
       <DependentUpon>ChartForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -672,6 +685,7 @@
     <EmbeddedResource Include="forms\control\ControlData.resx">
       <DependentUpon>ControlData.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\conversion\mdb\ConversionForm.resx" />
     <EmbeddedResource Include="forms\tile\ButtonTileControl.resx">
       <DependentUpon>ButtonTileControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -766,7 +780,7 @@
     <EmbeddedResource Include="forms\label\LabelControl.resx">
       <DependentUpon>LabelControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PictureControl.resx">
+    <EmbeddedResource Include="forms\picturebox\PictureControl.resx">
       <DependentUpon>PictureControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -796,6 +810,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\tile\RotatingTileControl.resx">
       <DependentUpon>RotatingTileControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\splitter\SplitControl.resx">
+      <DependentUpon>SplitControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include=".editorconfig" />
     <None Include="App.config" />

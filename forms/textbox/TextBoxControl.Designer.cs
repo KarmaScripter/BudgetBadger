@@ -30,22 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             this.TextBox = new BudgetExecution.TextBoxPanel();
-            this.BackPanel = new BudgetExecution.LayoutPanel();
             this.BudgetBinding = new BudgetExecution.BudgetBinding();
             this.ToolTip = new BudgetExecution.ToolTip();
-            this.BackPanel.SuspendLayout();
+            this.BackPanel = new BudgetExecution.LayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).BeginInit();
+            this.BackPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // TextBox
             // 
             this.TextBox.AlphaNumeric = false;
-            this.TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.TextBox.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(11)))));
+            this.TextBox.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.TextBox.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
             this.TextBox.BindingSource = this.BudgetBinding;
-            this.TextBox.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.TextBox.Border.HoverColor = System.Drawing.Color.Blue;
+            this.TextBox.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.TextBox.Border.HoverColor = System.Drawing.Color.SteelBlue;
             this.TextBox.Border.HoverVisible = true;
             this.TextBox.Border.Rounding = 6;
             this.TextBox.Border.Thickness = 1;
@@ -76,6 +76,7 @@
             this.TextBox.ImageVisible = false;
             this.TextBox.ImageWidth = 35;
             this.TextBox.Location = new System.Drawing.Point(0, 0);
+            this.TextBox.Margin = new System.Windows.Forms.Padding(5);
             this.TextBox.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
             this.TextBox.Name = "TextBox";
             this.TextBox.Numeric = BudgetExecution.Numeric.NS;
@@ -101,41 +102,6 @@
             this.TextBox.Watermark.Visible = false;
             this.TextBox.WordWrap = true;
             // 
-            // BackPanel
-            // 
-            this.BackPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.BindingSource = null;
-            this.BackPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BackPanel.Border.HoverColor = System.Drawing.Color.Blue;
-            this.BackPanel.Border.HoverVisible = false;
-            this.BackPanel.Border.Rounding = 6;
-            this.BackPanel.Border.Thickness = 1;
-            this.BackPanel.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-            this.BackPanel.Border.Visible = true;
-            this.BackPanel.Children = null;
-            this.BackPanel.Controls.Add(this.TextBox);
-            this.BackPanel.DataFilter = null;
-            this.BackPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BackPanel.Field = BudgetExecution.Field.NS;
-            this.BackPanel.ForeColor = System.Drawing.Color.LightGray;
-            this.BackPanel.Location = new System.Drawing.Point(1, 1);
-            this.BackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-            this.BackPanel.Name = "BackPanel";
-            this.BackPanel.Padding = new System.Windows.Forms.Padding(1);
-            this.BackPanel.Size = new System.Drawing.Size(159, 26);
-            this.BackPanel.TabIndex = 1;
-            this.BackPanel.Text = "layoutPanel1";
-            this.BackPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-            this.BackPanel.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BackPanel.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BackPanel.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-            this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.BackPanel.ToolTip = null;
-            // 
             // BudgetBinding
             // 
             this.BudgetBinding.DataFilter = null;
@@ -159,6 +125,42 @@
             this.ToolTip.TipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.ToolTip.TipTitle = "";
             // 
+            // BackPanel
+            // 
+            this.BackPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.BackPanel.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.BackPanel.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.BackPanel.BindingSource = null;
+            this.BackPanel.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(21)))));
+            this.BackPanel.Border.HoverColor = System.Drawing.Color.SteelBlue;
+            this.BackPanel.Border.HoverVisible = false;
+            this.BackPanel.Border.Rounding = 6;
+            this.BackPanel.Border.Thickness = 1;
+            this.BackPanel.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+            this.BackPanel.Border.Visible = true;
+            this.BackPanel.Children = null;
+            this.BackPanel.Controls.Add(this.TextBox);
+            this.BackPanel.DataFilter = null;
+            this.BackPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BackPanel.Field = BudgetExecution.Field.NS;
+            this.BackPanel.ForeColor = System.Drawing.Color.LightGray;
+            this.BackPanel.Location = new System.Drawing.Point(1, 1);
+            this.BackPanel.Margin = new System.Windows.Forms.Padding(5);
+            this.BackPanel.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+            this.BackPanel.Name = "BackPanel";
+            this.BackPanel.Padding = new System.Windows.Forms.Padding(1);
+            this.BackPanel.Size = new System.Drawing.Size(159, 26);
+            this.BackPanel.TabIndex = 1;
+            this.BackPanel.Text = "layoutPanel1";
+            this.BackPanel.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+            this.BackPanel.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BackPanel.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BackPanel.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BackPanel.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.BackPanel.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            this.BackPanel.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.BackPanel.ToolTip = null;
+            // 
             // TextBoxControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,9 +169,9 @@
             this.Controls.Add(this.BackPanel);
             this.Name = "TextBoxControl";
             this.Size = new System.Drawing.Size(161, 28);
+            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).EndInit();
             this.BackPanel.ResumeLayout(false);
             this.BackPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BudgetBinding)).EndInit();
             this.ResumeLayout(false);
 
         }
