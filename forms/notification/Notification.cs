@@ -2,11 +2,6 @@
 // // Copyright (c) Terry D. Eppler. All rights reserved.
 // // </copyright>
 
-using System.ComponentModel;
-using System.Drawing.Text;
-using VisualPlus.Enumerators;
-using VisualPlus.Toolkit.Controls.Layout;
-
 namespace BudgetExecution
 {
     // ********************************************************************************************************************************
@@ -22,9 +17,15 @@ namespace BudgetExecution
     using System.Threading.Tasks;
     using System.Windows.Forms;
     using Syncfusion.Windows.Forms;
+    using System.ComponentModel;
+    using System.Drawing.Text;
+    using VisualPlus.Enumerators;
+    using VisualPlus.Toolkit.Controls.Layout;
 
-    /// <summary> </summary>
-    /// <seealso cref = "Syncfusion.Windows.Forms.MetroForm"/>
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="Syncfusion.Windows.Forms.MetroForm" />
     [ SuppressMessage( "ReSharper", "InconsistentNaming" ) ]
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     [ SuppressMessage( "ReSharper", "RedundantExtendsListEntry" ) ]
@@ -37,43 +38,69 @@ namespace BudgetExecution
         // ****************************************************    FIELDS     ********************************************************
         // ***************************************************************************************************************************
 
-        /// <summary> The wm mouseactivate </summary>
+        /// <summary>
+        /// The wm mouseactivate
+        /// </summary>
         private const int WM_MOUSEACTIVATE = 0x0021, MA_NOACTIVATE = 0x0003;
 
-        /// <summary> The open notifications </summary>
+        /// <summary>
+        /// The open notifications
+        /// </summary>
         private static readonly List<Notification> OpenNotifications = new List<Notification>();
 
-        /// <summary> The ws ex noactivate </summary>
+        /// <summary>
+        /// The ws ex noactivate
+        /// </summary>
         private const int WS_EX_NOACTIVATE = 0x08000000;
 
-        /// <summary> The ws ex topmost </summary>
+        /// <summary>
+        /// The ws ex topmost
+        /// </summary>
         private const int WS_EX_TOPMOST = 0x00000008;
 
-        /// <summary> The effect </summary>
+        /// <summary>
+        /// The effect
+        /// </summary>
         private bool Effect;
 
-        /// <summary> The footer </summary>
+        /// <summary>
+        /// The footer
+        /// </summary>
         public Label Footer;
 
-        /// <summary> The PictureBox </summary>
+        /// <summary>
+        /// The PictureBox
+        /// </summary>
         public PictureBox PictureBox;
 
-        /// <summary> The title </summary>
+        /// <summary>
+        /// The title
+        /// </summary>
         public Label Title;
 
-        /// <summary> The body </summary>
+        /// <summary>
+        /// The body
+        /// </summary>
         public Label Body;
 
-        /// <summary> The timer </summary>
+        /// <summary>
+        /// The timer
+        /// </summary>
         public Timer Timer;
 
-        /// <summary> The label </summary>
+        /// <summary>
+        /// The label
+        /// </summary>
         public Label Label;
 
-        /// <summary> The panel </summary>
+        /// <summary>
+        /// The panel
+        /// </summary>
         public VisualPanel Panel;
 
-        /// <summary> The components </summary>
+        /// <summary>
+        /// The components
+        /// </summary>
         private IContainer components;
 
         // ***************************************************************************************************************************
@@ -82,13 +109,13 @@ namespace BudgetExecution
 
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref = "Notification"/>
+        /// <see cref="Notification" />
         /// class.
         /// </summary>
-        /// <param name = "icon" > The icon. </param>
-        /// <param name = "title" > The title. </param>
-        /// <param name = "body" > The body. </param>
-        /// <param name = "time" > The time. </param>
+        /// <param name="icon">The icon.</param>
+        /// <param name="title">The title.</param>
+        /// <param name="body">The body.</param>
+        /// <param name="time">The time.</param>
         public Notification( Bitmap icon, string title, string body,
             int time )
         {
@@ -106,7 +133,9 @@ namespace BudgetExecution
             Timer.Start();
         }
 
-        /// <summary> Initializes the component. </summary>
+        /// <summary>
+        /// Initializes the component.
+        /// </summary>
         private void InitializeComponent()
         {
             components = new Container();
@@ -256,11 +285,11 @@ namespace BudgetExecution
             ResumeLayout( false );
         }
 
-        /// <summary> Clean up any resources being used. </summary>
-        /// <param name = "disposing" >
-        /// true if managed resources should be disposed;
-        /// otherwise, false.
-        /// </param>
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed;
+        /// otherwise, false.</param>
         protected override void Dispose( bool disposing )
         {
             if( disposing )
@@ -271,14 +300,18 @@ namespace BudgetExecution
             base.Dispose( disposing );
         }
 
-        /// <summary> Displays the control to the user. </summary>
+        /// <summary>
+        /// Displays the control to the user.
+        /// </summary>
         public new void Show()
         {
             base.Show();
             FadeIn( this, 20 );
         }
 
-        /// <summary> Closes the notify. </summary>
+        /// <summary>
+        /// Closes the notify.
+        /// </summary>
         public void CloseNotify()
         {
             Effect = false;
@@ -288,8 +321,10 @@ namespace BudgetExecution
 
         #region WinApi
 
-        /// <summary> WNDs the proc. </summary>
-        /// <param name = "m" > The m. </param>
+        /// <summary>
+        /// WNDs the proc.
+        /// </summary>
+        /// <param name="m">The m.</param>
         protected override void WndProc( ref System.Windows.Forms.Message m )
         {
             if( m.Msg == WM_MOUSEACTIVATE )
@@ -313,8 +348,12 @@ namespace BudgetExecution
             }
         }
 
-        /// <summary> Gets the create parameters. </summary>
-        /// <value> The create parameters. </value>
+        /// <summary>
+        /// Gets the create parameters.
+        /// </summary>
+        /// <value>
+        /// The create parameters.
+        /// </value>
         protected override CreateParams CreateParams
         {
             get
@@ -330,9 +369,11 @@ namespace BudgetExecution
 
         #region Animations
 
-        /// <summary> Fades the in. </summary>
-        /// <param name = "o" > The o. </param>
-        /// <param name = "interval" > The interval. </param>
+        /// <summary>
+        /// Fades the in.
+        /// </summary>
+        /// <param name="o">The o.</param>
+        /// <param name="interval">The interval.</param>
         private async void FadeIn( Form o, int interval = 80 )
         {
             while( o.Opacity < 1.0 )
@@ -344,9 +385,11 @@ namespace BudgetExecution
             o.Opacity = 1;
         }
 
-        /// <summary> Fades the out. </summary>
-        /// <param name = "o" > The o. </param>
-        /// <param name = "interval" > The interval. </param>
+        /// <summary>
+        /// Fades the out.
+        /// </summary>
+        /// <param name="o">The o.</param>
+        /// <param name="interval">The interval.</param>
         private async void FadeOut( Form o, int interval = 80 )
         {
             while( o.Opacity > 0.0 )
@@ -368,13 +411,13 @@ namespace BudgetExecution
 
         #region Event Handlers
 
-        /// <summary> Handles the Load event of the ExNotifyBalloon control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the Load event of the ExNotifyBalloon control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void ExNotifyBalloon_Load( object sender, EventArgs e )
         {
             Location = new Point( Screen.PrimaryScreen.WorkingArea.Width - Width - 20,
@@ -395,13 +438,13 @@ namespace BudgetExecution
             }
         }
 
-        /// <summary> Handles the FormClosed event of the ExNotifyBalloon control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "FormClosedEventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the FormClosed event of the ExNotifyBalloon control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="FormClosedEventArgs" />
+        /// instance containing the event data.</param>
         private void ExNotifyBalloon_FormClosed( object sender, FormClosedEventArgs e )
         {
             foreach( var openForm in OpenNotifications )
@@ -417,13 +460,13 @@ namespace BudgetExecution
             OpenNotifications.Remove( this );
         }
 
-        /// <summary> Handles the Tick event of the NotifyTimer control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the Tick event of the NotifyTimer control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void NotifyTimer_Tick( object sender, EventArgs e )
         {
             Effect = false;
@@ -431,97 +474,97 @@ namespace BudgetExecution
             Timer.Stop();
         }
 
-        /// <summary> Handles the Click event of the PictureBoxIcon control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the Click event of the PictureBoxIcon control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void PictureBoxIcon_Click( object sender, EventArgs e )
         {
             CloseNotify();
         }
 
-        /// <summary> Handles the Click event of the ExNotifyBalloon control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the Click event of the ExNotifyBalloon control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void ExNotifyBalloon_Click( object sender, EventArgs e )
         {
             CloseNotify();
         }
 
-        /// <summary> Handles the Click event of the LabelTitle control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the Click event of the LabelTitle control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void LabelTitle_Click( object sender, EventArgs e )
         {
             CloseNotify();
         }
 
-        /// <summary> Handles the Click event of the LabelBody control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the Click event of the LabelBody control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void LabelBody_Click( object sender, EventArgs e )
         {
             CloseNotify();
         }
 
-        /// <summary> Handles the Click event of the LabelApp control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the Click event of the LabelApp control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void LabelApp_Click( object sender, EventArgs e )
         {
             CloseNotify();
         }
 
-        /// <summary> Handles the Click event of the Panel1 control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the Click event of the Panel1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void Panel1_Click( object sender, EventArgs e )
         {
             CloseNotify();
         }
 
-        /// <summary> Handles the Click event of the LabelClose control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the Click event of the LabelClose control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void LabelClose_Click( object sender, EventArgs e )
         {
             CloseNotify();
         }
 
-        /// <summary> Handles the MouseEnter event of the LabelClose control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the MouseEnter event of the LabelClose control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void LabelClose_MouseEnter( object sender, EventArgs e )
         {
             Label.ForeColor = Color.DarkGray;
@@ -530,25 +573,25 @@ namespace BudgetExecution
             Opacity = 1;
         }
 
-        /// <summary> Handles the MouseLeave event of the LabelClose control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the MouseLeave event of the LabelClose control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void LabelClose_MouseLeave( object sender, EventArgs e )
         {
             Label.ForeColor = Color.DimGray;
         }
 
-        /// <summary> Handles the MouseEnter event of the PictureBoxIcon control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the MouseEnter event of the PictureBoxIcon control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void PictureBoxIcon_MouseEnter( object sender, EventArgs e )
         {
             Timer.Stop();
@@ -556,13 +599,13 @@ namespace BudgetExecution
             Opacity = 1;
         }
 
-        /// <summary> Handles the MouseEnter event of the LabelTitle control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the MouseEnter event of the LabelTitle control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void LabelTitle_MouseEnter( object sender, EventArgs e )
         {
             Timer.Stop();
@@ -570,13 +613,13 @@ namespace BudgetExecution
             Opacity = 1;
         }
 
-        /// <summary> Handles the MouseEnter event of the LabelBody control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the MouseEnter event of the LabelBody control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void LabelBody_MouseEnter( object sender, EventArgs e )
         {
             Timer.Stop();
@@ -584,13 +627,13 @@ namespace BudgetExecution
             Opacity = 1;
         }
 
-        /// <summary> Handles the MouseEnter event of the LabelApp control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the MouseEnter event of the LabelApp control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void LabelApp_MouseEnter( object sender, EventArgs e )
         {
             Timer.Stop();
@@ -598,26 +641,26 @@ namespace BudgetExecution
             Opacity = 1;
         }
 
-        /// <summary> Handles the MouseLeave event of the Panel1 control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the MouseLeave event of the Panel1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void Panel1_MouseLeave( object sender, EventArgs e )
         {
             Timer.Start();
             Effect = false;
         }
 
-        /// <summary> Handles the MouseEnter event of the Panel1 control. </summary>
-        /// <param name = "sender" > The source of the event. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Handles the MouseEnter event of the Panel1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The
+        /// <see cref="EventArgs" />
+        /// instance containing the event data.</param>
         private void Panel1_MouseEnter( object sender, EventArgs e )
         {
             Timer.Stop();
