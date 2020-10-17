@@ -220,9 +220,11 @@ namespace BudgetExecution
                 {
                     ConnectionString = extension?.ToUpper() switch
                     {
-                        ".XLS" => @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + filepath
+                        ".XLS" => @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source="
+                            + filepath
                             + ";Extended Properties=\"Excel 8.0;HDR=YES;\"",
-                        ".Report" => @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + filepath
+                        ".Report" => @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source="
+                            + filepath
                             + ";Extended Properties=\"Excel 12.0;HDR=YES;\"",
                         _ => ConnectionString
                     };
@@ -288,7 +290,10 @@ namespace BudgetExecution
                     spreadsheet.Workbook.ActiveSheet.StandardWidth = 12.5f;
                     var name = spreadsheet.Workbook.Worksheets[ 0 ].Name;
                     var sheet = spreadsheet.Workbook.ActiveSheet;
-                    spreadsheet.ActiveSheet.ImportDataGridView( datagrid, 1, 1, true, false );
+
+                    spreadsheet.ActiveSheet.ImportDataGridView( datagrid, 1, 1, true,
+                        false );
+
                     var range = sheet.UsedRange;
                     var table = sheet.ListObjects.Create( name, range );
                     table.BuiltInTableStyle = TableBuiltInStyles.TableStyleMedium2;

@@ -365,7 +365,10 @@ namespace BudgetExecution
             // ControlData
             // 
             BackColor = Color.FromArgb( 10, 10, 11 );
-            Font = new Font( "Roboto", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0 );
+
+            Font = new Font( "Roboto", 8.25F, FontStyle.Regular, GraphicsUnit.Point,
+                0 );
+
             ForeColor = Color.LightGray;
             Name = "ControlData";
             ResumeLayout( false );
