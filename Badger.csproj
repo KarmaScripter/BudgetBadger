@@ -148,57 +148,57 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="forms\budgetchart\ChartForm.cs">
+    <Compile Include="budgetchart\ChartForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\budgetchart\ChartForm.Designer.cs">
+    <Compile Include="budgetchart\ChartForm.Designer.cs">
       <DependentUpon>ChartForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\chartdatagrid\ChartDataForm.cs">
+    <Compile Include="chartdatagrid\ChartDataForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\chartdatagrid\ChartDataForm.Designer.cs">
+    <Compile Include="chartdatagrid\ChartDataForm.Designer.cs">
       <DependentUpon>ChartDataForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\clock\ClockControl.cs">
+    <Compile Include="clock\ClockControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\clock\ClockControl.Designer.cs">
+    <Compile Include="clock\ClockControl.Designer.cs">
       <DependentUpon>ClockControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\clock\IClock.cs" />
-    <Compile Include="forms\conversion\mdb\ConversionForm.cs">
+    <Compile Include="clock\IClock.cs" />
+    <Compile Include="conversion\mdb\ConversionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\conversion\mdb\ConversionForm.Designer.cs" />
-    <Compile Include="forms\tile\ButtonTileControl.cs">
+    <Compile Include="conversion\mdb\ConversionForm.Designer.cs" />
+    <Compile Include="tile\ButtonTileControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\tile\ButtonTileControl.Designer.cs">
+    <Compile Include="tile\ButtonTileControl.Designer.cs">
       <DependentUpon>ButtonTileControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\combobox\ComboBoxControl.cs">
+    <Compile Include="combobox\ComboBoxControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\combobox\ComboBoxControl.Designer.cs">
+    <Compile Include="combobox\ComboBoxControl.Designer.cs">
       <DependentUpon>ComboBoxControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\button\ButtonControl.cs">
+    <Compile Include="button\ButtonControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\button\ButtonControl.Designer.cs">
+    <Compile Include="button\ButtonControl.Designer.cs">
       <DependentUpon>ButtonControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\editor\EditForm.cs">
+    <Compile Include="editor\EditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\editor\EditForm.Designer.cs">
+    <Compile Include="editor\EditForm.Designer.cs">
       <DependentUpon>EditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\calculator\CalculationControl.cs">
+    <Compile Include="calculator\CalculationControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\calculator\CalculationControl.Designer.cs">
+    <Compile Include="calculator\CalculationControl.Designer.cs">
       <DependentUpon>CalculationControl.cs</DependentUpon>
     </Compile>
     <Compile Include="config\AlignConfig.cs" />
@@ -215,388 +215,388 @@
     <Compile Include="format\ColorForrmat.cs" />
     <Compile Include="format\FontFormat.cs" />
     <Compile Include="format\SizeFomat.cs" />
-    <Compile Include="forms\budgetchart\bindingmodel\ChartBinding.cs">
+    <Compile Include="budgetchart\bindingmodel\ChartBinding.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\budgetchart\bindingmodel\SeriesConfig.cs" />
-    <Compile Include="forms\budgetchart\bindingmodel\SeriesModel.cs" />
-    <Compile Include="forms\budgetchart\BudgetChartControl.cs">
+    <Compile Include="budgetchart\bindingmodel\SeriesConfig.cs" />
+    <Compile Include="budgetchart\bindingmodel\SeriesModel.cs" />
+    <Compile Include="budgetchart\BudgetChartControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\budgetchart\BudgetChartControl.Designer.cs">
+    <Compile Include="budgetchart\BudgetChartControl.Designer.cs">
       <DependentUpon>BudgetChartControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\budgetchart\ChartPanel.cs">
+    <Compile Include="budgetchart\ChartPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\budgetchart\CallOut.cs" />
-    <Compile Include="forms\budgetchart\ChartBase.cs">
+    <Compile Include="budgetchart\CallOut.cs" />
+    <Compile Include="budgetchart\ChartBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\budgetchart\ChartData.cs" />
-    <Compile Include="forms\budgetchart\ibindingmodel\IChartBinding.cs" />
-    <Compile Include="forms\budgetchart\ibindingmodel\IChartSeriesModel.cs" />
-    <Compile Include="forms\budgetchart\ibindingmodel\ISeriesConfig.cs" />
-    <Compile Include="forms\budgetchart\ibindingmodel\ISourceModel.cs" />
-    <Compile Include="forms\budgetchart\IBudgetChart.cs" />
-    <Compile Include="forms\budgetchart\iseriesmodel\ISeriesModel.cs" />
-    <Compile Include="forms\budgetchart\iseriesmodel\ITitleInfo.cs" />
-    <Compile Include="forms\budgetchart\LegendItem.cs" />
-    <Compile Include="forms\budgetchart\seriesmodel\DataSeries.cs" />
-    <Compile Include="forms\budgetchart\seriesmodel\IDataSeries.cs" />
-    <Compile Include="forms\budgetchart\seriesmodel\SourceModel.cs" />
-    <Compile Include="forms\budgetchart\seriesmodel\TitleInfo.cs" />
-    <Compile Include="forms\button\ButtonBase.cs" />
-    <Compile Include="forms\button\ButtonPanel.cs" />
-    <Compile Include="forms\button\IButton.cs" />
-    <Compile Include="forms\calculator\CalculationPanel.cs">
+    <Compile Include="budgetchart\ChartData.cs" />
+    <Compile Include="budgetchart\ibindingmodel\IChartBinding.cs" />
+    <Compile Include="budgetchart\ibindingmodel\IChartSeriesModel.cs" />
+    <Compile Include="budgetchart\ibindingmodel\ISeriesConfig.cs" />
+    <Compile Include="budgetchart\ibindingmodel\ISourceModel.cs" />
+    <Compile Include="budgetchart\IBudgetChart.cs" />
+    <Compile Include="budgetchart\iseriesmodel\ISeriesModel.cs" />
+    <Compile Include="budgetchart\iseriesmodel\ITitleInfo.cs" />
+    <Compile Include="budgetchart\LegendItem.cs" />
+    <Compile Include="budgetchart\seriesmodel\DataSeries.cs" />
+    <Compile Include="budgetchart\seriesmodel\IDataSeries.cs" />
+    <Compile Include="budgetchart\seriesmodel\SourceModel.cs" />
+    <Compile Include="budgetchart\seriesmodel\TitleInfo.cs" />
+    <Compile Include="button\ButtonBase.cs" />
+    <Compile Include="button\ButtonPanel.cs" />
+    <Compile Include="button\IButton.cs" />
+    <Compile Include="calculator\CalculationPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\calculator\CalculatorData.cs">
+    <Compile Include="calculator\CalculatorData.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\calculator\ICalculator.cs" />
-    <Compile Include="forms\calendar\CalendarControl.cs">
+    <Compile Include="calculator\ICalculator.cs" />
+    <Compile Include="calendar\CalendarControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\calendar\CalendarControl.Designer.cs">
+    <Compile Include="calendar\CalendarControl.Designer.cs">
       <DependentUpon>CalendarControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\calendar\CalendarData.cs">
+    <Compile Include="calendar\CalendarData.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\calendar\CalendarForm.cs">
+    <Compile Include="calendar\CalendarForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\calendar\CalendarForm.Designer.cs">
+    <Compile Include="calendar\CalendarForm.Designer.cs">
       <DependentUpon>CalendarForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\calendar\CalendarPanel.cs">
+    <Compile Include="calendar\CalendarPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\chartdatagrid\ChartDataControl.cs">
+    <Compile Include="chartdatagrid\ChartDataControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\chartdatagrid\ChartDataControl.Designer.cs">
+    <Compile Include="chartdatagrid\ChartDataControl.Designer.cs">
       <DependentUpon>ChartDataControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\clock\ClockPanel.cs">
+    <Compile Include="clock\ClockPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\closebox\ClosePanel.cs">
+    <Compile Include="closebox\ClosePanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\combobox\ComboBoxData.cs">
+    <Compile Include="combobox\ComboBoxData.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\combobox\ComboBoxPanel.cs">
+    <Compile Include="combobox\ComboBoxPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\combobox\IComboBox.cs" />
+    <Compile Include="combobox\IComboBox.cs" />
     <Compile Include="forms\binding\IDataSource.cs" />
-    <Compile Include="forms\control\ControlBase.cs">
+    <Compile Include="control\ControlBase.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\control\ControlBase.Designer.cs">
+    <Compile Include="control\ControlBase.Designer.cs">
       <DependentUpon>ControlBase.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\control\ControlData.cs">
+    <Compile Include="control\ControlData.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\control\IDataControl.cs" />
-    <Compile Include="forms\dialog\browser\FileBrowser.cs">
+    <Compile Include="control\IDataControl.cs" />
+    <Compile Include="dialog\browser\FileBrowser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\dialog\browser\FileBrowser.Designer.cs">
+    <Compile Include="dialog\browser\FileBrowser.Designer.cs">
       <DependentUpon>FileBrowser.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\calculator\CalculatorForm.cs">
+    <Compile Include="calculator\CalculatorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\calculator\CalculatorForm.Designer.cs">
+    <Compile Include="calculator\CalculatorForm.Designer.cs">
       <DependentUpon>CalculatorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\dialog\column\ColumnConfiguration.cs">
+    <Compile Include="dialog\column\ColumnConfiguration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\dialog\column\ColumnConfiguration.Designer.cs">
+    <Compile Include="dialog\column\ColumnConfiguration.Designer.cs">
       <DependentUpon>ColumnConfiguration.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\dialog\error\Error.cs">
+    <Compile Include="dialog\error\Error.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\dialog\error\Error.Designer.cs">
+    <Compile Include="dialog\error\Error.Designer.cs">
       <DependentUpon>Error.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\dialog\excel\ExcelBrowser.cs">
+    <Compile Include="dialog\excel\ExcelBrowser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\dialog\excel\ExcelBrowser.Designer.cs">
+    <Compile Include="dialog\excel\ExcelBrowser.Designer.cs">
       <DependentUpon>ExcelBrowser.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\dialog\message\Message.cs">
+    <Compile Include="dialog\message\Message.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\dialog\message\Message.Designer.cs">
+    <Compile Include="dialog\message\Message.Designer.cs">
       <DependentUpon>Message.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\dropmenu\DropMenuPanel.cs">
+    <Compile Include="dropmenu\DropMenuPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\dropmenu\IDropMenu.cs" />
-    <Compile Include="forms\editor\EditControl.cs">
+    <Compile Include="dropmenu\IDropMenu.cs" />
+    <Compile Include="editor\EditControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\editor\EditControl.Designer.cs">
+    <Compile Include="editor\EditControl.Designer.cs">
       <DependentUpon>EditControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\excel\ExcelData.cs">
+    <Compile Include="excel\ExcelData.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\excel\ExcelForm.cs">
+    <Compile Include="excel\ExcelForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\excel\ExcelForm.Designer.cs">
+    <Compile Include="excel\ExcelForm.Designer.cs">
       <DependentUpon>ExcelForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\excel\sheet\ISpreadsheet.cs" />
-    <Compile Include="forms\excel\sheet\RibbonPanel.cs">
+    <Compile Include="excel\sheet\ISpreadsheet.cs" />
+    <Compile Include="excel\sheet\RibbonPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\excel\sheet\SheetPanel.cs">
+    <Compile Include="excel\sheet\SheetPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\flowpanel\FlowPanel.cs">
+    <Compile Include="flowpanel\FlowPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\flowpanel\IFlowPanel.cs" />
-    <Compile Include="forms\gridcontrol\budgetgrid\BudgetGridControl.cs">
+    <Compile Include="flowpanel\IFlowPanel.cs" />
+    <Compile Include="gridcontrol\budgetgrid\BudgetGridControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\gridcontrol\budgetgrid\BudgetGridControl.Designer.cs">
+    <Compile Include="gridcontrol\budgetgrid\BudgetGridControl.Designer.cs">
       <DependentUpon>BudgetGridControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\gridcontrol\budgetgrid\BudgetGridData.cs">
+    <Compile Include="gridcontrol\budgetgrid\BudgetGridData.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\gridcontrol\budgetgrid\BudgetGridPanel.cs">
+    <Compile Include="gridcontrol\budgetgrid\BudgetGridPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\gridcontrol\budgetgrid\IBudgetGrid.cs" />
-    <Compile Include="forms\gridcontrol\datagrid\DataGridControl.cs">
+    <Compile Include="gridcontrol\budgetgrid\IBudgetGrid.cs" />
+    <Compile Include="gridcontrol\datagrid\DataGridControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\gridcontrol\datagrid\DataGridControl.Designer.cs">
+    <Compile Include="gridcontrol\datagrid\DataGridControl.Designer.cs">
       <DependentUpon>DataGridControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\gridcontrol\datagrid\DataGridPanel.cs">
+    <Compile Include="gridcontrol\datagrid\DataGridPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\gridcontrol\datagrid\DataGridPanel.Designer.cs">
+    <Compile Include="gridcontrol\datagrid\DataGridPanel.Designer.cs">
       <DependentUpon>DataGridPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\gridcontrol\datagrid\GridData.cs">
+    <Compile Include="gridcontrol\datagrid\GridData.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\gridcontrol\datagrid\IDataGrid.cs" />
-    <Compile Include="forms\groupbox\GroupBoxControl.cs">
+    <Compile Include="gridcontrol\datagrid\IDataGrid.cs" />
+    <Compile Include="groupbox\GroupBoxControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\groupbox\GroupBoxControl.Designer.cs">
+    <Compile Include="groupbox\GroupBoxControl.Designer.cs">
       <DependentUpon>GroupBoxControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\groupbox\GroupBoxData.cs" />
-    <Compile Include="forms\groupbox\GroupBoxPanel.cs" />
-    <Compile Include="forms\groupbox\IGroupBox.cs" />
-    <Compile Include="forms\hover\HoverBase.cs">
+    <Compile Include="groupbox\GroupBoxData.cs" />
+    <Compile Include="groupbox\GroupBoxPanel.cs" />
+    <Compile Include="groupbox\IGroupBox.cs" />
+    <Compile Include="hover\HoverBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\hover\HoverData.cs">
+    <Compile Include="hover\HoverData.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\hover\IHover.cs" />
-    <Compile Include="forms\hover\Info.cs" />
-    <Compile Include="forms\label\ILabel.cs" />
-    <Compile Include="forms\label\LabelData.cs" />
-    <Compile Include="forms\label\LabelPanel.cs" />
-    <Compile Include="forms\layout\ILayout.cs" />
-    <Compile Include="forms\layout\LayoutPanel.cs" />
-    <Compile Include="forms\listbox\IListBox.cs" />
-    <Compile Include="forms\listbox\ListBoxControl.cs">
+    <Compile Include="hover\IHover.cs" />
+    <Compile Include="hover\Info.cs" />
+    <Compile Include="label\ILabel.cs" />
+    <Compile Include="label\LabelData.cs" />
+    <Compile Include="label\LabelPanel.cs" />
+    <Compile Include="layout\ILayout.cs" />
+    <Compile Include="layout\LayoutPanel.cs" />
+    <Compile Include="listbox\IListBox.cs" />
+    <Compile Include="listbox\ListBoxControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\listbox\ListBoxControl.Designer.cs">
+    <Compile Include="listbox\ListBoxControl.Designer.cs">
       <DependentUpon>ListBoxControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\listbox\ListBoxData.cs">
+    <Compile Include="listbox\ListBoxData.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\listbox\ListPanel.cs">
+    <Compile Include="listbox\ListPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\loader\Loader.cs">
+    <Compile Include="loader\Loader.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\loader\Loader.Designer.cs">
+    <Compile Include="loader\Loader.Designer.cs">
       <DependentUpon>Loader.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\main\BadgerMain.cs">
+    <Compile Include="main\BadgerMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\main\BadgerMain.Designer.cs">
+    <Compile Include="main\BadgerMain.Designer.cs">
       <DependentUpon>BadgerMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\metric\DataMetric.cs" />
-    <Compile Include="forms\metric\imetric\IDataMetric.cs" />
-    <Compile Include="forms\metric\imetric\IMetric.cs" />
-    <Compile Include="forms\metric\MetricBase.cs" />
-    <Compile Include="forms\notification\Notification.cs">
+    <Compile Include="metric\DataMetric.cs" />
+    <Compile Include="metric\imetric\IDataMetric.cs" />
+    <Compile Include="metric\imetric\IMetric.cs" />
+    <Compile Include="metric\MetricBase.cs" />
+    <Compile Include="notification\Notification.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\notification\SplashWindow.cs">
+    <Compile Include="notification\SplashWindow.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\notification\SplashConfig.cs">
+    <Compile Include="notification\SplashConfig.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\pdf\PdfForm.cs">
+    <Compile Include="pdf\PdfForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\pdf\PdfForm.Designer.cs">
+    <Compile Include="pdf\PdfForm.Designer.cs">
       <DependentUpon>PdfForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\pdf\PdfPanel.cs">
+    <Compile Include="pdf\PdfPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\picturebox\IPictureBox.cs" />
-    <Compile Include="forms\picturebox\PicturePanel.cs">
+    <Compile Include="picturebox\IPictureBox.cs" />
+    <Compile Include="picturebox\PicturePanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\editor\RecordControl.cs">
+    <Compile Include="editor\RecordControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\editor\RecordControl.Designer.cs">
+    <Compile Include="editor\RecordControl.Designer.cs">
       <DependentUpon>RecordControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\richtextbox\IRichTextBox.cs" />
-    <Compile Include="forms\richtextbox\RichTextData.cs" />
-    <Compile Include="forms\richtextbox\RichTextPanel.cs" />
-    <Compile Include="forms\selector\SelectionControl.cs">
+    <Compile Include="richtextbox\IRichTextBox.cs" />
+    <Compile Include="richtextbox\RichTextData.cs" />
+    <Compile Include="richtextbox\RichTextPanel.cs" />
+    <Compile Include="selector\SelectionControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\selector\SelectionControl.Designer.cs">
+    <Compile Include="selector\SelectionControl.Designer.cs">
       <DependentUpon>SelectionControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\selector\SelectionPanel.cs">
+    <Compile Include="selector\SelectionPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\splitter\ISplitter.cs" />
-    <Compile Include="forms\splitter\SplitBase.cs">
+    <Compile Include="splitter\ISplitter.cs" />
+    <Compile Include="splitter\SplitBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\splitter\SplitPanel.cs">
+    <Compile Include="splitter\SplitPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\streamer\IStreamer.cs" />
-    <Compile Include="forms\streamer\Streamer.cs">
+    <Compile Include="streamer\IStreamer.cs" />
+    <Compile Include="streamer\Streamer.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\streamer\StreamerBase.cs">
+    <Compile Include="streamer\StreamerBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\streamer\StreamerControl.cs">
+    <Compile Include="streamer\StreamerControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\streamer\StreamerControl.Designer.cs">
+    <Compile Include="streamer\StreamerControl.Designer.cs">
       <DependentUpon>StreamerControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\tabcontrol\ITabControl.cs" />
-    <Compile Include="forms\tabcontrol\ITabPage.cs" />
-    <Compile Include="forms\tabcontrol\TabControl.cs">
+    <Compile Include="tabcontrol\ITabControl.cs" />
+    <Compile Include="tabcontrol\ITabPage.cs" />
+    <Compile Include="tabcontrol\TabControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\tabcontrol\TabControl.Designer.cs">
+    <Compile Include="tabcontrol\TabControl.Designer.cs">
       <DependentUpon>TabControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\tabcontrol\TabPage.cs">
+    <Compile Include="tabcontrol\TabPage.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\tabcontrol\TabPanel.cs">
+    <Compile Include="tabcontrol\TabPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\textbox\ITextBox.cs" />
-    <Compile Include="forms\textbox\TextBoxData.cs" />
-    <Compile Include="forms\textbox\TextBoxPanel.cs" />
-    <Compile Include="forms\tilelayout\TileLayoutControl.cs">
+    <Compile Include="textbox\ITextBox.cs" />
+    <Compile Include="textbox\TextBoxData.cs" />
+    <Compile Include="textbox\TextBoxPanel.cs" />
+    <Compile Include="tilelayout\TileLayoutControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\tilelayout\TileLayoutControl.Designer.cs">
+    <Compile Include="tilelayout\TileLayoutControl.Designer.cs">
       <DependentUpon>TileLayoutControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\tilelayout\TilePanel.cs">
+    <Compile Include="tilelayout\TilePanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\tile\TileBase.cs">
+    <Compile Include="tile\TileBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\tile\TileConfig.cs">
+    <Compile Include="tile\TileConfig.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\tile\ButtonTilePanel.cs">
+    <Compile Include="tile\ButtonTilePanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\tile\IButtonTile.cs" />
-    <Compile Include="forms\tile\IPulsingTile.cs" />
-    <Compile Include="forms\tile\IRotatingTile.cs" />
-    <Compile Include="forms\tile\ITile.cs" />
-    <Compile Include="forms\tile\PulsingTilePanel.cs">
+    <Compile Include="tile\IButtonTile.cs" />
+    <Compile Include="tile\IPulsingTile.cs" />
+    <Compile Include="tile\IRotatingTile.cs" />
+    <Compile Include="tile\ITile.cs" />
+    <Compile Include="tile\PulsingTilePanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\tile\RotatingTilePanel.cs">
+    <Compile Include="tile\RotatingTilePanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\BarButton.cs">
+    <Compile Include="toolbar\BarButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\BarComboBox.cs">
+    <Compile Include="toolbar\BarComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\BarLabel.cs">
+    <Compile Include="toolbar\BarLabel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\BarProgress.cs">
+    <Compile Include="toolbar\BarProgress.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\BarTextBox.cs">
+    <Compile Include="toolbar\BarTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\BarButtonBase.cs">
+    <Compile Include="toolbar\BarButtonBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\BarComboBase.cs">
+    <Compile Include="toolbar\BarComboBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\BarLabelBase.cs">
+    <Compile Include="toolbar\BarLabelBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\IBarButton.cs" />
-    <Compile Include="forms\toolbar\IBarComboBox.cs" />
-    <Compile Include="forms\toolbar\IBarLabel.cs" />
-    <Compile Include="forms\toolbar\IBarTextBox.cs" />
-    <Compile Include="forms\toolbar\IToolBar.cs" />
-    <Compile Include="forms\toolbar\ToolPanelBase.cs">
+    <Compile Include="toolbar\IBarButton.cs" />
+    <Compile Include="toolbar\IBarComboBox.cs" />
+    <Compile Include="toolbar\IBarLabel.cs" />
+    <Compile Include="toolbar\IBarTextBox.cs" />
+    <Compile Include="toolbar\IToolBar.cs" />
+    <Compile Include="toolbar\ToolPanelBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\ToolPanelData.cs">
+    <Compile Include="toolbar\ToolPanelData.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\ToolPanel.cs">
+    <Compile Include="toolbar\ToolPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\ToolSeparator.cs">
+    <Compile Include="toolbar\ToolSeparator.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\tooltip\ToolTip.cs">
+    <Compile Include="tooltip\ToolTip.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="image\BudgetImage.cs" />
@@ -607,16 +607,16 @@
     <Compile Include="image\ImageList.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\label\LabelControl.cs">
+    <Compile Include="label\LabelControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\label\LabelControl.Designer.cs">
+    <Compile Include="label\LabelControl.Designer.cs">
       <DependentUpon>LabelControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\picturebox\PictureControl.cs">
+    <Compile Include="picturebox\PictureControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\picturebox\PictureControl.Designer.cs">
+    <Compile Include="picturebox\PictureControl.Designer.cs">
       <DependentUpon>PictureControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -631,156 +631,156 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="forms\binding\IBindingSource.cs" />
-    <Compile Include="forms\toolbar\ToolBarControl.cs">
+    <Compile Include="toolbar\ToolBarControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\toolbar\ToolBarControl.Designer.cs">
+    <Compile Include="toolbar\ToolBarControl.Designer.cs">
       <DependentUpon>ToolBarControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\editor\RecordForm.cs">
+    <Compile Include="editor\RecordForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\editor\RecordForm.Designer.cs">
+    <Compile Include="editor\RecordForm.Designer.cs">
       <DependentUpon>RecordForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\textbox\TextBoxControl.cs">
+    <Compile Include="textbox\TextBoxControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\textbox\TextBoxControl.Designer.cs">
+    <Compile Include="textbox\TextBoxControl.Designer.cs">
       <DependentUpon>TextBoxControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\richtextbox\RichTextBoxControl.cs">
+    <Compile Include="richtextbox\RichTextBoxControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\richtextbox\RichTextBoxControl.Designer.cs">
+    <Compile Include="richtextbox\RichTextBoxControl.Designer.cs">
       <DependentUpon>RichTextBoxControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\tile\PulsingTileControl.cs">
+    <Compile Include="tile\PulsingTileControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\tile\PulsingTileControl.Designer.cs">
+    <Compile Include="tile\PulsingTileControl.Designer.cs">
       <DependentUpon>PulsingTileControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\tile\RotatingTileControl.cs">
+    <Compile Include="tile\RotatingTileControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\tile\RotatingTileControl.Designer.cs">
+    <Compile Include="tile\RotatingTileControl.Designer.cs">
       <DependentUpon>RotatingTileControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\splitter\SplitControl.cs">
+    <Compile Include="splitter\SplitControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forms\splitter\SplitControl.Designer.cs">
+    <Compile Include="splitter\SplitControl.Designer.cs">
       <DependentUpon>SplitControl.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="forms\budgetchart\ChartForm.resx">
+    <EmbeddedResource Include="budgetchart\ChartForm.resx">
       <DependentUpon>ChartForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\chartdatagrid\ChartDataForm.resx">
+    <EmbeddedResource Include="chartdatagrid\ChartDataForm.resx">
       <DependentUpon>ChartDataForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\clock\ClockControl.resx">
+    <EmbeddedResource Include="clock\ClockControl.resx">
       <DependentUpon>ClockControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\control\ControlData.resx">
+    <EmbeddedResource Include="control\ControlData.resx">
       <DependentUpon>ControlData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\conversion\mdb\ConversionForm.resx" />
-    <EmbeddedResource Include="forms\tile\ButtonTileControl.resx">
+    <EmbeddedResource Include="conversion\mdb\ConversionForm.resx" />
+    <EmbeddedResource Include="tile\ButtonTileControl.resx">
       <DependentUpon>ButtonTileControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\combobox\ComboBoxControl.resx">
+    <EmbeddedResource Include="combobox\ComboBoxControl.resx">
       <DependentUpon>ComboBoxControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\button\ButtonControl.resx">
+    <EmbeddedResource Include="button\ButtonControl.resx">
       <DependentUpon>ButtonControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\editor\EditForm.resx">
+    <EmbeddedResource Include="editor\EditForm.resx">
       <DependentUpon>EditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\calculator\CalculationControl.resx">
+    <EmbeddedResource Include="calculator\CalculationControl.resx">
       <DependentUpon>CalculationControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\budgetchart\BudgetChartControl.resx">
+    <EmbeddedResource Include="budgetchart\BudgetChartControl.resx">
       <DependentUpon>BudgetChartControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\calendar\CalendarControl.resx">
+    <EmbeddedResource Include="calendar\CalendarControl.resx">
       <DependentUpon>CalendarControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\calendar\CalendarForm.resx">
+    <EmbeddedResource Include="calendar\CalendarForm.resx">
       <DependentUpon>CalendarForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\chartdatagrid\ChartDataControl.resx">
+    <EmbeddedResource Include="chartdatagrid\ChartDataControl.resx">
       <DependentUpon>ChartDataControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\control\ControlBase.resx">
+    <EmbeddedResource Include="control\ControlBase.resx">
       <DependentUpon>ControlBase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\dialog\browser\FileBrowser.resx">
+    <EmbeddedResource Include="dialog\browser\FileBrowser.resx">
       <DependentUpon>FileBrowser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\calculator\CalculatorForm.resx">
+    <EmbeddedResource Include="calculator\CalculatorForm.resx">
       <DependentUpon>CalculatorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\dialog\column\ColumnConfiguration.resx">
+    <EmbeddedResource Include="dialog\column\ColumnConfiguration.resx">
       <DependentUpon>ColumnConfiguration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\dialog\error\Error.resx">
+    <EmbeddedResource Include="dialog\error\Error.resx">
       <DependentUpon>Error.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\dialog\excel\ExcelBrowser.resx">
+    <EmbeddedResource Include="dialog\excel\ExcelBrowser.resx">
       <DependentUpon>ExcelBrowser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\dialog\message\Message.resx">
+    <EmbeddedResource Include="dialog\message\Message.resx">
       <DependentUpon>Message.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\editor\EditControl.resx">
+    <EmbeddedResource Include="editor\EditControl.resx">
       <DependentUpon>EditControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\excel\ExcelForm.resx">
+    <EmbeddedResource Include="excel\ExcelForm.resx">
       <DependentUpon>ExcelForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\gridcontrol\budgetgrid\BudgetGridControl.resx">
+    <EmbeddedResource Include="gridcontrol\budgetgrid\BudgetGridControl.resx">
       <DependentUpon>BudgetGridControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\gridcontrol\datagrid\DataGridControl.resx">
+    <EmbeddedResource Include="gridcontrol\datagrid\DataGridControl.resx">
       <DependentUpon>DataGridControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\groupbox\GroupBoxControl.resx">
+    <EmbeddedResource Include="groupbox\GroupBoxControl.resx">
       <DependentUpon>GroupBoxControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\listbox\ListBoxControl.resx">
+    <EmbeddedResource Include="listbox\ListBoxControl.resx">
       <DependentUpon>ListBoxControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\loader\Loader.resx">
+    <EmbeddedResource Include="loader\Loader.resx">
       <DependentUpon>Loader.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\main\BadgerMain.resx">
+    <EmbeddedResource Include="main\BadgerMain.resx">
       <DependentUpon>BadgerMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\notification\Notification.resx" />
-    <EmbeddedResource Include="forms\pdf\PdfForm.resx">
+    <EmbeddedResource Include="notification\Notification.resx" />
+    <EmbeddedResource Include="pdf\PdfForm.resx">
       <DependentUpon>PdfForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\editor\RecordControl.resx">
+    <EmbeddedResource Include="editor\RecordControl.resx">
       <DependentUpon>RecordControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\selector\SelectionControl.resx">
+    <EmbeddedResource Include="selector\SelectionControl.resx">
       <DependentUpon>SelectionControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\streamer\StreamerControl.resx">
+    <EmbeddedResource Include="streamer\StreamerControl.resx">
       <DependentUpon>StreamerControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\tabcontrol\TabControl.resx">
+    <EmbeddedResource Include="tabcontrol\TabControl.resx">
       <DependentUpon>TabControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\tilelayout\TileLayoutControl.resx">
+    <EmbeddedResource Include="tilelayout\TileLayoutControl.resx">
       <DependentUpon>TileLayoutControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\label\LabelControl.resx">
+    <EmbeddedResource Include="label\LabelControl.resx">
       <DependentUpon>LabelControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\picturebox\PictureControl.resx">
+    <EmbeddedResource Include="picturebox\PictureControl.resx">
       <DependentUpon>PictureControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -793,25 +793,25 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="forms\toolbar\ToolBarControl.resx">
+    <EmbeddedResource Include="toolbar\ToolBarControl.resx">
       <DependentUpon>ToolBarControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\editor\RecordForm.resx">
+    <EmbeddedResource Include="editor\RecordForm.resx">
       <DependentUpon>RecordForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\textbox\TextBoxControl.resx">
+    <EmbeddedResource Include="textbox\TextBoxControl.resx">
       <DependentUpon>TextBoxControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\richtextbox\RichTextBoxControl.resx">
+    <EmbeddedResource Include="richtextbox\RichTextBoxControl.resx">
       <DependentUpon>RichTextBoxControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\tile\PulsingTileControl.resx">
+    <EmbeddedResource Include="tile\PulsingTileControl.resx">
       <DependentUpon>PulsingTileControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\tile\RotatingTileControl.resx">
+    <EmbeddedResource Include="tile\RotatingTileControl.resx">
       <DependentUpon>RotatingTileControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\splitter\SplitControl.resx">
+    <EmbeddedResource Include="splitter\SplitControl.resx">
       <DependentUpon>SplitControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include=".editorconfig" />
