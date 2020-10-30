@@ -62,12 +62,12 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the binding source.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="T1"></typeparam>
         /// <typeparam name="T2">The type of the 2.</typeparam>
         /// <param name="bindinglist">The bindingsource.</param>
         /// <param name="dict">The dictionary.</param>
-        void SetDataSource<T, T2>( T bindinglist, T2 dict )
-            where T : IBindingList
+        void SetDataSource<T1, T2>( T1 bindinglist, T2 dict )
+            where T1 : IBindingList
             where T2 : IDictionary<string, object>;
 
         /// <summary>

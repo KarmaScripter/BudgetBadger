@@ -2,8 +2,6 @@
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
-using System;
-
 namespace BudgetExecution
 {
     // ********************************************************************************************************************************
@@ -11,12 +9,13 @@ namespace BudgetExecution
     // ********************************************************************************************************************************
 
     using System.Collections.Generic;
+    using System;
     using System.ComponentModel;
     using System.Linq;
     using System.Windows.Forms;
     using VisualPlus.Toolkit.Controls.Interactivity;
 
-    public class LabelData : VisualLabel, IDataSource
+    public class LabelData : VisualLabel
     {
         // ***************************************************************************************************************************
         // *********************************************   CONSTRUCTORS **************************************************************
@@ -117,7 +116,8 @@ namespace BudgetExecution
         /// <param name="bindinglist">The bindingsource.</param>
         /// <param name="dict">The dictionary.</param>
         public void SetDataSource<T, T2>( T bindinglist, T2 dict )
-            where T : IBindingList where T2 : IDictionary<string, object>
+            where T : IBindingList 
+            where T2 : IDictionary<string, object>
         {
             try
             {
@@ -214,9 +214,9 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the binding source.
         /// </summary>
-        /// <typeparam name="T1">The type of the 1.</typeparam>
-        /// <typeparam name="T2">The type of the 2.</typeparam>
-        /// <typeparam name="T3">The type of the 3.</typeparam>
+        /// <typeparam name="T1">The type of T1.</typeparam>
+        /// <typeparam name="T2">The type of T2.</typeparam>
+        /// <typeparam name="T3">The type of T3.</typeparam>
         /// <param name="data">The data.</param>
         /// <param name="field">The field.</param>
         /// <param name="filter">The dictionary.</param>

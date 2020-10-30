@@ -151,9 +151,10 @@ namespace BudgetExecution
         {
             try
             {
-                return DataTable?.Rows?.Count > 0 && DataTable?.Columns?.Count > 0
-                    ? DataTable
-                    : default( DataTable );
+                return DataTable?.Rows?.Count > 0 
+                    && DataTable?.Columns?.Count > 0
+                        ? DataTable
+                        : default( DataTable );
             }
             catch( Exception ex )
             {

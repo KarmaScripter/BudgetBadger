@@ -61,7 +61,8 @@
     </StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BudgetData">
+    <Reference Include="BudgetData, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\BudgetData\bin\Debug\BudgetData.dll</HintPath>
     </Reference>
     <Reference Include="BudgetEnumerations, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -148,6 +149,16 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="binding\BindingBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="binding\BindingData.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="binding\BudgetBinding.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="binding\IBindingSource.cs" />
     <Compile Include="budgetchart\ChartForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -293,7 +304,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="combobox\IComboBox.cs" />
-    <Compile Include="forms\binding\IDataSource.cs" />
     <Compile Include="control\ControlBase.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -621,16 +631,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="forms\binding\BindingBase.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="forms\binding\BindingData.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="forms\binding\BudgetBinding.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="forms\binding\IBindingSource.cs" />
     <Compile Include="toolbar\ToolBarControl.cs">
       <SubType>UserControl</SubType>
     </Compile>

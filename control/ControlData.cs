@@ -16,14 +16,19 @@ namespace BudgetExecution
     using System.Linq;
     using System.Windows.Forms;
 
-    public class ControlData : UserControl, IDataSource
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="System.Windows.Forms.UserControl" />
+    public class ControlData : UserControl
     {
         // ***************************************************************************************************************************
         // *********************************************   CONSTRUCTORS **************************************************************
         // ***************************************************************************************************************************
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ControlData"/> class.
+        /// Initializes a new instance of the
+        /// <see cref="ControlData" /> class.
         /// </summary>
         public ControlData()
         {
@@ -72,7 +77,9 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the field.
         /// </summary>
-        /// <param name="field">The field.</param>
+        /// <param name="field">
+        /// The field.
+        /// </param>
         public void SetField( Field field )
         {
             try
@@ -88,7 +95,11 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the binding source.
         /// </summary>
-        /// <param name="bindinglist">The bindingsource.</param>
+        /// <typeparam name="T">
+        /// </typeparam>
+        /// <param name="bindinglist">
+        /// The bindingsource.
+        /// </param>
         public void SetDataSource<T>( T bindinglist ) where T : IBindingList
         {
             try
@@ -115,12 +126,20 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the binding source.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <typeparam name="T2">The type of the 2.</typeparam>
-        /// <param name="bindinglist">The bindingsource.</param>
-        /// <param name="dict">The dictionary.</param>
+        /// <typeparam name="T">
+        /// </typeparam>
+        /// <typeparam name="T2">
+        /// The type of the 2.
+        /// </typeparam>
+        /// <param name="bindinglist">
+        /// The bindingsource.
+        /// </param>
+        /// <param name="dict">
+        /// The dictionary.
+        /// </param>
         public void SetDataSource<T, T2>( T bindinglist, T2 dict )
-            where T : IBindingList where T2 : IDictionary<string, object>
+            where T : IBindingList 
+            where T2 : IDictionary<string, object>
         {
             try
             {
@@ -163,6 +182,7 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the binding source.
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         /// <param name="data">The data.</param>
         public void SetDataSource<T>( IEnumerable<T> data ) where T : IEnumerable<T>
         {
@@ -281,9 +301,10 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the bindings.
         /// </summary>
+        /// <typeparam name="T1">The type of the 1.</typeparam>
+        /// <typeparam name="T2">The type of the 2.</typeparam>
         /// <param name="data">The data.</param>
-        /// <param>The numeric.</param>
-        /// <param name = "dict" > </param>
+        /// <param name="dict">The dictionary.</param>
         public void SetDataSource<T1, T2>( IEnumerable<T1> data, T2 dict )
             where T1 : IEnumerable<T1> where T2 : IDictionary<string, object>
         {
@@ -316,6 +337,8 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the binding source.
         /// </summary>
+        /// <typeparam name="T1">The type of the 1.</typeparam>
+        /// <typeparam name="T2">The type of the 2.</typeparam>
         /// <param name="data">The data.</param>
         /// <param name="field">The field.</param>
         /// <param name="filter">The filter.</param>
@@ -357,6 +380,9 @@ namespace BudgetExecution
             error?.ShowDialog();
         }
 
+        /// <summary>
+        /// Initializes the component.
+        /// </summary>
         private void InitializeComponent()
         {
             SuspendLayout();

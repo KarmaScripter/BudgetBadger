@@ -15,7 +15,7 @@ namespace BudgetExecution
     using System.Windows.Forms;
     using VisualPlus.Toolkit.Controls.Interactivity;
 
-    public class ComboBoxData : VisualComboBox, IDataSource
+    public class ComboBoxData : VisualComboBox
     {
         // **********************************************************************************************************************
         // *************************************************   PROPERTIES   *****************************************************
