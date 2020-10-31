@@ -673,12 +673,6 @@
     <Compile Include="splitter\SplitControl.Designer.cs">
       <DependentUpon>SplitControl.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="budgetchart\ChartForm.resx">
-      <DependentUpon>ChartForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="chartdatagrid\ChartDataForm.resx">
-      <DependentUpon>ChartDataForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="clock\ClockControl.resx">
       <DependentUpon>ClockControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -707,38 +701,14 @@
     <EmbeddedResource Include="calendar\CalendarControl.resx">
       <DependentUpon>CalendarControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="calendar\CalendarForm.resx">
-      <DependentUpon>CalendarForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="chartdatagrid\ChartDataControl.resx">
       <DependentUpon>ChartDataControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="control\ControlBase.resx">
       <DependentUpon>ControlBase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dialog\browser\FileBrowser.resx">
-      <DependentUpon>FileBrowser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="calculator\CalculatorForm.resx">
-      <DependentUpon>CalculatorForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="dialog\column\ColumnConfiguration.resx">
-      <DependentUpon>ColumnConfiguration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="dialog\error\Error.resx">
-      <DependentUpon>Error.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="dialog\excel\ExcelBrowser.resx">
-      <DependentUpon>ExcelBrowser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="dialog\message\Message.resx">
-      <DependentUpon>Message.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="editor\EditControl.resx">
       <DependentUpon>EditControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="excel\ExcelForm.resx">
-      <DependentUpon>ExcelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gridcontrol\budgetgrid\BudgetGridControl.resx">
       <DependentUpon>BudgetGridControl.cs</DependentUpon>
@@ -752,16 +722,7 @@
     <EmbeddedResource Include="listbox\ListBoxControl.resx">
       <DependentUpon>ListBoxControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loader\Loader.resx">
-      <DependentUpon>Loader.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="main\BadgerMain.resx">
-      <DependentUpon>BadgerMain.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="notification\Notification.resx" />
-    <EmbeddedResource Include="pdf\PdfForm.resx">
-      <DependentUpon>PdfForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="editor\RecordControl.resx">
       <DependentUpon>RecordControl.cs</DependentUpon>
     </EmbeddedResource>

@@ -127,9 +127,9 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the binding source.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="T1"></typeparam>
         /// <param name="data">The data.</param>
-        public new void SetDataSource<T>( IEnumerable<T> data ) where T : IEnumerable<DataRow>
+        public new void SetDataSource<T1>( IEnumerable<T1> data ) where T1 : IEnumerable<DataRow>
         {
             ( (IBudgetGrid)DataGrid ).SetDataSource( data );
         }

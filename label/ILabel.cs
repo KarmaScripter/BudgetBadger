@@ -56,8 +56,8 @@ namespace BudgetExecution
         /// Sets the binding source.
         /// </summary>
         /// <param name="bindingsource">The bindingsource.</param>
-        void SetDataSource<T>( T bindingsource )
-            where T : IBindingList;
+        void SetDataSource<T1>( T1 bindingsource )
+            where T1 : IBindingList;
 
         /// <summary>
         /// Sets the binding source.
@@ -74,8 +74,8 @@ namespace BudgetExecution
         /// Sets the binding source.
         /// </summary>
         /// <param name="data">The data.</param>
-        void SetDataSource<T>( IEnumerable<T> data )
-            where T : IEnumerable<T>;
+        void SetDataSource<T1>( IEnumerable<T1> data )
+            where T1 : IEnumerable<T1>;
 
         /// <summary>
         /// Sets the binding source.

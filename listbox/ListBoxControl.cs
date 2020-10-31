@@ -70,7 +70,7 @@ namespace BudgetExecution
         /// Sets the binding source.
         /// </summary>
         /// <param name="data">The data.</param>
-        public new void SetDataSource<T>( IEnumerable<T> data ) where T : IEnumerable<DataRow>
+        public new void SetDataSource<T1>( IEnumerable<T1> data ) where T1 : IEnumerable<DataRow>
         {
             ( (IListBox)ListBox ).SetDataSource( data );
         }

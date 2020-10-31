@@ -58,8 +58,8 @@ namespace BudgetExecution
         /// <param name="bindingsource">
         /// The bindingsource.
         /// </param>
-        public void SetDataSource<T>( T bindingsource ) 
-            where T : IBindingList
+        public void SetDataSource<T1>( T1 bindingsource ) 
+            where T1 : IBindingList
         {
             try
             {

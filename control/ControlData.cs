@@ -95,12 +95,12 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the binding source.
         /// </summary>
-        /// <typeparam name="T">
+        /// <typeparam name="T1">
         /// </typeparam>
         /// <param name="bindinglist">
         /// The bindingsource.
         /// </param>
-        public void SetDataSource<T>( T bindinglist ) where T : IBindingList
+        public void SetDataSource<T1>( T1 bindinglist ) where T1 : IBindingList
         {
             try
             {
@@ -126,7 +126,7 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the binding source.
         /// </summary>
-        /// <typeparam name="T">
+        /// <typeparam name="T1">
         /// </typeparam>
         /// <typeparam name="T2">
         /// The type of the 2.
@@ -137,8 +137,8 @@ namespace BudgetExecution
         /// <param name="dict">
         /// The dictionary.
         /// </param>
-        public void SetDataSource<T, T2>( T bindinglist, T2 dict )
-            where T : IBindingList 
+        public void SetDataSource<T1, T2>( T1 bindinglist, T2 dict )
+            where T1 : IBindingList 
             where T2 : IDictionary<string, object>
         {
             try
@@ -182,10 +182,10 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the binding source.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="T1"></typeparam>
         /// <param name="data">The data.</param>
-        public void SetDataSource<T>( IEnumerable<T> data ) 
-            where T : IEnumerable<T>
+        public void SetDataSource<T1>( IEnumerable<T1> data ) 
+            where T1 : IEnumerable<T1>
         {
             if( Verify.Sequence( data ) )
             {
