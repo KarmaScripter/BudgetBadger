@@ -2,8 +2,6 @@
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
-using System.Windows.Forms;
-
 namespace BudgetExecution
 {
     // **************************************************************************************************************************
@@ -11,15 +9,16 @@ namespace BudgetExecution
     // **************************************************************************************************************************
 
     using System;
+    using System;
     using System.Collections.Generic;
     using System.Data;
     using System.Diagnostics.CodeAnalysis;
     using System.Linq;
+    using System.Threading;
 
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     [ SuppressMessage( "ReSharper", "UnusedType.Global" ) ]
     [ SuppressMessage( "ReSharper", "AutoPropertyCanBeMadeGetOnly.Global" ) ]
-    [ SuppressMessage( "ReSharper", "AssignNullToNotNullAttribute" ) ]
     public class BudgetBinding : BindingData, IBindingSource
     {
         // **************************************************************************************************************************
@@ -61,17 +60,6 @@ namespace BudgetExecution
             AllowNew = false;
         }
 
-        public BudgetBinding( BindingSource bindingsource )
-        {
-            DataTable = (DataTable)bindingsource.DataSource;
-            DataSet = DataTable?.DataSet;
-            Source = (Source)Enum.Parse( typeof( Source ), DataTable?.TableName );
-            DataSource = DataTable;
-            Record = (DataRow)Current;
-            Index = Position;
-            AllowNew = false;
-        }
-
         // **************************************************************************************************************************
         // ********************************************      METHODS    *************************************************************
         // **************************************************************************************************************************
@@ -88,11 +76,6 @@ namespace BudgetExecution
             {
                 try
                 {
-                    if( DataFilter?.Count > 0 )
-                    {
-                        DataFilter.Clear();
-                    }
-
                     var datafilter = new Dictionary<string, object>
                     {
                         {

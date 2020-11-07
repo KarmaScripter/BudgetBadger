@@ -9,15 +9,13 @@ namespace BudgetExecution
     // **************************************************************************************************************************
 
     using System;
+    using System;
     using System.Collections.Generic;
     using System.Data;
     using System.Linq;
+    using System.Threading;
     using System.Windows.Forms;
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <seealso cref="System.Windows.Forms.BindingSource" />
     public class BindingBase : BindingSource
     {
         // **************************************************************************************************************************
@@ -95,7 +93,7 @@ namespace BudgetExecution
             {
                 return Verify.Source( Source )
                     ? Source
-                    : Source.NS;
+                    : default;
             }
             catch( Exception ex )
             {
@@ -115,12 +113,12 @@ namespace BudgetExecution
             {
                 return Verify.Field( Field )
                     ? Field
-                    : Field.NS;
+                    : default;
             }
             catch( Exception ex )
             {
                 Fail( ex );
-                return Field.NS;
+                return default;
             }
         }
 
@@ -153,9 +151,10 @@ namespace BudgetExecution
         {
             try
             {
-                return DataTable?.Rows?.Count > 0 && DataTable?.Columns?.Count > 0
-                    ? DataTable
-                    : default( DataTable );
+                return DataTable?.Rows?.Count > 0 
+                    && DataTable?.Columns?.Count > 0
+                        ? DataTable
+                        : default( DataTable );
             }
             catch( Exception ex )
             {

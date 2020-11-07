@@ -1,6 +1,6 @@
-﻿// <copyright file = "BindingData.cs" company = "Terry D. Eppler">
-// Copyright (c) Terry D. Eppler. All rights reserved.
-// </copyright>
+﻿// // <copyright file = "BindingData.cs" company = "Terry D. Eppler">
+// // Copyright (c) Terry D. Eppler. All rights reserved.
+// // </copyright>
 
 namespace BudgetExecution
 {
@@ -13,30 +13,27 @@ namespace BudgetExecution
     using System.ComponentModel;
     using System.Data;
     using System.Linq;
+    using System.Threading;
     using System.Windows.Forms;
 
+    /// <summary> </summary>
+    /// <seealso cref = "BudgetExecution.BindingBase"/>
     public class BindingData : BindingBase
     {
         // **********************************************************************************************************************
         // *************************************************   PROPERTIES   *****************************************************
         // **********************************************************************************************************************
 
-        /// <summary>
-        /// Gets or sets the numeric.
-        /// </summary>
-        /// <value>
-        /// The numeric.
-        /// </value>
+        /// <summary> Gets or sets the numeric. </summary>
+        /// <value> The numeric. </value>
         public Numeric Numeric { get; set; }
 
         // ***************************************************************************************************************************
         // ************************************************  METHODS   ***************************************************************
         // ***************************************************************************************************************************
 
-        /// <summary>
-        /// Sets the field.
-        /// </summary>
-        /// <param name="field">The field.</param>
+        /// <summary> Sets the field. </summary>
+        /// <param name = "field" > The field. </param>
         public void SetField( Field field )
         {
             try
@@ -49,12 +46,10 @@ namespace BudgetExecution
             }
         }
 
-        /// <summary>
-        /// Sets the binding source.
-        /// </summary>
-        /// <param name="bindingsource">The bindingsource.</param>
-        public void SetDataSource<T>( T bindingsource )
-            where T : IBindingList
+        /// <summary> Sets the binding source. </summary>
+        /// <typeparam name = "T1" > The type of the 1. </typeparam>
+        /// <param name = "bindingsource" > The bindingsource. </param>
+        public void SetDataSource<T1>( T1 bindingsource ) where T1 : IBindingList
         {
             try
             {
@@ -63,7 +58,7 @@ namespace BudgetExecution
                 {
                     try
                     {
-                        DataSource = binder?.DataSource;
+                        DataSource = binder.DataSource;
                     }
                     catch( Exception ex )
                     {
@@ -77,15 +72,13 @@ namespace BudgetExecution
             }
         }
 
-        /// <summary>
-        /// Sets the binding source.
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <typeparam name="T2">The type of the 2.</typeparam>
-        /// <param name="bindinglist">The bindingsource.</param>
-        /// <param name="dict">The dictionary.</param>
-        public void SetDataSource<T, T2>( T bindinglist, T2 dict )
-            where T : IBindingList where T2 : IDictionary<string, object>
+        /// <summary> Sets the binding source. </summary>
+        /// <typeparam name = "T1" > The type of the 1. </typeparam>
+        /// <typeparam name = "T2" > The type of the 2. </typeparam>
+        /// <param name = "bindinglist" > The bindingsource. </param>
+        /// <param name = "dict" > The dictionary. </param>
+        public void SetDataSource<T1, T2>( T1 bindinglist, T2 dict )
+            where T1 : IBindingList where T2 : IDictionary<string, object>
         {
             try
             {
@@ -124,10 +117,8 @@ namespace BudgetExecution
             }
         }
 
-        /// <summary>
-        /// Sets the binding source.
-        /// </summary>
-        /// <param name = "data" > </param>
+        /// <summary> Sets the binding source. </summary>
+        /// <param name = "data" > The data. </param>
         public void SetDataSource( IEnumerable<object> data )
         {
             if( Verify.Input( data ) )
@@ -143,12 +134,10 @@ namespace BudgetExecution
             }
         }
 
-        /// <summary>
-        /// Sets the binding source.
-        /// </summary>
-        /// <typeparam name="T1">The type of the 1.</typeparam>
-        /// <param name="data">The data.</param>
-        /// <param name="dict">The dictionary.</param>
+        /// <summary> Sets the binding source. </summary>
+        /// <typeparam name = "T1" > The type of the 1. </typeparam>
+        /// <param name = "data" > The data. </param>
+        /// <param name = "dict" > The dictionary. </param>
         public void SetDataSource<T1>( IEnumerable<T1> data, IDictionary<string, object> dict )
             where T1 : IEnumerable<DataRow>
         {
@@ -169,7 +158,7 @@ namespace BudgetExecution
                     }
 
                     DataSource = data?.ToList();
-                    Filter = filter.TrimEnd( " AND".ToCharArray() );
+                    Filter = filter?.TrimEnd( " AND".ToCharArray() );
                 }
                 catch( Exception ex )
                 {
@@ -178,15 +167,13 @@ namespace BudgetExecution
             }
         }
 
-        /// <summary>
-        /// Sets the binding source.
-        /// </summary>
-        /// <typeparam name="T1">The type of the 1.</typeparam>
-        /// <typeparam name="T2">The type of the 2.</typeparam>
-        /// <typeparam name="T3">The type of the 3.</typeparam>
-        /// <param name="data">The data.</param>
-        /// <param name="field">The field.</param>
-        /// <param name="filter">The dictionary.</param>
+        /// <summary> Sets the binding source. </summary>
+        /// <typeparam name = "T1" > The type of the 1. </typeparam>
+        /// <typeparam name = "T2" > The type of the 2. </typeparam>
+        /// <typeparam name = "T3" > The type of the 3. </typeparam>
+        /// <param name = "data" > The data. </param>
+        /// <param name = "field" > The field. </param>
+        /// <param name = "filter" > The dictionary. </param>
         public void SetDataSource<T1, T2, T3>( IEnumerable<T1> data, T2 field, T3 filter )
             where T1 : IEnumerable<DataRow> where T2 : struct
         {
@@ -214,12 +201,10 @@ namespace BudgetExecution
             }
         }
 
-        /// <summary>
-        /// Sets the binding source.
-        /// </summary>
-        /// <typeparam name="T1">The type of the 1.</typeparam>
-        /// <param name="data">The data.</param>
-        /// <param name="field">The field.</param>
+        /// <summary> Sets the binding source. </summary>
+        /// <typeparam name = "T1" > The type of the 1. </typeparam>
+        /// <param name = "data" > The data. </param>
+        /// <param name = "field" > The field. </param>
         public void SetDataSource<T1>( IEnumerable<T1> data, object field = null )
             where T1 : IEnumerable<DataRow>
         {
@@ -244,12 +229,11 @@ namespace BudgetExecution
             }
         }
 
-        /// <summary>
-        /// Sets the bindings.
-        /// </summary>
-        /// <param name="data">The data.</param>
-        /// <param>The numeric.</param>
-        /// <param name = "dict" > </param>
+        /// <summary> Sets the bindings. </summary>
+        /// <typeparam name = "T1" > The type of the 1. </typeparam>
+        /// <typeparam name = "T2" > The type of the 2. </typeparam>
+        /// <param name = "data" > The data. </param>
+        /// <param name = "dict" > The dictionary. </param>
         public void SetDataSource<T1, T2>( IEnumerable<T1> data, T2 dict )
             where T1 : IEnumerable<DataRow> where T2 : IDictionary<string, object>
         {
@@ -279,12 +263,12 @@ namespace BudgetExecution
             }
         }
 
-        /// <summary>
-        /// Sets the binding source.
-        /// </summary>
-        /// <param name="data">The data.</param>
-        /// <param name="field">The field.</param>
-        /// <param name="filter">The filter.</param>
+        /// <summary> Sets the binding source. </summary>
+        /// <typeparam name = "T1" > The type of the 1. </typeparam>
+        /// <typeparam name = "T2" > The type of the 2. </typeparam>
+        /// <param name = "data" > The data. </param>
+        /// <param name = "field" > The field. </param>
+        /// <param name = "filter" > The filter. </param>
         public void SetDataSource<T1, T2>( IEnumerable<T1> data, T2 field, object filter = null )
             where T1 : IEnumerable<DataRow> where T2 : struct
         {
@@ -301,7 +285,7 @@ namespace BudgetExecution
                     }
                     else
                     {
-                        DataSource = data.ToList();
+                        DataSource = data?.ToList();
                         DataMember = field.ToString();
                     }
                 }
