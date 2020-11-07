@@ -36,7 +36,7 @@ namespace BudgetExecution
         public RichTextPanel()
         {
             // Basic Properties
-            ForeColor = ColorConfig.ForeColorGray;
+            ForeColor = ColorConfig.ForeGray;
             Margin = ControlConfig.Margin;
             Font = FontConfig.FontSizeSmall;
             Padding = ControlConfig.Padding;
@@ -48,13 +48,13 @@ namespace BudgetExecution
             Enabled = true;
 
             // Style Configuration
-            BackColorState.Disabled = ColorConfig.BackColorBlack;
-            BackColorState.Enabled = ColorConfig.ControlInteriorBlack;
-            BackColor = ColorConfig.ControlInteriorBlack;
+            BackColorState.Disabled = ColorConfig.BackDark;
+            BackColorState.Enabled = ColorConfig.InteriorDark;
+            BackColor = ColorConfig.InteriorDark;
             Border.Type = ShapeTypes.Rounded;
-            Border.Color = ColorConfig.ControlHoverGray;
+            Border.Color = ColorConfig.HoverGray;
             Border.HoverVisible = true;
-            Border.HoverColor = ColorConfig.BorderColorLight;
+            Border.HoverColor = ColorConfig.BorderYellow;
             Border.Thickness = BorderConfig.SizeThin;
         }
 

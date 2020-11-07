@@ -40,9 +40,9 @@ namespace BudgetExecution
             ThemeAuthor = "Terry D. Eppler";
             ThemeName = "Budget Execution";
             Style = Style.Custom;
-            BackColor = ColorConfig.BackColorBlack;
-            BorderColor = ColorConfig.BorderColorLight;
-            ForeColor = ColorConfig.ForeColorGray;
+            BackColor = ColorConfig.BackDark;
+            BorderColor = ColorConfig.BorderYellow;
+            ForeColor = ColorConfig.ForeGray;
             UseAnimation = true;
             UseFading = true;
             AutomaticDelay = 500;

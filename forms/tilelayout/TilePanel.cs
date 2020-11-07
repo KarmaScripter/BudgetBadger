@@ -31,13 +31,13 @@ namespace BudgetExecution
         /// </summary>
         public TilePanel()
         {
-            BackColor = ColorConfig.BackColorBlack;
-            ForeColor = ColorConfig.ForeColorGray;
+            BackColor = ColorConfig.BackDark;
+            ForeColor = ColorConfig.ForeGray;
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;
             Font = FontConfig.FontSizeSmall;
             Border3DStyle = Border3DStyle.Flat;
-            BorderColor = ColorConfig.BorderColorDark;
+            BorderColor = ColorConfig.BorderDark;
             BorderStyle = BorderStyle.FixedSingle;
             BackgroundColor = new BrushInfo( BackColor );
             SetParentFormFlat = true;

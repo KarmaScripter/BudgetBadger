@@ -50,15 +50,15 @@ namespace BudgetExecution
             Visible = true;
 
             // Backcolor Configuration
-            BackColor = ColorConfig.BackColorBlack;
-            ForeColor = ColorConfig.ForeColorGray;
-            BackColorState.Disabled = ColorConfig.BackColorBlack;
-            BackColorState.Enabled = ColorConfig.BackColorBlack;
+            BackColor = ColorConfig.BackDark;
+            ForeColor = ColorConfig.ForeGray;
+            BackColorState.Disabled = ColorConfig.BackDark;
+            BackColorState.Enabled = ColorConfig.BackDark;
 
             // Border Configuration
-            Border.Color = ColorConfig.BackColorBlack;
+            Border.Color = ColorConfig.BackDark;
             Border.Thickness = BorderConfig.SizeThin;
-            Border.HoverColor = ColorConfig.BorderColorLight;
+            Border.HoverColor = ColorConfig.BorderYellow;
             Border.HoverVisible = false;
         }
 

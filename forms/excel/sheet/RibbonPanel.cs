@@ -37,8 +37,8 @@ namespace BudgetExecution
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;
             Font = FontConfig.FontSizeSmall;
-            ForeColor = ColorConfig.ForeColorGray;
-            BackColor = ColorConfig.BackColorBlack;
+            ForeColor = ColorConfig.ForeGray;
+            BackColor = ColorConfig.BackDark;
             Ribbon.BackColor = BackColor;
             Ribbon.CaptionFont = new Font( "Roboto", 10, FontStyle.Bold );
             Ribbon.TitleColor = Color.White;

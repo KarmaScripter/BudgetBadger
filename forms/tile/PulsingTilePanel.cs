@@ -37,8 +37,8 @@ namespace BudgetExecution
         {
             // Basic Properties
             TileType = HubTileType.PulsingTile;
-            BackColor = ColorConfig.BackColorBlack;
-            ForeColor = ColorConfig.ForeColorGray;
+            BackColor = ColorConfig.BackDark;
+            ForeColor = ColorConfig.ForeGray;
             Font = FontConfig.FontSizeSmall;
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;
@@ -66,7 +66,7 @@ namespace BudgetExecution
             ExpandOnHover = false;
             EnableHoverColor = true;
             HoverBorderLength = BorderConfig.SizeThin;
-            HoveredBorderColor = ColorConfig.BackColorBlack;
+            HoveredBorderColor = ColorConfig.BackDark;
             EnableTileSlideEffect = true;
             SlideTransition = TransitionDirection.RightToLeft;
             TurnLiveTileOn = false;

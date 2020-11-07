@@ -40,9 +40,9 @@ namespace BudgetExecution
             Size = SizeConfig.DialogMinimum;
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;
-            BackColor = ColorConfig.BackColorBlack;
-            BorderColor = ColorConfig.BorderColorLight;
-            ForeColor = ColorConfig.ForeColorGray;
+            BackColor = ColorConfig.BackDark;
+            BorderColor = ColorConfig.BorderYellow;
+            ForeColor = ColorConfig.ForeGray;
             Anchor = ControlConfig.GetAnchorStyle();
             Padding = ControlConfig.Padding;
             Margin = ControlConfig.Margin;

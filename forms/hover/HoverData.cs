@@ -63,15 +63,15 @@ namespace BudgetExecution
             VisualStyle = Appearance.Metro;
             UseFading = FadingType.Blend;
             GradientBackGround = true;
-            MetroColor = ColorConfig.BackColorBlack;
+            MetroColor = ColorConfig.BackDark;
 
             // Header Properties
             HeaderInfo = new ToolTipInfo();
-            HeaderInfo.BackColor = ColorConfig.BackColorBlack;
-            HeaderInfo.BorderColor = ColorConfig.BorderColorLight;
-            HeaderInfo.ForeColor = ColorConfig.ForeColorGray;
+            HeaderInfo.BackColor = ColorConfig.BackDark;
+            HeaderInfo.BorderColor = ColorConfig.BorderYellow;
+            HeaderInfo.ForeColor = ColorConfig.ForeGray;
             HeaderInfo.Separator = true;
-            HeaderInfo.Header.ForeColor = ColorConfig.ForeColorGray;
+            HeaderInfo.Header.ForeColor = ColorConfig.ForeGray;
             HeaderInfo.Header.Font = FontConfig.FontSizeMedium;
             HeaderInfo.Header.TextAlign = ContentAlignment.MiddleCenter;
             HeaderInfo.Header.TextMargin = ControlConfig.Margin;
@@ -81,11 +81,11 @@ namespace BudgetExecution
 
             // Body Properties
             BodyInfo = new ToolTipInfo();
-            BodyInfo.BackColor = ColorConfig.BackColorBlack;
-            BodyInfo.BorderColor = ColorConfig.BorderColorLight;
-            BodyInfo.ForeColor = ColorConfig.ForeColorGray;
+            BodyInfo.BackColor = ColorConfig.BackDark;
+            BodyInfo.BorderColor = ColorConfig.BorderYellow;
+            BodyInfo.ForeColor = ColorConfig.ForeGray;
             BodyInfo.Separator = true;
-            BodyInfo.Body.ForeColor = ColorConfig.ForeColorGray;
+            BodyInfo.Body.ForeColor = ColorConfig.ForeGray;
             BodyInfo.Body.Font = FontConfig.FontSizeMedium;
             BodyInfo.Body.TextAlign = ContentAlignment.MiddleCenter;
             BodyInfo.Body.TextMargin = ControlConfig.Margin;
@@ -93,11 +93,11 @@ namespace BudgetExecution
 
             // Footer Properties
             FooterInfo = new ToolTipInfo();
-            FooterInfo.BackColor = ColorConfig.BackColorBlack;
-            FooterInfo.BorderColor = ColorConfig.BorderColorLight;
-            FooterInfo.ForeColor = ColorConfig.ForeColorGray;
+            FooterInfo.BackColor = ColorConfig.BackDark;
+            FooterInfo.BorderColor = ColorConfig.BorderYellow;
+            FooterInfo.ForeColor = ColorConfig.ForeGray;
             FooterInfo.Separator = true;
-            FooterInfo.Footer.ForeColor = ColorConfig.ForeColorGray;
+            FooterInfo.Footer.ForeColor = ColorConfig.ForeGray;
             FooterInfo.Footer.Font = FontConfig.FontSizeSmall;
             FooterInfo.Footer.TextAlign = ContentAlignment.MiddleCenter;
             FooterInfo.Footer.TextMargin = ControlConfig.Margin;

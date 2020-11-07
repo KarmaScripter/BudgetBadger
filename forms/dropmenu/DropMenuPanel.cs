@@ -41,14 +41,14 @@ namespace BudgetExecution
             Location = ControlConfig.GetLocation();
             Anchor = ControlConfig.GetAnchorStyle();
             Dock = ControlConfig.GetDockStyle();
-            ForeColor = ColorConfig.ForeColorGray;
+            ForeColor = ColorConfig.ForeGray;
             Enabled = true;
             Visible = true;
 
             // Style Properties
-            BackColor = ColorConfig.BackColorBlack;
-            BorderColor = ColorConfig.BackColorBlack;
-            HeaderBackColor = ColorConfig.BackColorBlack;
+            BackColor = ColorConfig.BackDark;
+            BorderColor = ColorConfig.BackDark;
+            HeaderBackColor = ColorConfig.BackDark;
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;
             BorderStyle = BorderStyle.None;

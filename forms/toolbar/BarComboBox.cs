@@ -33,8 +33,8 @@ namespace BudgetExecution
             DropDownStyle = ComboBoxStyle.DropDownList;
             MaxDropDownItems = 30;
             DropDownHeight = 200;
-            BackColor = ColorConfig.BackColorBlack;
-            ForeColor = ColorConfig.ForeColorGray;
+            BackColor = ColorConfig.BackDark;
+            ForeColor = ColorConfig.ForeGray;
             Font = FontConfig.FontSizeSmall;
             Field = Field.NS;
             Tag = "Make Selection";

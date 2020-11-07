@@ -27,67 +27,67 @@ namespace BudgetExecution
         /// <summary>
         /// The orange border
         /// </summary>
-        public static readonly Color BorderColorLight = Color.FromArgb( 128, 64, 0 );
+        public static readonly Color BorderYellow = Color.FromArgb( 128, 64, 0 );
 
         /// <summary>
         /// The gray border
         /// </summary>
-        public static readonly Color BorderColorDark = Color.FromArgb( 40, 40, 41 );
+        public static readonly Color BorderDark = Color.FromArgb( 40, 40, 41 );
 
         /// <summary>
         /// The red border
         /// </summary>
-        public static readonly Color BorderColorRed = Color.FromArgb( 192, 0, 0 );
+        public static readonly Color BorderRed = Color.FromArgb( 192, 0, 0 );
 
         /// <summary>
         /// The black background
         /// </summary>
-        public static readonly Color BackColorBlack = Color.FromArgb( 10, 10, 11 );
+        public static readonly Color BackDark = Color.FromArgb( 10, 10, 11 );
 
         /// <summary>
         /// The hover color yellow
         /// </summary>
-        public static readonly Color HoverColorYellow = Color.FromArgb( 39, 29, 1 );
+        public static readonly Color HoverYellow = Color.FromArgb( 39, 29, 1 );
 
         /// <summary>
         /// The red foreground
         /// </summary>
-        public static readonly Color ForeColorRed = Color.FromArgb( 192, 0, 0 );
+        public static readonly Color ForeRed = Color.FromArgb( 192, 0, 0 );
 
         /// <summary>
         /// The gray foreground
         /// </summary>
-        public static readonly Color ForeColorGray = Color.LightGray;
+        public static readonly Color ForeGray = Color.LightGray;
 
         /// <summary>
         /// The white foreground
         /// </summary>
-        public static readonly Color ForeColorWhite = Color.White;
+        public static readonly Color ForeWhite = Color.White;
 
         /// <summary>
         /// The black foreground
         /// </summary>
-        public static readonly Color ForeColorBlack = Color.Black;
+        public static readonly Color ForeBlack = Color.Black;
 
         /// <summary>
         /// The clear background
         /// </summary>
-        public static readonly Color BackColorClear = Color.Transparent;
+        public static readonly Color Transparent = Color.Transparent;
 
         /// <summary>
         /// The gray background
         /// </summary>
-        public static readonly Color ControlInteriorBlack = Color.FromArgb( 20, 20, 21 );
+        public static readonly Color InteriorDark = Color.FromArgb( 20, 20, 21 );
 
         /// <summary>
         /// The gray back hover
         /// </summary>
-        public static readonly Color ControlHoverGray = Color.FromArgb( 28, 28, 29 );
+        public static readonly Color HoverGray = Color.FromArgb( 28, 28, 29 );
 
         /// <summary>
         /// The blue back hover
         /// </summary>
-        public static readonly Color ControlHoverBlue = Color.SteelBlue;
+        public static readonly Color HoverBlue = Color.SteelBlue;
 
         // **************************************************************************************************************************
         // ********************************************   CONSTRUCTORS     **********************************************************

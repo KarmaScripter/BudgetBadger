@@ -66,21 +66,21 @@ namespace BudgetExecution
             Dock = ControlConfig.GetDockStyle();
             Visible = true;
             Enabled = true;
-            BackColor = ColorConfig.BackColorBlack;
-            ForeColor = ColorConfig.ForeColorGray;
+            BackColor = ColorConfig.BackDark;
+            ForeColor = ColorConfig.ForeGray;
             Font = FontConfig.FontSizeSmall;
             Margin = ControlConfig.Margin;
 
             // Style Configuration
             ItemSize = new Size( 120, 20 );
-            TabPanelBackColor = ColorConfig.BackColorBlack;
-            ActiveTabColor = ColorConfig.BackColorBlack;
-            ActiveTabForeColor = ColorConfig.ForeColorGray;
-            InactiveTabColor = ColorConfig.BackColorBlack;
-            InActiveTabForeColor = ColorConfig.BackColorBlack;
-            SeparatorColor = ColorConfig.BackColorBlack;
-            FixedSingleBorderColor = ColorConfig.BackColorBlack;
-            BorderColor = ColorConfig.BackColorBlack;
+            TabPanelBackColor = ColorConfig.BackDark;
+            ActiveTabColor = ColorConfig.BackDark;
+            ActiveTabForeColor = ColorConfig.ForeGray;
+            InactiveTabColor = ColorConfig.BackDark;
+            InActiveTabForeColor = ColorConfig.BackDark;
+            SeparatorColor = ColorConfig.BackDark;
+            FixedSingleBorderColor = ColorConfig.BackDark;
+            BorderColor = ColorConfig.BackDark;
             BorderStyle = BorderStyle.None;
             BorderVisible = false;
             BorderWidth = 1;
@@ -244,7 +244,7 @@ namespace BudgetExecution
                     case true:
                     {
                         BorderStyle = BorderStyle.FixedSingle;
-                        BorderColor = ColorConfig.BorderColorLight;
+                        BorderColor = ColorConfig.BorderYellow;
                         BorderVisible = true;
                         BorderWidth = BorderConfig.SizeThin;
                         break;
@@ -253,7 +253,7 @@ namespace BudgetExecution
                     case false:
                     {
                         BorderStyle = BorderStyle.None;
-                        BorderColor = ColorConfig.BorderColorLight;
+                        BorderColor = ColorConfig.BorderYellow;
                         BorderVisible = false;
                         break;
                     }

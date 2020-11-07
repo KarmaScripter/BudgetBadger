@@ -173,10 +173,10 @@ namespace BudgetExecution
                 {
                     using var title = new ChartTitle();
                     title.Text = Main;
-                    title.ForeColor = ColorConfig.ForeColorGray;
+                    title.ForeColor = ColorConfig.ForeGray;
                     title.Visible = true;
                     title.Font = FontConfig.FontSizeSmall;
-                    title.BackColor = ColorConfig.BackColorBlack;
+                    title.BackColor = ColorConfig.BackDark;
                     return title;
                 }
                 catch( Exception ex )
@@ -199,10 +199,10 @@ namespace BudgetExecution
                 {
                     using var title = new ChartTitle();
                     title.Text = Main;
-                    title.ForeColor = ColorConfig.ForeColorGray;
+                    title.ForeColor = ColorConfig.ForeGray;
                     title.Visible = true;
                     title.Font = FontConfig.FontSizeSmall;
-                    title.BackColor = ColorConfig.BackColorBlack;
+                    title.BackColor = ColorConfig.BackDark;
                     return title;
                 }
                 catch( Exception ex )
@@ -231,7 +231,7 @@ namespace BudgetExecution
                     title.Visible = true;
                     title.Font = font;
                     title.ForeColor = color;
-                    title.BackColor = ColorConfig.BackColorBlack;
+                    title.BackColor = ColorConfig.BackDark;
                     return title;
                 }
                 catch( Exception ex )
@@ -260,7 +260,7 @@ namespace BudgetExecution
                     title.Visible = true;
                     title.Font = font;
                     title.ForeColor = color;
-                    title.BackColor = ColorConfig.BackColorBlack;
+                    title.BackColor = ColorConfig.BackDark;
                     return title;
                 }
                 catch( Exception ex )

@@ -38,8 +38,8 @@ namespace BudgetExecution
             LeftPanel = Panel1;
             RightPanel = Panel2;
             Location = ControlConfig.GetLocation();
-            BackColor = ColorConfig.BackColorBlack;
-            ForeColor = ColorConfig.ForeColorGray;
+            BackColor = ColorConfig.BackDark;
+            ForeColor = ColorConfig.ForeGray;
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;
             Dock = ControlConfig.GetDockStyle( DockStyle.Fill );

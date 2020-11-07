@@ -43,22 +43,22 @@ namespace BudgetExecution
             Dock = ControlConfig.GetDockStyle();
             Visible = true;
             Enabled = true;
-            BackColor = ColorConfig.ControlInteriorBlack;
-            ForeColor = ColorConfig.ForeColorGray;
+            BackColor = ColorConfig.InteriorDark;
+            ForeColor = ColorConfig.ForeGray;
             Font = FontConfig.FontSizeSmall;
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;
 
             // Border Configuration.
             Border.Type = ShapeTypes.Rounded;
-            Border.Color = ColorConfig.BorderColorDark;
+            Border.Color = ColorConfig.BorderDark;
             Border.Thickness = BorderConfig.SizeThin;
-            Border.HoverColor = ColorConfig.BorderColorLight;
+            Border.HoverColor = ColorConfig.BorderYellow;
             Border.HoverVisible = true;
 
             // BackColor Configuration.
-            BackColorState.Disabled = ColorConfig.BackColorBlack;
-            BackColorState.Enabled = ColorConfig.ControlInteriorBlack;
+            BackColorState.Disabled = ColorConfig.BackDark;
+            BackColorState.Enabled = ColorConfig.InteriorDark;
 
             // Text Configuration.
             TextAlignment = AlignConfig.StringCenter;
@@ -67,7 +67,7 @@ namespace BudgetExecution
 
             // Style Configuration.
             BoxStyle = GroupBoxStyle.Default;
-            SeparatorColor = ColorConfig.BorderColorDark;
+            SeparatorColor = ColorConfig.BorderDark;
             Separate = true;
         }
 
@@ -237,7 +237,7 @@ namespace BudgetExecution
                     {
                         Border.Color = Color.FromArgb( 64, 64, 64 );
                         Border.Thickness = BorderConfig.SizeThin;
-                        Border.HoverColor = ColorConfig.BorderColorLight;
+                        Border.HoverColor = ColorConfig.BorderYellow;
                         Border.HoverVisible = true;
                         SeparatorColor = Color.FromArgb( 64, 64, 64 );
                         Separate = true;
@@ -247,11 +247,11 @@ namespace BudgetExecution
 
                     case false:
                     {
-                        Border.Color = ColorConfig.BackColorBlack;
+                        Border.Color = ColorConfig.BackDark;
                         Border.Thickness = BorderConfig.SizeThin;
-                        Border.HoverColor = ColorConfig.BackColorBlack;
+                        Border.HoverColor = ColorConfig.BackDark;
                         Border.HoverVisible = false;
-                        SeparatorColor = ColorConfig.BackColorBlack;
+                        SeparatorColor = ColorConfig.BackDark;
                         Separate = false;
                         Border.Type = ShapeTypes.Rounded;
                         break;

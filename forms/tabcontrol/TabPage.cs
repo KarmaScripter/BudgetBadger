@@ -35,10 +35,10 @@ namespace BudgetExecution
         {
             Size = SizeConfig.GetSize( 600, 400 );
             Location = ControlConfig.GetLocation();
-            BackColor = ColorConfig.BackColorBlack;
-            TabBackColor = ColorConfig.BackColorBlack;
-            ForeColor = ColorConfig.ForeColorGray;
-            TabForeColor = ColorConfig.BackColorBlack;
+            BackColor = ColorConfig.BackDark;
+            TabBackColor = ColorConfig.BackDark;
+            ForeColor = ColorConfig.ForeGray;
+            TabForeColor = ColorConfig.BackDark;
             Font = FontConfig.FontSizeSmall;
             TabFont = FontConfig.FontSizeSmall;
             ImageSize = new Size( 12, 12 );

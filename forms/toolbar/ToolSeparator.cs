@@ -30,7 +30,7 @@ namespace BudgetExecution
         {
             Margin = new Padding( 3, 0, 3, 0 );
             Padding = new Padding( 0 );
-            ForeColor = ColorConfig.ForeColorBlack;
+            ForeColor = ColorConfig.ForeBlack;
             Font = FontConfig.FontSizeSmall;
             Width = 6;
         }

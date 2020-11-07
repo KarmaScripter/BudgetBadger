@@ -169,7 +169,7 @@ namespace BudgetExecution
             {
                 try
                 {
-                    tile.BackColor = ColorConfig.ControlHoverGray;
+                    tile.BackColor = ColorConfig.HoverGray;
                     SetHoverText( "Tile Message Information" );
                 }
                 catch( Exception ex )
@@ -192,7 +192,7 @@ namespace BudgetExecution
             {
                 try
                 {
-                    tile.BackColor = ColorConfig.BackColorBlack;
+                    tile.BackColor = ColorConfig.BackDark;
                 }
                 catch( Exception ex )
                 {

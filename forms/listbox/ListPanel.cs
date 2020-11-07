@@ -39,7 +39,7 @@ namespace BudgetExecution
             ThemeAuthor = "Terry D. Eppler";
             ThemeName = "Budget Execution";
             Font = FontConfig.FontSizeSmall;
-            ForeColor = ColorConfig.ForeColorGray;
+            ForeColor = ColorConfig.ForeGray;
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;
             Size = SizeConfig.GetSize( 180, 220 );
@@ -53,16 +53,16 @@ namespace BudgetExecution
             Enabled = true;
 
             // BackColor Configuration
-            BackColor = ColorConfig.ControlInteriorBlack;
-            BorderColor = ColorConfig.BorderColorDark;
-            DisabledBackColor = ColorConfig.BackColorBlack;
-            DisabledForeColor = ColorConfig.BackColorBlack;
+            BackColor = ColorConfig.InteriorDark;
+            BorderColor = ColorConfig.BorderDark;
+            DisabledBackColor = ColorConfig.BackDark;
+            DisabledForeColor = ColorConfig.BackDark;
 
             // Item Configuration
             ItemHeight = 30;
-            HoveredItemBackColor = ColorConfig.ControlHoverGray;
+            HoveredItemBackColor = ColorConfig.HoverGray;
             HoveredItemColor = Color.White;
-            SelectedItemBackColor = ColorConfig.BorderColorLight;
+            SelectedItemBackColor = ColorConfig.BorderYellow;
             SelectedItemColor = Color.White;
 
             // Event Wiring

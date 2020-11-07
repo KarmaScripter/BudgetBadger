@@ -42,7 +42,7 @@ namespace BudgetExecution
             Padding = ControlConfig.Padding;
             Visible = true;
             Enabled = true;
-            ForeColor = ColorConfig.ForeColorGray;
+            ForeColor = ColorConfig.ForeGray;
             Font = FontConfig.FontSizeSmall;
             BorderStyle = BorderStyle.None;
             FlowDirection = FlowDirection.RightToLeft;

@@ -36,7 +36,7 @@ namespace BudgetExecution
             Dock = DockStyle.Fill;
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;
-            BackColor = ColorConfig.ForeColorGray;
+            BackColor = ColorConfig.ForeGray;
             ForeColor = Color.Black;
             Font = new Font( "Roboto", 8, FontStyle.Regular );
             DefaultColumnCount = 26;

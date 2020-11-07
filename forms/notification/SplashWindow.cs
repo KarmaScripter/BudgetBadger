@@ -52,7 +52,7 @@ namespace BudgetExecution
             TransparentColor = ColorConfig.GetColor( Color.White );
 
             // Color Configuration
-            BackColor = ColorConfig.BackColorBlack;
+            BackColor = ColorConfig.BackDark;
             BackgroundColor = new BrushInfo( GradientStyle.PathRectangle, Color.AliceBlue, Color.SteelBlue );
 
             // Border COnfiguration

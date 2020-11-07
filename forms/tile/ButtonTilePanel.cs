@@ -34,8 +34,8 @@ namespace BudgetExecution
         {
             // Basic Properties
             TileType = HubTileType.DefaultTile;
-            BackColor = ColorConfig.BackColorBlack;
-            ForeColor = ColorConfig.ForeColorGray;
+            BackColor = ColorConfig.BackDark;
+            ForeColor = ColorConfig.ForeGray;
             Font = FontConfig.FontSizeSmall;
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;
@@ -61,7 +61,7 @@ namespace BudgetExecution
             EnableHoverColor = true;
             ExpandOnHover = true;
             HoverBorderLength = BorderConfig.SizeThin;
-            HoveredBorderColor = ColorConfig.BackColorBlack;
+            HoveredBorderColor = ColorConfig.BackDark;
             EnableTileSlideEffect = true;
             SlideTransition = TransitionDirection.RightToLeft;
             Visible = true;

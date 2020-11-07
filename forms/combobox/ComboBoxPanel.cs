@@ -41,10 +41,10 @@ namespace BudgetExecution
             Location = ControlConfig.GetLocation();
             Font = FontConfig.FontSizeSmall;
             Margin = ControlConfig.Margin;
-            ForeColor = ColorConfig.ForeColorGray;
-            BackColor = ColorConfig.ControlInteriorBlack;
-            BackColorState.Disabled = ColorConfig.BackColorBlack;
-            BackColorState.Enabled = ColorConfig.ControlInteriorBlack;
+            ForeColor = ColorConfig.ForeGray;
+            BackColor = ColorConfig.InteriorDark;
+            BackColorState.Disabled = ColorConfig.BackDark;
+            BackColorState.Enabled = ColorConfig.InteriorDark;
             Dock = ControlConfig.GetDockStyle();
             Anchor = ControlConfig.GetAnchorStyle();
             Visible = true;
@@ -52,27 +52,27 @@ namespace BudgetExecution
 
             // Border Configuration
             Border.Visible = true;
-            Border.Color = ColorConfig.BorderColorDark;
+            Border.Color = ColorConfig.BorderDark;
             Border.HoverVisible = true;
-            Border.HoverColor = ColorConfig.BorderColorLight;
+            Border.HoverColor = ColorConfig.BorderYellow;
             Border.Type = ShapeTypes.Rounded;
             Border.Rounding = 1;
             Border.Thickness = 1;
 
             // Menu Item Configuration.
-            MenuItemHover = ColorConfig.ControlHoverGray;
-            MenuItemNormal = ColorConfig.BackColorBlack;
+            MenuItemHover = ColorConfig.HoverGray;
+            MenuItemNormal = ColorConfig.BackDark;
             ItemHeight = 24;
             DropDownStyle = ComboBoxStyle.DropDownList;
             DropDownHeight = 100;
             DropDownWidth = 200;
             MaxDropDownItems = 100;
-            MenuTextColor = ColorConfig.ForeColorGray;
+            MenuTextColor = ColorConfig.ForeGray;
 
             // Style Configuration
             DrawMode = DrawMode.OwnerDrawVariable;
             ButtonStyle = ButtonStyles.Arrow;
-            ButtonColor = ColorConfig.ForeColorGray;
+            ButtonColor = ColorConfig.ForeGray;
             ButtonWidth = 22;
             SeparatorVisible = false;
             FlatStyle = FlatStyle.Flat;

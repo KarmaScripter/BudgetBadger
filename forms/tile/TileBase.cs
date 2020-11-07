@@ -289,7 +289,7 @@ namespace BudgetExecution
                 try
                 {
                     Body.Text = text;
-                    Body.TextColor = ColorConfig.ForeColorGray;
+                    Body.TextColor = ColorConfig.ForeGray;
                     Body.Font = FontConfig.FontSizeLarge;
                 }
                 catch( Exception ex )
@@ -315,7 +315,7 @@ namespace BudgetExecution
                 try
                 {
                     Footer.Text = text;
-                    Footer.TextColor = ColorConfig.ForeColorGray;
+                    Footer.TextColor = ColorConfig.ForeGray;
                     Footer.Font = FontConfig.FontSizeSmall;
                 }
                 catch( Exception ex )
@@ -337,7 +337,7 @@ namespace BudgetExecution
                 try
                 {
                     Footer.Text = text;
-                    Footer.TextColor = ColorConfig.ForeColorGray;
+                    Footer.TextColor = ColorConfig.ForeGray;
                     Footer.Font = FontConfig.FontSizeSmall;
                 }
                 catch( Exception ex )

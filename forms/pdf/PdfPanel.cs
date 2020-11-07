@@ -32,8 +32,8 @@ namespace BudgetExecution
         /// </summary>
         public PdfPanel()
         {
-            BackColor = ColorConfig.BackColorBlack;
-            ForeColor = ColorConfig.ForeColorGray;
+            BackColor = ColorConfig.BackDark;
+            ForeColor = ColorConfig.ForeGray;
             EnableNotificationBar = true;
             ShowToolBar = true;
             ShowHorizontalScrollBar = true;
