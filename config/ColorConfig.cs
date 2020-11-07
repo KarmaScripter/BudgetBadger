@@ -45,6 +45,11 @@ namespace BudgetExecution
         public static readonly Color BackColorBlack = Color.FromArgb( 10, 10, 11 );
 
         /// <summary>
+        /// The hover color yellow
+        /// </summary>
+        public static readonly Color HoverColorYellow = Color.FromArgb( 39, 29, 1 );
+
+        /// <summary>
         /// The red foreground
         /// </summary>
         public static readonly Color ForeColorRed = Color.FromArgb( 192, 0, 0 );
