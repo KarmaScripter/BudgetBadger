@@ -42,7 +42,7 @@ namespace BudgetExecution
         {
             // Basic Properties
             ForeColor = Color.White;
-            BackColor = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
             Font = new Font( "Roboto", 8, FontStyle.Bold );
             Margin = new Padding( 0 );
             Padding = new Padding( 0 );
@@ -71,7 +71,7 @@ namespace BudgetExecution
             ExcelLikeSelectionFrame = true;
             ExcelLikeAlignment = true;
             AlphaBlendSelectionColor = ColorConfig.BorderYellow;
-            Properties.BackgroundColor = ColorConfig.BackDark;
+            Properties.BackgroundColor = ColorConfig.FormDarkBackColor;
             Properties.CenterHorizontal = true;
             Properties.CenterVertical = true;
             Properties.ColHeaders = true;
@@ -201,9 +201,9 @@ namespace BudgetExecution
                     var gridcolumn = new GridBoundColumn();
                     gridcolumn.HeaderText = col.Caption;
                     gridcolumn.StyleInfo.Font.Bold = true;
-                    gridcolumn.StyleInfo.BackColor = ColorConfig.BackDark;
+                    gridcolumn.StyleInfo.BackColor = ColorConfig.FormDarkBackColor;
                     gridcolumn.StyleInfo.TextColor = Color.White;
-                    gridcolumn.BackColor = ColorConfig.BackDark;
+                    gridcolumn.BackColor = ColorConfig.FormDarkBackColor;
                     gridcolumn.MappingName = col.ColumnName;
                     GridBoundColumns.Add( gridcolumn );
                 }

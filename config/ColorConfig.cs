@@ -32,7 +32,12 @@ namespace BudgetExecution
         /// <summary>
         /// The gray border
         /// </summary>
-        public static readonly Color BorderDark = Color.FromArgb( 40, 40, 41 );
+        public static readonly Color BorderDark = Color.FromArgb( 25, 18, 1 );
+
+        /// <summary>
+        /// The border blue
+        /// </summary>
+        public static readonly Color BorderBlue = Color.FromArgb( 0, 120, 212 );
 
         /// <summary>
         /// The red border
@@ -42,12 +47,12 @@ namespace BudgetExecution
         /// <summary>
         /// The black background
         /// </summary>
-        public static readonly Color BackDark = Color.FromArgb( 10, 10, 11 );
+        public static readonly Color FormDarkBackColor = Color.FromArgb( 5, 5, 5 );
 
         /// <summary>
         /// The hover color yellow
         /// </summary>
-        public static readonly Color HoverYellow = Color.FromArgb( 39, 29, 1 );
+        public static readonly Color HoverYellow = Color.FromArgb( 24, 19, 1 );
 
         /// <summary>
         /// The red foreground
@@ -57,7 +62,7 @@ namespace BudgetExecution
         /// <summary>
         /// The gray foreground
         /// </summary>
-        public static readonly Color ForeGray = Color.LightGray;
+        public static readonly Color ForeGray = Color.FromArgb( 141, 139, 138 );
 
         /// <summary>
         /// The white foreground
@@ -70,24 +75,29 @@ namespace BudgetExecution
         public static readonly Color ForeBlack = Color.Black;
 
         /// <summary>
+        /// The control dark back color
+        /// </summary>
+        public static readonly Color ControlDarkBackColor = Color.FromArgb( 15, 15, 15 );
+
+        /// <summary>
         /// The clear background
         /// </summary>
         public static readonly Color Transparent = Color.Transparent;
 
         /// <summary>
-        /// The gray background
+        /// The dark background inside a control
         /// </summary>
-        public static readonly Color InteriorDark = Color.FromArgb( 20, 20, 21 );
+        public static readonly Color ControlDarkInterior = Color.FromArgb( 25, 25, 25 );
 
         /// <summary>
         /// The gray back hover
         /// </summary>
-        public static readonly Color HoverGray = Color.FromArgb( 28, 28, 29 );
+        public static readonly Color HoverGray = Color.FromArgb( 38, 38, 39 );
 
         /// <summary>
         /// The blue back hover
         /// </summary>
-        public static readonly Color HoverBlue = Color.SteelBlue;
+        public static readonly Color HoverBlue = Color.FromArgb( 50, 93, 129 );
 
         // **************************************************************************************************************************
         // ********************************************   CONSTRUCTORS     **********************************************************

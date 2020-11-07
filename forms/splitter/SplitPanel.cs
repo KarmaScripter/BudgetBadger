@@ -38,7 +38,7 @@ namespace BudgetExecution
             LeftPanel = Panel1;
             RightPanel = Panel2;
             Location = ControlConfig.GetLocation();
-            BackColor = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
             ForeColor = ColorConfig.ForeGray;
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;

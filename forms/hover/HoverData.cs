@@ -63,11 +63,11 @@ namespace BudgetExecution
             VisualStyle = Appearance.Metro;
             UseFading = FadingType.Blend;
             GradientBackGround = true;
-            MetroColor = ColorConfig.BackDark;
+            MetroColor = ColorConfig.FormDarkBackColor;
 
             // Header Properties
             HeaderInfo = new ToolTipInfo();
-            HeaderInfo.BackColor = ColorConfig.BackDark;
+            HeaderInfo.BackColor = ColorConfig.FormDarkBackColor;
             HeaderInfo.BorderColor = ColorConfig.BorderYellow;
             HeaderInfo.ForeColor = ColorConfig.ForeGray;
             HeaderInfo.Separator = true;
@@ -81,7 +81,7 @@ namespace BudgetExecution
 
             // Body Properties
             BodyInfo = new ToolTipInfo();
-            BodyInfo.BackColor = ColorConfig.BackDark;
+            BodyInfo.BackColor = ColorConfig.FormDarkBackColor;
             BodyInfo.BorderColor = ColorConfig.BorderYellow;
             BodyInfo.ForeColor = ColorConfig.ForeGray;
             BodyInfo.Separator = true;
@@ -93,7 +93,7 @@ namespace BudgetExecution
 
             // Footer Properties
             FooterInfo = new ToolTipInfo();
-            FooterInfo.BackColor = ColorConfig.BackDark;
+            FooterInfo.BackColor = ColorConfig.FormDarkBackColor;
             FooterInfo.BorderColor = ColorConfig.BorderYellow;
             FooterInfo.ForeColor = ColorConfig.ForeGray;
             FooterInfo.Separator = true;

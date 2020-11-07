@@ -45,7 +45,7 @@ namespace BudgetExecution
         public SelectionPanel()
         {
             Size = new Size( 1200, 750 );
-            BackColor = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
             MaximumSize = Size;
             MinimumSize = Size;
             Font = FontConfig.FontSizeSmall;
@@ -54,7 +54,7 @@ namespace BudgetExecution
             ImageSlides = true;
             Margin = new Padding( 10 );
             Padding = ControlConfig.Padding;
-            ImageshadeColor = ColorConfig.BackDark;
+            ImageshadeColor = ColorConfig.FormDarkBackColor;
             Perspective = 6;
             ShowImagePreview = true;
             ShowImageShadow = true;

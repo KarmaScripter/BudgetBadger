@@ -36,7 +36,7 @@ namespace BudgetExecution
         public RotatingPanel()
         {
             TileType = HubTileType.RotateTile;
-            BackColor = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
             ForeColor = ColorConfig.ForeGray;
             Font = FontConfig.FontSizeSmall;
             Margin = ControlConfig.Margin;
@@ -63,7 +63,7 @@ namespace BudgetExecution
             EnableHoverColor = true;
             ExpandOnHover = false;
             HoverBorderLength = BorderConfig.SizeThin;
-            HoveredBorderColor = ColorConfig.BackDark;
+            HoveredBorderColor = ColorConfig.FormDarkBackColor;
             EnableTileSlideEffect = false;
             SlideTransition = TransitionDirection.RightToLeft;
             TurnLiveTileOn = false;

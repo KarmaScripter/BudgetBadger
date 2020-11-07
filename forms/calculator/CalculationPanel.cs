@@ -36,7 +36,7 @@ namespace BudgetExecution
         {
             Size = SizeConfig.GetSize( 400, 400 );
             Location = ControlConfig.GetLocation();
-            BackColor = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
             ForeColor = ColorConfig.ForeGray;
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;
@@ -44,7 +44,7 @@ namespace BudgetExecution
             Anchor = ControlConfig.GetAnchorStyle();
             Visible = true;
             Enabled = true;
-            MetroColor = ColorConfig.BackDark;
+            MetroColor = ColorConfig.FormDarkBackColor;
             LayoutType = CalculatorLayoutTypes.WindowsStandard;
             ShowDisplayArea = false;
             HorizontalSpacing = 5;

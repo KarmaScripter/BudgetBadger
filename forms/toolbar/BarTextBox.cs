@@ -29,7 +29,7 @@ namespace BudgetExecution
             Margin = new Padding( 5, 5, 5, 5 );
             Padding = new Padding( 0 );
             Size = new Size( 150, 23 );
-            BackColor = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
             ForeColor = ColorConfig.ForeGray;
             Font = FontConfig.FontSizeSmall;
             Visible = true;

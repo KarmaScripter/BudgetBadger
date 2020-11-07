@@ -176,7 +176,7 @@ namespace BudgetExecution
                     title.ForeColor = ColorConfig.ForeGray;
                     title.Visible = true;
                     title.Font = FontConfig.FontSizeSmall;
-                    title.BackColor = ColorConfig.BackDark;
+                    title.BackColor = ColorConfig.FormDarkBackColor;
                     return title;
                 }
                 catch( Exception ex )
@@ -202,7 +202,7 @@ namespace BudgetExecution
                     title.ForeColor = ColorConfig.ForeGray;
                     title.Visible = true;
                     title.Font = FontConfig.FontSizeSmall;
-                    title.BackColor = ColorConfig.BackDark;
+                    title.BackColor = ColorConfig.FormDarkBackColor;
                     return title;
                 }
                 catch( Exception ex )
@@ -231,7 +231,7 @@ namespace BudgetExecution
                     title.Visible = true;
                     title.Font = font;
                     title.ForeColor = color;
-                    title.BackColor = ColorConfig.BackDark;
+                    title.BackColor = ColorConfig.FormDarkBackColor;
                     return title;
                 }
                 catch( Exception ex )
@@ -260,7 +260,7 @@ namespace BudgetExecution
                     title.Visible = true;
                     title.Font = font;
                     title.ForeColor = color;
-                    title.BackColor = ColorConfig.BackDark;
+                    title.BackColor = ColorConfig.FormDarkBackColor;
                     return title;
                 }
                 catch( Exception ex )

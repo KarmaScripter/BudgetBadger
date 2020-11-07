@@ -48,9 +48,9 @@ namespace BudgetExecution
             Enabled = true;
 
             // Style Configuration
-            BackColorState.Disabled = ColorConfig.BackDark;
-            BackColorState.Enabled = ColorConfig.InteriorDark;
-            BackColor = ColorConfig.InteriorDark;
+            BackColorState.Disabled = ColorConfig.FormDarkBackColor;
+            BackColorState.Enabled = ColorConfig.ControlDarkInterior;
+            BackColor = ColorConfig.ControlDarkInterior;
             Border.Type = ShapeTypes.Rounded;
             Border.Color = ColorConfig.HoverGray;
             Border.HoverVisible = true;

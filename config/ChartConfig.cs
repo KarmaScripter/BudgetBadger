@@ -39,7 +39,7 @@ namespace BudgetExecution
             DisplayText = true;
             TextColor = ColorConfig.ForeGray;
             Interior = new BrushInfo( Color.FromArgb( 5, 5, 5 ) );
-            Border = SetBorderStyle( ColorConfig.BackDark, BorderConfig.SizeThin );
+            Border = SetBorderStyle( ColorConfig.FormDarkBackColor, BorderConfig.SizeThin );
         }
 
         // ***************************************************************************************************************************

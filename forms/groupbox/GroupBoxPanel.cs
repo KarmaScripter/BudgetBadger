@@ -43,7 +43,7 @@ namespace BudgetExecution
             Dock = ControlConfig.GetDockStyle();
             Visible = true;
             Enabled = true;
-            BackColor = ColorConfig.InteriorDark;
+            BackColor = ColorConfig.ControlDarkInterior;
             ForeColor = ColorConfig.ForeGray;
             Font = FontConfig.FontSizeSmall;
             Margin = ControlConfig.Margin;
@@ -57,8 +57,8 @@ namespace BudgetExecution
             Border.HoverVisible = true;
 
             // BackColor Configuration.
-            BackColorState.Disabled = ColorConfig.BackDark;
-            BackColorState.Enabled = ColorConfig.InteriorDark;
+            BackColorState.Disabled = ColorConfig.FormDarkBackColor;
+            BackColorState.Enabled = ColorConfig.ControlDarkInterior;
 
             // Text Configuration.
             TextAlignment = AlignConfig.StringCenter;
@@ -247,11 +247,11 @@ namespace BudgetExecution
 
                     case false:
                     {
-                        Border.Color = ColorConfig.BackDark;
+                        Border.Color = ColorConfig.FormDarkBackColor;
                         Border.Thickness = BorderConfig.SizeThin;
-                        Border.HoverColor = ColorConfig.BackDark;
+                        Border.HoverColor = ColorConfig.FormDarkBackColor;
                         Border.HoverVisible = false;
-                        SeparatorColor = ColorConfig.BackDark;
+                        SeparatorColor = ColorConfig.FormDarkBackColor;
                         Separate = false;
                         Border.Type = ShapeTypes.Rounded;
                         break;

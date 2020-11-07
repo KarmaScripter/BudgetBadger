@@ -42,9 +42,9 @@ namespace BudgetExecution
             Font = FontConfig.FontSizeSmall;
             Margin = ControlConfig.Margin;
             ForeColor = ColorConfig.ForeGray;
-            BackColor = ColorConfig.InteriorDark;
-            BackColorState.Disabled = ColorConfig.BackDark;
-            BackColorState.Enabled = ColorConfig.InteriorDark;
+            BackColor = ColorConfig.ControlDarkInterior;
+            BackColorState.Disabled = ColorConfig.FormDarkBackColor;
+            BackColorState.Enabled = ColorConfig.ControlDarkInterior;
             Dock = ControlConfig.GetDockStyle();
             Anchor = ControlConfig.GetAnchorStyle();
             Visible = true;
@@ -61,7 +61,7 @@ namespace BudgetExecution
 
             // Menu Item Configuration.
             MenuItemHover = ColorConfig.HoverGray;
-            MenuItemNormal = ColorConfig.BackDark;
+            MenuItemNormal = ColorConfig.FormDarkBackColor;
             ItemHeight = 24;
             DropDownStyle = ComboBoxStyle.DropDownList;
             DropDownHeight = 100;

@@ -37,7 +37,7 @@ namespace BudgetExecution
         {
             Size = SizeConfig.GetSize( 165, 23 );
             Location = ControlConfig.GetLocation();
-            BackColor = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
             ForeColor = ColorConfig.ForeGray;
             Font = FontConfig.FontSizeSmall;
             Margin = ControlConfig.Margin;
@@ -48,7 +48,7 @@ namespace BudgetExecution
             Visible = true;
             TextAlignment = AlignConfig.StringCenter;
             TextLineAlignment = AlignConfig.StringCenter;
-            OutlineColor = ColorConfig.BackDark;
+            OutlineColor = ColorConfig.FormDarkBackColor;
         }
 
         /// <summary>

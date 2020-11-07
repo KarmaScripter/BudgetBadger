@@ -66,21 +66,21 @@ namespace BudgetExecution
             Dock = ControlConfig.GetDockStyle();
             Visible = true;
             Enabled = true;
-            BackColor = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
             ForeColor = ColorConfig.ForeGray;
             Font = FontConfig.FontSizeSmall;
             Margin = ControlConfig.Margin;
 
             // Style Configuration
             ItemSize = new Size( 120, 20 );
-            TabPanelBackColor = ColorConfig.BackDark;
-            ActiveTabColor = ColorConfig.BackDark;
+            TabPanelBackColor = ColorConfig.FormDarkBackColor;
+            ActiveTabColor = ColorConfig.FormDarkBackColor;
             ActiveTabForeColor = ColorConfig.ForeGray;
-            InactiveTabColor = ColorConfig.BackDark;
-            InActiveTabForeColor = ColorConfig.BackDark;
-            SeparatorColor = ColorConfig.BackDark;
-            FixedSingleBorderColor = ColorConfig.BackDark;
-            BorderColor = ColorConfig.BackDark;
+            InactiveTabColor = ColorConfig.FormDarkBackColor;
+            InActiveTabForeColor = ColorConfig.FormDarkBackColor;
+            SeparatorColor = ColorConfig.FormDarkBackColor;
+            FixedSingleBorderColor = ColorConfig.FormDarkBackColor;
+            BorderColor = ColorConfig.FormDarkBackColor;
             BorderStyle = BorderStyle.None;
             BorderVisible = false;
             BorderWidth = 1;

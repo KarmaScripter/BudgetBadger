@@ -32,7 +32,7 @@ namespace BudgetExecution
         /// </summary>
         public PdfPanel()
         {
-            BackColor = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
             ForeColor = ColorConfig.ForeGray;
             EnableNotificationBar = true;
             ShowToolBar = true;

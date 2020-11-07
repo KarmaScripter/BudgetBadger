@@ -31,7 +31,7 @@ namespace BudgetExecution
         /// </summary>
         public TilePanel()
         {
-            BackColor = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
             ForeColor = ColorConfig.ForeGray;
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;

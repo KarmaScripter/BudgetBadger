@@ -46,9 +46,9 @@ namespace BudgetExecution
             Visible = true;
 
             // Style Properties
-            BackColor = ColorConfig.BackDark;
-            BorderColor = ColorConfig.BackDark;
-            HeaderBackColor = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
+            BorderColor = ColorConfig.FormDarkBackColor;
+            HeaderBackColor = ColorConfig.FormDarkBackColor;
             Margin = ControlConfig.Margin;
             Padding = ControlConfig.Padding;
             BorderStyle = BorderStyle.None;

@@ -46,18 +46,18 @@ namespace BudgetExecution
             AllowGradientPalette = true;
             AllowUserEditStyles = true;
             PrintColorMode = ChartPrintColorMode.CheckPrinter;
-            BackInterior = new BrushInfo( ColorConfig.BackDark );
-            BackColor = ColorConfig.BackDark;
+            BackInterior = new BrushInfo( ColorConfig.FormDarkBackColor );
+            BackColor = ColorConfig.FormDarkBackColor;
 
             ChartInterior = new BrushInfo( GradientStyle.PathRectangle, Color.LightGray,
-                ColorConfig.BackDark );
+                ColorConfig.FormDarkBackColor );
 
             CalcRegions = true;
 
             //ChartArea Properties
             ChartArea.AdjustPlotAreaMargins = ChartSetMode.AutoSet;
             ChartArea.AutoScale = true;
-            ChartArea.BackInterior = new BrushInfo( ColorConfig.BackDark );
+            ChartArea.BackInterior = new BrushInfo( ColorConfig.FormDarkBackColor );
             ChartArea.BorderWidth = BorderConfig.SizeThin;
             ChartArea.BorderColor = ColorConfig.Transparent;
             ChartArea.BorderStyle = BorderStyle.FixedSingle;
@@ -71,7 +71,7 @@ namespace BudgetExecution
             SeriesHighlightIndex = -1;
             ShadowWidth = 5;
 
-            ShadowColor = new BrushInfo( GradientStyle.PathRectangle, ColorConfig.BackDark,
+            ShadowColor = new BrushInfo( GradientStyle.PathRectangle, ColorConfig.FormDarkBackColor,
                 Color.Silver );
 
             Depth = 250;
@@ -101,7 +101,7 @@ namespace BudgetExecution
             Legend.Font = FontConfig.FontSizeSmall;
             Legend.ItemsSize = SizeConfig.ImageSmall;
             Legend.VisibleCheckBox = true;
-            Legend.BackInterior = new BrushInfo( ColorConfig.BackDark );
+            Legend.BackInterior = new BrushInfo( ColorConfig.FormDarkBackColor );
             Legend.ItemsAlignment = AlignConfig.GetStringAlignment( StringAlignment.Center );
             Legend.ItemsTextAligment = VerticalAlignment.Center;
             Legend.Orientation = ChartOrientation.Vertical;
@@ -329,7 +329,7 @@ namespace BudgetExecution
                 using var title = new ChartTitle();
                 title.Visible = true;
                 title.Font = font;
-                title.BackColor = ColorConfig.BackDark;
+                title.BackColor = ColorConfig.FormDarkBackColor;
                 title.ForeColor = color;
                 title.Text = text;
                 Titles?.Add( title );

@@ -44,7 +44,7 @@ namespace BudgetExecution
             SizeConfig.GetSize( 700, 400 );
             Anchor = ControlConfig.GetAnchorStyle();
             EnableHeadersVisualStyles = false;
-            BackColor = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
             BorderStyle = BorderStyle.FixedSingle;
             BackgroundColor = BackColor;
 

@@ -53,10 +53,10 @@ namespace BudgetExecution
             Enabled = true;
 
             // BackColor Configuration
-            BackColor = ColorConfig.InteriorDark;
+            BackColor = ColorConfig.ControlDarkInterior;
             BorderColor = ColorConfig.BorderDark;
-            DisabledBackColor = ColorConfig.BackDark;
-            DisabledForeColor = ColorConfig.BackDark;
+            DisabledBackColor = ColorConfig.FormDarkBackColor;
+            DisabledForeColor = ColorConfig.FormDarkBackColor;
 
             // Item Configuration
             ItemHeight = 30;

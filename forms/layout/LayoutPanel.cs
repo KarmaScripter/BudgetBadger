@@ -50,13 +50,13 @@ namespace BudgetExecution
             Visible = true;
 
             // Backcolor Configuration
-            BackColor = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
             ForeColor = ColorConfig.ForeGray;
-            BackColorState.Disabled = ColorConfig.BackDark;
-            BackColorState.Enabled = ColorConfig.BackDark;
+            BackColorState.Disabled = ColorConfig.FormDarkBackColor;
+            BackColorState.Enabled = ColorConfig.FormDarkBackColor;
 
             // Border Configuration
-            Border.Color = ColorConfig.BackDark;
+            Border.Color = ColorConfig.FormDarkBackColor;
             Border.Thickness = BorderConfig.SizeThin;
             Border.HoverColor = ColorConfig.BorderYellow;
             Border.HoverVisible = false;

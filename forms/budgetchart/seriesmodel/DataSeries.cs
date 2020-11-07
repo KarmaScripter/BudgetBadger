@@ -91,7 +91,7 @@ namespace BudgetExecution
                 Style.Callout.Position = LabelPosition.Top;
                 Style.Callout.DisplayTextAndFormat = "{0} : {2}";
                 Style.Callout.Border.Color = ColorConfig.BorderYellow;
-                Style.Callout.Color = ColorConfig.BackDark;
+                Style.Callout.Color = ColorConfig.FormDarkBackColor;
                 Style.Callout.Font = ChartConfig.SetFont( FontConfig.FontSizeSmall );
                 Style.DisplayText = true;
             }

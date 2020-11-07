@@ -32,7 +32,7 @@ namespace BudgetExecution
         /// </summary>
         public ClockPanel()
         {
-            BackColor = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
             BorderColor = BackColor;
             ForeColor = ColorConfig.ForeGray;
             Font = FontConfig.FontSizeSmall;

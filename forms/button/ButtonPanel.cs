@@ -52,14 +52,14 @@ namespace BudgetExecution
             Enabled = true;
 
             // BackColor Configuration
-            BackColor = ColorConfig.BackDark;
-            BackColorState.Disabled = ColorConfig.BackDark;
-            BackColorState.Enabled = ColorConfig.BackDark;
+            BackColor = ColorConfig.FormDarkBackColor;
+            BackColorState.Disabled = ColorConfig.FormDarkBackColor;
+            BackColorState.Enabled = ColorConfig.FormDarkBackColor;
             BackColorState.Hover = ColorConfig.HoverGray;
             BackColorState.Pressed = ColorConfig.BorderYellow;
 
             // BorderColor Configuration
-            Border.Color = ColorConfig.BackDark;
+            Border.Color = ColorConfig.FormDarkBackColor;
             Border.HoverColor = ColorConfig.HoverGray;
             Border.HoverVisible = true;
             Border.Type = ShapeTypes.Rounded;
@@ -70,7 +70,7 @@ namespace BudgetExecution
 
             // Text Configuration
             TextStyle.Pressed = Color.White;
-            TextStyle.Disabled = ColorConfig.BackDark;
+            TextStyle.Disabled = ColorConfig.FormDarkBackColor;
             TextStyle.Enabled = ColorConfig.ForeGray;
             TextStyle.Hover = ColorConfig.ForeGray;
             TextStyle.TextAlignment = AlignConfig.StringCenter;
