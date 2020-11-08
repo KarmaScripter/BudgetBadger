@@ -65,7 +65,7 @@ namespace BudgetExecution
             PulseScale = 2;
             ExpandOnHover = false;
             EnableHoverColor = true;
-            HoverBorderLength = BorderConfig.SizeThin;
+            HoverBorderLength = BorderConfig.Thin;
             HoveredBorderColor = ColorConfig.FormDarkBackColor;
             EnableTileSlideEffect = true;
             SlideTransition = TransitionDirection.RightToLeft;

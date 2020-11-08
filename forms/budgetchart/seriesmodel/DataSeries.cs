@@ -47,7 +47,7 @@ namespace BudgetExecution
             OptimizePiePointPositions = Config.OptimizePiePointPositions;
             LegendItemUseSeriesStyle = Config.LegendItemUseSeriesStyle;
             SmartLabelsBorderColor = ColorConfig.BorderYellow;
-            SmartLabelsBorderWidth = BorderConfig.SizeThin;
+            SmartLabelsBorderWidth = BorderConfig.Thin;
         }
 
         // **********************************************************************************************************************

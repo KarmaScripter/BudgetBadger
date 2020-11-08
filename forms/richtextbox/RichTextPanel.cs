@@ -55,7 +55,7 @@ namespace BudgetExecution
             Border.Color = ColorConfig.HoverGray;
             Border.HoverVisible = true;
             Border.HoverColor = ColorConfig.BorderYellow;
-            Border.Thickness = BorderConfig.SizeThin;
+            Border.Thickness = BorderConfig.Thin;
         }
 
         /// <summary>

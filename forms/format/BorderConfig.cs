@@ -1,13 +1,9 @@
-﻿// <copyright file = "BorderConfig.cs" company = "Terry D. Eppler">
-// Copyright (c) Terry D. Eppler. All rights reserved.
-// </copyright>
+﻿// // <copyright file = "BorderConfig.cs" company = "Terry D. Eppler">
+// // Copyright (c) Terry D. Eppler. All rights reserved.
+// // </copyright>
 
 namespace BudgetExecution
 {
-    // **************************************************************************************************************************
-    // ********************************************      ASSEMBLIES    **********************************************************
-    // **************************************************************************************************************************
-
     using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Drawing;
@@ -22,72 +18,70 @@ namespace BudgetExecution
     [ SuppressMessage( "ReSharper", "ConvertToConstant.Global" ) ]
     public class BorderConfig
     {
-        // **************************************************************************************************************************
-        // ********************************************      FIELDS     *************************************************************
-        // **************************************************************************************************************************
+        // ***************************************************************************************************************************
+        // ****************************************************    FIELDS     ********************************************************
+        // ***************************************************************************************************************************
 
         /// <summary>
-        /// The form fixed
+        /// The fixed
         /// </summary>
-        public static readonly FormBorderStyle FormFixed = FormBorderStyle.FixedSingle;
+        public static readonly FormBorderStyle Fixed = FormBorderStyle.FixedSingle;
 
         /// <summary>
-        /// The form none
+        /// The none
         /// </summary>
-        public static readonly FormBorderStyle FormNone = FormBorderStyle.None;
+        public static readonly FormBorderStyle None = FormBorderStyle.None;
 
         /// <summary>
-        /// The form sizable
+        /// The sizeable
         /// </summary>
-        public static readonly FormBorderStyle FormSizable = FormBorderStyle.Sizable;
+        public static readonly FormBorderStyle Sizeable = FormBorderStyle.Sizable;
 
         /// <summary>
-        /// The size thin
+        /// The thin
         /// </summary>
-        public static readonly int SizeThin = 1;
+        public static readonly int Thin = 1;
 
-        // **************************************************************************************************************************
-        // ********************************************   CONSTRUCTORS     **********************************************************
-        // **************************************************************************************************************************
+        // ***************************************************************************************************************************
+        // ****************************************************  CONSTRUCTORS ********************************************************
+        // ***************************************************************************************************************************
 
         /// <summary>
-        /// Initializes a new instance of the <see cref = "BorderConfig"/> class.
+        /// Initializes a new instance of the <see cref="BorderConfig"/> class.
         /// </summary>
         public BorderConfig()
         {
         }
 
         // ***************************************************************************************************************************
-        // ******************************************************   PROPERTIES   *****************************************************
+        // ****************************************************  PROPERTIES   ********************************************************
         // ***************************************************************************************************************************
 
         /// <summary>
         /// Gets or sets a value indicating whether this instance is hoverable.
         /// </summary>
         /// <value>
-        /// <c>
-        /// true
-        /// </c>
-        /// if this instance is hoverable; otherwise,
-        /// <c>
-        /// false
-        /// </c>
-        /// .
+        ///   <c>true</c> if this instance is hoverable; otherwise, <c>false</c>.
         /// </value>
         public bool IsHoverable { get; set; } = false;
 
-        // **************************************************************************************************************************
-        // ********************************************      METHODS    *************************************************************
-        // **************************************************************************************************************************
+        /// <summary>
+        /// Gets or sets a value indicating whether this instance has color.
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if this instance has color; otherwise, <c>false</c>.
+        /// </value>
+        public bool HasColor { get; set; } = false;
+
+        // ***************************************************************************************************************************
+        // ****************************************************     METHODS   ********************************************************
+        // ***************************************************************************************************************************
 
         /// <summary>
         /// Gets the thickness.
         /// </summary>
-        /// <param name = "size" >
-        /// The size.
-        /// </param>
-        /// <returns>
-        /// </returns>
+        /// <param name="size">The size.</param>
+        /// <returns></returns>
         public static int GetThickness( int size = 1 )
         {
             try
@@ -106,11 +100,8 @@ namespace BudgetExecution
         /// <summary>
         /// Gets the style.
         /// </summary>
-        /// <param name = "style" >
-        /// The style.
-        /// </param>
-        /// <returns>
-        /// </returns>
+        /// <param name="style">The style.</param>
+        /// <returns></returns>
         public static BorderStyle GetStyle( BorderStyle style = BorderStyle.None )
         {
             try
@@ -129,11 +120,8 @@ namespace BudgetExecution
         /// <summary>
         /// Gets the color.
         /// </summary>
-        /// <param name = "color" >
-        /// The color.
-        /// </param>
-        /// <returns>
-        /// </returns>
+        /// <param name="color">The color.</param>
+        /// <returns></returns>
         public static Color GetColor( Color color )
         {
             try
@@ -190,11 +178,11 @@ namespace BudgetExecution
         }
 
         /// <summary>
-        /// Gets the spreadsheet border weight.
+        /// Gets the excel border weight.
         /// </summary>
         /// <param name="weight">The weight.</param>
         /// <returns></returns>
-        public static ExcelBorderWeight GetSpreadsheetBorderWeight( ExcelBorderWeight weight )
+        public static ExcelBorderWeight GetExcelBorderWeight( ExcelBorderWeight weight )
         {
             try
             {
@@ -210,11 +198,11 @@ namespace BudgetExecution
         }
 
         /// <summary>
-        /// Gets the spreadsheet line style.
+        /// Gets the excel line style.
         /// </summary>
-        /// <param name="style">The styel.</param>
+        /// <param name="style">The style.</param>
         /// <returns></returns>
-        public static ExcelLineStyle GetSpreadsheetLineStyle( ExcelLineStyle style )
+        public static ExcelLineStyle GetExcelLineStyle( ExcelLineStyle style )
         {
             try
             {
@@ -236,12 +224,8 @@ namespace BudgetExecution
         /// <summary>
         /// Called when [mouse hover].
         /// </summary>
-        /// <param name = "sender" >
-        /// The sender.
-        /// </param>
-        /// <param name = "e" >
-        /// The <see cref = "EventArgs"/> instance containing the event data.
-        /// </param>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         public static void OnMouseHover( object sender, EventArgs e )
         {
             if( sender != null
@@ -262,12 +246,8 @@ namespace BudgetExecution
         /// <summary>
         /// Called when [border changed].
         /// </summary>
-        /// <param name = "sender" >
-        /// The sender.
-        /// </param>
-        /// <param name = "e" >
-        /// The <see cref = "EventArgs"/> instance containing the event data.
-        /// </param>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         public static void OnBorderChanged( object sender, EventArgs e )
         {
             if( sender != null
@@ -286,7 +266,7 @@ namespace BudgetExecution
         }
 
         /// <summary>
-        /// Get Error Dialog.
+        /// Fails the specified ex.
         /// </summary>
         /// <param name="ex">The ex.</param>
         private protected static void Fail( Exception ex )

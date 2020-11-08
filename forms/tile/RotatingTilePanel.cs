@@ -62,7 +62,7 @@ namespace BudgetExecution
             RotationTransition = TileFlipDirection.Horizontal;
             EnableHoverColor = true;
             ExpandOnHover = false;
-            HoverBorderLength = BorderConfig.SizeThin;
+            HoverBorderLength = BorderConfig.Thin;
             HoveredBorderColor = ColorConfig.FormDarkBackColor;
             EnableTileSlideEffect = false;
             SlideTransition = TransitionDirection.RightToLeft;

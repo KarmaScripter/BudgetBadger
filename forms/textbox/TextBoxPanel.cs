@@ -56,7 +56,7 @@ namespace BudgetExecution
             Border.Color = ColorConfig.BorderDark;
             Border.HoverVisible = true;
             Border.HoverColor = ColorConfig.BorderYellow;
-            Border.Thickness = BorderConfig.SizeThin;
+            Border.Thickness = BorderConfig.Thin;
             TextAlign = HorizontalAlignment.Center;
         }
 

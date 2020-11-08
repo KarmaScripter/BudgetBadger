@@ -60,7 +60,7 @@ namespace BudgetExecution
             Banner.Font = FontConfig.FontSizeSmall;
             EnableHoverColor = true;
             ExpandOnHover = true;
-            HoverBorderLength = BorderConfig.SizeThin;
+            HoverBorderLength = BorderConfig.Thin;
             HoveredBorderColor = ColorConfig.FormDarkBackColor;
             EnableTileSlideEffect = true;
             SlideTransition = TransitionDirection.RightToLeft;

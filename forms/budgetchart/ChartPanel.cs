@@ -58,7 +58,7 @@ namespace BudgetExecution
             ChartArea.AdjustPlotAreaMargins = ChartSetMode.AutoSet;
             ChartArea.AutoScale = true;
             ChartArea.BackInterior = new BrushInfo( ColorConfig.FormDarkBackColor );
-            ChartArea.BorderWidth = BorderConfig.SizeThin;
+            ChartArea.BorderWidth = BorderConfig.Thin;
             ChartArea.BorderColor = ColorConfig.Transparent;
             ChartArea.BorderStyle = BorderStyle.FixedSingle;
             ChartAreaMargins = new ChartMargins( 3, 3, 3, 3 );

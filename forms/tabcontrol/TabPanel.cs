@@ -246,7 +246,7 @@ namespace BudgetExecution
                         BorderStyle = BorderStyle.FixedSingle;
                         BorderColor = ColorConfig.BorderYellow;
                         BorderVisible = true;
-                        BorderWidth = BorderConfig.SizeThin;
+                        BorderWidth = BorderConfig.Thin;
                         break;
                     }
 

@@ -213,20 +213,20 @@
     <Compile Include="forms\calculator\CalculationControl.Designer.cs">
       <DependentUpon>CalculationControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="config\AlignConfig.cs" />
-    <Compile Include="config\BorderConfig.cs" />
-    <Compile Include="config\ChartConfig.cs" />
-    <Compile Include="config\ColorConfig.cs" />
-    <Compile Include="config\ControlConfig.cs" />
-    <Compile Include="config\FontConfig.cs" />
-    <Compile Include="config\FormConfig.cs" />
-    <Compile Include="config\IChartConfig.cs" />
-    <Compile Include="config\SizeConfig.cs" />
-    <Compile Include="format\AlignFormat.cs" />
-    <Compile Include="format\BorderFormat.cs" />
-    <Compile Include="format\ColorForrmat.cs" />
-    <Compile Include="format\FontFormat.cs" />
-    <Compile Include="format\SizeFomat.cs" />
+    <Compile Include="forms\format\AlignConfig.cs" />
+    <Compile Include="forms\format\BorderConfig.cs" />
+    <Compile Include="forms\format\ChartConfig.cs" />
+    <Compile Include="forms\format\ColorConfig.cs" />
+    <Compile Include="forms\format\ControlConfig.cs" />
+    <Compile Include="forms\format\FontConfig.cs" />
+    <Compile Include="forms\format\FormConfig.cs" />
+    <Compile Include="forms\format\IChartConfig.cs" />
+    <Compile Include="forms\format\SizeConfig.cs" />
+    <Compile Include="forms\format\AlignFormat.cs" />
+    <Compile Include="forms\format\BorderFormat.cs" />
+    <Compile Include="forms\format\ColorForrmat.cs" />
+    <Compile Include="forms\format\FontFormat.cs" />
+    <Compile Include="forms\format\SizeFomat.cs" />
     <Compile Include="forms\budgetchart\bindingmodel\ChartBinding.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -458,8 +458,8 @@
       <DependentUpon>BadgerMain.cs</DependentUpon>
     </Compile>
     <Compile Include="metric\DataMetric.cs" />
-    <Compile Include="metric\imetric\IDataMetric.cs" />
-    <Compile Include="metric\imetric\IMetric.cs" />
+    <Compile Include="metric\IDataMetric.cs" />
+    <Compile Include="metric\IMetric.cs" />
     <Compile Include="metric\MetricBase.cs" />
     <Compile Include="forms\notification\Notification.cs">
       <SubType>Form</SubType>

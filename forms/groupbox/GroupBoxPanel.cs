@@ -52,7 +52,7 @@ namespace BudgetExecution
             // Border Configuration.
             Border.Type = ShapeTypes.Rounded;
             Border.Color = ColorConfig.BorderDark;
-            Border.Thickness = BorderConfig.SizeThin;
+            Border.Thickness = BorderConfig.Thin;
             Border.HoverColor = ColorConfig.BorderYellow;
             Border.HoverVisible = true;
 
@@ -236,7 +236,7 @@ namespace BudgetExecution
                     case true:
                     {
                         Border.Color = Color.FromArgb( 64, 64, 64 );
-                        Border.Thickness = BorderConfig.SizeThin;
+                        Border.Thickness = BorderConfig.Thin;
                         Border.HoverColor = ColorConfig.BorderYellow;
                         Border.HoverVisible = true;
                         SeparatorColor = Color.FromArgb( 64, 64, 64 );
@@ -248,7 +248,7 @@ namespace BudgetExecution
                     case false:
                     {
                         Border.Color = ColorConfig.FormDarkBackColor;
-                        Border.Thickness = BorderConfig.SizeThin;
+                        Border.Thickness = BorderConfig.Thin;
                         Border.HoverColor = ColorConfig.FormDarkBackColor;
                         Border.HoverVisible = false;
                         SeparatorColor = ColorConfig.FormDarkBackColor;
