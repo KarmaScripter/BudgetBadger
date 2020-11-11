@@ -86,6 +86,7 @@ namespace BudgetExecution
         /// Gets the source.
         /// </summary>
         /// <returns>
+        /// Returns the Source Enumeration
         /// </returns>
         public Source GetSource()
         {
