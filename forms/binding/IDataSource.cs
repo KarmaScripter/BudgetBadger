@@ -30,7 +30,7 @@ namespace BudgetExecution
         /// Sets the binding source.
         /// </summary>
         /// <typeparam name="T1"></typeparam>
-        /// <typeparam name="T2">The type of the 2.</typeparam>
+        /// <typeparam name="T2">The type of T2</typeparam>
         /// <param name="bindinglist">The bindingsource.</param>
         /// <param name="dict">The dictionary.</param>
         void SetDataSource<T1, T2>( T1 bindinglist, T2 dict )
@@ -47,7 +47,7 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the binding source.
         /// </summary>
-        /// <typeparam name="T1">The type of the 1.</typeparam>
+        /// <typeparam name="T1">The type of the T1.</typeparam>
         /// <param name="data">The data.</param>
         /// <param name="dict">The dictionary.</param>
         void SetDataSource<T1>( IEnumerable<T1> data, IDictionary<string, object> dict )
@@ -56,9 +56,9 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the binding source.
         /// </summary>
-        /// <typeparam name="T1">The type of the 1.</typeparam>
-        /// <typeparam name="T2">The type of the 2.</typeparam>
-        /// <typeparam name="T3">The type of the 3.</typeparam>
+        /// <typeparam name="T1">The type of T1</typeparam>
+        /// <typeparam name="T2">The type of T2</typeparam>
+        /// <typeparam name="T3">The type of T3</typeparam>
         /// <param name="data">The data.</param>
         /// <param name="field">The field.</param>
         /// <param name="filter">The dictionary.</param>
@@ -69,7 +69,7 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the binding source.
         /// </summary>
-        /// <typeparam name="T1">The type of the 1.</typeparam>
+        /// <typeparam name="T1">The type of T1</typeparam>
         /// <param name="data">The data.</param>
         /// <param name="field">The field.</param>
         void SetDataSource<T1>( IEnumerable<T1> data, object field = null )
