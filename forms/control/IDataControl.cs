@@ -2,8 +2,6 @@
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
-using System.Diagnostics.CodeAnalysis;
-
 namespace BudgetExecution
 {
     using System;
@@ -11,6 +9,7 @@ namespace BudgetExecution
     using System.ComponentModel;
     using System.Drawing;
     using System.Windows.Forms;
+    using System.Diagnostics.CodeAnalysis;
 
     [ SuppressMessage( "ReSharper", "UnusedParameter.Global" ) ]
     public interface IDataControl

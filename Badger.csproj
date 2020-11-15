@@ -72,6 +72,9 @@
     <Reference Include="BudgetExtensions">
       <HintPath>..\Extensions\bin\Debug\BudgetExtensions.dll</HintPath>
     </Reference>
+    <Reference Include="BudgetResources">
+      <HintPath>..\BudgetResources\bin\Debug\net5.0-windows\BudgetResources.dll</HintPath>
+    </Reference>
     <Reference Include="BudgetStatic">
       <HintPath>..\Static\bin\Debug\BudgetStatic.dll</HintPath>
     </Reference>

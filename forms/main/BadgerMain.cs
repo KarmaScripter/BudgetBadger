@@ -60,6 +60,13 @@ namespace BudgetExecution
         // ****************************************************     EVENTS    ********************************************************
         // ***************************************************************************************************************************
 
+        /// <summary>
+        /// Called when [excel button click].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/>
+        /// instance containing the event data.
+        /// </param>
         private void OnExcelButtonClick( object sender, EventArgs e )
         {
             var path = Resource.Settings[ "Report" ];
@@ -67,6 +74,14 @@ namespace BudgetExecution
             excel?.ShowDialog();
         }
 
+        /// <summary>
+        /// Raises the Close event.
+        /// </summary>
+        /// <param name="sender">The sender.
+        /// </param>
+        /// <param name="e">The <see cref="EventArgs"/>
+        /// instance containing the event data.
+        /// </param>
         private void OnClose( object sender, EventArgs e )
         {
             PictureBox?.Image?.Dispose();

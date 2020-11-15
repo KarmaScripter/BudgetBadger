@@ -77,7 +77,7 @@ namespace BudgetExecution
             : this()
         {
             FilePath = path;
-            GetImageList( path );
+            SetImageList( path );
             OnCarouselItemFocused += OnImageSelected;
         }
 
@@ -161,7 +161,7 @@ namespace BudgetExecution
         /// </summary>
         /// <param name="imagepath">The imagepath
         /// <see cref="string" /></param>
-        private void GetImageList( string imagepath )
+        private void SetImageList( string imagepath )
         {
             if( Verify.Input( imagepath ) )
             {
@@ -207,11 +207,11 @@ namespace BudgetExecution
         }
 
         /// <summary>
-        /// The GetSourceSelector
+        /// The SetSourceSelector
         /// </summary>
         /// <param name="image">The image
         /// <see cref="Image" /></param>
-        private void GetSourceSelector( Image image )
+        private void SetSourceSelector( Image image )
         {
             if( Verify.Input( image?.Tag.ToString() ) )
             {
@@ -298,11 +298,11 @@ namespace BudgetExecution
         }
 
         /// <summary>
-        /// The GetNonSourceSelector
+        /// The SetNonSourceSelector
         /// </summary>
         /// <param name="image">The image
         /// <see cref="Image" /></param>
-        private void GetNonSourceSelector( Image image )
+        private void SetNonSourceSelector( Image image )
         {
             try
             {
@@ -316,6 +316,17 @@ namespace BudgetExecution
             {
                 Fail( ex );
             }
+        }
+
+        /// <summary>
+        /// Get Error Dialog.
+        /// </summary>
+        /// <param name="ex">The ex.</param>
+        private protected static void Fail( Exception ex )
+        {
+            using var error = new Error( ex );
+            error?.SetText();
+            error?.ShowDialog();
         }
 
         // **************************************************************************************************************************
@@ -357,12 +368,12 @@ namespace BudgetExecution
 
                 if( !Resource.Sources.Contains( carousel?.ActiveImage.Tag.ToString() ) )
                 {
-                    GetNonSourceSelector( carousel?.ActiveImage );
+                    SetNonSourceSelector( carousel?.ActiveImage );
                 }
 
                 if( Resource.Sources.Contains( carousel?.ActiveImage.Tag.ToString() ) )
                 {
-                    GetSourceSelector( carousel?.ActiveImage );
+                    SetSourceSelector( carousel?.ActiveImage );
                 }
             }
             catch( Exception ex )
@@ -370,17 +381,6 @@ namespace BudgetExecution
                 Fail( ex );
                 Dispose();
             }
-        }
-
-        /// <summary>
-        /// Get Error Dialog.
-        /// </summary>
-        /// <param name="ex">The ex.</param>
-        private protected static void Fail( Exception ex )
-        {
-            using var error = new Error( ex );
-            error?.SetText();
-            error?.ShowDialog();
         }
     }
 }

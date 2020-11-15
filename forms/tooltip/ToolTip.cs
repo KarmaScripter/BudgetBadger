@@ -81,6 +81,10 @@ namespace BudgetExecution
             SetToolTipText( component, text );
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ToolTip"/> class.
+        /// </summary>
+        /// <param name="toolitem">The toolitem.</param>
         public ToolTip( ToolStripItem toolitem )
             : this()
         {
