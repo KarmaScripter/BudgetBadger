@@ -50,7 +50,7 @@ namespace BudgetExecution
         public BarButton( Tool tool )
             : this()
         {
-            Image = new BudgetImage( tool.ToString(), ImageSource.ToolBar )?.GetBitmap();
+            Image = new BudgetImage( tool.ToString(), ImageSource.ToolBarImages )?.GetBitmap();
             Bar = tool;
         }
 
@@ -95,7 +95,7 @@ namespace BudgetExecution
             {
                 try
                 {
-                    var image = new BudgetImage( tool.ToString(), ImageSource.ToolBar );
+                    var image = new BudgetImage( tool.ToString(), ImageSource.ToolBarImages );
                     Image = image?.GetBitmap();
                 }
                 catch( Exception ex )

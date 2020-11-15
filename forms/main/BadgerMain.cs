@@ -34,7 +34,7 @@ namespace BudgetExecution
         {
             try
             {
-                var img = new BudgetImage( "SqlCe", ImageSource.Databases );
+                var img = new BudgetImage( "SqlCe", ImageSource.DatabaseImages );
                 Label.Text = img?.GetBuilder()?.GetFilePath();
                 return img?.GetBitmap();
             }

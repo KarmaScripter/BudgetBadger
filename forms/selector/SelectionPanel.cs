@@ -228,7 +228,7 @@ namespace BudgetExecution
                             case Source.EJ:
                             case Source.LCARD:
                             case Source.LSASD:
-                            case Source.MDR:
+                            case Source.MSR:
                             case Source.MSD:
                             case Source.ORA:
                             case Source.ORC:

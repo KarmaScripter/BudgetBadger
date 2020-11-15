@@ -66,7 +66,7 @@ namespace BudgetExecution
             {
                 try
                 {
-                    var image = new BudgetImage( imagename, ImageSource.ToolBar, ImageSizer.Small );
+                    var image = new BudgetImage( imagename, ImageSource.ToolBarImages, ImageSizer.Small );
                     var button = new BarButton( image );
                     Items?.Add( button );
 
