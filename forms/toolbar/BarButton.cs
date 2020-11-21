@@ -69,8 +69,12 @@ namespace BudgetExecution
         // ******************************************************   PROPERTIES   *****************************************************
         // ***************************************************************************************************************************
 
-        /// <summary> Gets or sets the binding source. </summary>
-        /// <value> The binding source. </value>
+        /// <summary>
+        /// Gets or sets the binding source.
+        /// </summary>
+        /// <value>
+        /// The binding source.
+        /// </value>
         public BindingSource BindingSource { get; set; }
 
         /// <summary>
@@ -85,10 +89,10 @@ namespace BudgetExecution
         // *******************************************************      METHODS        ***********************************************
         // ***************************************************************************************************************************
 
-        /// <summary> Sets the image.
+        /// <summary>
+        /// Sets the image.
         /// </summary>
-        /// <param name = "tool" > 
-        /// </param>
+        /// <param name="tool"></param>
         public void SetImage( Tool tool )
         {
             if( Enum.IsDefined( typeof( Tool ), tool ) )
@@ -113,7 +117,8 @@ namespace BudgetExecution
         /// Called when [mouse over].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the
+        ///     event data.</param>
         public void OnMouseHover( object sender, EventArgs e )
         {
             try
@@ -146,7 +151,8 @@ namespace BudgetExecution
         /// Called when [mouse leave].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the
+        ///     event data.</param>
         public void OnMouseLeave( object sender, EventArgs e )
         {
             try
@@ -163,13 +169,12 @@ namespace BudgetExecution
             }
         }
 
-        /// <summary> Called when [click]. </summary>
-        /// <param name = "sender" > The sender. </param>
-        /// <param name = "e" >
-        /// The
-        /// <see cref = "EventArgs"/>
-        /// instance containing the event data.
-        /// </param>
+        /// <summary>
+        /// Called when [click].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the
+        ///     event data.</param>
         public void OnClick( object sender, EventArgs e )
         {
             if( sender is BarButton button )
