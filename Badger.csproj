@@ -461,6 +461,7 @@
     <Compile Include="forms\main\BadgerMain.Designer.cs">
       <DependentUpon>BadgerMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="image\IBudgetImage.cs" />
     <Compile Include="metric\DataMetric.cs" />
     <Compile Include="metric\IDataMetric.cs" />
     <Compile Include="metric\IMetric.cs" />
@@ -615,7 +616,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="image\BudgetImage.cs" />
-    <Compile Include="image\IBudgetImage.cs" />
     <Compile Include="image\ImageBuilder.cs" />
     <Compile Include="image\ImageConfig.cs" />
     <Compile Include="image\ImageFactory.cs" />

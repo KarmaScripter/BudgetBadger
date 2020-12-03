@@ -152,16 +152,15 @@ namespace BudgetExecution
         /// <param name="text">The text.</param>
         public void SetHoverText( string text )
         {
-            if( Verify.Input( text ) )
+            try
             {
-                try
-                {
-                    HoverText = text;
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
+                HoverText = Verify.Input( text )
+                    ? text
+                    : string.Empty;
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
             }
         }
 
@@ -171,16 +170,15 @@ namespace BudgetExecution
         /// <param name="field">The field.</param>
         public void SetField( Field field )
         {
-            if( Enum.IsDefined( typeof( Field ), field ) )
+            try
             {
-                try
-                {
-                    Field = field;
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
+                Field = Enum.IsDefined( typeof( Field ), field )
+                    ? field
+                    : Field.NS;
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
             }
         }
 
@@ -190,16 +188,15 @@ namespace BudgetExecution
         /// <param name="tag">The tag.</param>
         public void SetTag( object tag )
         {
-            if( tag != null )
+            try
             {
-                try
-                {
-                    Tag = tag;
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                }
+                Tag = Verify.Ref( tag )
+                    ? tag
+                    : null;
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
             }
         }
 
@@ -239,7 +236,6 @@ namespace BudgetExecution
 
                 if( Verify.Input( HoverText ) )
                 {
-                    var text = picturepanel?.HoverText;
                     var _ = new ToolTip( picturepanel, HoverText );
                 }
                 else

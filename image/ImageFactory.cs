@@ -31,11 +31,6 @@ namespace BudgetExecution
         private readonly ImageBuilder Builder;
 
         /// <summary>
-        /// The format
-        /// </summary>
-        private readonly ImageFormat Format;
-
-        /// <summary>
         /// The stream data
         /// </summary>
         private readonly IDictionary<string, FileInfo> FileStreams;

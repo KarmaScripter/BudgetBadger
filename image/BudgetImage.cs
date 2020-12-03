@@ -13,6 +13,11 @@ namespace BudgetExecution
     using System.Drawing;
     using System.IO;
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="BudgetExecution.ImageConfig" />
+    /// <seealso cref="BudgetExecution.IBudgetImage" />
     [ SuppressMessage( "ReSharper", "MemberCanBeInternal" ) ]
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     public class BudgetImage : ImageConfig, IBudgetImage
@@ -36,16 +41,24 @@ namespace BudgetExecution
         // ****************************************************************************************************************************
 
         /// <summary>
-        /// Initializes a new instance of the <see cref = "BudgetImage"/> class.
+        /// Initializes a new instance of the <see cref="BudgetImage"/> class.
         /// </summary>
         public BudgetImage()
         {
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BudgetImage"/> class.
+        /// </summary>
+        /// <param name="path">The path.</param>
         public BudgetImage( string path )
         {
-            Name = Path.GetFileNameWithoutExtension( path );
+            SetName( Path.GetFileNameWithoutExtension( path ) );
             Builder = new ImageBuilder( Path.GetFullPath( path ) );
+            SetImageSize( Builder.GetSize() );
+            SetImageSource( Builder.GetImageSource() );
+            SetImageFormat( Builder.GetFormat() );
+            Factory = new ImageFactory( Builder );
             Image = new Bitmap( Builder.GetFilePath() );
         }
 
@@ -53,64 +66,63 @@ namespace BudgetExecution
         /// Initializes a new instance of the <see cref="BudgetImage"/> class.
         /// </summary>
         /// <param name="path">The path.</param>
-        /// <param name = "source" > </param>
+        /// <param name="source">The source.</param>
         public BudgetImage( string path, ImageSource source = ImageSource.NS )
         {
-            Name = Path.GetFileNameWithoutExtension( path );
-            Builder = new ImageBuilder( Name, source, ImageSizer.Medium );
+            SetName( Path.GetFileNameWithoutExtension( path ) );
+            Builder = new ImageBuilder( ImageName, source, ImageSizer.Medium );
+            SetImageSize( Builder.GetSize() );
+            SetImageSource( Builder.GetImageSource() );
+            SetImageFormat( Builder.GetFormat() );
             Factory = new ImageFactory( Builder );
             Image = Factory.CreateImage();
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref = "BudgetImage"/> class.
+        /// Initializes a new instance of the <see cref="BudgetImage"/> class.
         /// </summary>
-        /// <param name = "imagebuilder" >
-        /// The imagebuilder.
-        /// </param>
+        /// <param name="imagebuilder">The imagebuilder.</param>
         public BudgetImage( ImageBuilder imagebuilder )
         {
+            SetName( imagebuilder.GetImageName() );
+            SetImageSize( imagebuilder.GetSize() );
+            SetImageSource( imagebuilder.GetImageSource() );
+            SetImageFormat( imagebuilder.GetFormat() );
             Builder = imagebuilder;
-            Name = Builder.GetImageName();
             Factory = new ImageFactory( Builder );
             Image = Factory.CreateImage();
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref = "BudgetImage"/> class.
+        /// Initializes a new instance of the <see cref="BudgetImage"/> class.
         /// </summary>
-        /// <param name = "name" >
-        /// The name.
-        /// </param>
-        /// <param name = "resource" >
-        /// The resource.
-        /// </param>
-        /// <param name = "size" >
-        /// </param>
+        /// <param name="name">The name.</param>
+        /// <param name="resource">The resource.</param>
+        /// <param name="size">The size.</param>
         public BudgetImage( string name, ImageSource resource, ImageSizer size = ImageSizer.Medium )
         {
+            SetName( name );
+            SetImageSize( size );
+            SetImageSource( resource );
             Builder = new ImageBuilder( name, resource, size );
-            Name = Builder.GetImageName();
+            SetImageFormat( Builder.GetFormat() );
             Factory = new ImageFactory( Builder );
             Image = Factory.CreateImage();
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref = "BudgetImage"/> class.
+        /// Initializes a new instance of the <see cref="BudgetImage"/> class.
         /// </summary>
-        /// <param name = "name" >
-        /// The name.
-        /// </param>
-        /// <param name = "size" >
-        /// The size.
-        /// </param>
-        /// <param name = "resource" >
-        /// The resource.
-        /// </param>
+        /// <param name="name">The name.</param>
+        /// <param name="resource">The resource.</param>
+        /// <param name="size">The size.</param>
         public BudgetImage( string name, ImageSource resource, Size size )
         {
+            SetName( name );
+            SetImageSize( size );
+            SetImageSource( resource );
             Builder = new ImageBuilder( name, resource, size );
-            Name = Builder.GetImageName();
+            SetImageFormat( Builder.GetFormat() );
             Factory = new ImageFactory( Builder );
             Image = Factory.CreateImage();
         }
@@ -122,8 +134,7 @@ namespace BudgetExecution
         /// <summary>
         /// Gets the builder.
         /// </summary>
-        /// <returns>
-        /// </returns>
+        /// <returns></returns>
         public ImageBuilder GetBuilder()
         {
             try
@@ -142,8 +153,7 @@ namespace BudgetExecution
         /// <summary>
         /// Gets the factory.
         /// </summary>
-        /// <returns>
-        /// </returns>
+        /// <returns></returns>
         public ImageFactory GetFactory()
         {
             try
@@ -160,36 +170,9 @@ namespace BudgetExecution
         }
 
         /// <summary>
-        /// Gets the name.
-        /// </summary>
-        /// <returns>
-        /// </returns>
-        public string GetName()
-        {
-            if( Verify.Input( Name ) )
-            {
-                try
-                {
-                    return Path.HasExtension( Name )
-                        ? Path.GetFileNameWithoutExtension( Name )
-                        : Name;
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                    return string.Empty;
-                }
-            }
-
-            return string.Empty;
-        }
-
-        /// <summary>
         /// Sets the tag.
         /// </summary>
-        /// <param name = "tag" >
-        /// The tag.
-        /// </param>
+        /// <param name="tag">The tag.</param>
         public void SetTag( object tag )
         {
             if( Verify.Ref( Image )
@@ -208,10 +191,9 @@ namespace BudgetExecution
         }
 
         /// <summary>
-        /// Gets the image.
+        /// Gets the bitmap.
         /// </summary>
-        /// <returns>
-        /// </returns>
+        /// <returns></returns>
         public Image GetBitmap()
         {
             try
@@ -228,10 +210,10 @@ namespace BudgetExecution
         }
 
         /// <summary>
-        /// Gets the attributes.
+        /// Gets the color.
         /// </summary>
-        /// <returns>
-        /// </returns>
+        /// <param name="newcolor">The newcolor.</param>
+        /// <returns></returns>
         public Color GetColor( Color newcolor )
         {
             try

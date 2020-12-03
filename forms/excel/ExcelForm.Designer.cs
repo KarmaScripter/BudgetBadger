@@ -184,7 +184,7 @@ namespace BudgetExecution
             this.Ribbon.Size = new System.Drawing.Size(1114, 162);
             this.Ribbon.Spreadsheet = this.Sheet;
             this.Ribbon.SystemText.QuickAccessDialogDropDownName = "Start menu";
-            this.Ribbon.SystemText.RenameDisplayLabelText = "&Display Name:";
+            this.Ribbon.SystemText.RenameDisplayLabelText = "&Display ImageName:";
             this.Ribbon.TabIndex = 0;
             this.Ribbon.TitleColor = System.Drawing.Color.White;
             this.Ribbon.TitleFont = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold);

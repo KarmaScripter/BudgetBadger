@@ -1,6 +1,6 @@
-﻿// <copyright file = "ImageConfig.cs" company = "Terry D. Eppler">
-// Copyright (c) Terry D. Eppler. All rights reserved.
-// </copyright>
+﻿// // <copyright file = "ImageConfig.cs" company = "Terry D. Eppler">
+// // Copyright (c) Terry D. Eppler. All rights reserved.
+// // </copyright>
 
 namespace BudgetExecution
 {
@@ -14,6 +14,9 @@ namespace BudgetExecution
     using System.IO;
     using System.Linq;
 
+    /// <summary>
+    /// 
+    /// </summary>
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     [ SuppressMessage( "ReSharper", "MemberCanBeInternal" ) ]
     [ SuppressMessage( "ReSharper", "MemberCanBeProtected.Global" ) ]
@@ -27,6 +30,16 @@ namespace BudgetExecution
         /// The image
         /// </summary>
         private protected Bitmap Image;
+
+        /// <summary>
+        /// The source
+        /// </summary>
+        private protected ImageSource Source;
+
+        /// <summary>
+        /// The format
+        /// </summary>
+        private protected ImageFormat Format;
 
         /// <summary>
         /// The small
@@ -44,9 +57,9 @@ namespace BudgetExecution
         private protected static readonly Size Large = new Size( 20, 20 );
 
         /// <summary>
-        /// The largest
+        /// The huge
         /// </summary>
-        private protected static readonly Size Largest = new Size( 250, 250 );
+        private protected static readonly Size Huge = new Size( 250, 250 );
 
         // ****************************************************************************************************************************
         // *************************************************   PROPERTIES   ***********************************************************
@@ -69,68 +82,99 @@ namespace BudgetExecution
         private protected Color Color { get; set; }
 
         /// <summary>
-        /// Gets or sets the size.
+        /// Gets or sets the size of the image.
         /// </summary>
         /// <value>
-        /// The size.
+        /// The size of the image.
         /// </value>
         private protected Size ImageSize { get; set; }
 
         /// <summary>
-        /// Gets or sets the name.
+        /// Gets or sets the name of the image.
         /// </summary>
         /// <value>
-        /// The name.
+        /// The name of the image.
         /// </value>
-        private protected string Name { get; set; }
+        private protected string ImageName { get; set; }
 
         /// <summary>
-        /// Gets or sets the extension.
+        /// Gets or sets the file extension.
         /// </summary>
         /// <value>
-        /// The extension.
+        /// The file extension.
         /// </value>
-        private protected string Extension { get; set; }
+        private protected string FileExtension { get; set; }
 
         // ****************************************************************************************************************************
         // ************************************************  METHODS   ****************************************************************
         // ****************************************************************************************************************************
 
         /// <summary>
-        /// Gets the image source.
+        /// Sets the image source.
         /// </summary>
-        /// <returns>
-        /// </returns>
-        public ImageSource GetImageSource( ImageSource source )
+        /// <param name="source">The source.</param>
+        private protected void SetImageSource( ImageSource source )
         {
             try
             {
-                return Verify.ImageResource( source )
+                Source = Verify.ImageResource( source )
                     ? source
-                    : default;
+                    : ImageSource.NS;
             }
             catch( Exception ex )
             {
                 Fail( ex );
-                return default;
+            }
+        }
+
+        /// <summary>
+        /// Gets the image source.
+        /// </summary>
+        /// <returns></returns>
+        public ImageSource GetImageSource()
+        {
+            try
+            {
+                return Enum.IsDefined( typeof( ImageSource ), Source )
+                    ? Source
+                    : ImageSource.NS;
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+                return ImageSource.NS;
             }
         }
 
         /// <summary>
         /// Sets the name.
         /// </summary>
-        /// <param name = "name" >
-        /// The name.
-        /// </param>
-        /// <returns>
-        /// </returns>
-        public string GetName( string name )
+        /// <param name="name">The name.</param>
+        private protected void SetName( string name )
         {
             try
             {
-                return Verify.Input( name )
+                ImageName = Verify.Input( name )
                     ? name
-                    : default;
+                    : string.Empty;
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Gets the name.
+        /// </summary>
+        /// <returns></returns>
+        public string GetName()
+        {
+            try
+            {
+                return Verify.Input( ImageName )
+                    ? ImageName
+                    : string.Empty;
             }
             catch( Exception ex )
             {
@@ -140,140 +184,174 @@ namespace BudgetExecution
         }
 
         /// <summary>
-        /// Sets the extension.
+        /// Sets the file extension.
         /// </summary>
-        /// <param name = "resource" >
-        /// The resource.
-        /// </param>
-        /// <param name = "filename" >
-        /// </param>
-        /// <returns>
-        /// </returns>
-        public string GetExtension( string filename, ImageSource resource = ImageSource.NS )
-        {
-            if( Verify.ImageResource( resource )
-                && Verify.Input( filename )
-                && resource != ImageSource.NS )
-            {
-                try
-                {
-                    var path = Directory.GetFiles( Resource.Settings[ resource.ToString() ] )
-                        ?.Where( n => n.Contains( filename ) )
-                        ?.Select( n => n )
-                        ?.FirstOrDefault();
-
-                    var extension = Path.GetExtension( path );
-
-                    return Verify.Input( extension )
-                        ? extension
-                        : ImageFormat.PNG.ToString();
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                    return default;
-                }
-            }
-            else
-            {
-                return Path.GetExtension( filename );
-            }
-        }
-
-        /// <summary>
-        /// Sets the extenstion.
-        /// </summary>
-        /// <param name = "extension" >
-        /// The filepath.
-        /// </param>
-        /// <returns>
-        /// </returns>
-        public ImageFormat GetFormat( string extension )
-        {
-            if( Verify.Input( extension ) )
-            {
-                try
-                {
-                    if( extension.StartsWith( "." ) )
-                    {
-                        var ext = extension.TrimStart( '.' );
-                        var format = (ImageFormat)Enum.Parse( typeof( ImageFormat ), ext.ToUpper() );
-
-                        return Verify.ImageFormat( format )
-                            ? format
-                            : ImageFormat.PNG;
-                    }
-                    else
-                    {
-                        var format = (ImageFormat)Enum.Parse( typeof( ImageFormat ), extension.ToUpper() );
-
-                        return Verify.ImageFormat( format )
-                            ? format
-                            : ImageFormat.PNG;
-                    }
-                }
-                catch( Exception ex )
-                {
-                    Fail( ex );
-                    return default;
-                }
-            }
-
-            return default;
-        }
-
-        /// <summary>
-        /// Sets the size.
-        /// </summary>
-        /// <returns>
-        /// </returns>
-        public Size GetImageSize( Size size )
+        /// <param name="filepath">The filepath.</param>
+        /// <param name="resource">The resource.</param>
+        private protected void SetFileExtension( string filepath, ImageSource resource = ImageSource.NS )
         {
             try
             {
-                return SizeConfig.GetSize( size );
+                FileExtension = Verify.ImageResource( resource )
+                    && Verify.Input( filepath )
+                    && File.Exists( filepath )
+                    && resource != ImageSource.NS
+                        ? filepath
+                        : string.Empty;
             }
             catch( Exception ex )
             {
                 Fail( ex );
-                return Size.Empty;
+            }
+        }
+
+        /// <summary>
+        /// Gets the extension.
+        /// </summary>
+        /// <returns></returns>
+        public string GetExtension()
+        {
+            try
+            {
+                return Verify.Input( FileExtension )
+                    ? FileExtension
+                    : ImageFormat.PNG.ToString();
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+                return default;
+            }
+        }
+
+        /// <summary>
+        /// Sets the image format.
+        /// </summary>
+        /// <param name="format">The format.</param>
+        private protected void SetImageFormat( ImageFormat format )
+        {
+            try
+            {
+                Format = Enum.IsDefined( typeof( ImageFormat ), format )
+                    ? format
+                    : ImageFormat.NS;
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Sets the image format.
+        /// </summary>
+        /// <param name="extension">The extension.</param>
+        private protected void SetImageFormat( string extension )
+        {
+            try
+            {
+                var names = Enum.GetNames( typeof( ImageFormat ) );
+
+                if( names.Contains( extension ) )
+                {
+                    Format = (ImageFormat)Enum.Parse( typeof( ImageFormat ), extension );
+                }
+                else
+                {
+                    Format = ImageFormat.PNG;
+                }
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Gets the format.
+        /// </summary>
+        /// <returns></returns>
+        public ImageFormat GetFormat()
+        {
+            try
+            {
+                return Enum.IsDefined( typeof( ImageFormat ), Format )
+                    ? Format
+                    : ImageFormat.NS;
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+                return ImageFormat.NS;
             }
         }
 
         /// <summary>
         /// Sets the size of the image.
         /// </summary>
-        /// <param name = "width" >
-        /// The width.
-        /// </param>
-        /// <param name = "height" >
-        /// The height.
-        /// </param>
-        /// <returns>
-        /// </returns>
-        public Size GetImageSize( int width, int height )
+        /// <param name="size">The size.</param>
+        private protected void SetImageSize( Size size )
         {
             try
             {
-                return SizeConfig.GetSize( width, height );
+                ImageSize = size != Size.Empty
+                    ? SizeConfig.GetSize( size )
+                    : Size.Empty;
             }
             catch( Exception ex )
             {
                 Fail( ex );
-                return Size.Empty;
             }
         }
 
         /// <summary>
-        /// Sets the size.
+        /// Sets the size of the image.
         /// </summary>
-        /// <returns>
-        /// </returns>
-        public Size GetImageSize( ImageSizer size )
+        /// <param name="width">The width.</param>
+        /// <param name="height">The height.</param>
+        private protected void SetImageSize( int width, int height )
         {
             try
             {
-                return SizeConfig.GetSize( size );
+                ImageSize = width > -1 && height > -1
+                    ? SizeConfig.GetSize( width, height )
+                    : Size.Empty;
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Sets the size of the image.
+        /// </summary>
+        /// <param name="sizer">The sizer.</param>
+        private protected void SetImageSize( ImageSizer sizer )
+        {
+            try
+            {
+                ImageSize = Enum.IsDefined( typeof( ImageSizer ), sizer )
+                    ? SizeConfig.GetSize( sizer )
+                    : Size.Empty;
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Gets the size of the image.
+        /// </summary>
+        /// <returns></returns>
+        public Size GetImageSize()
+        {
+            try
+            {
+                return ImageSize != Size.Empty
+                    ? ImageSize
+                    : Size.Empty;
             }
             catch( Exception ex )
             {
@@ -285,9 +363,7 @@ namespace BudgetExecution
         /// <summary>
         /// Res the color.
         /// </summary>
-        /// <param name = "newcolor" >
-        /// The newcolor.
-        /// </param>
+        /// <param name="newcolor">The newcolor.</param>
         public void ReColor( Color newcolor )
         {
             if( newcolor != Color.Empty )
@@ -316,11 +392,7 @@ namespace BudgetExecution
         /// <summary>
         /// Sets the color of the back ground.
         /// </summary>
-        /// <param name = "newcolor" >
-        /// The newcolor.
-        /// </param>
-        /// <returns>
-        /// </returns>
+        /// <param name="newcolor">The newcolor.</param>
         public void SetBackGroundColor( Color newcolor )
         {
             if( newcolor != Color.Empty )
@@ -337,7 +409,7 @@ namespace BudgetExecution
         }
 
         /// <summary>
-        /// Get Error Dialog.
+        /// Fails the specified ex.
         /// </summary>
         /// <param name="ex">The ex.</param>
         private protected static void Fail( Exception ex )

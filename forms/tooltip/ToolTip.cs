@@ -103,7 +103,7 @@ namespace BudgetExecution
         /// <value> The tool tip title. </value>
         public string TipTitle { get; set; } = string.Empty;
 
-        /// <summary> Gets or sets the Name </summary>
+        /// <summary> Gets or sets the ImageName </summary>
         /// <value> The name. </value>
         public string Name { get; set; }
 
